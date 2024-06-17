@@ -30,12 +30,12 @@ const AboutUs: React.FC = () => {
                             San Bar Construction Corp. was established in August of 1989 around the kitchen table of its owner, David “Hossie” Sanchez. After four month of planning and preparation, the company began operations as a pavement markings specialist in January 1990 initially operating out of a one bay garage in Los Lunas. In 1999, San Bar Construction Corp. moved into its present 34,000 sq. ft. facility sitauted along the I-25/South Broadway corridor in Albuquerque's south valley.
                         </p>
                         </div>
-                        <a href="/history" className="inline-block bg-amber-400 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
-                            More About Our History
-                        </a>
+                        {/*<a href="/history" className="inline-block bg-amber-400 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">*/}
+                        {/*    More About Our History*/}
+                        {/*</a>*/}
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/path-to-history-image.jpg" alt="Our History" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/HossieHistory.JPG" alt="Our History" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>
