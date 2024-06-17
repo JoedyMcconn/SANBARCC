@@ -1,0 +1,41 @@
+{
+  "mainHero": {
+    "title": "The Best in the Southwest",
+    "subtitle": "Providing High-Quality Road Construction",
+    "description": "Providing high-quality road construction, striping, and milling services throughout the Southwest region.",
+    "primaryAction": {
+      "text": "Contact Us",
+      "href": "/contact-us"
+    },
+    "secondaryAction": {
+      "text": "Call Us: +1 (505) 123-4567",
+      "href": "tel:+15051234567"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Signage",
+        "description": "Sign Printing",
+        "img": "/Signage.jpeg"
+      },
+      {
+        "title": "Striping",
+        "description": "Road Marking and Striping",
+        "img": "/Striping1.jpg"
+      },
+      {
+        "title": "Traffic Safety",
+        "description": "Traffic Safety Equipment",
+        "img": "/road-construction-raffic-safety.png"
+      }
+    ],
+    "viewAllLink": "/services"
+  },
+  "musicalRoad": {
+    "title": "Musical Road",
+    "description": "The Musical Road is a unique project designed for National Geographic that plays a musical tune when driven over at a specific speed.",
+    "videoUrl": "https://www.youtube.com/embed/5eCTk8Yp01A?si=aklSLBcUVo6ezRTj"
+  }
+}
