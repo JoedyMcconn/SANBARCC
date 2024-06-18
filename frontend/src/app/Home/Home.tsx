@@ -1,4 +1,6 @@
+'use client'
 import { FaBuilding, FaUsers, FaCheckCircle } from 'react-icons/fa';
+import {useEffect} from "react";
 
 
 const Hero = () => {
@@ -64,8 +66,31 @@ const Hero = () => {
 
 
 const About = () => {
+    useEffect(() => {
+        const images = document.querySelectorAll('.fade-slide-image');
+
+        const handleScroll = () => {
+            images.forEach(image => {
+                const rect = image.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+                // Add 'is-visible' if the image is in view, remove it otherwise
+                if (rect.top <= windowHeight * 1.25 && rect.bottom >= windowHeight * 0.29) {
+                    image.classList.add('is-visible');
+                } else {
+                    image.classList.remove('is-visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Initial check
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <section id="About" className="relative min-h-screen py-20 bg-gray-100">
+        <section id="About" className="relative min-h-screen py-20 bg-white bg-gradient-to-r from-yellow-400/10 to-black/10">
             <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 flex flex-wrap">
                 {/* Text block */}
                 <div className="w-full md:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto">
@@ -118,13 +143,13 @@ const About = () => {
                 <div className="w-full md:w-1/2 p-6">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
-                            <img src="/GuardRailTruck.JPG" alt="Guard Rail Truck" className="w-full h-full object-cover rounded-lg" />
+                            <img src="/GuardRailTruck.JPG" alt="Guard Rail Truck" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/Striping1.jpg" alt="Striping" className="w-full h-full object-cover rounded-lg" />
+                            <img src="/Striping1.jpg" alt="Striping" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="left"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/SignShop2.JPG" alt="Sign Shop" className="w-full h-full object-cover rounded-lg" />
+                            <img src="/SignShop2.JPG" alt="Sign Shop" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="right"/>
                         </div>
                     </div>
                 </div>
@@ -147,17 +172,20 @@ const Services = () => {
     return (
         <section id="services" className="py-20 text-center">
             <div className="container mx-auto px-4">
-                <div className="lg:flex lg:justify-between lg:items-center mb-10 max-w-lg">
-                    <h1 className="font-semibold text-4xl text-yellow-400 lg:mr-10">Quality you expect, the service you deserve!</h1>
+                <div className="mb-5">
+                    <h1 className="font-semibold text-4xl text-yellow-400 lg:mr-10">Quality you expect, the service
+                        you<br/>deserve!</h1>
                 </div>
-                <div className="max-w-lg">
-                    <p className="text-gray-700 lg:text-left">We provide a wide range of services to meet your construction needs. Our team is dedicated to delivering the highest quality work and exceptional customer service.</p>
+                <div>
+                    <p className="text-gray-700">We provide a wide range of services to meet your construction needs.
+                        Our team is dedicated to<br/>delivering the highest quality work and exceptional customer
+                        service.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {servicesData.map(service => (
                         <div key={service.title} className="shadow-lg rounded-lg overflow-hidden">
-                            <img src={service.src} alt={service.alt} className="w-full h-60 object-cover" />
+                            <img src={service.src} alt={service.alt} className="w-full h-60 object-cover hover:scale-105" />
                             <div className="p-4 bg-white">
                                 <h2 className="font-bold text-xl mb-2">{service.title}</h2>
                                 <p className="text-gray-700">{service.description}</p>
@@ -178,7 +206,7 @@ const Services = () => {
 
 const MusicalRoad = () => {
     return (
-        <section id="about" className="min-h-screen bg-gray-100 py-16">
+        <section id="about" className="min-h-screen bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 py-16">
             <div className="container mx-auto px-6 lg:px-12">
                 {/* Grid Layout for Video and Text */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
