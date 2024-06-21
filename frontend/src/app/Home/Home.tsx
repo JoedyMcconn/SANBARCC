@@ -1,6 +1,6 @@
 'use client'
 import { FaBuilding, FaUsers, FaCheckCircle } from 'react-icons/fa';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 
 const Hero = () => {
@@ -66,19 +66,19 @@ const Hero = () => {
 
 
 const About = () => {
+
     useEffect(() => {
         const images = document.querySelectorAll('.fade-slide-image');
 
         const handleScroll = () => {
             images.forEach(image => {
+                // Get the rectangle for the image
                 const rect = image.getBoundingClientRect();
                 const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-                // Add 'is-visible' if the image is in view, remove it otherwise
-                if (rect.top <= windowHeight * 1.25 && rect.bottom >= windowHeight * 0.29) {
+                // Add 'is-visible' if the image is in view
+                if (rect.top <= windowHeight * 1.25) {
                     image.classList.add('is-visible');
-                } else {
-                    image.classList.remove('is-visible');
                 }
             });
         };
@@ -247,15 +247,81 @@ const MusicalRoad = () => {
 
 
 
+
+type CarouselProps = {
+    images: string[];
+}
+
+
+const Shop = () => {
+    const Carousel: React.FC<CarouselProps> = ({ images }) => {
+        const [currentIndex, setCurrentIndex] = useState(0);
+
+        const handlePrev = () => {
+            setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+        };
+
+        const handleNext = () => {
+            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        };
+
+        return (
+            <div className="relative w-full max-w-3xl mx-auto">
+                <div className="overflow-hidden rounded-lg">
+                    <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="w-full h-64 object-cover"/>
+                </div>
+                <button
+                    onClick={handlePrev}
+                    className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+                >
+                    &#9664;
+                </button>
+                <button
+                    onClick={handleNext}
+                    className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+                >
+                    &#9654;
+                </button>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    {images.map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setCurrentIndex(index)}
+                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-gray-400'}`}
+                        />
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
+    const images = [
+        'https://via.placeholder.com/800x400.png?text=Slide+1',
+        'https://via.placeholder.com/800x400.png?text=Slide+2',
+        'https://via.placeholder.com/800x400.png?text=Slide+3',
+    ];
+
+    return (
+        <section className="Shop">
+            <h1 className="text-6xl text-center font-extrabold text-yellow-400 my-12">
+                Check Out Our Shop!
+            </h1>
+            <Carousel images={images}/>
+        </section>
+    );
+};
+
+
 // Main HomePage component that assembles all the sections
 export default function HomePage() {
     return (
         <div className="mt-10">
             <main>
                 <Hero/>
-                <About />
+                <About/>
                 <Services/>
                 <MusicalRoad/>
+                <Shop/>
             </main>
         </div>
     );

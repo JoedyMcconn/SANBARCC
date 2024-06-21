@@ -29,6 +29,8 @@
 
 
 @layer base {
+
+  /* Image Slider */
   .fade-slide-image {
     opacity: 0;
     transition: opacity 2.0s ease, transform 2.5s ease;
@@ -49,5 +51,41 @@
   .fade-slide-image.is-visible {
     opacity: 1;
     transform: translateX(0);
+  }
+
+
+/* Carousel */
+  /* Additional styles */
+  .carousel-container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .carousel-slide img {
+    border-radius: 0.5rem;
+  }
+
+  .carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .carousel-indicator.active {
+    background-color: white;
   }
 }
