@@ -25,7 +25,7 @@ const Hero = () => {
             ></div>
 
             {/* Wrapper for Top Left Images */}
-            <div className="absolute top-0 left-0 hidden md:flex flex-row space-x-2 p-4">
+            <div className="absolute top-0 left-0 hidden md:flex flex-row space-x-2 pt-6">
                 <img
                     src="/TopLeftHeroLogos.png"
                     alt="ACON New Mexico & ATSSA"
@@ -46,7 +46,7 @@ const Hero = () => {
                 <p className="hidden md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 mb-10 text-gray-300">
                     today to find out how we can help.
                 </p>
-                <h2 className="text-8xl md:text-5xl lg:text-4xl font-bold text-white mb-4">San Bar Construction Corp.</h2>
+                <h2 className="text-5xl lg:text-8xl font-bold text-white mb-4">San Bar Construction Corp.</h2>
                 {/* Contact Button and Phone Number Smaller Side-by-Side on Mobile */}
                 <div className="flex flex-row justify-center md:justify-end space-x-2 md:space-x-4">
                     <a
@@ -71,14 +71,17 @@ const About = () => {
         const images = document.querySelectorAll('.fade-slide-image');
 
         const handleScroll = () => {
-            images.forEach(image => {
-                // Get the rectangle for the image
-                const rect = image.getBoundingClientRect();
-                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            const screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
-                // Add 'is-visible' if the image is in view
+            images.forEach(image => {
+                const rect = image.getBoundingClientRect();
+
+                // Only add 'is-visible' if the screen width is >= lg breakpoint (1024px)
                 if (rect.top <= windowHeight * 1.25) {
                     image.classList.add('is-visible');
+                } else if (screenWidth < 1024) {
+                    image.classList.add('no-transition');
                 }
             });
         };
@@ -89,6 +92,7 @@ const About = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+
     return (
         <section id="About" className="relative min-h-screen py-20 bg-white bg-gradient-to-r from-yellow-400/10 to-black/10">
             <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 flex flex-wrap">
@@ -98,12 +102,12 @@ const About = () => {
                         <div className="flex justify-center mb-4">
                             <div className="bg-yellow-500 p-2 mx-5">
                                 <div className="bg-black p-4 shadow-lg">
-                                    <h2 className="text-white text-6xl lg:text-3xl font-semibold">About San Bar</h2>
+                                    <h2 className="text-white text-3xl lg:text-6xl font-semibold">About San Bar</h2>
                                 </div>
                             </div>
                         </div>
 
-                        <hr className="w-96 border-t-4 border-yellow-500 mx-auto mt-8 mb-8"/>
+                        <hr className="border-t-4 border-yellow-500 mt-8 mb-8"/>
                     </div>
 
                     <div className="mb-10 p-4 rounded-lg bg-white text-left">
@@ -246,48 +250,48 @@ const MusicalRoad = () => {
 };
 
 
-
-
-type CarouselProps = {
-    images: string[];
+interface CarouselProps {
+    props: { src: string, text: string }[];
 }
 
-
 const Shop = () => {
-    const Carousel: React.FC<CarouselProps> = ({ images }) => {
+    const Carousel: React.FC<CarouselProps> = ({ props }) => {
         const [currentIndex, setCurrentIndex] = useState(0);
 
         const handlePrev = () => {
-            setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+            setCurrentIndex((prevIndex) => (prevIndex === 0 ? props.length - 1 : prevIndex - 1));
         };
 
         const handleNext = () => {
-            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+            setCurrentIndex((prevIndex) => (prevIndex === props.length - 1 ? 0 : prevIndex + 1));
         };
 
         return (
             <div className="relative w-full max-w-3xl mx-auto">
-                <div className="overflow-hidden rounded-lg">
-                    <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="w-full h-64 object-cover"/>
+                <div className="overflow-hidden rounded-xl relative">
+                    <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`} className="w-full h-96 object-cover"/>
+                    <div className="overlay">
+                        <h2 className="overlay-text">{props[currentIndex].text}</h2>
+                    </div>
                 </div>
                 <button
                     onClick={handlePrev}
-                    className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+                    className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-black/60 text-white p-2 rounded-full hover:bg-gray-600"
                 >
                     &#9664;
                 </button>
                 <button
                     onClick={handleNext}
-                    className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700"
+                    className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-black/60 text-white p-2 rounded-full hover:bg-gray-600"
                 >
                     &#9654;
                 </button>
                 <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    {images.map((_, index) => (
+                    {props.map((_, index) => (
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-gray-400'}`}
+                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-black/40'}`}
                         />
                     ))}
                 </div>
@@ -295,18 +299,23 @@ const Shop = () => {
         );
     };
 
-    const images = [
-        'https://via.placeholder.com/800x400.png?text=Slide+1',
-        'https://via.placeholder.com/800x400.png?text=Slide+2',
-        'https://via.placeholder.com/800x400.png?text=Slide+3',
+    const props = [
+        { src: 'https://www.oxfordplastics.com/m3cms/files/mNfcDEXL/HIGHWAYMAN%20CONE_HEADER%20IMAGE.png?text=Slide+1',
+            text: 'First Slide'},
+        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+2',
+            text: 'Second Slide' },
+        { src: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/construction-workers-safety-equipment-tek-image.jpg?text=Slide+3',
+            text: 'Third Slide' },
+        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
+            text: 'Fourth Slide' },
     ];
 
     return (
-        <section className="Shop">
-            <h1 className="text-6xl text-center font-extrabold text-yellow-400 my-12">
+        <section className="my-24">
+            <h1 className="text-6xl text-center font-extrabold text-yellow-400 pb-5">
                 Check Out Our Shop!
             </h1>
-            <Carousel images={images}/>
+            <Carousel props={props}/>
         </section>
     );
 };
