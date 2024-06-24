@@ -77,17 +77,16 @@ const About = () => {
             images.forEach(image => {
                 const rect = image.getBoundingClientRect();
 
-                // Only add 'is-visible' if the screen width is >= lg breakpoint (1024px)
                 if (rect.top <= windowHeight * 1.25) {
                     image.classList.add('is-visible');
-                } else if (screenWidth < 1024) {
+                } else if (screenWidth < 1024 && windowHeight * 0.01) {
                     image.classList.add('no-transition');
                 }
             });
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check
+        handleScroll();
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -251,7 +250,7 @@ const MusicalRoad = () => {
 
 
 interface CarouselProps {
-    props: { src: string, text: string }[];
+    props: { src: string, title: string, text:string }[];
 }
 
 const Shop = () => {
@@ -268,21 +267,22 @@ const Shop = () => {
 
         return (
             <div className="relative w-full max-w-3xl mx-auto">
-                <div className="overflow-hidden rounded-xl relative">
+                <div className="overflow-hidden md:rounded-xl relative">
                     <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`} className="w-full h-96 object-cover"/>
-                    <div className="overlay">
-                        <h2 className="overlay-text">{props[currentIndex].text}</h2>
+                    <div className="overlay text-white">
+                        <h2 className="text-4xl">{props[currentIndex].title}</h2>
+                        <p className="text-2xl">{props[currentIndex].text}</p>
                     </div>
                 </div>
                 <button
                     onClick={handlePrev}
-                    className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-black/60 text-white p-2 rounded-full hover:bg-gray-600"
+                    className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-black/60 text-white ms-1 p-2 rounded-full hover:bg-gray-600"
                 >
                     &#9664;
                 </button>
                 <button
                     onClick={handleNext}
-                    className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-black/60 text-white p-2 rounded-full hover:bg-gray-600"
+                    className="absolute top-1/2 transform -translate-y-1/2 right-0 bg-black/60 text-white me-1 p-2 rounded-full hover:bg-gray-600"
                 >
                     &#9654;
                 </button>
@@ -291,7 +291,7 @@ const Shop = () => {
                         <button
                             key={index}
                             onClick={() => setCurrentIndex(index)}
-                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-black/40'}`}
+                            className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-white' : 'bg-black/80'}`}
                         />
                     ))}
                 </div>
@@ -301,13 +301,17 @@ const Shop = () => {
 
     const props = [
         { src: 'https://www.oxfordplastics.com/m3cms/files/mNfcDEXL/HIGHWAYMAN%20CONE_HEADER%20IMAGE.png?text=Slide+1',
+            title: 'First Slide',
             text: 'First Slide'},
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+2',
-            text: 'Second Slide' },
+            title: 'Second Slide',
+            text: 'First Slide' },
         { src: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/construction-workers-safety-equipment-tek-image.jpg?text=Slide+3',
-            text: 'Third Slide' },
+            title: 'Third Slide',
+            text: 'First Slide' },
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
-            text: 'Fourth Slide' },
+            title: 'Fourth Slide',
+            text: 'First Slide' },
     ];
 
     return (
