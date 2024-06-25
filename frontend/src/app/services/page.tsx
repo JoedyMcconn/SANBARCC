@@ -11,7 +11,7 @@ const Services: React.FC = () => {
     };
 
     return (
-        <section id="services" className="relative min-h-screen py-16 bg-yellow-500 mt-12">
+        <section id="services" className="relative min-h-screen py-16 bg-yellow-500 mt-6">
 
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-top mb-6" style={{ backgroundImage: "url('/SignWarehouse.JPG')" }}>
