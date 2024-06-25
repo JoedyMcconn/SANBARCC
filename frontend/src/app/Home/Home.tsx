@@ -168,7 +168,7 @@ const servicesData = [
     { src: "/road-construction-raffic-safety.png", alt: "Traffic Safety Equipment", title: "Traffic Safety", description: "Equipment and tools to ensure road safety." },
     { src: "/Guardrail.png", alt: "Guard rails and repairs", title: "Guard Rail Repair/Installation", description: "Repair and install guard rails effectively." },
     { src: "/overhead_signs.jpg", alt: "Overhead Signs and Structures", title: "Overhead Signs/Structures", description: "Overhead signs and structures for guidance." },
-    { src: "/RoadMilling.jpg", alt: "Roadway milling", title: "Roadway milling", description: "Roadway milling services for smooth roads." }
+    { src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg", alt: "Roadway milling", title: "Rumble Strip Installation", description: "Rumble Strip Installation." }
 ];
 
 const Services = () => {
@@ -197,7 +197,7 @@ const Services = () => {
                     ))}
                 </div>
                 <a href="/services"
-                   className="mt-12 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                   className="mt-12 inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300">
                     View All Services
                 </a>
             </div>
@@ -209,7 +209,7 @@ const Services = () => {
 
 const MusicalRoad = () => {
     return (
-        <section id="about" className="min-h-screen bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 py-16">
+        <section id="about" className="min-h-screen bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 pt-16">
             <div className="container mx-auto px-6 lg:px-12">
                 {/* Grid Layout for Video and Text */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -249,7 +249,7 @@ const MusicalRoad = () => {
 };
 
 
-interface CarouselProps {
+type CarouselProps = {
     props: { src: string, title: string, text:string }[];
 }
 
@@ -269,9 +269,9 @@ const Shop = () => {
             <div className="relative w-full max-w-3xl mx-auto">
                 <div className="overflow-hidden md:rounded-xl relative">
                     <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`} className="w-full h-96 object-cover"/>
-                    <div className="overlay text-white">
+                    <div className="overlay text-white p-10">
                         <h2 className="text-4xl">{props[currentIndex].title}</h2>
-                        <p className="text-2xl">{props[currentIndex].text}</p>
+                        <p className="text-2xl font-">{props[currentIndex].text}</p>
                     </div>
                 </div>
                 <button
@@ -300,18 +300,18 @@ const Shop = () => {
     };
 
     const props = [
-        { src: 'https://www.oxfordplastics.com/m3cms/files/mNfcDEXL/HIGHWAYMAN%20CONE_HEADER%20IMAGE.png?text=Slide+1',
+        { src: 'https://cdn11.bigcommerce.com/s-s2do0/images/stencil/1280x1280/products/1119/4143/61mkxgtxxWL__47363.1710189944.jpg?text=Slide+1',
             title: 'First Slide',
             text: 'First Slide'},
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+2',
             title: 'Second Slide',
-            text: 'First Slide' },
+            text: 'Second Slide' },
         { src: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/construction-workers-safety-equipment-tek-image.jpg?text=Slide+3',
             title: 'Third Slide',
-            text: 'First Slide' },
+            text: 'Third Slide' },
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
             title: 'Fourth Slide',
-            text: 'First Slide' },
+            text: 'Fourth Slide' },
     ];
 
     return (
