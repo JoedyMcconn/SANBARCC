@@ -57,7 +57,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Buster Sign Stand"
+                            <img src="/Buster-sign-flags.webp" alt="Buster Sign Stand"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ const SafetyProducts: React.FC = () => {
                         </div>
                         <div className="w-full md:w-1/2">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <img src="/placeholder.png" alt="Orange Saftey Fence"
+                                <img src="/Orange-Safety-Fence.jpeg" alt="Orange Saftey Fence"
                                      className="m-5 w-full h-auto rounded-lg"/>
                             </div>
                         </div>
@@ -97,7 +97,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Pavement Markers"
+                            <img src="/markers.jpeg" alt="Pavement Markers"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -119,7 +119,7 @@ const SafetyProducts: React.FC = () => {
 
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Traffic Paint & Glass Beads"
+                            <img src="/traffic-paint.jpeg" alt="Traffic Paint & Glass Beads"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Channelizer Barrel with Tire Collars"
+                            <img src="/traffic-channelizer-drums.jpg" alt="Channelizer Barrel with Tire Collars"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -159,7 +159,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Caution Tape"
+                            <img src="/caution-tape.jpg" alt="Caution Tape"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -193,7 +193,7 @@ const SafetyProducts: React.FC = () => {
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Sand Bags"
+                            <img src="/sand-bags.jpg" alt="Sand Bags"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -213,7 +213,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Barricade Lights"
+                            <img src="/barricade-lights.jpeg" alt="Barricade Lights"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -256,7 +256,7 @@ const SafetyProducts: React.FC = () => {
                                 </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Personal Protection Equipment, PPE"
+                            <img src="/PPE.jpeg" alt="Personal Protection Equipment, PPE"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -274,7 +274,7 @@ const SafetyProducts: React.FC = () => {
                             </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Personal Protection Equipment, PPE"
+                            <img src="/pse-amber-matrix.avif" alt="Personal Protection Equipment, PPE"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ const SafetyProducts: React.FC = () => {
                             </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Personal Protection Equipment, PPE"
+                            <img src="/concrete-parking-bumper.png" alt="Personal Protection Equipment, PPE"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -325,7 +325,7 @@ const SafetyProducts: React.FC = () => {
                             </ul>
                         </div>
                         <div className="w-full md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Personal Protection Equipment, PPE"
+                            <img src="/warning-mat.png" alt="Personal Protection Equipment, PPE"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
