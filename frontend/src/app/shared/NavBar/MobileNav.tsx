@@ -20,6 +20,7 @@ const MobileNav = ({showNav, closeNav}:Props) => {
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="/">Home</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../about-us">About Us</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../services">Services</a></li>
+                <li className="navlink text-[25px] sm:text-[30px]"><a href="../Safety-Products">Retail</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../projects">Projects</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../contact-us">Contact Us</a></li>
                 {/* Cross Icon for closing navbar */}
