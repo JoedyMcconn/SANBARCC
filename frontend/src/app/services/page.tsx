@@ -89,22 +89,47 @@ const Services: React.FC = () => {
                                 <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
                                     {/* Text block */}
                                     <div className="w-full md:w-1/2 p-6 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting Overhead Sign Structures</h2>
+                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting
+                                            Overhead Sign Structures</h2>
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                                         <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Sign structures come in 3 different styles; Cantilever, Bridge or Butterfly (“T” shape) and in various sizes ranging from 18” in diameter up to the larger 40” diameter structures. The basic components of any sign structure installation consist of a drilled shaft; rebar cage, bolt assembly, 3000 psi concrete, sign structure and the sign(s) themselves. Some drilled shafts can reach up to 65’ in depth depending on the terrain and size of the structure. Anyone who has traveled the interstate systems here in New Mexico has either passed by or gone under a sign structure that San Bar has installed. Variable Message Systems are becoming more popular across the States interstate system and San Bar is installing the structure for these as well.
+                                            Sign structures come in 3 different styles; Cantilever, Bridge or Butterfly
+                                            (“T” shape) and in various sizes ranging from 18” in diameter up to the
+                                            larger 40” diameter structures. The basic components of any sign structure
+                                            installation consist of a drilled shaft; rebar cage, bolt assembly, 3000 psi
+                                            concrete, sign structure and the sign(s) themselves. Some drilled shafts can
+                                            reach up to 65’ in depth depending on the terrain and size of the structure.
+                                            Anyone who has traveled the interstate systems here in New Mexico has either
+                                            passed by or gone under a sign structure that San Bar has installed.
+                                            Variable Message Systems are becoming more popular across the States
+                                            interstate system and San Bar is installing the structure for these as well.
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Designs</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span></li>
+                                            <li className="flex items-start"><FaSign/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Designs</span>
+                                            </li>
+                                            <li className="flex items-start"><FaSign/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span>
+                                            </li>
+                                            <li className="flex items-start"><FaSign/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span>
+                                            </li>
                                         </ul>
+                                        <div className="mt-6 text-center">
+                                            <a
+                                                href="/services/overhead-sign-structures"
+                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                            >
+                                                Learn More
+                                            </a>
+                                        </div>
                                     </div>
 
                                     {/* Image block */}
                                     <div className="w-full md:w-1/2 p-6 md:p-12">
-                                        <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures" className="w-auto h-auto rounded-lg -rotate-90"/>
+                                        <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
+                                             className="w-auto h-auto rounded-lg -rotate-90"/>
                                     </div>
                                 </div>
                             </div>
