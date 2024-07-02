@@ -2,9 +2,9 @@ import React from 'react';
 
 const Leadership = () => {
     return (
-        <div className="bg-gray-100 py-8 mt-10"> {/* Added mt-10 for spacing */}
+        <div className="bg-gray-100 py-8 mt-8"> {/* Added mt-10 for spacing */}
             {/* Banner Section */}
-            <div className="relative h-64 flex items-center justify-center text-white">
+            <div className="relative h-96 flex items-center justify-center text-white">
                 <img
                     src="/path-to-banner-image.jpg" // Replace with the actual path to your banner image
                     alt="Leadership Banner"
