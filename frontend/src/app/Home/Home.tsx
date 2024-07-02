@@ -25,7 +25,7 @@ const Hero = () => {
             ></div>
 
             {/* Wrapper for Top Left Images */}
-            <div className="absolute top-0 left-0 hidden md:flex flex-row space-x-2 pt-6">
+            <div className="absolute top-0 left-0 hidden lg:flex flex-row space-x-2 pt-6">
                 <img
                     src="/TopLeftHeroLogos.png"
                     alt="ACON New Mexico & ATSSA"
@@ -94,9 +94,9 @@ const About = () => {
 
     return (
         <section id="About" className="relative min-h-screen py-20 bg-white bg-gradient-to-r from-yellow-400/10 to-black/10">
-            <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 flex flex-wrap">
+            <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 lg:flex">
                 {/* Text block */}
-                <div className="w-full md:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto">
+                <div className="w-full lg:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto">
                     <div className="relative mb-12">
                         <div className="flex justify-center mb-4">
                             <div className="bg-yellow-500 p-2 mx-5">
@@ -111,7 +111,7 @@ const About = () => {
 
                     <div className="mb-10 p-4 rounded-lg bg-white text-left">
                         <ul className="space-y-6">
-                            <li className="flex flex-col md:flex-row items-start mb-6">
+                            <li className="flex flex-col lg:flex-row items-start mb-6">
                                 <FaBuilding style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
                                     <h3 className="text-3xl font-bold">Build To Last</h3>
@@ -120,7 +120,7 @@ const About = () => {
                                     </p>
                                 </div>
                             </li>
-                            <li className="flex flex-col md:flex-row items-start mb-6">
+                            <li className="flex flex-col lg:flex-row items-start mb-6">
                                 <FaUsers style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
                                     <h3 className="text-3xl font-bold">Family Owned Business</h3>
@@ -129,7 +129,7 @@ const About = () => {
                                     </p>
                                 </div>
                             </li>
-                            <li className="flex flex-col md:flex-row items-start mb-6">
+                            <li className="flex flex-col lg:flex-row items-start mb-6">
                                 <FaCheckCircle style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
                                     <h3 className="text-3xl font-bold">Certified Professionals</h3>
@@ -143,7 +143,7 @@ const About = () => {
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full md:w-1/2 p-6">
+                <div className="w-full lg:w-1/2 p-6">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
                             <img src="/GuardRailTruck.JPG" alt="Guard Rail Truck" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="up"/>
@@ -209,7 +209,7 @@ const Services = () => {
 
 const MusicalRoad = () => {
     return (
-        <section id="about" className="min-h-screen bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 pt-16">
+        <section id="about" className="bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 py-36">
             <div className="container mx-auto px-6 lg:px-12">
                 {/* Grid Layout for Video and Text */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -267,13 +267,16 @@ const Shop = () => {
 
         return (
             <div className="relative w-full max-w-3xl mx-auto">
-                <div className="overflow-hidden md:rounded-xl relative">
-                    <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`} className="w-full h-96 object-cover"/>
-                    <div className="overlay text-white p-10">
-                        <h2 className="text-4xl">{props[currentIndex].title}</h2>
-                        <p className="text-2xl font-">{props[currentIndex].text}</p>
+                <a href='/Safety-Products'>
+                    <div className="overflow-hidden md:rounded-xl relative">
+                        <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`}
+                             className="w-full h-96 object-cover"/>
+                        <div className="overlay text-white p-10">
+                            <h2 className="text-4xl">{props[currentIndex].title}</h2>
+                            <pre className="text-2xl leading-9">{props[currentIndex].text}</pre>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <button
                     onClick={handlePrev}
                     className="absolute top-1/2 transform -translate-y-1/2 left-0 bg-black/60 text-white ms-1 p-2 rounded-full hover:bg-gray-600"
@@ -301,24 +304,31 @@ const Shop = () => {
 
     const props = [
         { src: 'https://cdn11.bigcommerce.com/s-s2do0/images/stencil/1280x1280/products/1119/4143/61mkxgtxxWL__47363.1710189944.jpg?text=Slide+1',
-            title: 'First Slide',
-            text: 'First Slide'},
+            title: 'Traffic Cones',
+            text: ` 18″ – 3# Reflective 
+ 28″ – 7# Non-Reflective 
+ 28″ – 7# Reflective
+ 36″ – 10# Reflective`},
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+2',
-            title: 'Second Slide',
+            title: 'Custom Road Signs',
             text: 'Second Slide' },
         { src: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/construction-workers-safety-equipment-tek-image.jpg?text=Slide+3',
-            title: 'Third Slide',
+            title: 'Safety Equipment',
             text: 'Third Slide' },
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
             title: 'Fourth Slide',
             text: 'Fourth Slide' },
+        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
+            title: 'And More!',
+            text: 'Click here to view the full shop...'}
     ];
 
     return (
         <section className="my-24">
-            <h1 className="text-6xl text-center font-extrabold text-yellow-400 pb-5">
+            <h2 className="text-6xl text-center font-extrabold text-yellow-400">
                 Check Out Our Shop!
-            </h1>
+            </h2>
+            <h3 className='text-center text-2xl pb-5'>Some Items We Offer...</h3>
             <Carousel props={props}/>
         </section>
     );
