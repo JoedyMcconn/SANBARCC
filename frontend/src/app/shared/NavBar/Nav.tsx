@@ -25,6 +25,7 @@ const Nav = ({ openNav }:Props) => {
                 <li className="navlink"><a href='/'>Home</a></li>
                 <li className="navlink"><a href='../about-us'>About Us</a></li>
                 <li className="navlink"><a href='../services'>Services</a></li>
+                <li className="navlink"><a href="../Safety-Products">Retail</a></li>
                 <li className="navlink"><a href='../projects'>Projects</a></li>
                 <li className="contactUs"><a href='../contact-us'>Contact Us</a></li>
             </ul>
