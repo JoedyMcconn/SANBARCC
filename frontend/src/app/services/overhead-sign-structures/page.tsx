@@ -118,22 +118,6 @@ export default function OverheadSignStructuresPage() {
                         </div>
                     </div>
                 </div>
-                {/* Section 4: Drone Footage */}
-                <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="w-full bg-white p-6 rounded-lg">
-                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Drone Footage</h2>
-                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                            Take a look at our overhead sign structure installations from a unique perspective. Our drone footage showcases the precision and professionalism that go into every project.
-                        </p>
-                        <div className="mt-6">
-                            <video controls className="w-full rounded-lg">
-                                <source src="/OverheadSignStructureDroneFootage.MP4" type="video/mp4"/>
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     );

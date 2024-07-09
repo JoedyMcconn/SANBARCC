@@ -1,7 +1,38 @@
 import React from 'react';
-import { FaTrafficLight, FaFlag, FaMapMarkerAlt, FaPaintBrush, FaRoad, FaTape, FaLightbulb, FaCogs, FaShieldAlt } from 'react-icons/fa';
+import {
+    FaTrafficLight,
+    FaFlag,
+    FaMapMarkerAlt,
+    FaPaintBrush,
+    FaRoad,
+    FaTape,
+    FaLightbulb,
+    FaCogs,
+    FaShieldAlt,
+    FaBolt, FaScrewdriver, FaStopCircle, FaSign, FaHardHat, FaBatteryFull, FaExclamationTriangle
+} from 'react-icons/fa';
+import {
+    FaBuildingCircleExclamation,
+    FaRoadBarrier,
+    FaRoadBridge,
+    FaRoadCircleCheck,
+    FaRoadCircleExclamation,
+    FaRoadLock
+} from "react-icons/fa6";
 
-const products = [
+interface ProductItem {
+    text: string;
+    icon?: JSX.Element;
+}
+
+interface Product {
+    title: string;
+    image: string;
+    alt: string;
+    items: ProductItem[];
+}
+
+const products: Product[] = [
     {
         title: "Traffic Cones",
         image: "/traffic-cone.webp",
@@ -49,9 +80,9 @@ const products = [
         image: "/StreetSignBracket.png",
         alt: "Street Name Brackets",
         items: [
-            { text: "5″ or 12″ ", icon: <FaFlag /> },
-            { text: "90degree, 180degree, or cross T ", icon: <FaShieldAlt /> },
-            { text: "With Hardware", icon: <FaFlag /> }
+            { text: "5″ or 12″ ", icon: <FaSign /> },
+            { text: "90°, 180°, or Cross T ", icon: <FaShieldAlt /> },
+            { text: "With Hardware", icon: <FaHardHat /> }
         ]
     },
     {
@@ -66,12 +97,31 @@ const products = [
     },
     {
         title: "Pavement Markers",
-        image: "/markers.jpeg",
+        image: "/PavementMarkers.png",
         alt: "Pavement Markers",
         items: [
             { text: "Chip seal markers", icon: <FaRoad /> },
-            { text: "Barrier wall markers", icon: <FaRoad /> },
-            { text: "Raised pavement markers", icon: <FaRoad /> }
+            { text: "Barrier wall markers", icon: <FaRoadCircleCheck /> },
+            { text: "Raised pavement markers", icon: <FaRoadBridge /> }
+        ]
+    },
+    {
+        title: "Barrier Markers",
+        image: "/BarrierMarkers.png",
+        alt: "Barrier Markers",
+        items: [
+            { text: "Delineator Buttons", icon: <FaBuildingCircleExclamation /> },
+            { text: "Concrete Barrier Wall Markers", icon: <FaExclamationTriangle /> },
+        ]
+    },
+    {
+        title: "Hardware",
+        image: "/HardwarePoster.png",
+        alt: "Hardware",
+        items: [
+            { text: "Sign Hardware", icon: <FaBolt /> },
+            { text: "Post HDW", icon: <FaScrewdriver /> },
+            { text: "Delineator Button HDW", icon: <FaStopCircle /> }
         ]
     },
     {
@@ -95,31 +145,30 @@ const products = [
     },
     {
         title: "Vertical Panel",
-        image: "/",
-        alt: "Channelizer Barrel with Tire Collars",
+        image: "/VerticalPanel.png",
+        alt: "Vertical Panel",
         items: [
-            { text: "8″ X 36″", icon: <FaLightbulb /> },
-            { text: "20lb. Base", icon: <FaLightbulb /> },
-            { text: "Shoulder or Center Line", icon: <FaLightbulb /> }
+            { text: "8″ X 36″", icon: <FaRoadLock /> },
+            { text: "20lb. Base", icon: <FaRoad /> },
+            { text: "Shoulder or Center Line", icon: <FaRoadBarrier /> }
         ]
     },
     {
         title: "Type-2 & Type-3 Barricades",
-        image: "/placeholder.png",
+        image: "/Type2-3Barricades.jpg",
         alt: "Type-2 & Type-3 Barricades",
         items: [
-            { text: "Type-2 : 24″", icon: <FaTape /> },
-            { text: "Type-3 : 3 panel 96″", icon: <FaTape /> },
+            { text: "Type-2 : 24″", icon: <FaRoadCircleExclamation /> },
+            { text: "Type-3 : 3 panel 96″", icon: <FaRoadBarrier /> },
         ]
     },
     {
         title: "Barricade Lights",
-        image: "/barricade-lights.jpeg",
+        image: "/BarricadeLights.png",
         alt: "Barricade Lights",
         items: [
             { text: "3-way-steady, flashing & continuous", icon: <FaLightbulb /> },
-            { text: "D-cell", icon: <FaLightbulb /> },
-            { text: "Batteries – In stock", icon: <FaLightbulb /> }
+            { text: "D-Cell Batteries – In stock", icon: <FaBatteryFull /> }
         ]
     },
     {
@@ -133,8 +182,8 @@ const products = [
     },
     {
         title: "Panel Lights",
-        image: "/placeholder.png",
-        alt: "Panel Lites",
+        image: "/PanelLite.png",
+        alt: "Panel Lights",
         items: [
             { text: "Diamond Grade Sheeting", icon: <FaLightbulb /> },
             { text: "2 sided", icon: <FaLightbulb /> },
@@ -147,13 +196,13 @@ const products = [
         image: "/sand-bags.jpg",
         alt: "Sand Bags",
         items: [
-            {text: "14″ x 27″",},
-            {text: "Drawstring "}
+            { text: "14″ x 27″", icon: <FaShieldAlt /> },
+            { text: "Drawstring", icon: <FaShieldAlt /> }
         ]
     },
     {
         title: "Temporary Removable Tape",
-        image: "/placeholder.png",
+        image: "/TempRemovableTape.jpg",
         alt: "Temporary Removable Tape",
         items: [
             { text: "White and Yellow", icon: <FaTape /> },
@@ -162,7 +211,7 @@ const products = [
     },
     {
         title: "Foil Back Temporary Removable Tape",
-        image: "/placeholder.png",
+        image: "/FoilBackRemovableTape.png",
         alt: "Temporary Removable Tape",
         items: [
             { text: "White and Yellow", icon: <FaTape /> },
@@ -171,11 +220,10 @@ const products = [
     },
     {
         title: "Pennant Flagline",
-        image: "/placeholder.png",
+        image: "/PennantFlagline.png",
         alt: "Pennant Flagline",
         items: [
-            { text: "60 ft. ", icon: <FaTape /> },
-
+            { text: "60 ft.", icon: <FaFlag /> },
         ]
     }
 ];
@@ -204,7 +252,7 @@ export default function SafetyProducts() {
                                 <ul className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
                                     {product.items.map((item, i) => (
                                         <li key={i} className="pb-2.5 flex items-center">
-                                            <span className="mr-2">{item?.icon}</span>
+                                            <span className="mr-2">{item.icon}</span>
                                             {item.text}
                                         </li>
                                     ))}

@@ -2,7 +2,7 @@
 import React from 'react';
 const GuardrailPage: React.FC = () => {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-amber-300 mt-8">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-amber-300 mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -69,13 +69,6 @@ const GuardrailPage: React.FC = () => {
                             <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
                                 <em>End Terminals</em><br/>
                                 End terminals must be designed to absorb impact energy and minimize the risk of vehicle penetration or vaulting. Energy-absorbing end terminals are a common design that helps dissipate impact forces safely.
-                            </p>
-                            <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <strong>State-Specific Standards</strong><br/>
-                                Each state may have additional guidelines and standards that complement federal regulations. For example, the Florida Department of Transportation (FDOT) provides specific design standards and installation requirements for guardrails within the state.
-                            </p>
-                            <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                For detailed information on safety guidelines and standards, you can refer to resources provided by the FHWA, AASHTO, and state transportation departments. These documents provide comprehensive information on all aspects of guardrail safety, from design and installation to maintenance and performance evaluation.
                             </p>
                         </div>
                         <div className="w-full md:w-1/2">
