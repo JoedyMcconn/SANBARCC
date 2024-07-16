@@ -1,8 +1,8 @@
 import React from 'react';
 
-const RoadwaySigns: React.FC = () => {
+export default function RoadwaySigns() {
     return (
-        <section id="roadway-signs" className="relative min-h-screen py-16 bg-yellow-300 mt-10">
+        <section id="roadway-signs" className="relative min-h-screen py-16 bg-center bg-yellow-300 mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover" style={{ backgroundImage: "url('/SignShop1.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -124,6 +124,4 @@ const RoadwaySigns: React.FC = () => {
             </div>
         </section>
     );
-};
-
-export default RoadwaySigns;
+}
