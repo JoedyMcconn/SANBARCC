@@ -47,15 +47,21 @@ const Services: React.FC = () => {
                         {/*Roadway signage*/}
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Roadway Signs</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/placeholder.png" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            San Bar is constantly updating our procedures, materials and equipment to ensure that we meet or exceed the specifications of your project. We also stay current with the regulations in the Manual of Uniform Traffic Control Devices (MUTCD). We ensure your signs are compliant with Local, State, and Federal regulations.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            San Bar continually updates our procedures, materials, and equipment to meet or exceed project specifications and comply with the latest MUTCD regulations. We ensure your signs meet all Local, State, and Federal standards.
                                             <br /><br />
-                                            San Bar takes great pride in being a 3M Certified(tm) Sign Fabricator. Our 13,000 square foot state-of-the-art sign shop is one of the largest sign shops in the Southwest. We can manufacture and install any type of signs from a single Handicap sign to the largest overhead sign structure. Not only do we produce and install standard signs, we can also manufacture and install any custom sign you may need.
+                                            As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structures, including custom designs.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -76,7 +82,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/placeholder.png" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
@@ -86,23 +92,23 @@ const Services: React.FC = () => {
                         {/* Erecting Overhead Sign Structures*/}
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting
                                             Overhead Sign Structures</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
+                                            <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
+                                                 className="w-auto h-auto rounded-lg -rotate-90"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Sign structures come in 3 different styles; Cantilever, Bridge or Butterfly
-                                            (“T” shape) and in various sizes ranging from 18” in diameter up to the
-                                            larger 40” diameter structures. The basic components of any sign structure
-                                            installation consist of a drilled shaft; rebar cage, bolt assembly, 3000 psi
-                                            concrete, sign structure and the sign(s) themselves. Some drilled shafts can
-                                            reach up to 65’ in depth depending on the terrain and size of the structure.
-                                            Anyone who has traveled the interstate systems here in New Mexico has either
-                                            passed by or gone under a sign structure that San Bar has installed.
-                                            Variable Message Systems are becoming more popular across the States
-                                            interstate system and San Bar is installing the structure for these as well.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            Sign structures come in three styles: Cantilever, Bridge, and Butterfly (T shape). They range in size from 18” to 40” in diameter. Installation components include a drilled shaft, rebar cage, bolt assembly, 3000 psi concrete, sign structure, and the sign(s). Some drilled shafts can be as deep as 65’, depending on the terrain and structure size.
+                                            <br/><br/>
+                                            If you've traveled the interstates in New Mexico, you've likely seen a San Bar-installed sign structure. San Bar also installs structures for Variable Message Systems, which are becoming more popular on interstates nationwide.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -127,7 +133,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
                                              className="w-auto h-auto rounded-lg -rotate-90"/>
                                     </div>
@@ -143,13 +149,19 @@ const Services: React.FC = () => {
                         {/*Pavement Markings*/}
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Pavement Markings</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/Striping1.jpg" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Our expert team specializes in providing high-quality pavement markings that ensure safety, organization, and efficiency on roadways and parking areas. We use durable materials and state-of-the-art equipment to deliver precise and long-lasting results, whether for highways, city streets, parking lots, or custom projects. Our comprehensive services include a wide range of marking options designed to meet your specific needs and enhance the functionality and appearance of your surfaces.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            Our expert team provides quality pavement markings for roadways and parking areas, ensuring safety and efficiency. Using durable materials, we deliver precise, long-lasting results for highways, streets, parking lots, and custom projects. Our services include a wide range of marking options tailored to meet your specific needs.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -171,7 +183,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/Striping1.jpg" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
@@ -181,13 +193,19 @@ const Services: React.FC = () => {
                         {/*Guardrail repair and installation */}
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Guardrail: Installation & Repair</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Our expert team specializes in providing high-quality guardrail installation and repair services that ensure safety and protection on roadways. We use durable materials and state-of-the-art equipment to deliver precise and long-lasting results, whether for highways, city streets, or custom projects. Our comprehensive services include a wide range of guardrail solutions designed to meet your specific needs and enhance the safety and functionality of your infrastructure. Whether installing new guardrails or repairing existing ones, we are committed to maintaining the highest standards of quality and safety.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            You can always expect high-quality guardrail installation and repair when choosing San Bar, ensuring roadway safety and protection. Using durable materials and state-of-the-art equipment, we deliver precise, long-lasting results for highways, city streets, and custom projects. Our comprehensive services offer a wide range of guardrail solutions to meet your specific needs and enhance infrastructure safety and functionality.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -206,7 +224,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
@@ -217,13 +235,19 @@ const Services: React.FC = () => {
 
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Rumble Strip Installation</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/placeholder.png" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Our expert team specializes in providing high-quality rumble strip installation services that enhance safety and alertness on roadways. We use state-of-the-art equipment to deliver precise and long-lasting results, whether for highways, city streets, or custom projects. Our comprehensive services include a wide range of rumble strip options designed to meet your specific needs and improve the functionality and safety of your roads. We are committed to maintaining the highest standards of quality and effectiveness.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            We also specializes in high-quality rumble strip installation, enhancing roadway safety and alertness. We deliver precise, long-lasting results for highways, city streets, and custom projects. Our services offer various rumble strip options to meet your needs and improve road safety.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -242,7 +266,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/placeholder.png" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
@@ -253,13 +277,19 @@ const Services: React.FC = () => {
 
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Cable Barrier: Installation & Repair</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Our expert team specializes in providing high-quality cable barrier installation and repair services that enhance safety and protection on roadways. We use durable materials and state-of-the-art equipment to deliver precise and long-lasting results, whether for highways, medians, or custom projects. Our comprehensive services include a wide range of cable barrier solutions designed to meet your specific needs and improve the safety and functionality of your infrastructure. Whether installing new cable barriers or repairing existing ones, we are committed to maintaining the highest standards of quality and safety.
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            We provide high-quality cable barrier installation and repair services, enhancing roadway safety and protection. Using durable materials, we deliver precise, long-lasting results for highways, medians, and custom projects. Our services include a wide range of cable barrier solutions to meet your specific needs and improve infrastructure.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -278,7 +308,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
@@ -289,13 +319,36 @@ const Services: React.FC = () => {
 
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex flex-wrap items-center">
+                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                                     {/* Text block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
                                         <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Water & Sand Blasting</h2>
+
+                                        {/* Image block */}
+                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                            <img src="/placeholder.png" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
+                                        </div>
+
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            The process of waterblasting quickly and completely removes all types of durable traffic markings from asphalt and concrete applications while not adversely affecting road surfaces even if that surface is grooved or very porous.  The removal of all forms of durable traffic markings from all surfaces has never been so quick, clean and cost efficient.  Waterblasting leaves very little to no confusing marks (scars) on your roadway, no re-surfacing and no secondary clean-up or sweeping is needed with our equipment.  San Bar has the only (Waterblaster) piece of equipment in the State of New Mexico with a full reclamation system; whatever the equipment removes is immediately suctioned into the additional holding tank on the back of the truck and is taken off of the project for proper disposal.  Unlike the older systems that merely remove the traffic markings leaving them on road thus requiring an additional costly cleanup process afterwards.  San Bar’s “Stripe Hog” has a double 8” head on the front of the truck so the machine can remove a 16” wide line in one pass saving both time and money.  The water pressure out of the equipment can be adjusted between 10,000 psi to 40,000 psi.  With this type of equipment we can be as delicate or aggressive as needed to complete the removal.  The current standard with the New Mexico D.O.T. for traffic marking removal requires that this process be used for both temporary and permanent marking removal.                                        </p>
+                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                            Waterblasting efficiently and completely removes all types of durable
+                                            traffic markings from asphalt and concrete without damaging the road
+                                            surface, even if it is grooved or porous. This method ensures quick, clean,
+                                            and cost-effective removal, leaving minimal to no scars on the roadway and
+                                            eliminating the need for resurfacing or secondary cleanup.
+                                            <br/><br/>
+                                            San Bar boasts the only waterblaster in New Mexico equipped with a full
+                                            reclamation system, which immediately suctions removed markings into a
+                                            holding tank for proper disposal, unlike older systems that leave debris on
+                                            the road, requiring additional costly cleanup.
+                                            <br/><br/>
+                                            Our "Stripe Hog" waterblaster features a double 8” head, allowing it to
+                                            remove a 16” wide line in one pass, saving both time and money. The
+                                            adjustable water pressure ranges from 10,000 psi to 40,000 psi, enabling
+                                            precise control for delicate or aggressive removal as needed. The New Mexico
+                                            D.O.T. requires this process for both temporary and permanent traffic
+                                            marking removal.
+                                        </p>
 
                                         <ul className="space-y-2">
                                             <li className="flex items-start"><FaPaintRoller /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Standard Rumble Bars</span></li>
@@ -313,7 +366,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="w-full md:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/placeholder.png" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
