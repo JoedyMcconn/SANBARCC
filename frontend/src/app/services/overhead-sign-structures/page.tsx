@@ -1,7 +1,3 @@
-
-
-import React from 'react';
-
 export default function OverheadSignStructuresPage() {
     return (
         <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-yellow-300 mt-8">
