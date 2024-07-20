@@ -188,7 +188,7 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {servicesData.map(service => (
                         <div key={service.title} className="shadow-lg rounded-lg overflow-hidden">
-                            <img src={service.src} alt={service.alt} className="w-full h-60 object-cover hover:scale-105" />
+                            <img src={service.src} alt={service.alt} className="w-full h-60 object-cover transition-transform duration-500 ease-in-out transform hover:scale-105" />
                             <div className="p-4 bg-white">
                                 <h2 className="font-bold text-xl mb-2">{service.title}</h2>
                                 <p className="text-gray-700">{service.description}</p>
