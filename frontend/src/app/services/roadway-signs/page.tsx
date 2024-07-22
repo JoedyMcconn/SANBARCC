@@ -2,11 +2,6 @@
 
 import React, {useState} from 'react';
 
-
-type CarouselProps = {
-    props: { src: string}[];
-}
-
 export default function RoadwaySigns() {
     return (
         <section id="roadway-signs" className="relative min-h-screen py-16 bg-center bg-yellow-300 mt-6">
@@ -89,7 +84,7 @@ export default function RoadwaySigns() {
                                 Enhance roadway safety with our durable and highly visible warning signs.
                             </p>
                         </div>
-                        <div className="hidden w-full lg::w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                             <img src="/placeholder.png" alt="Warning Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Warning Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Warning Signs" className="m-5 w-full h-auto rounded-lg"/>
@@ -112,7 +107,7 @@ export default function RoadwaySigns() {
                                 Provide clear directions and information with our custom guide signs.
                             </p>
                         </div>
-                        <div className="hidden w-full lg::w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                             <img src="/placeholder.png" alt="Guide Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Guide Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Guide Signs" className="m-5 w-full h-auto rounded-lg"/>
@@ -135,7 +130,7 @@ export default function RoadwaySigns() {
                                 Create impactful political signs for your campaigns with our expert services.
                             </p>
                         </div>
-                        <div className="hidden w-full lg::w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                             <img src="/placeholder.png" alt="Political Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Political Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Political Signs" className="m-5 w-full h-auto rounded-lg"/>
@@ -158,7 +153,7 @@ export default function RoadwaySigns() {
                                 Customize any sign you need with our specialty sign services.
                             </p>
                         </div>
-                        <div className="hidden w-full lg::w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                             <img src="/placeholder.png" alt="Specialty Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Specialty Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Specialty Signs" className="m-5 w-full h-auto rounded-lg"/>

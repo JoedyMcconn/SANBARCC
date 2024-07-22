@@ -15,12 +15,16 @@ const GuardrailPage: React.FC = () => {
             </div>
             {/* Introduction */}
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
+
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-6 rounded-lg flex flex-wrap items-center">
-                        <div className="w-full md:w-1/2">
+                    <div className="bg-white p-6 rounded-lg flex flex-wrap items-center justify-center">
+                        <div className="w-full lg:w-1/2">
                             <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Professional Guardrail Services</h2>
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
-                            <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
+
+
+
+                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
                                 Guardrails serve as a safety barrier designed to prevent vehicles from leaving the roadway and to reduce the severity of crashes when they occur. They are typically installed in areas where the consequences of a vehicle leaving the roadway would be more severe than striking the guardrail itself, such as near steep embankments, bridge piers, or roadside obstacles.
                             </p>
                         </div>
@@ -29,6 +33,7 @@ const GuardrailPage: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
                 {/* Section 1: Expertise and Experience */}
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
                     <div className="bg-white p-6 rounded-lg flex flex-wrap items-center">

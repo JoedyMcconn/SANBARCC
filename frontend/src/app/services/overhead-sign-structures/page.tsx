@@ -1,9 +1,8 @@
 'use client'
 
-// @ts-ignore
 import React, {useState} from 'react';
 
-export default function OverheadSignStructuresPage() {
+function OverheadSignStructuresPage() {
     return (
         <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-yellow-300 mt-8">
             {/* Banner */}
@@ -170,6 +169,7 @@ export default function OverheadSignStructuresPage() {
     );
 }
 
+export default OverheadSignStructuresPage;
 
 const Carousel: React.FC<{ images: { src: string }[] }> = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
