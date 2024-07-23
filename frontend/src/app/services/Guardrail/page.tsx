@@ -1,8 +1,7 @@
-"use client"
 import React from 'react';
-const GuardrailPage: React.FC = () => {
+export default function GuardrailPage()  {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-amber-300 mt-6">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -146,4 +145,3 @@ const GuardrailPage: React.FC = () => {
         </section>
     );
 };
-export default GuardrailPage;

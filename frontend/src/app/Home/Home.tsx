@@ -329,15 +329,20 @@ const Shop = () => {
  28″ – 7# Non-Reflective 
  28″ – 7# Reflective
  36″ – 10# Reflective`},
-        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+2',
-            title: 'Custom Road Signs',
-            text: 'Second Slide' },
-        { src: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/construction-workers-safety-equipment-tek-image.jpg?text=Slide+3',
-            title: 'Safety Equipment',
-            text: 'Third Slide' },
-        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
-            title: 'Fourth Slide',
-            text: 'Fourth Slide' },
+        { src: '/traffic-paint.jpeg',
+            title: 'Traffic Paint & Glass Beads',
+            text: ` 5 gallon water-based white, yellow, black, red & blue paint 
+ Beads – 50 lb. bags `},
+        { src: '/VerticalPanel.png',
+            title: 'Vertical Panel',
+            text: ` 8″ X 36″ 
+ 20lb. Base 
+ Shoulder or Center Line`},
+        { src: '/PavementMarkers.png',
+            title: 'Pavement Markers',
+            text: `Raised Pavement Markers  
+ Barrier Wall Markers 
+ Chip Seal Markers`},
         { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
             title: 'And More!',
             text: 'Click here to view the full shop...'}

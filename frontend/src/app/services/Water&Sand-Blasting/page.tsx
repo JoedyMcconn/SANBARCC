@@ -1,7 +1,7 @@
 import React from 'react';
 const SandWaterBlastingPage: React.FC = () => {
     return (
-        <section id="sand-water-blasting" className="relative min-h-screen bg-yellow-300 py-8">
+        <section id="sand-water-blasting" className="relative min-h-screen bg-[#E0AF2A] py-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">

@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 function OverheadSignStructuresPage() {
     return (
-        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-yellow-300 mt-8">
+        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/OverheadSignStructureBanner.jpg')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">

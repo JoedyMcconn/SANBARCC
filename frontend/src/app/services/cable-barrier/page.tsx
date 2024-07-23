@@ -2,7 +2,7 @@ import React from 'react';
 
 const CableBarrierPage: React.FC = () => {
     return (
-        <section id="cable-barrier" className="relative min-h-screen py-16 bg-yellow-300 mt-8">
+        <section id="cable-barrier" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
