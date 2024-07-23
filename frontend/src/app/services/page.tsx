@@ -54,7 +54,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/placeholder.png" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                            <img src="/SpeedLimitSign.jpg" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>

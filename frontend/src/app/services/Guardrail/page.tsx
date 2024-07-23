@@ -23,7 +23,7 @@ export default function GuardrailPage()  {
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/placeholder.png" alt="Professional Guardrail Services"
+                                <img src="/GuardRailTruck2.JPG" alt="Professional Guardrail Services"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 

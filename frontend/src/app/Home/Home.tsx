@@ -183,11 +183,11 @@ const JobOpportunitiesSection = () => {
 
 
 const servicesData = [
-    { src: "/Signage.jpeg", alt: "Sign Printing", title: "Signage", description: "We offer high-quality signage for various purposes." },
+    { src: "/SignShop2.JPG", alt: "Sign Printing", title: "Signage", description: "We offer high-quality signage for various purposes." },
     { src: "/Striping1.jpg", alt: "Striping", title: "Striping", description: "Professional striping services for parking lots and roads." },
     { src: "/road-construction-raffic-safety.png", alt: "Traffic Safety Equipment", title: "Traffic Safety", description: "Equipment and tools to ensure road safety." },
     { src: "/Guardrail.png", alt: "Guard rails and repairs", title: "Guard Rail Repair/Installation", description: "Repair and install guard rails effectively." },
-    { src: "/overhead_signs.jpg", alt: "Overhead Signs and Structures", title: "Overhead Signs/Structures", description: "Overhead signs and structures for guidance." },
+    { src: "/ABQoverheadSign.jpg", alt: "Overhead Signs and Structures", title: "Overhead Signs/Structures", description: "Overhead signs and structures for guidance." },
     { src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg", alt: "Roadway milling", title: "Rumble Strip Installation", description: "Rumble Strip Installation." }
 ];
 
@@ -256,8 +256,7 @@ const MusicalRoad = () => {
                         {/* Underline */}
                         <hr className="my-4 border-t-4 border-amber-400 mx-auto lg:mx-0 w-1/2 lg:w-1/3"/>
                         <p className="text-xl text-gray-700 leading-relaxed">
-                            The Musical Road is a unique project designed for National Geographic that plays a musical tune when driven over at a specific speed. This innovation demonstrates our specialized expertise in engineering and technical skills.
-                        </p>
+                            When it comes to new products and services San Bar has always been and always will be a leader in innovation. Because of this reputation in the market, we were approached by National Geographic to help them create only one of two “SINGING ROADS” in the entire United States. This road has become very popular with not only the locals, but also many visitors to the area.                        </p>
                         <p className="text-xl text-gray-700 leading-relaxed">
                             A musical road is created by carefully calibrating grooves or rumble strips at precise intervals on the road surface. As a vehicle travels over these grooves at a specific speed, the vibrations created produce a recognizable melody or tune, offering an interactive and entertaining experience for drivers while highlighting our innovative engineering capabilities.
                         </p>

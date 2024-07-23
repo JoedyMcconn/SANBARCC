@@ -121,18 +121,6 @@ const PavementMarkingsPage: React.FC = () => {
                                 <img src="/placeholder.png" alt="Transverse Markings"
                                      className="m-5 w-full h-auto rounded-lg"/>
                             </div>
-                            <div className="mt-5 md:mt-0">
-                            <video controls className="w-full rounded-lg md:hidden">
-                                    <source src="" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div className="hidden md:block">
-                                    <video controls className="w-full rounded-lg mt-5">
-                                        <source src="" type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,6 +246,25 @@ const PavementMarkingsPage: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                {/* Section 6: Drone Video */}
+                <div className="w-full bg-black p-6 rounded-lg mb-12">
+                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
+                        <div className="w-full">
+                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Drone Video</h2>
+                            <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
+                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                Watch our drone footage to see our pavement marking projects from a unique aerial perspective.
+                            </p>
+                            <div className="w-full">
+                                <video controls className="w-full rounded-lg">
+                                    <source src="/OverheadStripingTucumcari.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     );
