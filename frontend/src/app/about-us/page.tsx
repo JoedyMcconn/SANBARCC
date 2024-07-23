@@ -55,14 +55,9 @@ const AboutUs: React.FC = () => {
             </div>
 
             {/* Leadership Section */}
-            <div className="py-20 bg-gradient-radial from-amber-400 to-[#E0AF2A] shadow-inner h-screen flex flex-col md:flex-row items-center">
-                {/* Image block */}
-                <div className="w-full md:w-1/2 p-6 order-1 md:order-none">
-                    <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
-                        <img src="/HossieSanchez.JPG" alt="David 'Hossie' Sanchez" className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
-                    </div>
-                </div>
+            <div className="py-20 bg-gradient-radial from-amber-400 to-[#E0AF2A] shadow-inner h-full flex flex-col md:flex-row items-center">
                 {/* Text block */}
+                <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                 <div className="w-full md:w-1/2 p-6">
                     <h2 className="text-8xl md:text-6xl text-center md:text-left mb-4 text-white">Leadership</h2>
                     <hr className="w-full mb-4 border-t-4 border-black" />
@@ -76,6 +71,14 @@ const AboutUs: React.FC = () => {
                             Meet the Team
                         </a>
                     </div>
+                </div>
+                {/* Image block */}
+                <div className="w-full md:w-1/2 p-6">
+                    <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
+                        <img src="/HossieSanchez.JPG" alt="David 'Hossie' Sanchez" className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                    </div>
+                </div>
+
                 </div>
             </div>
 
