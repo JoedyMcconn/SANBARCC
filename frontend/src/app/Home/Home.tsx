@@ -225,7 +225,7 @@ const Services = () => {
                     ))}
                 </div>
                 <a href="/services"
-                   className="mt-12 inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                   className="mt-12 inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300 shadow-md hover:shadow-lg">
                     View All Services
                 </a>
             </div>
@@ -296,7 +296,7 @@ const Shop = () => {
                 <a href='/Safety-Products'>
                     <div className="overflow-hidden md:rounded-xl relative">
                         <img src={props[currentIndex].src} alt={`Slide ${currentIndex}`}
-                             className="w-full h-96 object-cover"/>
+                             className="w-full h-96 object-contain"/>
                         <div className="overlay text-white p-10">
                             <h2 className="text-4xl">{props[currentIndex].title}</h2>
                             <pre className="text-2xl leading-9">{props[currentIndex].text}</pre>
@@ -339,19 +339,20 @@ const Shop = () => {
             title: 'Traffic Paint & Glass Beads',
             text: ` 5 gallon water-based white, yellow, black, red & blue paint 
  Beads – 50 lb. bags `},
-        { src: '/VerticalPanel.png',
-            title: 'Vertical Panel',
-            text: ` 8″ X 36″ 
- 20lb. Base 
- Shoulder or Center Line`},
+        { src: '/PanelLite.png',
+            title: 'Panel Light',
+            text: ` Diamond Grade Sheeting 
+ 2 Sided
+ 6" x 8" 
+ Pre-drilled`},
         { src: '/PavementMarkers.png',
             title: 'Pavement Markers',
             text: `Raised Pavement Markers  
  Barrier Wall Markers 
  Chip Seal Markers`},
-        { src: 'https://img.forconstructionpros.com/files/base/acbm/fcp/image/2020/11/AdobeStock_108579982.5fbc0a7871aed.5fbc0acf5bc5a.png?text=Slide+4',
-            title: 'And More!',
-            text: 'Click here to view the full shop...'}
+        { src: '/road-construction-raffic-safety.png',
+            title: 'Click Here to View Full Shop!',
+            text: '...'}
     ];
 
     return (

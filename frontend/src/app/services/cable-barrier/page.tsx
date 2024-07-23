@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CableBarrierPage: React.FC = () => {
+export default function CableBarrierPage () {
     return (
-        <section id="cable-barrier" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
+        <section id="cable-barrier" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -35,7 +35,7 @@ const CableBarrierPage: React.FC = () => {
                                 typically installed in medians and other high-risk areas to enhance road safety.
                             </p>
                         </div>
-                        <div className="w-full lg:w-1/2 hidden lg:flex">
+                        <div className="lg:w-1/2 md:w-1/3 sm:w-full hidden lg:flex">
                             <img src="/placeholder.png" alt="Professional Cable Barrier Services"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
@@ -156,4 +156,3 @@ const CableBarrierPage: React.FC = () => {
         </section>
     );
 };
-export default CableBarrierPage;
