@@ -4,9 +4,9 @@ import React, {useState} from 'react';
 
 function OverheadSignStructuresPage() {
     return (
-        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
+        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/OverheadSignStructureBanner.jpg')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/SignStructure4.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -39,57 +39,15 @@ function OverheadSignStructuresPage() {
                                 and size of the structure.
                             </p>
                         </div>
-                        <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Professional Overhead Sign Structures"
-                                 className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Professional Overhead Sign Structures"
-                                 className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Professional Overhead Sign Structures"
-                                 className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Professional Overhead Sign Structures"
+                        <div className="h-4 gap-4">
+                            <img src="/SignStructure3.JPG" alt="Professional Overhead Sign Structures"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
                 </div>
 
-                {/* Section 1: Custom Designs */}
-                <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Custom Designs</h2>
-                            <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
 
-                            <div className='lg:hidden flex mb-4'>
-                                <CustomDesignImages/>
-                            </div>
-
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                We provide custom designs for overhead sign structures, tailored to meet the specific
-                                needs of your project. Our expert team ensures that each design complies with local,
-                                state, and federal regulations.
-                            </p>
-                            <div>
-                                <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                    <strong>Design Features</strong>
-                                </p>
-                                <ul className="list-disc list-inside">
-                                    <li>Cantilever Structures</li>
-                                    <li>Bridge Structures</li>
-                                    <li>Butterfly (“T” shape) Structures</li>
-                                    <li>Variable Message Systems</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Custom Designs" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Custom Designs" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Custom Designs" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Custom Designs" className="m-5 w-full h-auto rounded-lg"/>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Section 2: Installation Services */}
+                {/* Section 1: Installation Services */}
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
                     <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
                         <div className="w-full lg:w-1/2">
@@ -214,7 +172,7 @@ const Carousel: React.FC<{ images: { src: string }[] }> = ({ images }) => {
 
 const ProfOverheadSignImages = () => {
     const images = [
-        { src: '/placeholder.png?text=Slide+1' },
+        { src: '/SignStructure4.JPG' },
         { src: '/placeholder.png?text=Slide+2' },
         { src: '/placeholder.png?text=Slide+3' },
         { src: '/placeholder.png?text=Slide+4' },

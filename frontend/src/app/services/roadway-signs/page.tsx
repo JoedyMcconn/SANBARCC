@@ -37,8 +37,7 @@ export default function RoadwaySigns() {
                             </p>
                         </div>
                         <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="3M Certified Sign Fabricator" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="3M Certified Sign Fabricator" className="m-5 w-full h-auto rounded-lg"/>
+                            <img src="/3m_CertfiedSignFabricator.jpg" alt="3M Certified Sign Fabricator" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="3M Certified Sign Fabricator" className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -61,7 +60,7 @@ export default function RoadwaySigns() {
                             </p>
                         </div>
                         <div className="hidden w-full lg:w-1/2 lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <img src="/placeholder.png" alt="Regulatory Signs" className="m-5 w-full h-auto rounded-lg"/>
+                        <img src="/WarningSign1.jpg" alt="Regulatory Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Regulatory Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Regulatory Signs" className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Regulatory Signs" className="m-5 w-full h-auto rounded-lg"/>

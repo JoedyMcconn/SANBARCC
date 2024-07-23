@@ -109,14 +109,14 @@ const About = () => {
                         <hr className="border-t-4 border-yellow-500 mt-8 mb-8"/>
                     </div>
 
-                    <div className="mb-10 p-4 rounded-lg bg-white text-left">
+                    <div className="mb-4 p-4 rounded-lg bg-white text-left">
                         <ul className="space-y-6">
                             <li className="flex flex-col lg:flex-row items-start mb-6">
                                 <FaBuilding style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
                                     <h3 className="text-3xl font-bold">Build To Last</h3>
                                     <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
-                                        Established in 1989 in Albuquerque, NM, San Bar construction provides a large variety of services ranging from the design and manufacturing of construction of permanent roadway signing, to installing and repairing roadway guardrails.
+                                        Established in 1989 in Albuquerque NM,<br/> San Bar construction provides a large variety of services ranging from the design and manufacturing of permanent roadway signing, to roadway construction services.
                                     </p>
                                 </div>
                             </li>
@@ -143,16 +143,16 @@ const About = () => {
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full lg:w-1/2 p-6">
+                <div className="w-full lg:w-1/2 p-6 mt-40">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
-                            <img src="/GuardRailTruck.JPG" alt="Guard Rail Truck" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="up"/>
+                            <img src="/NMwelcomeSign.JPG" alt="Welcome to NM sign" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
                             <img src="/Striping1.jpg" alt="Striping" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="left"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/SignShop2.JPG" alt="Sign Shop" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="right"/>
+                            <img src="/SignStructure5.JPG" alt="Sign Shop" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="right"/>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ const JobOpportunitiesSection = () => {
         <section className="relative h-full bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
             <div className="flex items-center justify-center h-full">
                 <div className="bg-black bg-opacity-50 w-full p-12 md:p-28 rounded-lg text-center">
-                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">We're Hiring!</h2>
+                    <h2 className="text-8xl md:text-8xl font-bold text-white mb-4">We're Hiring!</h2>
                     <p className="text-lg md:text-xl text-gray-200 mb-6">
                         We have various job opportunities available for dedicated and skilled individuals.
                     </p>
@@ -185,8 +185,8 @@ const JobOpportunitiesSection = () => {
 const servicesData = [
     { src: "/SignShop2.JPG", alt: "Sign Printing", title: "Signage", description: "We offer high-quality signage for various purposes." },
     { src: "/Striping1.jpg", alt: "Striping", title: "Striping", description: "Professional striping services for parking lots and roads." },
-    { src: "/road-construction-raffic-safety.png", alt: "Traffic Safety Equipment", title: "Traffic Safety", description: "Equipment and tools to ensure road safety." },
-    { src: "/Guardrail.png", alt: "Guard rails and repairs", title: "Guard Rail Repair/Installation", description: "Repair and install guard rails effectively." },
+    { src: "/TrafficSafety.JPG", alt: "Traffic Safety Equipment", title: "Traffic Safety", description: "Equipment and tools to ensure road safety." },
+    { src: "/Guardrail4.JPG", alt: "Guard rails and repairs", title: "Guard Rail Repair/Installation", description: "Repair and install guard rails effectively." },
     { src: "/ABQoverheadSign.jpg", alt: "Overhead Signs and Structures", title: "Overhead Signs/Structures", description: "Overhead signs and structures for guidance." },
     { src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg", alt: "Roadway milling", title: "Rumble Strip Installation", description: "Rumble Strip Installation." }
 ];
@@ -195,20 +195,28 @@ const Services = () => {
     return (
         <section id="services" className="py-20 text-center">
             <div className="container mx-auto px-4">
-                <div className="mb-5">
-                    <h1 className="font-semibold text-4xl text-yellow-400 lg:mr-10">Quality you expect, the service
-                        you<br/>deserve!</h1>
+                <div
+                    className="flex flex-col md:flex-row justify-center items-center mb-5 space-y-4 md:space-y-0 md:space-x-4">
+                    <div className="md:w-1/2">
+                        <h1 className="font-semibold text-4xl text-yellow-400">Quality you expect, the service<br/>you
+                            deserve!</h1>
+                    </div>
+                    <div className="md:w-1/2">
+                        <p className="text-gray-700 text-xl">We provide a wide range of services to meet your
+                            construction needs. Our team is dedicated <br/> to delivering the highest quality work and
+                            exceptional customer service.</p>
+                    </div>
                 </div>
-                <div>
-                    <p className="text-gray-700">We provide a wide range of services to meet your construction needs.
-                        Our team is dedicated to<br/>delivering the highest quality work and exceptional customer
-                        service.</p>
-                </div>
+
+                <hr className="mb-0.5 border-l-current border-2 border-[#E0AF2A]"/>
+                <hr className="mb-0.5 border-dashed border-2 border-black"/>
+                <hr className="mt-0.5 mb-8 border-l-current border-2 border-[#E0AF2A]"/>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {servicesData.map(service => (
                         <div key={service.title} className="shadow-lg rounded-lg overflow-hidden">
-                            <img src={service.src} alt={service.alt} className="w-full h-60 object-cover transition-transform duration-500 ease-in-out transform hover:scale-105" />
+                            <img src={service.src} alt={service.alt}
+                                 className="w-full h-60 object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"/>
                             <div className="p-4 bg-white">
                                 <h2 className="font-bold text-xl mb-2">{service.title}</h2>
                                 <p className="text-gray-700">{service.description}</p>
@@ -224,7 +232,6 @@ const Services = () => {
         </section>
     );
 };
-
 
 
 const MusicalRoad = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 export default function GuardrailPage()  {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-16">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -135,7 +135,7 @@ export default function GuardrailPage()  {
                         </p>
                         <div className="mt-6">
                             <video controls className="w-full rounded-lg">
-                                <source src="" type="video/mp4"/>
+                                <source src="/GuardrailFootage.mp4" type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
                         </div>

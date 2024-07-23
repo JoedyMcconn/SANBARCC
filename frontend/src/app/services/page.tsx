@@ -1,7 +1,23 @@
 "use client"
 
 import React, { useState } from 'react';
-import { FaCheckCircle, FaRoad, FaPaintRoller, FaSign, FaShieldAlt } from 'react-icons/fa';
+import {
+    FaCheckCircle,
+    FaRoad,
+    FaPaintRoller,
+    FaSign,
+    FaShieldAlt,
+    FaScrewdriver,
+    FaExclamationTriangle, FaMapSigns, FaDirections, FaHardHat, FaTruckMoving
+} from 'react-icons/fa';
+import {
+    FaArrowDownLong,
+    FaArrowUpAZ,
+    FaArrowUpFromWaterPump,
+    FaGears, FaGlassWaterDroplet, FaRoadBarrier, FaRoadCircleCheck, FaRoadCircleExclamation, FaRoadSpikes,
+    FaSignHanging,
+    FaSterlingSign
+} from "react-icons/fa6";
 
 const Services: React.FC = () => {
     const [activeCategory, setActiveCategory] = useState<'signage' | 'roadConstruction'>('signage');
@@ -11,7 +27,7 @@ const Services: React.FC = () => {
     };
 
     return (
-        <section id="services" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
+        <section id="services" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
 
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-top mb-6" style={{ backgroundImage: "url('/SignWarehouse.JPG')" }}>
@@ -54,7 +70,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/SpeedLimitSign.jpg" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                            <img src="/RoadwaySignage1.JPG" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -65,11 +81,11 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span></li>
-                                            <li className="flex items-start"><FaSign /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs</span></li>
+                                            <li className="flex items-start"><FaDirections /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span></li>
+                                            <li className="flex items-start"><FaExclamationTriangle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span></li>
+                                            <li className="flex items-start"><FaArrowUpAZ /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span></li>
+                                            <li className="flex items-start"><FaSignHanging /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span></li>
+                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs</span></li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a
@@ -83,7 +99,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                        <img src="/RoadwaySignage1.JPG" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -112,13 +128,10 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaSign/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Designs</span>
-                                            </li>
-                                            <li className="flex items-start"><FaSign/><span
+                                            <li className="flex items-start"><FaScrewdriver/><span
                                                 className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span>
                                             </li>
-                                            <li className="flex items-start"><FaSign/><span
+                                            <li className="flex items-start"><FaGears/><span
                                                 className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span>
                                             </li>
                                         </ul>
@@ -156,7 +169,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/Striping1.jpg" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
+                                            <img src="/PavementMarking2.JPG" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -184,7 +197,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/Striping1.jpg" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
+                                        <img src="/PavementMarking2.JPG" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -209,9 +222,9 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Installation</span></li>
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Repair</span></li>
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Guardrail Solutions</span></li>
+                                            <li className="flex items-start"><FaScrewdriver /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Installation</span></li>
+                                            <li className="flex items-start"><FaHardHat /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Repair</span></li>
+                                            <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Guardrail Solutions</span></li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a
@@ -232,7 +245,6 @@ const Services: React.FC = () => {
                         </div>
 
                         {/*Rumble Strip Installation*/}
-
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
                                 <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
@@ -247,12 +259,12 @@ const Services: React.FC = () => {
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                                         <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            We also specializes in high-quality rumble strip installation, enhancing roadway safety and alertness. We deliver precise, long-lasting results for highways, city streets, and custom projects. Our services offer various rumble strip options to meet your needs and improve road safety.
+                                            We also specialize in high-quality rumble strip installation, enhancing roadway safety and alertness. We deliver precise, long-lasting results for highways, city streets, and custom projects. Our services offer various rumble strip options to meet your needs and improve road safety.
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Asphalt Rumble Strips</span></li>
-                                            <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Concrete Rumble Strips</span></li>
+                                            <li className="flex items-start"><FaRoadCircleExclamation /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Asphalt Rumble Strips</span></li>
+                                            <li className="flex items-start"><FaRoadSpikes /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Concrete Rumble Strips</span></li>
                                             <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Rumble Strips</span></li>
                                         </ul>
                                         <div className="mt-6 text-center">
@@ -274,7 +286,6 @@ const Services: React.FC = () => {
                         </div>
 
                         {/*Cable Barrier Installation and repair*/}
-
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
                                 <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
@@ -293,9 +304,9 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
+                                            <li className="flex items-start"><FaRoadBarrier /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
+                                            <li className="flex items-start"><FaGears /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
+                                            <li className="flex items-start"><FaRoadCircleCheck /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a
@@ -316,7 +327,6 @@ const Services: React.FC = () => {
                         </div>
 
                         {/* Water and Sand Blasting services*/}
-
                         <div className="flex flex-wrap mb-12 md:mb-24">
                             <div className="w-full bg-black p-6 rounded-lg">
                                 <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
@@ -337,11 +347,6 @@ const Services: React.FC = () => {
                                             and cost-effective removal, leaving minimal to no scars on the roadway and
                                             eliminating the need for resurfacing or secondary cleanup.
                                             <br/><br/>
-                                            San Bar boasts the only waterblaster in New Mexico equipped with a full
-                                            reclamation system, which immediately suctions removed markings into a
-                                            holding tank for proper disposal, unlike older systems that leave debris on
-                                            the road, requiring additional costly cleanup.
-                                            <br/><br/>
                                             Our "Stripe Hog" waterblaster features a double 8” head, allowing it to
                                             remove a 16” wide line in one pass, saving both time and money. The
                                             adjustable water pressure ranges from 10,000 psi to 40,000 psi, enabling
@@ -351,9 +356,9 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaPaintRoller /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Standard Rumble Bars</span></li>
-                                            <li className="flex items-start"><FaPaintRoller /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">High-Visibility Rumble Bars</span></li>
-                                            <li className="flex items-start"><FaPaintRoller /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Rumble Bars</span></li>
+                                            <li className="flex items-start"><FaGlassWaterDroplet /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Water-Blasting Services</span></li>
+                                            <li className="flex items-start"><FaTruckMoving /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Sand-Blasting Services</span></li>
+                                            <li className="flex items-start"><FaPaintRoller /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2"></span></li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a

@@ -66,9 +66,9 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
 
 export default function JobOpportunities() {
     return (
-        <section id="job-opportunities" className="relative min-h-screen py-16 bg-yellow-300 mt-8">
+        <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/job-opportunities-banner.jpg')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -81,6 +81,9 @@ export default function JobOpportunities() {
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
                 <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center">
                     Applicants are required to apply in person at the business location. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
+                </p>
+                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center">
+                    San Bar is a Drug Free environment based on our Federal Contracts.
                 </p>
 
                 <JobPosition
@@ -115,36 +118,7 @@ export default function JobOpportunities() {
                     ]}
                     jobType="Full-time"
                     compensation="Dependent on Project"
-                    benefits="Medical and Dental Insurance, PTO, Holiday Pay"
-                />
-
-                <JobPosition
-                    title="Diesel Technician/Mechanic"
-                    icon={<FaTools />}
-                    summary="The Diesel Technician/Mechanic will perform a variety of skilled duties which may involve inspections, diagnosis, troubleshooting, maintenance and repair of highway safety construction vehicles and equipment."
-                    qualifications={[
-                        "Minimum of 5 years automotive/diesel mechanic experience",
-                        "Valid driver license, CDL license a plus but not required",
-                        "Proficiency with maintenance and repair tools",
-                        "Attention to detail",
-                        "Meet all company, government and equipment related safety requirements",
-                        "Communicate effectively with operators, supervisors and co-workers",
-                        "Physically fit and able to lift up to 60 pounds",
-                        "Capable of climbing, kneeling, twisting and bending as required to complete necessary repair",
-                        "Must provide own basic hand tools"
-                    ]}
-                    responsibilities={[
-                        "Perform a variety of skilled duties which may involve inspections, diagnosis, troubleshooting, maintenance and repair of highway safety construction vehicles and equipment.",
-                        "Analyze diagnostic test results",
-                        "Service vehicles and equipment as required ensuring safe and proper operation",
-                        "Operate equipment such as forklifts, skid loaders, stationary as well as portable air compressor, brooms, boom trucks and other equipment pertinent to industry",
-                        "Diagnose and repair a wide variety of mechanical and electrical equipment",
-                        "Read and understand specifications, schematics and manuals",
-                        "Ensure cleanliness of the shop"
-                    ]}
-                    jobType="Full-time"
-                    compensation="Dependent on experience"
-                    benefits="Medical and Dental Insurance, Sick and Vacation Time, Holiday Pay, 401K"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
                 />
 
                 <JobPosition
@@ -171,8 +145,34 @@ export default function JobOpportunities() {
                         "Deliver orders to customers when necessary"
                     ]}
                     jobType="Full-time, Summer Hire"
-                    compensation="Dependent on experience"
-                    benefits="Medical and Dental Insurance, PTO, Holiday Pay"
+                    compensation="$12.00/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                />
+
+                <JobPosition
+                    title="Sign Shop Laborer"
+                    icon={<FaSign />}
+                    summary="San Bar Construction Corp. is a company specializing in fast paced road construction primarily focusing on roadway striping, signs and installation of guardrails and is currently hiring full time entry-level Sign Shop Laborers. Experience in the industry is not required and training will be provided to those with the desire to learn and advance with this dynamic company."
+                    qualifications={[
+                        "Detail oriented.",
+                        "Dependable and reliable.",
+                        "Ability to work in a fast paced environment.",
+                        "Team player with ability to work independently",
+                        "A self-starter",
+                        "Ability to multi-task",
+                        "Ability to lift 25-30 lbs.",
+                        "Stand for long periods of time.",
+                        "Knowledge and experience working with a tape measure preferred.",
+                        "Good communication skills."
+                    ]}
+                    responsibilities={[
+                        "Manufacture signs, banners, and digital printed media.",
+                        "Cut metal, wood, and other materials per designated order.",
+                        "Operate a variety of saws and other equipment in the manufacturing process"
+                    ]}
+                    jobType="Full-time, Summer Hire"
+                    compensation="$13.50/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
                 />
 
             </div>

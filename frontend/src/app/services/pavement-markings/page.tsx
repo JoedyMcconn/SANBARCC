@@ -36,10 +36,8 @@ const PavementMarkingsPage: React.FC = () => {
                                 using high-quality materials and state-of-the-art application techniques.
                             </p>
                         </div>
-                        <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <img src="/placeholder.png" alt="Professional Pavement Marking Services" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Professional Pavement Marking Services" className="m-5 w-full h-auto rounded-lg"/>
-                            <img src="/placeholder.png" alt="Professional Pavement Marking Services" className="m-5 w-full h-auto rounded-lg"/>
+                        <div className="w-full lg:w-1/2 hidden gap-4">
+                        <img src="/IntersectionStriping.jpg" alt="Intersection Striping" className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
                 </div>
@@ -315,7 +313,7 @@ const Carousel: React.FC<{ images: { src: string }[] }> = ({ images }) => {
 
 const ProfPavementImages = () => {
     const images = [
-        { src: '/placeholder.png?text=Slide+1' },
+        { src: '/IntersectionStriping.jpg'},
         { src: '/placeholder.png?text=Slide+2' },
         { src: '/placeholder.png?text=Slide+3' },
         { src: '/placeholder.png?text=Slide+4' },
