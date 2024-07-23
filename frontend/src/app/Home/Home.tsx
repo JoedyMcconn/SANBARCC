@@ -161,6 +161,26 @@ const About = () => {
     );
 };
 
+const JobOpportunitiesSection = () => {
+    return (
+        <section className="relative h-full bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
+            <div className="flex items-center justify-center h-full">
+                <div className="bg-black bg-opacity-50 w-full p-12 md:p-28 rounded-lg text-center">
+                    <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">We're Hiring!</h2>
+                    <p className="text-lg md:text-xl text-gray-200 mb-6">
+                        We have various job opportunities available for dedicated and skilled individuals.
+                    </p>
+                    <a
+                        href="/job-opportunities"
+                        className="inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                        View Job Opportunities
+                    </a>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 
 const servicesData = [
     { src: "/Signage.jpeg", alt: "Sign Printing", title: "Signage", description: "We offer high-quality signage for various purposes." },
@@ -342,6 +362,7 @@ export default function HomePage() {
             <main>
                 <Hero/>
                 <About/>
+                <JobOpportunitiesSection/>
                 <Services/>
                 <MusicalRoad/>
                 <Shop/>
