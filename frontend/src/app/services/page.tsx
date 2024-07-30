@@ -122,9 +122,9 @@ const Services: React.FC = () => {
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                                         <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Sign structures come in three styles: Cantilever, Bridge, and Butterfly (T shape). They range in size from 18” to 40” in diameter. Installation components include a drilled shaft, rebar cage, bolt assembly, 3000 psi concrete, sign structure, and the sign(s). Some drilled shafts can be as deep as 65’, depending on the terrain and structure size.
-                                            <br/><br/>
-                                            If you've traveled the interstates in New Mexico, you've likely seen a San Bar-installed sign structure. San Bar also installs structures for Variable Message Systems, which are becoming more popular on interstates nationwide.
+                                            If you've traveled any of the interstates in New Mexico, you've likely seen driven under a San Bar installed sign structure.
+                                           <br/> <br/>
+                                            San Bar also installs structures for Variable Message Systems, which are increasing in popularity on interstates nationwide.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -174,7 +174,7 @@ const Services: React.FC = () => {
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                                         <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Our expert team provides quality pavement markings for roadways and parking areas, ensuring safety and efficiency. Using durable materials, we deliver precise, long-lasting results for highways, streets, parking lots, and custom projects. Our services include a wide range of marking options tailored to meet your specific needs.
+                                            San Bar provides quality pavement markings for roadways and parking areas, ensuring safety and efficiency. Using durable materials, we deliver precise, long-lasting results for highways, streets, parking lots, and custom projects. Our services include a wide range of marking options tailored to meet your specific needs.
                                         </p>
 
                                         <ul className="space-y-2">
@@ -279,7 +279,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
+                                        <img src="/RumbleStripExample.jpg" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>

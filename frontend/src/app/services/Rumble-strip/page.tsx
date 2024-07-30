@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function RumbleStripPage() {
     return (
-        <section id="rumble-strip" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-14">
+        <section id="rumble-strip" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -83,11 +83,6 @@ export default function RumbleStripPage() {
                                 Proper installation is crucial for rumble strips to function as intended. This includes
                                 ensuring correct spacing, depth, and placement. Regular maintenance and inspection are required
                                 to ensure that rumble strips remain effective over time.
-                            </p>
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <em>Material Standards</em><br/>
-                                We use high-quality materials that meet industry standards for durability and performance,
-                                ensuring that our rumble strips provide long-lasting safety benefits.
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">

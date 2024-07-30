@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 export default function RoadwaySigns() {
     return (
-        <section id="roadway-signs" className="relative min-h-screen py-16 bg-center bg-[#E0AF2A] mt-6">
+        <section id="roadway-signs" className="relative min-h-screen py-16 bg-center bg-[#F7D117] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover" style={{ backgroundImage: "url('/SignShop1.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">

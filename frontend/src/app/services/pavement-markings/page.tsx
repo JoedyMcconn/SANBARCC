@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 const PavementMarkingsPage: React.FC = () => {
     return (
-        <section id="pavement-markings" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
+        <section id="pavement-markings" className="relative min-h-screen py-16 bg-[#F7D117] mt-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -248,7 +248,7 @@ const PavementMarkingsPage: React.FC = () => {
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
                     <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
                         <div className="w-full">
-                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Drone Video</h2>
+                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Interstate Striping</h2>
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
                                 Watch our drone footage to see our pavement marking projects from a unique aerial perspective.

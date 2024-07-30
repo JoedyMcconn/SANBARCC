@@ -6,19 +6,13 @@ interface Props {
 }
 
 const Nav = ({ openNav }:Props) => {
-    return <div className="navbar h-[13vh] bg-black">
+    return <div className="navbar h-[13vh] bg-black z-[999]">
         <div className="flex items-center justify-between w-[90%] xl:w-[80%] h-full mx-auto">
+
             {/* Logo */}
             <div className="text-[35px] font-semibold text-white">
                 <img src='/SanBarTextLogo.png' alt="San Bar Logo" className="h-[75px] w-[160px]"/>
             </div>
-
-                {/*Phone number and Address */}
-            {/*<div className="text-white font-semibold text-xl ">*/}
-            {/*    <p>505-452-8000</p>*/}
-            {/*    <p>9101 Broadway S.E</p>*/}
-            {/*    <p>Albuquerque, NM 87105</p>*/}
-            {/*</div>*/}
 
             {/* Nav Links*/}
             <ul className="lg:flex hidden text-white items-center space-x-6 xl:space-x-10">

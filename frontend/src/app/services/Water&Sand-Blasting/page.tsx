@@ -1,7 +1,7 @@
 import React from 'react';
 const SandWaterBlastingPage: React.FC = () => {
     return (
-        <section id="sand-water-blasting" className="relative min-h-screen bg-[#E0AF2A] py-8">
+        <section id="sand-water-blasting" className="relative min-h-screen bg-[#F7D117] py-8 mt-12">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -28,10 +28,12 @@ const SandWaterBlastingPage: React.FC = () => {
                             </div>
 
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                Water blasting is an effective and environmentally friendly method for surface
-                                preparation, cleaning, and paint removal. It uses high-pressure water jets to remove
-                                contaminants, coatings, and other materials from surfaces without damaging the
-                                substrate.
+                                Our "Stripe Hog" waterblaster features a double 8” head, allowing it to
+                                remove a 16” wide line in one pass, saving both time and money. The
+                                adjustable water pressure ranges from 10,000 psi to 40,000 psi, enabling
+                                precise control for delicate or aggressive removal as needed. The New Mexico
+                                D.O.T. requires this process for both temporary and permanent traffic
+                                marking removal.
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">

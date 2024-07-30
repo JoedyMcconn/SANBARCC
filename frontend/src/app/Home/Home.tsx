@@ -203,7 +203,7 @@ const Services = () => {
                     </div>
                     <div className="md:w-1/2">
                         <p className="text-gray-700 text-xl">We provide a wide range of services to meet your
-                            construction needs. Our team is dedicated <br/> to delivering the highest quality work and
+                            needs. Our team is dedicated <br/> to delivering the highest quality work and
                             exceptional customer service.</p>
                     </div>
                 </div>
