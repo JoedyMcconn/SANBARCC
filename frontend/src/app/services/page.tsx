@@ -77,15 +77,28 @@ const Services: React.FC = () => {
                                         <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
                                             San Bar continually updates our procedures, materials, and equipment to meet or exceed project specifications and comply with the latest MUTCD regulations. We ensure your signs meet all Local, State, and Federal standards.
                                             <br /><br />
-                                            As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structures, including custom designs.
+                                            As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structure mounted signs, including custom designs.
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaDirections /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span></li>
-                                            <li className="flex items-start"><FaExclamationTriangle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span></li>
-                                            <li className="flex items-start"><FaArrowUpAZ /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span></li>
-                                            <li className="flex items-start"><FaSignHanging /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span></li>
-                                            <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs</span></li>
+                                            <li className="flex items-start"><FaDirections/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span>
+                                            </li>
+                                            <li className="flex items-start"><FaExclamationTriangle/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span>
+                                            </li>
+                                            <li className="flex items-start"><FaArrowUpAZ/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span>
+                                            </li>
+                                            <li className="flex items-start"><FaSignHanging/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span>
+                                            </li>
+                                            <li className="flex items-start"><FaShieldAlt/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs/Banners</span>
+                                            </li>
+                                            <li className="flex items-start"><FaShieldAlt/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Temporary/Permanent construction Signs</span>
+                                            </li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a
@@ -117,12 +130,12 @@ const Services: React.FC = () => {
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
                                             <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
-                                                 className="w-auto h-auto rounded-lg -rotate-90"/>
+                                                 className="w-auto h-64 rounded-lg -rotate-90"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                                         <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            If you've traveled any of the interstates in New Mexico, you've likely seen driven under a San Bar installed sign structure.
+                                            If you've traveled any of the interstates in New Mexico, you've likely driven under a San Bar installed sign structure.
                                            <br/> <br/>
                                             San Bar also installs structures for Variable Message Systems, which are increasing in popularity on interstates nationwide.
                                         </p>
@@ -178,12 +191,27 @@ const Services: React.FC = () => {
                                         </p>
 
                                         <ul className="space-y-2">
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Hot applied Thermoplastic Pavement Markings</span></li>
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Painted Pavement Marking</span></li>
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed (Tape) Pavement Markings</span></li>
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed Thermoplastic Pavement Markings</span></li>
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Contrast Pavement Markings</span></li>
-                                            <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Raised and Recessed Pavement Markers</span></li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Hot applied Thermoplastic Pavement Markings</span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Painted Pavement Markings & Symbols</span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed (Tape) Pavement Markings & Symbols</span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed Thermoplastic Pavement Markings & Symbols</span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Contrast Pavement Markings & Symbols</span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Raised and Recessed Pavement Markers </span>
+                                            </li>
+                                            <li className="flex items-start"><FaRoad/><span
+                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Decorative Pavement Markings & Symbols</span>
+                                            </li>
                                         </ul>
                                         <div className="mt-6 text-center">
                                             <a
@@ -347,8 +375,7 @@ const Services: React.FC = () => {
                                             and cost-effective removal, leaving minimal to no scars on the roadway and
                                             eliminating the need for resurfacing or secondary cleanup.
                                             <br/><br/>
-                                            Our "Stripe Hog" waterblaster features a double 8” head, allowing it to
-                                            remove a 16” wide line in one pass, saving both time and money. The
+                                            Our ultra high pressure waterblasters feature a double 8” head, allowing it to remove a 16” wide line in one pass, saving both time and money. The
                                             adjustable water pressure ranges from 10,000 psi to 40,000 psi, enabling
                                             precise control for delicate or aggressive removal as needed. The New Mexico
                                             D.O.T. requires this process for both temporary and permanent traffic

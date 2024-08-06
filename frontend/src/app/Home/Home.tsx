@@ -55,7 +55,7 @@ const Hero = () => {
                         Contact Us
                     </a>
                     <div className="bg-white text-black p-1 md:p-2 rounded text-sm md:text-lg flex items-center">
-                        Call Us: +1 (505) 123-4567
+                        Call Us: +1 505-452-8000
                     </div>
                 </div>
             </div>
@@ -111,30 +111,21 @@ const About = () => {
 
                     <div className="mb-4 p-4 rounded-lg bg-white text-left">
                         <ul className="space-y-6">
-                            <li className="flex flex-col lg:flex-row items-start mb-6">
+                            <li className="flex flex-col lg:flex-row items-start mb-16">
                                 <FaBuilding style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
-                                    <h3 className="text-3xl font-bold">Build To Last</h3>
-                                    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
-                                        Established in 1989 in Albuquerque NM,<br/> San Bar construction provides a large variety of services ranging from the design and manufacturing of permanent roadway signing, to roadway construction services.
+                                    <h3 className="text-4xl font-bold">Built To Last</h3>
+                                    <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
+                                        <strong>San Bar Construction Corp.</strong> provides a large variety of services ranging from the design and manufacturing of permanent roadway signing, to roadway construction services.
                                     </p>
                                 </div>
                             </li>
-                            <li className="flex flex-col lg:flex-row items-start mb-6">
-                                <FaUsers style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
+                            <li className="flex flex-col lg:flex-row items-start mt-16">
+                                <FaUsers style={{ fontSize: '10rem' }} className="text-yellow-500 mt-1 mr-3" />
                                 <div>
                                     <h3 className="text-3xl font-bold">Family Owned Business</h3>
                                     <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
-                                        As a locally owned, family-run construction company, we have an innate understanding of our community's needs, enabling us to provide tailored solutions. Our deep roots within the community grant us a distinctive perspective and insight into local preferences and demands.
-                                    </p>
-                                </div>
-                            </li>
-                            <li className="flex flex-col lg:flex-row items-start mb-6">
-                                <FaCheckCircle style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
-                                <div>
-                                    <h3 className="text-3xl font-bold">Certified Professionals</h3>
-                                    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
-                                        Our team of seasoned builders and installers are not just experienced, but they are dedicated to turning your visions into reality. Simply reach out with your ideas, and we'll take care of the rest. With our team, your satisfaction isn't just a hope – it's guaranteed.
+                                        As a locally owned, family-run construction company, we have an innate understanding of our State's needs, enabling us to provide tailored solutions. Our deep roots within the State of New Mexico grant us a distinctive perspective and insight into our State's preferences and demands.
                                     </p>
                                 </div>
                             </li>
@@ -257,22 +248,41 @@ const MusicalRoad = () => {
 
                     {/* Description and Information on the right */}
                     <div className="flex flex-col justify-center h-full text-center lg:text-left space-y-6">
-                        <h1 className="text-6xl font-extrabold text-gray-800 mb-4">
-                            Musical Road
+                        {/* Musical Road Logo */}
+                        <div className="flex justify-center lg:justify-start mb-8">
+                            <img
+                                src="/Musical%20Road%20Logo.png"
+                                alt="Musical Road Logo"
+                                className="h-12 lg:h-16"
+                            />
+                        </div>
+
+                        <h1 className="text-6xl font-extrabold text-gray-800 mb-4 text-center lg:text-left">
+                            Musical Roads
                         </h1>
+
                         {/* Underline */}
-                        <hr className="my-4 border-t-4 border-amber-400 mx-auto lg:mx-0 w-1/2 lg:w-1/3"/>
-                        <p className="text-xl text-gray-700 leading-relaxed">
-                            When it comes to new products and services San Bar has always been and always will be a leader in innovation. Because of this reputation in the market, we were approached by National Geographic to help them create only one of two “SINGING ROADS” in the entire United States. This road has become very popular with not only the locals, but also many visitors to the area.                        </p>
-                        <p className="text-xl text-gray-700 leading-relaxed">
-                            A musical road is created by carefully calibrating grooves or rumble strips at precise intervals on the road surface. As a vehicle travels over these grooves at a specific speed, the vibrations created produce a recognizable melody or tune, offering an interactive and entertaining experience for drivers while highlighting our innovative engineering capabilities.
-                        </p>
+                        <div className="flex justify-center lg:justify-start">
+                            <hr className="my-4 border-t-4 border-amber-400 w-1/2 lg:w-1/3"/>
+                        </div>
+
+                        {/* Paragraph with white background */}
+                        <div className="bg-white p-6 rounded-lg shadow-md">
+                            <p className="text-xl text-gray-700 leading-relaxed mb-4">
+                                When it comes to new products and services San Bar has always been and always will be a leader in innovation. Because of this reputation in the market, we were approached by National Geographic and City of Palmdale, California to help them create two of the most high profile Musical Roads in the United States.
+                            </p>
+
+                            <p className="text-xl text-gray-700 leading-relaxed">
+                                A Musical Road™ is created by carefully calibrating grooves or rumble strips at precise intervals on the road surface. As a vehicle travels over these grooves at a specific speed, the vibrations created produce a recognizable melody or tune, offering an interactive and entertaining experience for drivers while highlighting our innovative engineering capabilities.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
 };
+
 
 
 type CarouselProps = {

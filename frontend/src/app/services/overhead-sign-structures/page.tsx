@@ -81,7 +81,7 @@ const MaintenanceImages = () => {
 
 function OverheadSignStructuresPage() {
     return (
-        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
+        <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/SignStructure4.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">

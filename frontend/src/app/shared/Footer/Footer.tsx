@@ -7,12 +7,15 @@ export default function Footer() {
 
                 {/* Contact Info Section */}
                 <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
-                    <p className='text-2xl font-semibold mb-2'><strong className="text-2xl text-pretty">Call Us:</strong> +1 505-452-8000</p>
-                    <p className="text-2xl font-semibold mb-2"><strong>Email:</strong> contact@sanbarcc.com</p>
-                    <p className="text-xl mb-2">9101 Broadway S.E Albuquerque, New Mexico</p>
-                    <a href="/contact" className="text-blue-500 hover:text-blue-300 mt-2 text-xl">
-                        Contact Us
-                    </a>
+                    <p className='text-2xl font-semibold mb-2'>
+                        <strong className="text-2xl text-pretty">Call Us:</strong> <span className="text-blue-500">+1 505-452-8000</span>
+                    </p>
+                    <p className="text-2xl font-semibold mb-2">
+                        <strong>Email:</strong> contact@sanbarcc.com
+                    </p>
+                    <p className="text-xl mb-4 text-yellow-500">
+                        <strong className="">9101 Broadway S.E</strong> Albuquerque, New Mexico
+                    </p>
                 </div>
 
                 {/* Logo Section */}

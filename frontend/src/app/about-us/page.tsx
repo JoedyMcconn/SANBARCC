@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs: React.FC = () => {
+export default function AboutUs() {
     return (
         <div className="bg-gray-100 mt-20">
             {/* Banner Section */}
@@ -46,10 +46,11 @@ const AboutUs: React.FC = () => {
                         <hr className="w-1/2 mb-4 border-t-4 border-amber-400" />
                         <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
                             <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
-                                <strong>San Bar Construction Corp.</strong> was founded in 1989 by David "Hossie" Sanchez, starting as a pavement markings specialist operating out of a one-bay garage in Los Lunas, New Mexico. Over the years, the company has grown significantly, moving to a 34,000 sq. ft. facility in Albuquerque in 1999.
+                                <strong>San Bar Construction Corp.</strong> was founded in 1990 by David "Hossie" Sanchez, starting as a pavement markings specialist operating out of a one-bay garage in Los Lunas, New Mexico. Over the years, the company has grown significantly, moving to a 34,000 sq. ft. facility in Albuquerque in 1999.
                             </p>
                             <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
-                                From this strategic location, San Bar provides comprehensive road construction services and specializes in the design, manufacture, and installation of signs. Additionally, the company operates a fully stocked retail store offering a wide range of traffic safety items and PPE construction gear. With a reputation for excellence, San Bar Construction continues to be a leader in the highway and road construction industry in the Southwest.
+                                From this strategic location,<br/>
+                                <strong>San Bar Construction Corp.</strong> provides comprehensive road construction services and specializes in the design, manufacture, and installation of signs. Additionally, the company operates a fully stocked retail store offering a wide range of traffic safety items and PPE construction gear. We also sell and rent message boards, arrow boards, and impact attenuators. We have the capabilities to service, maintain, and repair all makes & models of message boards and arrow boards. With a reputation for excellence, San Bar Construction continues to be a leader in the highway and road construction industry in the Southwest.
                             </p>
 
                         </div>
@@ -139,4 +140,4 @@ const AboutUs: React.FC = () => {
     );
 };
 
-export default AboutUs;
+

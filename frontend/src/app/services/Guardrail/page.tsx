@@ -1,7 +1,7 @@
 import React from 'react';
 export default function GuardrailPage()  {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-16">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -88,33 +88,12 @@ export default function GuardrailPage()  {
                                 with federal guidelines, including those outlined by the Federal Highway Administration
                                 (FHWA) and the Manual for Assessing Safety Hardware (MASH).
                             </p>
+
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <strong>Key Safety Guidelines</strong><br/>
-                                <em>Crashworthiness</em><br/>
-                                Guardrails must meet specific crash test criteria to be considered crashworthy. These
-                                tests evaluate the guardrail's ability to safely redirect vehicles and absorb impact
-                                energy. The crash tests are performed under controlled conditions to simulate real-world
-                                scenarios and assess the guardrail's performance.
-                            </p>
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <em>Clear Zones</em><br/>
-                                The clear zone is the area immediately adjacent to the roadway that should be free of
-                                fixed objects that could be hazardous to errant vehicles. Guardrails are installed to
-                                protect vehicles from more severe hazards within the clear zone. The clear zone width
-                                varies depending on factors such as traffic speed, volume, and roadway geometry.
-                            </p>
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <em>Installation and Maintenance</em><br/>
                                 Proper installation is crucial for the guardrail to function as intended. This includes
                                 ensuring correct post spacing, height, and the use of appropriate end terminals. Regular
                                 maintenance and inspection are required to ensure that guardrails remain effective over
                                 time. This includes repairing any damage promptly and replacing worn-out components.
-                            </p>
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                <em>End Terminals</em><br/>
-                                End terminals must be designed to absorb impact energy and minimize the risk of vehicle
-                                penetration or vaulting. Energy-absorbing end terminals are a common design that helps
-                                dissipate impact forces safely.
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">
