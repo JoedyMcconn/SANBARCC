@@ -1,6 +1,7 @@
 'use client'
 import { FaBuilding, FaUsers, FaCheckCircle } from 'react-icons/fa';
 import {useEffect, useState} from "react";
+import React, {Suspense, lazy} from "react";
 
 
 const Hero = () => {
@@ -34,7 +35,7 @@ const Hero = () => {
                 <img
                     src="/3M_CertifiedEB!.png"
                     alt="3M certified"
-                    className="h-36 md:h-48 mt-10"
+                    className="h-36 md:h-40 mt-10"
                 />
             </div>
 
@@ -93,7 +94,8 @@ const About = () => {
 
 
     return (
-        <section id="About" className="relative min-h-screen py-20 bg-white bg-gradient-to-r from-yellow-400/10 to-black/10">
+        <section id="About"
+                 className="relative min-h-screen py-20 bg-white bg-gradient-to-r from-yellow-400/10 to-black/10">
             <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 lg:flex">
                 {/* Text block */}
                 <div className="w-full lg:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto">
@@ -109,23 +111,26 @@ const About = () => {
                         <hr className="border-t-4 border-yellow-500 mt-8 mb-8"/>
                     </div>
 
-                    <div className="mb-4 p-4 rounded-lg bg-white text-left">
-                        <ul className="space-y-6">
-                            <li className="flex flex-col lg:flex-row items-start mb-16">
-                                <FaBuilding style={{ fontSize: '6rem' }} className="text-yellow-500 mt-1 mr-3" />
+                    <div className="mb-2 p-6 rounded-lg bg-white text-left">
+                        <ul className="space-y-16">
+                            <li className="flex flex-col lg:flex-row items-start">
+                                <FaBuilding style={{fontSize: '6rem'}} className="text-yellow-500 mt-1 mr-3"/>
                                 <div>
                                     <h3 className="text-4xl font-bold">Built To Last</h3>
                                     <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
-                                        <strong>San Bar Construction Corp.</strong> provides a large variety of services ranging from the design and manufacturing of permanent roadway signing, to roadway construction services.
+                                        San Bar Construction Corp. provides a comprehensive range of services, including permanent roadway sign design and manufacturing, roadway construction, pavement marking, guardrail and cable barrier installation, rumble strip installation, overhead sign structure installation, and water and sand blasting services.
                                     </p>
                                 </div>
                             </li>
-                            <li className="flex flex-col lg:flex-row items-start mt-16">
-                                <FaUsers style={{ fontSize: '10rem' }} className="text-yellow-500 mt-1 mr-3" />
+                            <li className="flex flex-col lg:flex-row items-start">
+                                <FaUsers style={{fontSize: '6rem'}} className="text-yellow-500 mt-1 mr-3"/>
                                 <div>
-                                    <h3 className="text-3xl font-bold">Family Owned Business</h3>
-                                    <p className="text-lg md:text-xl text-gray-800 leading-relaxed font-serif">
-                                        As a locally owned, family-run construction company, we have an innate understanding of our State's needs, enabling us to provide tailored solutions. Our deep roots within the State of New Mexico grant us a distinctive perspective and insight into our State's preferences and demands.
+                                    <h3 className="text-4xl font-bold">Family Owned Business</h3>
+                                    <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
+                                        As a locally owned, family-run construction company, we have an innate
+                                        understanding of our State's needs, enabling us to provide tailored solutions.
+                                        Our deep roots within the State of New Mexico grant us a distinctive perspective
+                                        and insight into our State's preferences and demands.
                                     </p>
                                 </div>
                             </li>
@@ -134,16 +139,27 @@ const About = () => {
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full lg:w-1/2 p-6 mt-40">
+                <div className="w-full lg:w-1/2 p-6 mt-20">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
-                            <img src="/NMwelcomeSign.JPG" alt="Welcome to NM sign" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="up"/>
+                            <img src="/NMwelcomeSign.JPG" alt="Welcome to NM sign"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/Striping1.jpg" alt="Striping" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="left"/>
+                            <img src="/Striping1.jpg" alt="Striping"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 data-direction="left"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/SignStructure5.JPG" alt="Sign Shop" className="fade-slide-image w-full h-full object-cover rounded-lg" data-direction="right"/>
+                            <img src="/SignStructure5.JPG" alt="Sign Shop"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 data-direction="right"/>
+                        </div>
+                        <div className="col-span-2 row-span-2">
+                            <img src="/SignStructure5.JPG" alt="Sign Shop"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 data-direction="right"/>
                         </div>
                     </div>
                 </div>
@@ -154,9 +170,10 @@ const About = () => {
 
 const JobOpportunitiesSection = () => {
     return (
-        <section className="relative h-full bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
+        <section className="relative h-full bg-fixed bg-cover bg-top"
+                 style={{backgroundImage: "url('/San-Bar-Construction-Corp.jpg')"}}>
             <div className="flex items-center justify-center h-full">
-                <div className="bg-black bg-opacity-50 w-full p-12 md:p-28 rounded-lg text-center">
+                <div className="bg-black bg-opacity-70 w-full p-12 md:p-28 rounded-lg text-center">
                     <h2 className="text-8xl md:text-8xl font-bold text-white mb-4">We're Hiring!</h2>
                     <p className="text-lg md:text-xl text-gray-200 mb-6">
                         We have various job opportunities available for dedicated and skilled individuals.
@@ -174,12 +191,42 @@ const JobOpportunitiesSection = () => {
 
 
 const servicesData = [
-    { src: "/SignShop2.JPG", alt: "Sign Printing", title: "Signage", description: "We offer high-quality signage for various purposes." },
-    { src: "/Striping1.jpg", alt: "Striping", title: "Striping", description: "Professional striping services for parking lots and roads." },
-    { src: "/TrafficSafety.JPG", alt: "Traffic Safety Equipment", title: "Traffic Safety", description: "Equipment and tools to ensure road safety." },
-    { src: "/Guardrail4.JPG", alt: "Guard rails and repairs", title: "Guard Rail Repair/Installation", description: "Repair and install guard rails effectively." },
-    { src: "/ABQoverheadSign.jpg", alt: "Overhead Signs and Structures", title: "Overhead Signs/Structures", description: "Overhead signs and structures for guidance." },
-    { src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg", alt: "Roadway milling", title: "Rumble Strip Installation", description: "Rumble Strip Installation." }
+    {
+        src: "/SignShop2.JPG",
+        alt: "Sign Printing",
+        title: "Signage",
+        description: "We offer high-quality signage for various purposes."
+    },
+    {
+        src: "/Striping1.jpg",
+        alt: "Striping",
+        title: "Striping",
+        description: "Professional striping services for parking lots and roads."
+    },
+    {
+        src: "/TrafficSafety.JPG",
+        alt: "Traffic Safety Equipment",
+        title: "Traffic Safety",
+        description: "Equipment and tools to ensure road safety."
+    },
+    {
+        src: "/Guardrail4.JPG",
+        alt: "Guard rails and repairs",
+        title: "Guard Rail Repair/Installation",
+        description: "Repair and install guard rails effectively."
+    },
+    {
+        src: "/ABQoverheadSign.jpg",
+        alt: "Overhead Signs and Structures",
+        title: "Overhead Signs/Structures",
+        description: "Overhead signs and structures for guidance."
+    },
+    {
+        src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg",
+        alt: "Roadway milling",
+        title: "Rumble Strip Installation",
+        description: "Rumble Strip Installation."
+    }
 ];
 
 const Services = () => {
@@ -234,7 +281,7 @@ const MusicalRoad = () => {
                     {/* YouTube Video on the left */}
                     <div className="w-full h-full">
                         <div className="relative w-full h-96 lg:h-full rounded-lg overflow-hidden shadow-2xl">
-                            <iframe
+                        <iframe
                                 className="absolute top-0 left-0 w-full h-full"
                                 src="https://www.youtube.com/embed/5eCTk8Yp01A?si=aklSLBcUVo6ezRTj"
                                 title="YouTube video player"
@@ -248,14 +295,7 @@ const MusicalRoad = () => {
 
                     {/* Description and Information on the right */}
                     <div className="flex flex-col justify-center h-full text-center lg:text-left space-y-6">
-                        {/* Musical Road Logo */}
-                        <div className="flex justify-center lg:justify-start mb-8">
-                            <img
-                                src="/Musical%20Road%20Logo.png"
-                                alt="Musical Road Logo"
-                                className="h-12 lg:h-16"
-                            />
-                        </div>
+
 
                         <h1 className="text-6xl font-extrabold text-gray-800 mb-4 text-center lg:text-left">
                             Musical Roads
@@ -269,14 +309,22 @@ const MusicalRoad = () => {
                         {/* Paragraph with white background */}
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             <p className="text-xl text-gray-700 leading-relaxed mb-4">
-                                When it comes to new products and services San Bar has always been and always will be a leader in innovation. Because of this reputation in the market, we were approached by National Geographic and City of Palmdale, California to help them create two of the most high profile Musical Roads in the United States.
+                                When it comes to new products and services <strong className="text-xl">San Bar Construction Corp. </strong> has always been and always will be a leader in innovation. Because of this reputation in the market, we were approached by National Geographic and City of Palmdale, California to help them create two of the most high profile Musical Roads in the United States.
                             </p>
 
                             <p className="text-xl text-gray-700 leading-relaxed">
-                                A Musical Road™ is created by carefully calibrating grooves or rumble strips at precise intervals on the road surface. As a vehicle travels over these grooves at a specific speed, the vibrations created produce a recognizable melody or tune, offering an interactive and entertaining experience for drivers while highlighting our innovative engineering capabilities.
+                                A  <strong>Musical Road™</strong> is created by carefully calibrating grooves or rumble strips at precise intervals on the road surface. As a vehicle travels over these grooves at a specific speed, the vibrations created produce a recognizable melody or tune, offering an interactive and entertaining experience for drivers while highlighting our innovative engineering capabilities.
                             </p>
                         </div>
                     </div>
+                </div>
+                {/* Musical Road Logo */}
+                <div className="flex justify-center lg:justify-start mb-8">
+                    <img
+                        src="/Musical%20Road%20Logo.png"
+                        alt="Musical Road Logo"
+                        className="h-12 lg:h-48"
+                    />
                 </div>
             </div>
         </section>
