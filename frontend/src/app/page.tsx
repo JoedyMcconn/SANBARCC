@@ -3,7 +3,7 @@ import Home from "@/app/Home/Home";
 
 const HomePage = () => {
   return (
-      <div>
+      <div className='mt-10'>
         <Home />
       </div>
   );

@@ -56,7 +56,7 @@ const products: Product[] = [
     },
     {
         title: "Roll-up Sign",
-        image: "/",
+        image: "/Buster-sign.webp",
         alt: "Roll-up Sign",
         items: [
             { text: "All sizes", icon: <FaFlag /> },

@@ -77,7 +77,11 @@ export default function AboutUs() {
                         </p>
                     </div>
                     <div className="w-full text-center mt-10">
-                        <a href="/leadership" className="inline-block bg-black hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                        <a
+                            href="/leadership"
+                            id="Leadership"
+                            aria-label="Leadership"
+                           className="inline-block bg-black hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
                             Meet the Team
                         </a>
                     </div>

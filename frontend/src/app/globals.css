@@ -102,4 +102,41 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
   }
+
+  .road-border {
+    position: relative;
+    padding: 40px; /* Adjust padding to create space inside the border */
+  }
+
+  .road-border::before,
+  .road-border::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+
+  .road-border::before {
+    border: 2px solid #F7D117; /* Yellow borders */
+    border-left: 2px solid #F7D117; /* Left yellow border */
+    border-right: 2px solid #F7D117; /* Right yellow border */
+    box-sizing: border-box;
+  }
+
+  .road-border::after {
+    border-top: 2px dashed white; /* White dashed line on top */
+    border-bottom: 2px dashed white; /* White dashed line on bottom */
+    border-left: 2px solid #F7D117; /* Left yellow border */
+    border-right: 2px solid #F7D117; /* Right yellow border */
+    top: 10px; /* Adjust spacing between yellow lines and dashed white line */
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    box-sizing: border-box;
+  }
+
 }
+
