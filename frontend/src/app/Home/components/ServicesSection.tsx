@@ -46,10 +46,10 @@ const Services = () => {
                 <div
                     className="flex flex-col md:flex-row justify-center items-center mb-5 space-y-4 md:space-y-0 md:space-x-4">
                     <div className="md:w-1/2">
-                        <h1 className="font-semibold text-4xl text-[#F7D117] font-sans bg-black ">Serving all of New Mexico,<br/>and more!</h1>
+                        <h1 className="font-semibold text-4xl text-[#F7D117] font-sans bg-black rounded-3xl pt-2t">Serving all of New Mexico,<br/>and more!</h1>
                     </div>
                     <div className="md:w-1/2">
-                        <p className="text-gray-700 text-xl font-sans">San Bar Construction Corp. is committed to providing a diverse array of services tailored to your needs. We prioritize exceptional craftsmanship and unparalleled customer service in every project we undertake.</p>
+                        <p className="text-gray-700 text-xl font-mono bg-[#F7D117] rounded-3xl ">San Bar Construction Corp. is committed to providing a diverse array of services tailored to your needs. We prioritize exceptional craftsmanship and unparalleled customer service in every project we undertake.</p>
                     </div>
                 </div>
 

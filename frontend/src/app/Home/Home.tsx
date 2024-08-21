@@ -36,7 +36,7 @@ const Home = () => {
                 <title>San Bar Construction Corp - Home</title>
                 <meta name="San Bar Construction Corp." content="San Bar Construction Corp - " />
             </Helmet>
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<div className="">Loading...</div>}>
                 <HeroSection />
                 <AboutSection />
                 <JobOpportunitiesSection />
