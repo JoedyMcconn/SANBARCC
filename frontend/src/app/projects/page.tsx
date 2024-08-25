@@ -110,7 +110,7 @@ const Projects = () => {
                         {/* Category Title */}
                         <div className="flex items-center mb-8">
                             <span className="inline-block w-2 h-10 bg-[#F7D117] mr-4"></span>
-                            <h2 className="text-4xl font-extrabold text-black">
+                            <h2 className="text-4xl font-extrabold text-[#F7D117]">
                                 {category.category}
                             </h2>
                         </div>
@@ -118,7 +118,7 @@ const Projects = () => {
                         {/* Project Cards */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:p-5">
                             {category.projects.map((project, index) => (
-                                <div key={index} className="bg-white border-y-2 border-l-2 border-solid md:border-yellow-400 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                                <div key={index} className="bg-white border-y-2 border-l-2 border-solid md:border-[#F7D117] rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
                                     <div className="overflow-hidden rounded-t-lg">
                                         <img
                                             src={project.image}
