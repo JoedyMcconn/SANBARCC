@@ -6,7 +6,6 @@ import ShopSection from "@/app/Home/components/ShopSection";
 import JobOpportunitiesSection from "@/app/Home/components/JobOpportunitiesSection";
 import MusicalRoadSection from "@/app/Home/components/MusicalRoadSection";
 import ContractingServices from "@/app/Home/components/Contracting";
-import ThreeMCertified from "@/app/Home/components/3mCertified";
 
 // Lazy loading components
 const HeroSection = React.lazy(() => import('./components/HeroSection'));
@@ -15,19 +14,20 @@ const ServicesSection = React.lazy(() => import('./components/ServicesSection'))
 // const ContactSection = React.lazy(() => import('./components/ContactSection'));
 
 const Home = () => {
-
     useEffect(() => {
         // Using pagehide/pageshow instead of unload to keep bfcache intact
-        const handlePageHide = (event) => {
+        const handlePageHide = (event: PageTransitionEvent) => {
             if (event.persisted) {
                 // Page is about to be unloaded, but cached for bfcache
             }
         };
 
         window.addEventListener('pagehide', handlePageHide);
+        window.addEventListener('pageshow', handlePageHide);
 
         return () => {
             window.removeEventListener('pagehide', handlePageHide);
+            window.removeEventListener('pageshow', handlePageHide);
         };
     }, []);
 
@@ -43,7 +43,6 @@ const Home = () => {
                 <JobOpportunitiesSection />
                 <ServicesSection />
                 <ContractingServices />
-                <ThreeMCertified />
                 <MusicalRoadSection />
                 <ShopSection />
             </Suspense>

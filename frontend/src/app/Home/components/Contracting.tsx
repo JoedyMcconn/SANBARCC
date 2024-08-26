@@ -21,31 +21,29 @@ const ContractingServices = () => {
                         <li>New Mexico Dept of Transportation</li>
                         <li>City of Albuquerque</li>
                         <li>Mountain States Constructors, Inc.</li>
-                        <li>AUI </li>
                         <li>City of Roswell</li>
                         <li>Fisher Sand & Gravel Co.</li>
                         <li>Bernalillo County Public Works</li>
                         <li>Constructors, Inc.</li>
                         <li>Holloman AFB</li>
                         <li>James Hamilton Construction Co.</li>
+                        <li>FNF Construction, Inc</li>
                         <li>Taos County Public Works</li>
                         <li>Bureau of Indian Affairs</li>
-                        <li>Hassie</li>
-                        <li>Meridian</li>
                     </ul>
                     <ul className="text-lg lg:text-xl font-serif space-y-2 ml-8">
                         <li>Kiewit New Mexico Company</li>
                         <li>Mesa Verde Enterprises, Inc.</li>
-                        <li>City of Santa Fe </li>
                         <li>Navajo Engineering & Construction Auth.</li>
                         <li>White Sands Missile Range</li>
                         <li>City of El Paso</li>
                         <li>Santa Fe County Public Works</li>
+                        <li>Skanska USA Civil West</li>
                         <li>MWI</li>
                         <li>El Terrero Construction, LLC</li>
                         <li>City of Las Cruces</li>
+                        <li>Ames Construction, Inc</li>
                         <li>Cannon AFB</li>
-                        <li>City of Hobbs</li>
                     </ul>
                 </div>
                 <p className="text-lg lg:text-xl font-serif mb-6">

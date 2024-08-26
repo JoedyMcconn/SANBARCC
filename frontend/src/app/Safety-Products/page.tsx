@@ -67,7 +67,7 @@ const products: Product[] = [
     },
     {
         title: "Stop/Slow Paddles",
-        image: "/Stop&SlowPaddles.webp",
+        image: "/",
         alt: "Stop/Slow Paddles",
         items: [
             { text: "18″ or 24″ signs", icon: <FaFlag /> },
@@ -126,7 +126,7 @@ const products: Product[] = [
     },
     {
         title: "Traffic Paint & Glass Beads",
-        image: "/",
+        image: "/traffic-paint.jpeg",
         alt: "Traffic Paint & Glass Beads",
         items: [
             { text: "5 gallon water-based white, yellow, black, red & blue paint", icon: <FaPaintBrush /> },
@@ -225,35 +225,22 @@ const products: Product[] = [
         items: [
             { text: "60 ft.", icon: <FaFlag /> },
         ]
-    },
-    {
-        title: "And Much more",
-        image: "",
-        alt: "",
-        items: [
-            { text: "Please call the shop to find more.", icon: <FaFlag /> },
-        ]
     }
 ];
 
 export default function SafetyProducts() {
     return (
-        <section id="safety-products" className="relative min-h-screen py-16 bg-yellow-300 mt-8"
-                 style={{background: "url('/caution-background.jpg')"}}>
+        <section id="safety-products" className="relative min-h-screen py-16 bg-yellow-300 mt-8" style={{background: "url('/caution-background.jpg')"}}>
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center"
-                 style={{backgroundImage: "url('/PavementMarkingsBanner.jpg')"}}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
-                        <div className="bg-[#F7D117] p-4">
-                            <h1 className="text-4xl lg:text-7xl font-bold text-white text-center">Safety Products</h1>
+                        <div className="bg-yellow-500 p-4">
+                            <h1 className="text-4xl lg:text-5xl font-bold text-white text-center">Safety Products</h1>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <p className="text-3xl text-center text-white"> Please call to inquire about a purchase or visit
-                our store in person. </p>
 
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
                 {products.map((product, index) => (
@@ -272,8 +259,7 @@ export default function SafetyProducts() {
                                 </ul>
                             </div>
                             <div className="w-full md:w-1/2 flex justify-center items-center">
-                                <img src={product.image} alt={product.alt}
-                                     className="m-5 w-full h-auto max-w-xs rounded-lg"/>
+                                <img src={product.image} alt={product.alt} className="m-5 w-full h-auto max-w-xs rounded-lg"/>
                             </div>
                         </div>
                     </div>

@@ -6,19 +6,14 @@ const projectsData = [
         projects: [
             {
                 image: '/striping1.jpg',
-                title: 'Airport Striping',
-                description: ''
-            },
-            {
-                image: '/striping2.jpg',
-                title: 'Municipalities Striping',
-                description: ''
-            },
-            {
-                image: '/striping2.jpg',
                 title: 'Highway Striping',
-                description: ''
+                description: 'Completed striping on a major highway in New Mexico.'
             },
+            {
+                image: '/striping2.jpg',
+                title: 'City Road Striping',
+                description: 'Performed striping for city roads with precision and durability.'
+            }
         ]
     },
     {
@@ -40,7 +35,7 @@ const projectsData = [
         category: 'Cable Barrier/Guard Rail',
         projects: [
             {
-                image: '/CableBarrierTruck.JPG',
+                image: '/cable-barrier1.jpg',
                 title: 'Highway Cable Barrier',
                 description: 'Installed cable barriers on high-traffic highways.'
             }
@@ -132,10 +127,10 @@ const Projects = () => {
                                         />
                                     </div>
                                     <div className="p-6 bg-black rounded-b-lg">
-                                        <h3 className="text-2xl font-semibold text-white mb-2">
+                                        <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                                             {project.title}
                                         </h3>
-                                        <p className="text-white">
+                                        <p className="text-gray-600">
                                             {project.description}
                                         </p>
                                     </div>
