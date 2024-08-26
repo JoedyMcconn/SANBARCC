@@ -7,8 +7,8 @@ const MusicalRoad = () => {
                 {/* Grid Layout for Video and Text */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* YouTube Video on the left */}
-                    <div className="w-full h-full">
-                        <div className="relative w-full h-96 lg:h-full rounded-lg overflow-hidden shadow-2xl">
+                    <div className="w-full h-full mb-12">
+                        <div className="relative w-full h-96 lg:h-1/2 rounded-lg overflow-hidden shadow-2xl">
                             <iframe
                                 className="absolute top-0 left-0 w-full h-full"
                                 src="https://www.youtube.com/embed/5eCTk8Yp01A?si=aklSLBcUVo6ezRTj"
@@ -18,6 +18,14 @@ const MusicalRoad = () => {
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
                             ></iframe>
+                        </div>
+                        {/* Musical Road Logo */}
+                        <div className="justify-center mb-8">
+                            <img
+                                src="/MusicalRoadLogo.png"
+                                alt="Musical Road Logo"
+                                className="h-1/2 mt-8 rounded-2xl overflow-hidden shadow-2xl mb-8"
+                            />
                         </div>
                     </div>
 
@@ -45,14 +53,6 @@ const MusicalRoad = () => {
                             </p>
                         </div>
                     </div>
-                </div>
-                {/* Musical Road Logo */}
-                <div className="justify-center mb-8">
-                    <img
-                        src="/Musical%20Road%20Logo.png"
-                        alt="Musical Road Logo"
-                        className=" mt-12 h-80 justify-center"
-                    />
                 </div>
             </div>
         </section>

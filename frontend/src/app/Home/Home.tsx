@@ -6,6 +6,7 @@ import ShopSection from "@/app/Home/components/ShopSection";
 import JobOpportunitiesSection from "@/app/Home/components/JobOpportunitiesSection";
 import MusicalRoadSection from "@/app/Home/components/MusicalRoadSection";
 import ContractingServices from "@/app/Home/components/Contracting";
+import ThreeMCertified from "@/app/Home/components/3mCertified";
 
 // Lazy loading components
 const HeroSection = React.lazy(() => import('./components/HeroSection'));
@@ -42,6 +43,7 @@ const Home = () => {
                 <JobOpportunitiesSection />
                 <ServicesSection />
                 <ContractingServices />
+                <ThreeMCertified />
                 <MusicalRoadSection />
                 <ShopSection />
             </Suspense>

@@ -18,11 +18,11 @@ export default function AboutUs() {
             </div>
 
             {/* Who We Are */}
-            <div className="py-20 bg-[#F7D117] shadow-inner min-h-screen">
+            <div className="py-20 bg-white shadow-inner min-h-screen">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                     <div className="md:w-1/2 p-8">
-                        <h2 className="text-6xl font-bold mb-4 text-white">Who We Are</h2>
-                        <hr className="w-1/2 mb-4 border-t-4 border-black" />
+                        <h2 className="text-6xl font-bold mb-4 text-center text-black">Who We Are</h2>
+                        <hr className="w-full mb-4 border-t-4 border-[#F7D117]" />
                         <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
                             <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
                                 <strong>San Bar Construction Corp. </strong> is a premier construction firm specializing in road construction services and comprehensive sign services, including printing, fabrication, and installation. As a 3M certified sign fabricator, we ensure top-notch quality and compliance with all regulations.
@@ -33,7 +33,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/Employee1.JPG" alt="Who We Are" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/SignShop1.JPG" alt="Who We Are" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>
@@ -62,39 +62,42 @@ export default function AboutUs() {
             </div>
 
             {/* Leadership Section */}
-            <div className="py-20 bg-[#F7D117] shadow-inner h-full flex flex-col md:flex-row items-center">
-                {/* Text block */}
+            <section className="py-20 bg-[#F7D117] shadow-inner h-full flex flex-col items-center">
+                {/* Header */}
+                <h2 className="text-8xl md:text-6xl text-center mb-4 text-white">Leadership</h2>
+                <hr className="w-full max-w-3xl mb-4 border-t-4 border-black" />
+
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-                <div className="w-full md:w-1/2 p-6">
-                    <h2 className="text-8xl md:text-6xl text-center md:text-left mb-4 text-white">Leadership</h2>
-                    <hr className="w-full mb-4 border-t-4 border-black" />
-                    <div className="p-6 bg-white rounded-2xl mt-6 border-8 border-black">
-                        <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
-                            David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's success.
-                        </p>
-                        <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
-                            Our team ensures every project meets the highest standards of quality and safety. Together, we bring innovation, integrity, and the best customer service to every endeavor, making <strong> San Bar Construction Corp. </strong> a trusted leader in the road construction and signage industry across the Southwest.
-                        </p>
+                    {/* Image block */}
+                    <div className="w-full md:w-1/2 p-6">
+                        <div className="w-full h-96 rounded-lg overflow-hidden shadow-md mb-8 md:mb-0">
+                            <img src="/HossieHistory.JPG" alt="David 'Hossie' Sanchez"
+                                 className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        </div>
                     </div>
-                    <div className="w-full text-center mt-10">
-                        <a
-                            href="/leadership"
-                            id="Leadership"
-                            aria-label="Leadership"
-                           className="inline-block bg-black hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
-                            Meet the Team
-                        </a>
-                    </div>
-                </div>
-                {/* Image block */}
-                <div className="w-full md:w-1/2 p-6">
-                    <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
-                        <img src="/HossieHistory.JPG" alt="David 'Hossie' Sanchez" className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+
+                    {/* Text block */}
+                    <div className="w-full md:w-1/2 p-6">
+                        <div className="p-6 bg-white rounded-2xl border-8 border-black">
+                            <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
+                                David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's success.
+                            </p>
+                            <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
+                                Our team ensures every project meets the highest standards of quality and safety. Together, we bring innovation, integrity, and the best customer service to every endeavor, making <strong>San Bar Construction Corp.</strong> a trusted leader in the road construction and signage industry across the Southwest.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
+                {/* Button */}
+                <div className="w-full text-center mt-10">
+                    <a href="/leadership" id="Leadership" aria-label="Leadership"
+                       className="inline-block bg-black hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                        Meet the Team
+                    </a>
                 </div>
-            </div>
+            </section>
+
 
             {/* Core Values */}
             <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen">
@@ -118,7 +121,7 @@ export default function AboutUs() {
             </div>
 
             {/* Contact Information */}
-            <div className="py-20 bg-[#F7D117] shadow-inner min-h-screen">
+            <div className="py-20 bg-[#F7D117] shadow-inner min-h-36">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                     <div className="md:w-1/2 p-8">
                         <h2 className="text-6xl font-bold mb-4 text-white">Contact Us</h2>

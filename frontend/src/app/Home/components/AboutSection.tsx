@@ -46,7 +46,7 @@ const About = () => {
                         <hr className="border-t-4 border-yellow-500 mt-8 mb-8"/>
                     </div>
 
-                    <div className="mb-2 p-6 rounded-lg bg-white text-left">
+                    <div className="mb-2 p-6 rounded-lg bg-white text-left border-2 border-[#F7D117]">
                         <ul className="space-y-16">
                             <li className="flex flex-col lg:flex-row items-start">
                                 <FaBuilding style={{fontSize: '10rem'}} className="text-yellow-500 mt-1 mr-3"/>
@@ -78,22 +78,22 @@ const About = () => {
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
                             <img src="/NMwelcomeSign.JPG" alt="Welcome to NM sign"
-                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg border-2 border-[#F7D117]"
                                  data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
                             <img src="/Striping1.jpg" alt="Striping"
-                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg border-2 border-[#F7D117]"
                                  data-direction="left"/>
                         </div>
                         <div className="col-span-1 row-span-1">
                             <img src="/SignStructure5.JPG" alt="Sign Shop"
-                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg border-2 border-[#F7D117]"
                                  data-direction="right"/>
                         </div>
                         <div className="col-span-2 row-span-2">
-                            <img src="/SignStructure5.JPG" alt="Sign Shop"
-                                 className="fade-slide-image w-full h-full object-cover rounded-lg"
+                            <img src="/PressureWashingTruck.webp" alt="Sign Shop"
+                                 className="fade-slide-image w-full h-full object-cover rounded-lg border-2 border-[#F7D117]"
                                  data-direction="right"/>
                         </div>
                     </div>

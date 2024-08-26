@@ -167,7 +167,7 @@ const PavementMarkingsPage: React.FC = () => {
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
                     <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
                         <div className="w-full lg:w-1/2">
-                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Raised Pavement
+                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Raised & Recessed Pavement
                                 Markers</h2>
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
 

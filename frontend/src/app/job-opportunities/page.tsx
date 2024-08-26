@@ -68,7 +68,7 @@ export default function JobOpportunities() {
     return (
         <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/SanBarFrontEnhanced.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -118,7 +118,7 @@ export default function JobOpportunities() {
                     ]}
                     jobType="Full-time"
                     compensation="Dependent on Project"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, Healthy Workplaces Act (H.W.A.), 401k"
                 />
 
                 <JobPosition
@@ -145,8 +145,8 @@ export default function JobOpportunities() {
                         "Deliver orders to customers when necessary"
                     ]}
                     jobType="Full-time, Summer Hire"
-                    compensation="$12.00/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    compensation="$13.50/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, Healthy Workplaces Act (H.W.A.), 401k"
                 />
 
                 <JobPosition
@@ -171,8 +171,8 @@ export default function JobOpportunities() {
                         "Operate a variety of saws and other equipment in the manufacturing process"
                     ]}
                     jobType="Full-time, Summer Hire"
-                    compensation="$13.50/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    compensation="$14.50/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, Healthy Workplaces Act (H.W.A.)"
                 />
 
             </div>

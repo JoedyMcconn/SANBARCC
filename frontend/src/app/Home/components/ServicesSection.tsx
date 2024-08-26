@@ -8,10 +8,10 @@ const servicesData = [
         description: "We offer high-quality signage for various purposes."
     },
     {
-        src: "/Striping1.jpg",
-        alt: "Striping",
-        title: "Striping",
-        description: "Professional striping services for parking lots and roads."
+        src: "/",
+        alt: "Roadway Striping",
+        title: "Roadway Striping",
+        description: "Professional striping services for roads and interstates."
     },
     {
         src: "/TrafficSafety.JPG",
@@ -33,10 +33,22 @@ const servicesData = [
     },
     {
         src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg",
-        alt: "Roadway milling",
+        alt: "",
         title: "Rumble Strip Installation",
         description: "Rumble Strip Installation."
-    }
+    },
+    {
+        src: "Striping1.jpg",
+        alt: "",
+        title: "Airport Striping",
+        description: ""
+    },
+    // {
+    //     src: "/",
+    //     alt: "",
+    //     title: "Striping & Pavement Marking Removal",
+    //     description: "" Message Boards,
+    // }
 ];
 
 const Services = () => {

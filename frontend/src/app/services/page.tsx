@@ -159,7 +159,7 @@ const Services: React.FC = () => {
                                     </div>
 
                                     {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                    <div className="hidden lg:flex w-full lg:h-full lg:w-1/2 p-6 md:p-12">
                                         <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
                                              className="w-auto h-auto rounded-lg -rotate-90"/>
                                     </div>
@@ -241,7 +241,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                            <img src="/placeholder.png" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -266,7 +266,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        <img src="/CableBarrierTruck.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +323,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                            <img src="/CableBarrierExample.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -348,7 +348,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        <img src="/CableBarrierTruck.JPG" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +399,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
+                                        <img src="/PressureWashingTruck.webp" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
