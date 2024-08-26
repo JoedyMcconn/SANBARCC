@@ -103,7 +103,7 @@ const Projects = () => {
             </div>
 
             {/* Projects Categories */}
-            <div className="mt-20 space-y-24">
+            <div className="my-20 space-y-24">
                 {/* Projects Categories */}
                 {projectsData.map((category) => (
                     <div key={category.category} className="mb-16">
