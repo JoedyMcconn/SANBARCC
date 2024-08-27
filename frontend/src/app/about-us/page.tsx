@@ -33,7 +33,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/Employee1.JPG" alt="Who We Are" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/Employee1-1.webp" alt="Who We Are" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/History2.jpg" alt="Our History" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/History2-1.webp" alt="Our History" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ export default function AboutUs() {
                 {/* Image block */}
                 <div className="w-full md:w-1/2 p-6">
                     <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
-                        <img src="/HossieHistory.JPG" alt="David 'Hossie' Sanchez" className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/HossieHistory1.webp" alt="David 'Hossie' Sanchez" className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/Employees1.JPG" alt="Employees" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                        <img src="/Employees1-1.webp" alt="Employees" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>

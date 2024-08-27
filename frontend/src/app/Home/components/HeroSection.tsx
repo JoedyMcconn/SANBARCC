@@ -24,12 +24,12 @@ const Hero = () => {
             {/* Wrapper for Top Left Images */}
             <div className="absolute top-0 left-0 hidden lg:flex flex-row space-x-2 pt-6">
                 <img
-                    src="/TopLeftHeroLogos.png"
+                    src="/TopLeftHeroLogos1.webp"
                     alt="ACON New Mexico & ATSSA"
                     className="h-48 md:h-60"
                 />
                 <img
-                    src="/3M_CertifiedEB!.png"
+                    src="/3M_CertifiedEB!1.webp"
                     alt="3M certified"
                     className="h-36 md:h-40 mt-10"
                 />

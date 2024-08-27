@@ -2,31 +2,31 @@ import React from "react";
 
 const servicesData = [
     {
-        src: "/SignShop2.JPG",
+        src: "/SignShop2-1.webp",
         alt: "Sign Printing",
         title: "Signage",
         description: "We offer high-quality signage for various purposes."
     },
     {
-        src: "/Striping1.jpg",
+        src: "/Striping1-1.webp",
         alt: "Striping",
         title: "Striping",
         description: "Professional striping services for parking lots and roads."
     },
     {
-        src: "/TrafficSafety.JPG",
+        src: "/TrafficSafety1.webp",
         alt: "Traffic Safety Equipment",
         title: "Traffic Safety",
         description: "Equipment and tools to ensure road safety."
     },
     {
-        src: "/Guardrail4.JPG",
+        src: "/Guardrail4-1.webp",
         alt: "Guard rails and repairs",
         title: "Guard Rail Repair/Installation",
         description: "Repair and install guard rails effectively."
     },
     {
-        src: "/ABQoverheadSign.jpg",
+        src: "/ABQoverheadSign1.webp",
         alt: "Overhead Signs and Structures",
         title: "Overhead Signs/Structures",
         description: "Overhead signs and structures for guidance."

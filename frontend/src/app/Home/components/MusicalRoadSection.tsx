@@ -49,7 +49,7 @@ const MusicalRoad = () => {
                 {/* Musical Road Logo */}
                 <div className="justify-center mb-8">
                     <img
-                        src="/Musical%20Road%20Logo.png"
+                        src="/Musical-Road-Logo1.webp"
                         alt="Musical Road Logo"
                         className=" mt-12 h-80 justify-center"
                     />

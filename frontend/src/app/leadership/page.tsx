@@ -26,7 +26,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Owner</h3>
                         <img
-                            src="/HossieSanchez.JPG"
+                            src="/HossieSanchez1.webp"
                             alt="Hossie Sanchez"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -37,7 +37,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Chief Financial Officer</h3>
                         <img
-                            src="/ShaunBerry.JPG"
+                            src="/ShaunBerry1.webp"
                             alt="Shaun Berry"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -48,7 +48,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">SVP of Business & Market Dev.</h3>
                         <img
-                            src="/FrankSanchez.JPG"
+                            src="/FrankSanchez1.webp"
                             alt="Frank Sanchez"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -60,7 +60,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Fleet Manager</h3>
                         <img
-                            src="/SamBoggs.JPG"
+                            src="/SamBoggs1.webp"
                             alt="Sam Boggs"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -72,7 +72,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Purchasing agent, Retail sales</h3>
                         <img
-                            src="/LarryMoritomo.JPG"
+                            src="/LarryMoritomo1.webp"
                             alt="Larry Moritomo"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -94,7 +94,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Sign Shop Manager</h3>
                         <img
-                            src="/OctaviaChavez.JPG"
+                            src="/OctaviaChavez1.webp"
                             alt="Octavia Chavez"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -106,7 +106,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Operations Manager Assistant</h3>
                         <img
-                            src="/MicahSanchez.JPG"
+                            src="/MicahSanchez1.webp"
                             alt="Micah Sanchez"
                             className="w-full h-64 object-cover mb-4"
                         />
@@ -117,7 +117,7 @@ const Leadership = () => {
                     <div className="bg-yellow-400 shadow-lg rounded-lg p-4 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Human Resource Manager</h3>
                         <img
-                            src="/WadeHarris.JPG"
+                            src="/WadeHarris1.webp"
                             alt="Wade Harris"
                             className="w-full h-64 object-cover mb-4"
                         />

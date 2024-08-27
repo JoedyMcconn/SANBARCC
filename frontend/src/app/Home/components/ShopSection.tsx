@@ -60,22 +60,22 @@ const Shop = () => {
  28″ – 7# Non-Reflective 
  28″ – 7# Reflective
  36″ – 10# Reflective`},
-        { src: '/traffic-paint.jpeg',
+        { src: '/traffic-paint1.webp',
             title: 'Traffic Paint & Glass Beads',
             text: ` 5 gallon water-based white, yellow, black, red & blue paint 
  Beads – 50 lb. bags `},
-        { src: '/PanelLite.png',
+        { src: '/PanelLite1.webp',
             title: 'Panel Light',
             text: ` Diamond Grade Sheeting 
  2 Sided
  6" x 8" 
  Pre-drilled`},
-        { src: '/PavementMarkers.png',
+        { src: '/PavementMarkers1.webp',
             title: 'Pavement Markers',
             text: `Raised Pavement Markers  
  Barrier Wall Markers 
  Chip Seal Markers`},
-        { src: '/road-construction-raffic-safety.png',
+        { src: '/road-construction-raffic-safety1.webp',
             title: 'Click Here to View Full Shop!',
             text: '...'}
     ];

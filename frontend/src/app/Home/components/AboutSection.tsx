@@ -77,22 +77,22 @@ const About = () => {
                 <div className="w-full lg:w-1/2 p-6 mt-20">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
-                            <img src="/NMwelcomeSign.JPG" alt="Welcome to NM sign"
+                            <img src="/NMwelcomeSign1.webp" alt="Welcome to NM sign"
                                  className="fade-slide-image w-full h-full object-cover rounded-lg"
                                  data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/Striping1.jpg" alt="Striping"
+                            <img src="/Striping1-1.webp" alt="Striping"
                                  className="fade-slide-image w-full h-full object-cover rounded-lg"
                                  data-direction="left"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/SignStructure5.JPG" alt="Sign Shop"
+                            <img src="/SignStructure5-1.webp" alt="Sign Shop"
                                  className="fade-slide-image w-full h-full object-cover rounded-lg"
                                  data-direction="right"/>
                         </div>
                         <div className="col-span-2 row-span-2">
-                            <img src="/SignStructure5.JPG" alt="Sign Shop"
+                            <img src="/SignStructure5-1.webp" alt="Sign Shop"
                                  className="fade-slide-image w-full h-full object-cover rounded-lg"
                                  data-direction="right"/>
                         </div>

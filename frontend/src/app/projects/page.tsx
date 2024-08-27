@@ -5,12 +5,12 @@ const projectsData = [
         category: 'Striping',
         projects: [
             {
-                image: '/striping1.jpg',
+                image: '/striping1-1.webp',
                 title: 'Highway Striping',
                 description: 'Completed striping on a major highway in New Mexico.'
             },
             {
-                image: '/striping2.jpg',
+                image: '/striping2-1.webp',
                 title: 'City Road Striping',
                 description: 'Performed striping for city roads with precision and durability.'
             }
@@ -20,12 +20,12 @@ const projectsData = [
         category: 'Signage',
         projects: [
             {
-                image: '/signage1.jpg',
+                image: '/signage1-1.webp',
                 title: 'Road Sign Installation',
                 description: 'Installed essential road signs across multiple districts.'
             },
             {
-                image: '/signage2.jpg',
+                image: '/signage2-1.webp',
                 title: 'Custom Signage',
                 description: 'Designed and installed custom signage for city landmarks.'
             }
@@ -45,7 +45,7 @@ const projectsData = [
         category: 'Overhead Sign Structure',
         projects: [
             {
-                image: '/overhead-sign1.jpg',
+                image: '/overhead_sign1-1.webp',
                 title: 'Overhead Sign Installation',
                 description: 'Installed large overhead signs for freeway guidance.'
             }
@@ -55,7 +55,7 @@ const projectsData = [
         category: 'Rumble Strip Installation',
         projects: [
             {
-                image: '/rumble-strip1.jpg',
+                image: '/rumble-strip1-1.webp',
                 title: 'Rumble Strip Installation',
                 description: 'Installed rumble strips on various state roads.'
             }
