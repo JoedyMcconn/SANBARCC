@@ -31,7 +31,7 @@ export default function CableBarrierPage() {
                             </p>
                         </div>
                         <div className="lg:w-1/2 md:w-1/3 sm:w-full hidden lg:flex">
-                            <img loading="lazy" src="/placeholder.png" alt="Professional Cable Barrier Services" className="m-5 w-full h-auto rounded-lg"/>
+                            <img loading="lazy" src="/cableBarrier.webp" alt="Professional Cable Barrier Services" className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
                 </div>

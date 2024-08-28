@@ -112,7 +112,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/RoadwaySignage1.JPG" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                        <img src="/RoadwaySignage1-1.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
-                                            <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
+                                            <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures"
                                                  className="w-auto h-64 rounded-lg -rotate-90"/>
                                         </div>
 
@@ -160,7 +160,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/SignStructureDark.jpg" alt="Erecting Overhead Sign Structures"
+                                        <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures"
                                              className="w-auto h-auto rounded-lg -rotate-90"/>
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/PavementMarking2.JPG" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
+                                            <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -225,7 +225,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/PavementMarking2.JPG" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
+                                        <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +266,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        <img src="/GuardRailTruck2-1.webp" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/RumbleStripExample.jpg" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
+                                        <img src="/RumbleStripExample1.webp" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +323,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                            <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -348,7 +348,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
+                                        <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@ const Services: React.FC = () => {
 
                                         {/* Image block */}
                                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/placeholder.png" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
+                                            <img src="/waterBlasting.webp" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
                                         </div>
 
                                         <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
@@ -399,7 +399,7 @@ const Services: React.FC = () => {
 
                                     {/* Image block */}
                                     <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/placeholder.png" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
+                                        <img src="/waterBlasting.webp" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
                                     </div>
                                 </div>
                             </div>
