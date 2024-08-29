@@ -32,10 +32,10 @@ const servicesData = [
         description: "Overhead signs and structures for guidance."
     },
     {
-        src: "https://www.researchgate.net/publication/341509281/figure/fig1/AS:911297331879936@1594281623421/the-installation-of-Shoulder-Rumble-Strip-left-and-Centerline-rumble-strips-right.jpg",
-        alt: "Roadway milling",
+        src: "/RumbleStripProject1.webp",
+        alt: "Rumble strip installation",
         title: "Rumble Strip Installation",
-        description: "Rumble Strip Installation."
+        description: "Rumble Strip Installation and service."
     }
 ];
 
