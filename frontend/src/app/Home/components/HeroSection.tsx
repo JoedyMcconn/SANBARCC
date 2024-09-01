@@ -1,42 +1,44 @@
 import React from "react";
 
 const Hero = () => {
-    // Static background image
-    const backgroundImage = '/SanBarFrontEnhanced.webp';
-
     return (
         <div className="relative h-screen flex justify-end">
-            {/* Background Image shifted to the right on mobile */}
+            {/* Background Image */}
             <img
-                src={backgroundImage}
+                src="/SanBarFrontEnhanced.webp"  // Default (Desktop) background image
                 alt="SanBar Front Enhanced Background"
-                className="absolute inset-0 w-full h-full object-cover object-left md:object-center"
+                className="hidden md:block absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <img
+                src="/SanBarFrontMobileEnhanced.png"  // Mobile background image
+                alt="SanBar Front Enhanced Background"
+                className="md:hidden absolute inset-0 w-fit h-full object-cover object-top"
             />
 
             {/* Subtle Overlay on Desktop Only (hidden on mobile) */}
             <div
-                className="hidden md:block absolute inset-y-0 right-0 w-1/3 h-full"
+                className="hidden md:block lg:block absolute inset-y-0 right-0 w-1/3 h-full"
                 style={{
                     background: 'linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0))',
                 }}
             ></div>
 
             {/* Wrapper for Top Left Images */}
-            <div className="absolute top-0 left-0 hidden lg:flex flex-row space-x-2 pt-6">
+            <div className="absolute top-0 left-0 hidden lg:flex lg:mt-10 md:mt-6 flex-row space-x-2 pt-6">
                 <img
                     src="/TopLeftHeroLogos1.webp"
                     alt="ACON New Mexico & ATSSA"
-                    className="h-48 md:h-60"
+                    className="h-[30vh]"
                 />
                 <img
                     src="/3M_CertifiedEB!1.webp"
                     alt="3M certified"
-                    className="h-36 md:h-40 mt-10"
+                    className="h-[20vh] mt-10"
                 />
             </div>
 
             {/* Text, Button, and Phone Number */}
-            <div className="z-10 flex flex-col justify-center w-full md:max-w-lg mr-4 md:mr-8 h-full text-center md:text-right px-4">
+            <div className="z-10 flex flex-col justify-center w-full md:max-w-lg lg:max-w-xl mr-4 md:mr-8 h-full text-center md:text-right px-4">
                 <p className="hidden md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 text-gray-300">
                     Serving all of New Mexico since 1989, contact us
                 </p>

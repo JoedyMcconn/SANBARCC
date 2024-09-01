@@ -28,10 +28,10 @@ export default function Footer() {
                         <li><a href='/projects' className="hover:text-yellow-500">Projects</a></li>
                         <li><a href='/contact-us' className="hover:text-yellow-500">Contact Us</a></li>
                     </ul>
-                    <img src="/SanBarTextLogo.png" alt="SanBar Logo" className="w-96 p-4 mb-4" />
+                    <img src="/SanBarTextLogo1.webp" alt="SanBar Logo" className="w-96 p-4 mb-4" />
                     <div className="grid grid-cols-2 gap-4 mt-4">
-                        <img src="/TopLeftHeroLogos.png" alt="ACON New Mexico & ATSSA" className="w-40 h-auto" />
-                        <img src="/3M_CertifiedEB!.png" alt="3M certified" className="w-40 h-auto" />
+                        <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="w-40 h-auto" />
+                        <img src="/3M_CertifiedEB!1.webp" alt="3M certified" className="w-40 h-auto" />
                     </div>
                 </div>
 
