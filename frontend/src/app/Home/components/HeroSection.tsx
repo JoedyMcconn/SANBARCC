@@ -3,28 +3,33 @@ import React from "react";
 const Hero = () => {
     return (
         <div className="relative h-screen flex justify-end">
-            {/* Background Image */}
+            {/* Background Image for Large Screens */}
             <img
                 src="/SanBarFrontEnhanced.webp"  // Default (Desktop) background image
                 alt="SanBar Front Enhanced Background"
                 className="hidden md:block absolute inset-0 w-full h-full object-cover object-center"
             />
+
+            {/* Background Image for Mobile/Small Screens */}
             <img
-                src="/SanBarFrontMobileEnhanced.png"  // Mobile background image
-                alt="SanBar Front Enhanced Background"
-                className="md:hidden absolute inset-0 w-fit h-full object-cover object-top"
+                src="/LogoBackground1.webp"  // New image for mobile screens
+                alt="SanBar Mobile Background"
+                className="md:hidden absolute inset-0 w-full h-full"
             />
 
-            {/* Subtle Overlay on Desktop Only (hidden on mobile) */}
+            {/* Subtle Overlay on Large Screens */}
             <div
-                className="hidden md:block lg:block absolute inset-y-0 right-0 w-1/3 h-full"
+                className="hidden md:block absolute inset-y-0 right-0 w-1/3 h-full"
                 style={{
                     background: 'linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0))',
                 }}
             ></div>
 
+            {/* Full-Screen Dark Overlay for Mobile/Small Screens */}
+            <div className="md:hidden absolute inset-0 bg-black opacity-60"></div>
+
             {/* Wrapper for Top Left Images */}
-            <div className="absolute top-0 left-0 hidden lg:flex lg:mt-10 md:mt-6 flex-row space-x-2 pt-6">
+            <div className="absolute top-0 left-0 lg:flex lg:mt-10 md:mt-6 flex-row space-x-2 pt-6">
                 <img
                     src="/TopLeftHeroLogos1.webp"
                     alt="ACON New Mexico & ATSSA"
@@ -39,10 +44,10 @@ const Hero = () => {
 
             {/* Text, Button, and Phone Number */}
             <div className="z-10 flex flex-col justify-center w-full md:max-w-lg lg:max-w-xl mr-4 md:mr-8 h-full text-center md:text-right px-4">
-                <p className="hidden md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 text-gray-300">
+                <p className=" md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 text-gray-300">
                     Serving all of New Mexico since 1989, contact us
                 </p>
-                <p className="hidden md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 mb-10 text-gray-300">
+                <p className=" md:block text-base md:text-xl border-r-amber-400 border-r-4 pr-1 mb-10 text-gray-300">
                     today to find out how we can help.
                 </p>
                 <h2 className="text-5xl lg:text-8xl font-bold text-white mb-4">San Bar Construction Corp.</h2>

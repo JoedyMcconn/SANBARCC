@@ -19,7 +19,7 @@ const ContractingServices = () => {
                     </div>
                     <div className="bg-white text-black p-6 border-2 border-[#F7D117] rounded-2xl shadow-lg lg:w-1/2">
                         <p className="text-2xl font-serif">
-                            San Bar Construction Corp. lets you rest assured that our team is aware of what the job requires. We have received the necessary training, and the right attitude to complete the job on time. San Bar Construction Corp. works within specification to meet your expectations. Our satisfied customers are some of the largest agencies and most respected contractors in the area, such as:
+                            <strong>San Bar Construction Corp.</strong> lets you rest assured that our team is aware of what the job requires. We have received the necessary training, and the right attitude to complete the job on time. San Bar Construction Corp. works within specification to meet your expectations. Our satisfied customers are some of the largest agencies and most respected contractors in the area, such as:
                         </p>
                     </div>
                 </div>
