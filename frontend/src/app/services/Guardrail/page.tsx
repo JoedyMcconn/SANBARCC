@@ -1,7 +1,7 @@
 import React from 'react';
 export default function GuardrailPage()  {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-8">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-[#F7D117] mt-8">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -17,8 +17,8 @@ export default function GuardrailPage()  {
 
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
                     <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center justify-center">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Professional Guardrail
+                        <div className="w-full">
+                            <h2 className="text-2xl lg:text-6xl font-semibold text-black text-center mb-4">Professional Guardrail
                                 Services</h2>
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
 
@@ -35,9 +35,11 @@ export default function GuardrailPage()  {
                                 or roadside obstacles.
                             </p>
                         </div>
-                        <div className="w-full lg:w-1/2 hidden lg:flex">
-                            <img src="/placeholder.png" alt="Professional Guardrail Services"
-                                 className=" m-5 w-full h-auto rounded-lg"/>
+                        <div className="mt-6">
+                            <video controls className="w-full rounded-lg">
+                                <source src="/GuardrailFootage.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -99,24 +101,6 @@ export default function GuardrailPage()  {
                         <div className="w-full lg:w-1/2 hidden lg:flex">
                             <img src="/placeholder.png" alt="Safety and Compliance"
                                  className=" m-5 w-full h-auto rounded-lg"/>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Section 4: Drone Footage */}
-                <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="w-full bg-white p-4 md:p-6 rounded-lg">
-                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Drone Footage</h2>
-                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                            Take a look at our guardrail installations from a unique perspective. Our drone footage
-                            showcases the precision and professionalism that go into every project.
-                        </p>
-                        <div className="mt-6">
-                            <video controls className="w-full rounded-lg">
-                                <source src="/GuardrailFootage.mp4" type="video/mp4"/>
-                                Your browser does not support the video tag.
-                            </video>
                         </div>
                     </div>
                 </div>

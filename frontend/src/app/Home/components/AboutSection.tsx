@@ -49,15 +49,6 @@ const About = () => {
                     <div className="mb-2 p-6 rounded-lg bg-white text-left">
                         <ul className="space-y-16">
                             <li className="flex flex-col lg:flex-row items-start">
-                                <FaBuilding style={{fontSize: '10rem'}} className="text-yellow-500 mt-1 mr-3"/>
-                                <div>
-                                    <h3 className="text-4xl font-bold">Built To Last</h3>
-                                    <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
-                                        San Bar Construction Corp. provides a comprehensive range of services, including permanent roadway sign design and manufacturing, roadway construction, pavement marking, guardrail and cable barrier installation, rumble strip installation, overhead sign structure installation, and water and sand blasting services.
-                                    </p>
-                                </div>
-                            </li>
-                            <li className="flex flex-col lg:flex-row items-start">
                                 <FaUsers style={{fontSize: '10rem'}} className="text-yellow-500 mt-1 mr-3"/>
                                 <div>
                                     <h3 className="text-4xl font-bold">Family Owned Business</h3>

@@ -11,6 +11,7 @@ export default function Footer() {
                         <strong className="text-2xl text-pretty">Call Us:</strong> <span className="text-blue-500">+1 505-452-8000</span>
                     </p>
                     <p className="text-2xl font-semibold mb-2">
+
                         <strong>Email:</strong> contact@sanbarcc.com
                     </p>
                     <p className="text-xl mb-4 text-yellow-500">
@@ -23,14 +24,14 @@ export default function Footer() {
                     <ul className="flex space-x-4 text-white mb-4 text-lg">
                         <li><a href='/' className="hover:text-yellow-500">Home</a></li>
                         <li><a href='/about-us' className="hover:text-yellow-500">About Us</a></li>
-                        <li><a href='/services' className="hover:text-yellow-500">Services</a></li>
-                        <li><a href='/Safety-Products' className="hover:text-yellow-500">Retail</a></li>
-                        <li><a href='/projects' className="hover:text-yellow-500">Projects</a></li>
+                        <li><a href='/services' className="hover:text-yellow-500">Contracting Services</a></li>
+                        <li><a href='/Safety-Products' className="hover:text-yellow-500">Retail Services</a></li>
+                        <li><a href='/job-opportunities' className="hover:text-yellow-500">Job Opportunities</a></li>
                         <li><a href='/contact-us' className="hover:text-yellow-500">Contact Us</a></li>
                     </ul>
                     <img src="/SanBarTextLogo1.webp" alt="SanBar Logo" className="w-96 p-4 mb-4" />
                     <div className="grid grid-cols-2 gap-4 mt-4">
-                        <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="w-40 h-auto" />
+                        <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="w-40" />
                         <img src="/3M_CertifiedEB!1.webp" alt="3M certified" className="w-40 h-auto" />
                     </div>
                 </div>

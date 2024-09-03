@@ -18,9 +18,9 @@ const Nav = ({ openNav }:Props) => {
             <ul className="lg:flex hidden text-white items-center space-x-6 xl:space-x-10">
                 <li className="navlink"><a href='/'>Home</a></li>
                 <li className="navlink"><a href='../about-us'>About Us</a></li>
-                <li className="navlink"><a href='../services'>Services</a></li>
-                <li className="navlink"><a href="../Safety-Products">Retail</a></li>
-                <li className="navlink"><a href='../projects'>Projects</a></li>
+                <li className="navlink"><a href='../services'>Contract Services</a></li>
+                <li className="navlink"><a href="../Safety-Products">Retail Services</a></li>
+                <li className="navlink"><a href='../job-opportunities'>Job Opportunities</a></li>
                 <li className="contactUs"><a href='../contact-us'>Contact Us</a></li>
             </ul>
             {/*Burger menu */}

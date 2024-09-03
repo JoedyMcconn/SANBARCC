@@ -10,14 +10,8 @@ const servicesData = [
     {
         src: "/Striping1-1.webp",
         alt: "Striping",
-        title: "Striping",
-        description: "Professional striping services for parking lots and roads."
-    },
-    {
-        src: "/TrafficSafety1.webp",
-        alt: "Traffic Safety Equipment",
-        title: "Traffic Safety",
-        description: "Equipment and tools to ensure road safety."
+        title: "Pavement Markings",
+        description: "Professional striping services for roads and airports."
     },
     {
         src: "/Guardrail4-1.webp",

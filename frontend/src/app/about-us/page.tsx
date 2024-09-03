@@ -25,7 +25,22 @@ export default function AboutUs() {
                         <hr className="w-full mb-4 border-t-4 border-[#F7D117]" />
                         <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
                             <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
-                                <strong>San Bar Construction Corp. </strong> is a premier construction firm specializing in road construction services and comprehensive sign services, including printing, fabrication, and installation. As a 3M certified sign fabricator, we ensure top-notch quality and compliance with all regulations.
+                                <strong>San Bar Construction Corp. </strong> is a premier specialized construction company providing the following services:
+                                <ul className="mt-6">
+                                    <li className="text-lg font-semibold">Pavement Markings</li>
+                                    <li className="text-lg font-semibold">Guardrail & Cable Barrier
+                                        Installation/Repair
+                                    </li>
+                                    <li className="text-lg font-semibold">MUTCD Sign Design, Manufacturing, and
+                                        Installation
+                                    </li>
+                                    <li className="text-lg font-semibold">Water Blasting Services</li>
+                                    <li className="text-lg font-semibold">Rumble Strip Installation</li>
+                                    <li className="text-lg font-semibold">Musical Road™</li>
+                                    <li className="text-lg font-semibold">Overhead Sign Structures</li>
+                                    <li className="text-lg font-semibold">Retail Shop</li>
+
+                                </ul>
                             </p>
                             <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
                                 We are dedicated to delivering high-quality, reliable solutions for the highway and road construction industry in New Mexico and the Southwest. Our team of experienced professionals, state-of-the-art equipment, and commitment to excellence ensure that every project meets the highest standards of safety and quality. We pride ourselves on our reputation for integrity, innovation, and outstanding customer service.
@@ -116,30 +131,6 @@ export default function AboutUs() {
                     </div>
                     <div className="md:w-1/2 p-8">
                         <img src="/Employees1.JPG" alt="Employees" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
-                    </div>
-                </div>
-            </div>
-
-            {/* Contact Information */}
-            <div className="py-20 bg-[#F7D117] shadow-inner min-h-36">
-                <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-                    <div className="md:w-1/2 p-8">
-                        <h2 className="text-6xl font-bold mb-4 text-white">Contact Us</h2>
-                        <hr className="w-1/2 mb-4 border-t-4 border-black" />
-                        <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
-                            <p className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
-                                Contact us for a quote.
-                                <br /><br />
-                                <strong>Phone:</strong> (505)-452-8000
-                                <br />
-                                <strong>Email:</strong> contact@sanbarcc.com
-                                <br />
-                                <strong>Address:</strong> 9101 Broadway S.E. Albuquerque, NM 87105
-                            </p>
-                        </div>
-                    </div>
-                    <div className="md:w-1/2 p-8">
-                        <img src="/SanBarTextLogo1.webp" alt="Contact Us" className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
                 </div>
             </div>

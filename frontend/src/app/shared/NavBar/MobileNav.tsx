@@ -19,9 +19,9 @@ const MobileNav = ({showNav, closeNav}:Props) => {
                 transition-all duration-300 delay-300 w-[80%] sm:w-[60%] bg-yellow-500 space-y-10 z-[10006]`}>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="/">Home</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../about-us">About Us</a></li>
-                <li className="navlink text-[25px] sm:text-[30px]"><a href="../services">Services</a></li>
-                <li className="navlink text-[25px] sm:text-[30px]"><a href="../Safety-Products">Retail</a></li>
-                <li className="navlink text-[25px] sm:text-[30px]"><a href="../projects">Projects</a></li>
+                <li className="navlink text-[25px] sm:text-[30px]"><a href="../services">Contract Services</a></li>
+                <li className="navlink text-[25px] sm:text-[30px]"><a href="../Safety-Products">Retail Services</a></li>
+                <li><a href='/job-opportunities' className="hover:text-yellow-500">Job Opportunities</a></li>
                 <li className="navlink text-[25px] sm:text-[30px]"><a href="../contact-us">Contact Us</a></li>
                 {/* Cross Icon for closing navbar */}
                 <ImCross

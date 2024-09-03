@@ -83,7 +83,7 @@ const Shop = () => {
     return (
         <section className="my-24">
             <h2 className="text-6xl text-center font-extrabold text-yellow-400">
-                Check Out Our Shop!
+                Check Out San Bar's Retail Services!
             </h2>
             <h3 className='text-center text-2xl pb-5'>Some Items We Offer...</h3>
             <Carousel props={props}/>

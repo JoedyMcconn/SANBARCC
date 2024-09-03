@@ -66,7 +66,7 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
 
 export default function JobOpportunities() {
     return (
-        <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
+        <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/LogoBackground.png')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -78,18 +78,18 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
-                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center">
-                    Applicants are required to apply in person at the business location. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10 bg">
+                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-xl">
+                    Apply now online or in person. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
-                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center">
-                    San Bar is a Drug Free environment based on our Federal Contracts.
+                <p className=" font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
+                    San Bar is a Drug Free work place.
                 </p>
 
                 <JobPosition
                     title="Field Technician/Laborer"
                     icon={<FaHardHat />}
-                    summary="The Field Technician/Laborer will work in a team environment ensuring daily tasks of preparing and executing of projects are performed in a professional and safe manner. The Field Technician/Laborer will load and unload required material to and from work sites, operate various types of equipment required for the job in a safe manner to include company vehicles and perform basic maintenance and repair of equipment."
+                    summary="The Field Technician/Laborer will load and unload required material to and from work sites, operate various types of equipment required for the job in a safe manner to include company vehicles and perform basic maintenance and repair of equipment."
                     qualifications={[
                         "1 – 2 years of road construction experience preferred",
                         "Possess a CDL preferred",
@@ -118,7 +118,7 @@ export default function JobOpportunities() {
                     ]}
                     jobType="Full-time"
                     compensation="Dependent on Project"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
                 <JobPosition
@@ -145,8 +145,8 @@ export default function JobOpportunities() {
                         "Deliver orders to customers when necessary"
                     ]}
                     jobType="Full-time, Summer Hire"
-                    compensation="$12.00/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    compensation="$13.50/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
                 <JobPosition
@@ -172,7 +172,7 @@ export default function JobOpportunities() {
                     ]}
                     jobType="Full-time, Summer Hire"
                     compensation="$13.50/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, HWA, 401k"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
             </div>

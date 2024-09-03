@@ -142,37 +142,6 @@ function OverheadSignStructuresPage() {
                         </div>
                     </div>
                 </div>
-
-                {/* Section 3: Maintenance */}
-                <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
-                        <div className="w-full lg:w-1/2">
-                            <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Maintenance</h2>
-                            <hr className="w-full border-t-4 border-yellow-500 mb-4" />
-                            <div className='lg:hidden flex mb-4'>
-                                <MaintenanceImages />
-                            </div>
-                            <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                Regular maintenance is crucial for the longevity and safety of overhead sign structures. Our team provides comprehensive maintenance services to ensure that your signs remain in optimal condition.
-                            </p>
-                            <div>
-                                <p className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                    <strong>Maintenance Services</strong>
-                                </p>
-                                <ul className="list-disc list-inside">
-                                    <li>Inspection and Assessment</li>
-                                    <li>Structural Repairs</li>
-                                    <li>Repainting and Resurfacing</li>
-                                    <li>Sign Replacement</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <img src="/placeholder.png" alt="Maintenance" className="m-5 w-full h-auto rounded-lg" />
-                            <img src="/placeholder.png" alt="Maintenance" className="m-5 w-full h-auto rounded-lg" />
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     );
