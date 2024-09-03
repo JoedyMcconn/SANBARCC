@@ -74,7 +74,7 @@ const About = () => {
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full lg:w-1/2 p-6 mt-20">
+                <div className="w-full lg:w-1/2 p-6 mt-20 md:mt-56">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
                             <img src="/NMwelcomeSign1.webp" alt="Welcome to NM sign"
