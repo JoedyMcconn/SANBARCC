@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 import ShopSection from "@/app/Home/components/ShopSection";
 import JobOpportunitiesSection from "@/app/Home/components/JobOpportunitiesSection";
 import MusicalRoadSection from "@/app/Home/components/MusicalRoadSection";
-import ContractingServices from "@/app/Home/components/Contracting";
 
 // Lazy loading components
 const HeroSection = React.lazy(() => import('./components/HeroSection'));
@@ -34,7 +33,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>San Bar Construction Corp - Home</title>
+                <title>San Bar Construction Corp.</title>
                 <meta name="San Bar Construction Corp." content="San Bar Construction Corp - " />
             </Helmet>
             <Suspense fallback={<div className="">Loading...</div>}>
@@ -42,7 +41,6 @@ const Home = () => {
                 <AboutSection />
                 <JobOpportunitiesSection />
                 <ServicesSection />
-                <ContractingServices />
                 <MusicalRoadSection />
                 <ShopSection />
             </Suspense>

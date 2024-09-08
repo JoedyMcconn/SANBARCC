@@ -2,7 +2,6 @@ import React from 'react';
 import {
     FaTrafficLight,
     FaFlag,
-    FaMapMarkerAlt,
     FaPaintBrush,
     FaRoad,
     FaTape,
@@ -31,6 +30,39 @@ interface Product {
     alt: string;
     items: ProductItem[];
 }
+
+const rentals: Product[] = [
+    {
+        title: "Message Boards",
+        image: "/message-board.webp",
+        alt: "Message Board",
+        items: [
+            { text: "Solar Powered", icon: <FaLightbulb /> },
+            { text: "High visibility LEDs", icon: <FaCogs /> },
+            { text: "Portable", icon: <FaFlag /> },
+        ]
+    },
+    {
+        title: "Arrow Boards",
+        image: "/arrow-board.webp",
+        alt: "Arrow Board",
+        items: [
+            { text: "Solar Powered", icon: <FaLightbulb /> },
+            { text: "8 or 15 lamp options", icon: <FaFlag /> },
+            { text: "Directional Traffic Control", icon: <FaRoad /> },
+        ]
+    },
+    {
+        title: "Other Rentals",
+        image: "/rental-placeholder.webp",
+        alt: "Other Rentals",
+        items: [
+            { text: "Traffic Cones", icon: <FaTrafficLight /> },
+            { text: "Barricades", icon: <FaRoadBarrier /> },
+            { text: "Portable Signage", icon: <FaSign /> },
+        ]
+    }
+];
 
 const products: Product[] = [
     {
@@ -173,7 +205,7 @@ const products: Product[] = [
     },
     {
         title: "Caution Tape",
-        image: "/caution-tape.jpg",
+        image: "/caution-tape1.webp",
         alt: "Caution Tape",
         items: [
             { text: "3″ X 100′ roll yellow", icon: <FaTape /> },
@@ -231,8 +263,45 @@ const products: Product[] = [
 export default function SafetyProducts() {
     return (
         <section id="safety-products" className="relative min-h-screen py-16 bg-yellow-300 mt-8" style={{background: "url('/caution-background.jpg')"}}>
-            {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>
+
+            {/* Banner for Rentals */}
+            <div className="relative w-full h-96 bg-cover bg-center mb-10" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>
+                <div className="absolute inset-0 flex justify-center items-center">
+                    <div className="bg-black p-4">
+                        <div className="bg-yellow-500 p-4">
+                            <h1 className="text-4xl lg:text-5xl font-bold text-white text-center">Rentals</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Rentals Section */}
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
+                {rentals.map((rental, index) => (
+                    <div key={index} className="w-full bg-black p-6 rounded-lg mb-12">
+                        <div className="bg-white p-6 rounded-lg flex flex-wrap items-center">
+                            <div className="w-full md:w-1/2">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">{rental.title}</h2>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <ul className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    {rental.items.map((item, i) => (
+                                        <li key={i} className="pb-2.5 flex items-center">
+                                            <span className="mr-2">{item.icon}</span>
+                                            {item.text}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <div className="w-full md:w-1/2 flex justify-center items-center">
+                                <img src={rental.image} alt={rental.alt} className="m-5 w-full h-auto max-w-xs rounded-lg" />
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Banner for Safety Products */}
+            <div className="relative w-full h-96 bg-cover bg-center mb-10" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -242,13 +311,14 @@ export default function SafetyProducts() {
                 </div>
             </div>
 
+            {/* Safety Products Section */}
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
                 {products.map((product, index) => (
                     <div key={index} className="w-full bg-black p-6 rounded-lg mb-12">
                         <div className="bg-white p-6 rounded-lg flex flex-wrap items-center">
                             <div className="w-full md:w-1/2">
                                 <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">{product.title}</h2>
-                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
                                 <ul className="text-2xl md:text-xl text-gray-800 leading-relaxed mb-4 font-sans">
                                     {product.items.map((item, i) => (
                                         <li key={i} className="pb-2.5 flex items-center">
@@ -259,7 +329,7 @@ export default function SafetyProducts() {
                                 </ul>
                             </div>
                             <div className="w-full md:w-1/2 flex justify-center items-center">
-                                <img src={product.image} alt={product.alt} className="m-5 w-full h-auto max-w-xs rounded-lg"/>
+                                <img src={product.image} alt={product.alt} className="m-5 w-full h-auto max-w-xs rounded-lg" />
                             </div>
                         </div>
                     </div>

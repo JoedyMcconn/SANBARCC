@@ -7,21 +7,18 @@ export default function Footer() {
 
                 {/* Contact Info Section */}
                 <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                    <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
                     <p className='text-2xl font-semibold mb-2'>
-                        <strong className="text-2xl text-pretty">Call Us:</strong> <span className="text-blue-500">+1 505-452-8000</span>
-                    </p>
-                    <p className="text-2xl font-semibold mb-2">
-
-                        <strong>Email:</strong> contact@sanbarcc.com
+                        <strong className="text-2xl text-pretty">Call Us:</strong> <a href="tel:+15054528000" className="text-blue-500">+1 505-452-8000</a>
                     </p>
                     <p className="text-xl mb-4 text-yellow-500">
-                        <strong className="">9101 Broadway S.E</strong> Albuquerque, New Mexico
+                        <strong>Hours:</strong> Mon - Fri, 8 AM - 5 PM <br/> Closed on Weekends
                     </p>
                 </div>
 
                 {/* Logo Section */}
                 <div className="flex flex-col justify-center items-center md:items-start">
-                    <ul className="flex space-x-4 text-white mb-4 text-lg">
+                    <ul className="flex flex-wrap justify-center md:justify-start space-x-3 text-white mb-4 text-lg">
                         <li><a href='/' className="hover:text-yellow-500">Home</a></li>
                         <li><a href='/about-us' className="hover:text-yellow-500">About Us</a></li>
                         <li><a href='/services' className="hover:text-yellow-500">Contracting Services</a></li>
@@ -32,7 +29,7 @@ export default function Footer() {
                     <img src="/SanBarTextLogo1.webp" alt="SanBar Logo" className="w-96 p-4 mb-4" />
                     <div className="grid grid-cols-2 gap-4 mt-4">
                         <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="w-40" />
-                        <img src="/3M_CertifiedEB!1.webp" alt="3M certified" className="w-40 h-auto" />
+                        <img src="/" alt="3M certified" className="w-40 h-auto" />
                     </div>
                 </div>
 

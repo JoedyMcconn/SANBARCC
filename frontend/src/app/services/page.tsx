@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
+import React from "react";
 import {
     FaCheckCircle,
     FaRoad,
@@ -20,11 +20,6 @@ import {
 } from "react-icons/fa6";
 
 const Services: React.FC = () => {
-    const [activeCategory, setActiveCategory] = useState<'signage' | 'roadConstruction'>('signage');
-
-    const handleCategoryChange = (category: 'signage' | 'roadConstruction') => {
-        setActiveCategory(category);
-    };
 
     return (
         <section id="services" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
@@ -40,371 +35,300 @@ const Services: React.FC = () => {
                 </div>
             </div>
 
-            {/* Category Buttons */}
-            <div className="flex justify-center mt-8">
-                <button
-                    onClick={() => handleCategoryChange('signage')}
-                    className={`px-6 py-2 mx-2 text-lg font-bold rounded ${activeCategory === 'signage' ? 'bg-white text-black' : 'bg-black text-amber-400'} border border-yellow-300 transition duration-300`}
-                >
-                    Signage
-                </button>
-                <button
-                    onClick={() => handleCategoryChange('roadConstruction')}
-                    className={`px-6 py-2 mx-2 text-lg font-bold rounded ${activeCategory === 'roadConstruction' ? 'bg-white text-black' : 'bg-black text-white'} border border-yellow-300 transition duration-300`}
-                >
-                    Road Construction
-                </button>
-
-            </div>
-
             {/* Services List */}
             <div className="container relative mx-auto px-6 md:px-12 lg:px-16 py-20">
-                {activeCategory === 'signage' && (
-                    <>
-                        {/*Roadway signage*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Roadway Signs</h2>
 
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/RoadwaySignage1.JPG" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
-                                        </div>
+                {/* Roadway signage */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Roadway Signs</h2>
 
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            San Bar continually updates our procedures, materials, and equipment to meet or exceed project specifications and comply with the latest MUTCD regulations. We ensure your signs meet all Local, State, and Federal standards.
-                                            <br /><br />
-                                            As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structure mounted signs, including custom designs.
-                                        </p>
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/RoadwaySignage1.JPG" alt="Roadway Signs" className="w-full h-auto rounded-lg" />
+                                </div>
 
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaDirections/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span>
-                                            </li>
-                                            <li className="flex items-start"><FaExclamationTriangle/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span>
-                                            </li>
-                                            <li className="flex items-start"><FaArrowUpAZ/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span>
-                                            </li>
-                                            <li className="flex items-start"><FaSignHanging/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span>
-                                            </li>
-                                            <li className="flex items-start"><FaShieldAlt/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs/Banners</span>
-                                            </li>
-                                            <li className="flex items-start"><FaShieldAlt/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Temporary/Permanent construction Signs</span>
-                                            </li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/roadway-signs"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    San Bar continually updates our procedures, materials, and equipment to meet or exceed project specifications and comply with the latest MUTCD regulations. We ensure your signs meet all Local, State, and Federal standards.
+                                    <br /><br />
+                                    As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structure mounted signs, including custom designs.
+                                </p>
 
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/RoadwaySignage1-1.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
-                                    </div>
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaDirections /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span></li>
+                                    <li className="flex items-start"><FaExclamationTriangle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span></li>
+                                    <li className="flex items-start"><FaArrowUpAZ /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span></li>
+                                    <li className="flex items-start"><FaSignHanging /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span></li>
+                                    <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs/Banners</span></li>
+                                    <li className="flex items-start"><FaShieldAlt /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Temporary/Permanent Construction Signs</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/roadway-signs"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Erecting Overhead Sign Structures*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting
-                                            Overhead Sign Structures</h2>
-
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
-                                            <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures"
-                                                 className="w-auto h-64 rounded-lg -rotate-90"/>
-                                        </div>
-
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            If you've traveled any of the interstates in New Mexico, you've likely driven under a San Bar installed sign structure.
-                                           <br/> <br/>
-                                            San Bar also installs structures for Variable Message Systems, which are increasing in popularity on interstates nationwide.
-                                        </p>
-
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaScrewdriver/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span>
-                                            </li>
-                                            <li className="flex items-start"><FaGears/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span>
-                                            </li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/overhead-sign-structures"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures"
-                                             className="w-auto h-auto rounded-lg -rotate-90"/>
-                                    </div>
-                                </div>
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/RoadwaySignage1-1.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg" />
                             </div>
                         </div>
-                    </>
-                )}
+                    </div>
+                </div>
 
-                {activeCategory === 'roadConstruction' && (
-                    <>
+                {/* Erecting Overhead Sign Structures */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting Overhead Sign Structures</h2>
 
-                        {/*Pavement Markings*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Pavement Markings</h2>
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
+                                    <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures" className="w-auto h-64 rounded-lg -rotate-90" />
+                                </div>
 
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
-                                        </div>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    If you've traveled any of the interstates in New Mexico, you've likely driven under a San Bar installed sign structure.
+                                    <br /><br />
+                                    San Bar also installs structures for Variable Message Systems, which are increasing in popularity on interstates nationwide.
+                                </p>
 
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            San Bar provides quality pavement markings for roadways and parking areas, ensuring safety and efficiency. Using durable materials, we deliver precise, long-lasting results for highways, streets, parking lots, and custom projects. Our services include a wide range of marking options tailored to meet your specific needs.
-                                        </p>
-
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Hot applied Thermoplastic Pavement Markings</span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Painted Pavement Markings & Symbols</span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed (Tape) Pavement Markings & Symbols</span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed Thermoplastic Pavement Markings & Symbols</span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Contrast Pavement Markings & Symbols</span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Raised and Recessed Pavement Markers </span>
-                                            </li>
-                                            <li className="flex items-start"><FaRoad/><span
-                                                className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Decorative Pavement Markings & Symbols</span>
-                                            </li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/pavement-markings"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg"/>
-                                    </div>
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaScrewdriver /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span></li>
+                                    <li className="flex items-start"><FaGears /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/overhead-sign-structures"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        {/*Guardrail repair and installation */}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Guardrail: Installation & Repair</h2>
-
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
-                                        </div>
-
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            You can always expect high-quality guardrail installation and repair when choosing San Bar, ensuring roadway safety and protection. Using durable materials and state-of-the-art equipment, we deliver precise, long-lasting results for highways, city streets, and custom projects. Our comprehensive services offer a wide range of guardrail solutions to meet your specific needs and enhance infrastructure safety and functionality.
-                                        </p>
-
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaScrewdriver /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Installation</span></li>
-                                            <li className="flex items-start"><FaHardHat /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Repair</span></li>
-                                            <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Guardrail Solutions</span></li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/Guardrail"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/GuardRailTruck2-1.webp" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg"/>
-                                    </div>
-                                </div>
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/SignStructureDark1.webp" alt="Erecting Overhead Sign Structures" className="w-auto h-auto rounded-lg -rotate-90" />
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        {/*Rumble Strip Installation*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Rumble Strip Installation</h2>
+                {/* Pavement Markings */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Pavement Markings</h2>
 
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/placeholder.png" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
-                                        </div>
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg" />
+                                </div>
 
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            We also specialize in high-quality rumble strip installation, enhancing roadway safety and alertness. We deliver precise, long-lasting results for highways, city streets, and custom projects. Our services offer various rumble strip options to meet your needs and improve road safety.
-                                        </p>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    San Bar provides quality pavement markings for roadways and parking areas, ensuring safety and efficiency.
+                                </p>
 
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaRoadCircleExclamation /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Asphalt Rumble Strips</span></li>
-                                            <li className="flex items-start"><FaRoadSpikes /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Concrete Rumble Strips</span></li>
-                                            <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Rumble Strips</span></li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/Rumble-strip"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/RumbleStripExample1.webp" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg"/>
-                                    </div>
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Hot applied Thermoplastic Pavement Markings</span></li>
+                                    <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Painted Pavement Markings & Symbols</span></li>
+                                    <li className="flex items-start"><FaRoad /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed (Tape) Pavement Markings & Symbols</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/pavement-markings"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
-                        </div>
 
-                        {/*Cable Barrier Installation and repair*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Cable Barrier: Installation & Repair</h2>
-
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
-                                        </div>
-
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            We provide high-quality cable barrier installation and repair services, enhancing roadway safety and protection. Using durable materials, we deliver precise, long-lasting results for highways, medians, and custom projects. Our services include a wide range of cable barrier solutions to meet your specific needs and improve infrastructure.
-                                        </p>
-
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaRoadBarrier /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
-                                            <li className="flex items-start"><FaGears /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
-                                            <li className="flex items-start"><FaRoadCircleCheck /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/cable-barrier"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg"/>
-                                    </div>
-                                </div>
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/PavementMarking2-1.webp" alt="Pavement Markings" className="w-full h-auto rounded-lg" />
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        {/* Water blasting services*/}
-                        <div className="flex flex-wrap mb-12 md:mb-24">
-                            <div className="w-full bg-black p-6 rounded-lg">
-                                <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                                    {/* Text block */}
-                                    <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                        <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Water Blasting Services</h2>
+                {/* Guardrail repair and installation */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Guardrail: Installation & Repair</h2>
 
-                                        {/* Image block */}
-                                        <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                            <img src="/WaterBlastingTruck.webp" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
-                                        </div>
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/GuardRailTruck2.JPG" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg" />
+                                </div>
 
-                                        <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                        <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                            Waterblasting efficiently and completely removes all types of durable
-                                            traffic markings from asphalt and concrete without damaging the road
-                                            surface, even if it is grooved or porous. This method ensures quick, clean,
-                                            and cost-effective removal, leaving minimal to no scars on the roadway and
-                                            eliminating the need for resurfacing or secondary cleanup.
-                                            <br/><br/>
-                                            Our ultra high pressure waterblasters feature a double 8” head, allowing it to remove a 16” wide line in one pass, saving both time and money. The
-                                            adjustable water pressure ranges from 10,000 psi to 40,000 psi, enabling
-                                            precise control for delicate or aggressive removal as needed. The New Mexico
-                                            D.O.T. requires this process for both temporary and permanent traffic
-                                            marking removal.
-                                        </p>
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    You can always expect high-quality guardrail installation and repair when choosing San Bar, ensuring roadway safety and protection.
+                                </p>
 
-                                        <ul className="space-y-2">
-                                            <li className="flex items-start"><FaGlassWaterDroplet /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Water-Blasting Services</span></li>
-                                        </ul>
-                                        <div className="mt-6 text-center">
-                                            <a
-                                                href="/services/Water&Sand-Blasting"
-                                                className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                            >
-                                                Learn More
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    {/* Image block */}
-                                    <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                        <img src="/WaterBlastingTruck.webp" alt="Water & Sand Blasting" className="w-full h-auto rounded-lg"/>
-                                    </div>
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaScrewdriver /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Installation</span></li>
+                                    <li className="flex items-start"><FaHardHat /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guardrail Repair</span></li>
+                                    <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Guardrail Solutions</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/Guardrail"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
                                 </div>
                             </div>
+
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/GuardRailTruck2-1.webp" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg" />
+                            </div>
                         </div>
-                    </>
-                )}
+                    </div>
+                </div>
+
+                {/* Rumble Strip Installation */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Rumble Strip Installation</h2>
+
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/RumbleStripExample1.webp" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg" />
+                                </div>
+
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    We also specialize in high-quality rumble strip installation, enhancing roadway safety and alertness.
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaRoadCircleExclamation /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Asphalt Rumble Strips</span></li>
+                                    <li className="flex items-start"><FaRoadSpikes /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Concrete Rumble Strips</span></li>
+                                    <li className="flex items-start"><FaCheckCircle /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Rumble Strips</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/Rumble-strip"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/RumbleStripExample1.webp" alt="Rumble Strip Installation" className="w-full h-auto rounded-lg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Cable Barrier Installation and repair */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Cable Barrier: Installation & Repair</h2>
+
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg" />
+                                </div>
+
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    We provide high-quality cable barrier installation and repair services, enhancing roadway safety and protection.
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaRoadBarrier /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
+                                    <li className="flex items-start"><FaGears /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
+                                    <li className="flex items-start"><FaRoadCircleCheck /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/cable-barrier"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/cableBarrier.webp" alt="Cable Barrier: Installation & Repair" className="w-full h-auto rounded-lg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Water Blasting Services */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Water Blasting Services</h2>
+
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/WaterBlastingTruck.webp" alt="Water Blasting" className="w-full h-auto rounded-lg" />
+                                </div>
+
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4" />
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    Waterblasting efficiently and completely removes all types of durable traffic markings from asphalt and concrete without damaging the road surface, even if it is grooved or porous.
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaGlassWaterDroplet /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Water-Blasting Services</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/Water&Sand-Blasting"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/WaterBlastingTruck.webp" alt="Water Blasting" className="w-full h-auto rounded-lg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     );

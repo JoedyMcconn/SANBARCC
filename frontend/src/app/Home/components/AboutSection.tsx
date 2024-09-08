@@ -33,8 +33,8 @@ const About = () => {
                  className="relative min-h-screen py-20 bg-black road-border">
             <div className="container relative text-center mx-auto px-6 md:px-12 lg:px-16 lg:flex">
                 {/* Text block */}
-                <div className="w-full lg:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto">
-                    <div className="relative mb-12">
+                <div className="w-full lg:w-1/2 text-center max-w-2xl z-10 p-6 md:p-12 mx-auto lg:mt-20">
+                    <div className="relative">
                         <div className="flex justify-center mb-4">
                             <div className="bg-yellow-500 p-2 mx-5">
                                 <div className="bg-black p-4 shadow-lg">
@@ -42,30 +42,22 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-
                         <hr className="border-t-4 border-yellow-500 mt-8 mb-8"/>
                     </div>
 
                     <div className="mb-2 p-6 rounded-lg bg-white text-left">
-                        <ul className="space-y-16">
-                            <li className="flex flex-col lg:flex-row items-start">
-                                <FaUsers style={{fontSize: '10rem'}} className="text-yellow-500 mt-1 mr-3"/>
-                                <div>
-                                    <h3 className="text-4xl font-bold">Family Owned Business</h3>
-                                    <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
-                                        As a locally owned, family-run construction company, we have an innate
-                                        understanding of our State's needs, enabling us to provide tailored solutions.
-                                        Our deep roots within the State of New Mexico grant us a distinctive perspective
-                                        and insight into our State's preferences and demands.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+                        <h3 className="text-4xl font-bold">Family Owned Business</h3>
+                            <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
+                                As a locally owned, family-run construction company, we have an innate
+                                understanding of our State's needs, enabling us to provide tailored solutions.
+                                Our deep roots within the State of New Mexico grant us a distinctive perspective
+                                and insight into our State's preferences and demands.
+                            </p>
                     </div>
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full lg:w-1/2 p-6 mt-20 md:mt-56">
+                <div className="w-full lg:w-1/2 p-6">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
                             <img src="/NMwelcomeSign1.webp" alt="Welcome to NM sign"
