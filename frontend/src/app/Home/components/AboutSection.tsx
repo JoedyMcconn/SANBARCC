@@ -46,10 +46,12 @@ const About = () => {
                     </div>
 
                     <div className="mb-2 p-6 rounded-lg bg-white text-left">
-                        <h3 className="text-4xl font-bold">Family Owned Business</h3>
+
                             <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif">
                                 As a locally owned, family-run construction company, we have an innate
                                 understanding of our State's needs, enabling us to provide tailored solutions.
+                            </p>
+                            <p className="text-lg md:text-2xl text-gray-800 leading-relaxed font-serif mt-3">
                                 Our deep roots within the State of New Mexico grant us a distinctive perspective
                                 and insight into our State's preferences and demands.
                             </p>
@@ -57,7 +59,7 @@ const About = () => {
                 </div>
 
                 {/* Images collage */}
-                <div className="w-full lg:w-1/2 p-6">
+                <div className="w-full lg:w-1/2 p-6 lg:mt-40">
                     <div className="grid grid-cols-2 gap-2 md:gap-4">
                         <div className="col-span-2 row-span-2">
                             <img src="/NMwelcomeSign1.webp" alt="Welcome to NM sign"

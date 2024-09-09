@@ -34,7 +34,7 @@ interface Product {
 const rentals: Product[] = [
     {
         title: "Message Boards",
-        image: "/message-board.webp",
+        image: "/MessageBoard.webp",
         alt: "Message Board",
         items: [
             { text: "Solar Powered", icon: <FaLightbulb /> },
@@ -44,7 +44,7 @@ const rentals: Product[] = [
     },
     {
         title: "Arrow Boards",
-        image: "/arrow-board.webp",
+        image: "/ArrowBoard.webp",
         alt: "Arrow Board",
         items: [
             { text: "Solar Powered", icon: <FaLightbulb /> },
@@ -77,7 +77,7 @@ const products: Product[] = [
     },
     {
         title: "Portable Sign Stand",
-        image: "/Buster-sign-flags.webp",
+        image: "/PortableSignStand.webp",
         alt: "Buster Sign Stand",
         items: [
             { text: "Designed to hold 24″ to 48″ signs", icon: <FaFlag /> },
@@ -88,7 +88,7 @@ const products: Product[] = [
     },
     {
         title: "Roll-up Sign",
-        image: "/Buster-sign.webp",
+        image: "/RollUpSigns.webp",
         alt: "Roll-up Sign",
         items: [
             { text: "All sizes", icon: <FaFlag /> },
@@ -99,7 +99,7 @@ const products: Product[] = [
     },
     {
         title: "Stop/Slow Paddles",
-        image: "/",
+        image: "/StopSlowPaddles.webp",
         alt: "Stop/Slow Paddles",
         items: [
             { text: "18″ or 24″ signs", icon: <FaFlag /> },

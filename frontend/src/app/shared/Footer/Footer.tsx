@@ -1,24 +1,31 @@
+"use client";
+
 import React from "react";
 
 export default function Footer() {
     return (
         <div className="pt-20 pb-12 bg-black text-white px-8 md:px-16">
-            <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
-                {/* Contact Info Section */}
-                <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left">
-                    <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
-                    <p className='text-2xl font-semibold mb-2'>
-                        <strong className="text-2xl text-pretty">Call Us:</strong> <a href="tel:+15054528000" className="text-blue-500">+1 505-452-8000</a>
-                    </p>
-                    <p className="text-xl mb-4 text-yellow-500">
-                        <strong>Hours:</strong> Mon - Fri, 8 AM - 5 PM <br/> Closed on Weekends
+                {/* Certification Logos and Address Section */}
+                <div className="flex flex-col items-left md:items-start text-center md:text-left lg:ml-[-5%]">
+                    <div className="flex flex-col items-center md:items-start mb-4">
+                        <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="h-48 lg:h-32 mb-4 lg:ml-[-20px]" />
+                        <div className="flex space-x-4">
+                            <img src="/" alt="3M certified" className="h-48 lg:h-36" />
+                            <img src="/NMDOT.webp" alt="NMDOT certified" className="h-48 lg:h-36" />
+                        </div>
+                    </div>
+                    <p className="text-lg lg:text-xl mt-6 lg:mt-4">
+                        San Bar Construction Corp. <br />
+                        5109 Edith Blvd NE, Albuquerque, NM 87107
                     </p>
                 </div>
 
-                {/* Logo Section */}
-                <div className="flex flex-col justify-center items-center md:items-start">
-                    <ul className="flex flex-wrap justify-center md:justify-start space-x-3 text-white mb-4 text-lg">
+                {/* Logo and Nav Links Section */}
+                <div className="flex flex-col items-center w-full md:w-96 lg:w-[140%] lg:ml-[-22%]"> {/* Adjusted left margin */}
+                    <img src="/SanBarTextLogo1.webp" alt="SanBar Logo" className="w-80 lg:w-96 mb-4 mx-auto" />
+                    <ul className="flex flex-wrap justify-center space-x-4 text-white mb-4 text-lg lg:text-xl">
                         <li><a href='/' className="hover:text-yellow-500">Home</a></li>
                         <li><a href='/about-us' className="hover:text-yellow-500">About Us</a></li>
                         <li><a href='/services' className="hover:text-yellow-500">Contracting Services</a></li>
@@ -26,28 +33,39 @@ export default function Footer() {
                         <li><a href='/job-opportunities' className="hover:text-yellow-500">Job Opportunities</a></li>
                         <li><a href='/contact-us' className="hover:text-yellow-500">Contact Us</a></li>
                     </ul>
-                    <img src="/SanBarTextLogo1.webp" alt="SanBar Logo" className="w-96 p-4 mb-4" />
-                    <div className="grid grid-cols-2 gap-4 mt-4">
-                        <img src="/TopLeftHeroLogos1.webp" alt="ACON New Mexico & ATSSA" className="w-40" />
-                        <img src="/" alt="3M certified" className="w-40 h-auto" />
-                    </div>
                 </div>
 
-                {/* Address, Map and Nav Links Section */}
-                <div className="flex flex-col justify-center items-center md:items-end text-center md:text-right relative">
-                    <div className="map-responsive mb-4 w-full sm:w-auto sm:mx-auto md:mr-0">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.730949373761!2d-106.66392302489504!3d34.963351569075954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87220f1a42e3582f%3A0xfb330061da02f7fb!2sSan%20Bar%20Construction%20Corp.!5e0!3m2!1sen!2sus!4v1714607603120!5m2!1sen!2sus"
-                            width="90%"
-                            height="250px"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            title="San Bar Construction Location"
-                        ></iframe>
-                    </div>
+                {/* Contact Info Section */}
+                <div className="flex flex-col justify-center items-center md:items-start md:text-left lg:ml-40">
+                    <p className="text-6xl lg:text-7xl font-semibold mb-2">Call Us:</p>
+                    <p className="text-2xl lg:text-3xl text-center md:text-left">
+                        <a href="tel:+15054528000" className="text-blue-500 hover:text-yellow-500">+1 505-452-8000</a>
+                    </p>
+                    <p className="text-2xl lg:text-3xl mt-7 text-yellow-500">
+                        <strong>Hours:</strong>
+                    </p>
+                    <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                    <p>Saturday - Sunday: Closed</p>
                 </div>
             </div>
+
+            {/* Mobile Stacking */}
+            <style jsx>{`
+                @media (max-width: 768px) {
+                    .flex-col {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .space-x-4 {
+                        flex-direction: column;
+                        space-y-4;
+                    }
+                    .h-48 {
+                        height: auto;
+                        width: 100%;
+                    }
+                }
+            `}</style>
         </div>
     );
 }

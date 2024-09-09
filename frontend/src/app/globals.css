@@ -1,8 +1,11 @@
+/* Import Tailwind CSS base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Components Layer */
 @layer components {
+  /* Contact Us Button */
   .contactUs {
     @apply relative text-2xl w-fit block transition-all duration-500;
     color: #FFE92E;
@@ -10,16 +13,18 @@
       @apply text-white scale-110; /* Changes color to white and grows in size */
     }
   }
+
+  /* Navigation Link Styling */
   .navlink {
     @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px]
     after:bg-yellow-500 after:w-full after:scale-x-0 after:hover:scale-100 after:transition-all after:duration-300
     after:origin-center;
   }
+
+  /* Navbar Styling */
   .navbar {
     @apply fixed top-0 left-0 right-0 z-50;
   }
-
-
 
   /* Yellow border for images */
   .yellow-border {
@@ -27,10 +32,9 @@
   }
 }
 
-
+/* Custom Base Layer */
 @layer base {
-
-  /* Image Slider */
+  /* Image Slider Transitions */
   .fade-slide-image {
     opacity: 0;
     transition: opacity 2.0s ease, transform 2.5s ease;
@@ -58,9 +62,7 @@
     transform: none;
   }
 
-
-/* Carousel */
-  /* Additional styles */
+  /* Carousel Styling */
   .carousel-container {
     max-width: 800px;
     margin: auto;
@@ -94,6 +96,7 @@
     background-color: white;
   }
 
+  /* Overlay Styling */
   .overlay {
     position: absolute;
     top: 0;
@@ -103,9 +106,10 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  /* Road Border Styling */
   .road-border {
     position: relative;
-    padding: 40px; /* Adjust padding to create space inside the border */
+    padding: 40px;
   }
 
   .road-border::before,
@@ -120,23 +124,21 @@
   }
 
   .road-border::before {
-    border: 2px solid #F7D117; /* Yellow borders */
-    border-left: 2px solid #F7D117; /* Left yellow border */
-    border-right: 2px solid #F7D117; /* Right yellow border */
+    border: 2px solid #F7D117;
+    border-left: 2px solid #F7D117;
+    border-right: 2px solid #F7D117;
     box-sizing: border-box;
   }
 
   .road-border::after {
-    border-top: 2px dashed white; /* White dashed line on top */
-    border-bottom: 2px dashed white; /* White dashed line on bottom */
-    border-left: 2px solid #F7D117; /* Left yellow border */
-    border-right: 2px solid #F7D117; /* Right yellow border */
-    top: 10px; /* Adjust spacing between yellow lines and dashed white line */
+    border-top: 2px dashed white;
+    border-bottom: 2px dashed white;
+    border-left: 2px solid #F7D117;
+    border-right: 2px solid #F7D117;
+    top: 10px;
     bottom: 10px;
     left: 10px;
     right: 10px;
     box-sizing: border-box;
   }
-
 }
-
