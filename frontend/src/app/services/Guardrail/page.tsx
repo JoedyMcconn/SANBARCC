@@ -3,7 +3,7 @@ export default function GuardrailPage()  {
     return (
         <section id="guardrail" className="relative min-h-screen py-16 bg-[#F7D117] mt-8">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardRailTruck.JPG')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardrailTruck1.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -23,7 +23,7 @@ export default function GuardrailPage()  {
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/GuardRailTruck2.JPG" alt="Professional Guardrail Services"
+                                <img src="/GuardRailTruck2-1.webp" alt="Professional Guardrail Services"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 

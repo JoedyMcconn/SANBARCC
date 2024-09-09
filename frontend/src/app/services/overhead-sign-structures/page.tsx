@@ -45,7 +45,7 @@ const Carousel: React.FC<{ images: { src: string }[] }> = ({ images }) => {
 
 const ProfOverheadSignImages = () => {
     const images = [
-        { src: '/SignStructure4.JPG' },
+        { src: '/SignStructure4-1.webp' },
         { src: '/placeholder.png?text=Slide+2' },
         { src: '/placeholder.png?text=Slide+3' },
         { src: '/placeholder.png?text=Slide+4' },
@@ -83,7 +83,7 @@ function OverheadSignStructuresPage() {
     return (
         <section id="overhead-sign-structures" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/SignStructure4.JPG')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/SignStructure4-1.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -138,7 +138,7 @@ function OverheadSignStructuresPage() {
                             </div>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex lg:justify-center">
-                            <img src="/SignStructure1.JPG" alt="Installation Services" className="m-5 w-full h-auto rounded-lg" />
+                            <img src="/SignStructure1-1.webp" alt="Installation Services" className="m-5 w-full h-auto rounded-lg" />
                         </div>
                     </div>
                 </div>

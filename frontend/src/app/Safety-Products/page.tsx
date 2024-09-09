@@ -109,7 +109,7 @@ const products: Product[] = [
     },
     {
         title: "Street Name Brackets",
-        image: "/StreetSignBracket.png",
+        image: "/StreetSignBracket1.webp",
         alt: "Street Name Brackets",
         items: [
             { text: "5″ or 12″ ", icon: <FaSign /> },
@@ -119,7 +119,7 @@ const products: Product[] = [
     },
     {
         title: "Traffic Barrel Tape",
-        image: "/BarrelTape.png",
+        image: "/BarrelTape1.webp",
         alt: "Traffic Barrel Tape",
         items: [
             { text: "4″ x 150'", icon: <FaFlag /> },
@@ -129,7 +129,7 @@ const products: Product[] = [
     },
     {
         title: "Pavement Markers",
-        image: "/PavementMarkers.png",
+        image: "/PavementMarkers1.webp",
         alt: "Pavement Markers",
         items: [
             { text: "Chip seal markers", icon: <FaRoad /> },
@@ -139,7 +139,7 @@ const products: Product[] = [
     },
     {
         title: "Barrier Markers",
-        image: "/BarrierMarkers.png",
+        image: "/BarrierMarkers1.webp",
         alt: "Barrier Markers",
         items: [
             { text: "Delineator Buttons", icon: <FaBuildingCircleExclamation /> },
@@ -148,7 +148,7 @@ const products: Product[] = [
     },
     {
         title: "Hardware",
-        image: "/HardwarePoster.png",
+        image: "/HardwarePoster1.webp",
         alt: "Hardware",
         items: [
             { text: "Sign Hardware", icon: <FaBolt /> },
@@ -158,7 +158,7 @@ const products: Product[] = [
     },
     {
         title: "Traffic Paint & Glass Beads",
-        image: "/traffic-paint.jpeg",
+        image: "/",
         alt: "Traffic Paint & Glass Beads",
         items: [
             { text: "5 gallon water-based white, yellow, black, red & blue paint", icon: <FaPaintBrush /> },
@@ -167,7 +167,7 @@ const products: Product[] = [
     },
     {
         title: "Channelizer Barrels with Tire Collars",
-        image: "/traffic-channelizer-drums.jpg",
+        image: "/traffic-channelizer-drums1.webp",
         alt: "Channelizer Barrel with Tire Collars",
         items: [
             { text: "Bright fluorescent orange", icon: <FaLightbulb /> },
@@ -177,7 +177,7 @@ const products: Product[] = [
     },
     {
         title: "Vertical Panel",
-        image: "/VerticalPanel.png",
+        image: "/VerticalPanel1.webp",
         alt: "Vertical Panel",
         items: [
             { text: "8″ X 36″", icon: <FaRoadLock /> },
@@ -187,7 +187,7 @@ const products: Product[] = [
     },
     {
         title: "Type-2 & Type-3 Barricades",
-        image: "/Type2-3Barricades.jpg",
+        image: "/Type2-3Barricades1.webp",
         alt: "Type-2 & Type-3 Barricades",
         items: [
             { text: "Type-2 : 24″", icon: <FaRoadCircleExclamation /> },
@@ -196,7 +196,7 @@ const products: Product[] = [
     },
     {
         title: "Barricade Lights",
-        image: "/BarricadeLights.png",
+        image: "/BarricadeLights1.webp",
         alt: "Barricade Lights",
         items: [
             { text: "3-way-steady, flashing & continuous", icon: <FaLightbulb /> },
@@ -214,7 +214,7 @@ const products: Product[] = [
     },
     {
         title: "Panel Lights",
-        image: "/PanelLite.png",
+        image: "/PanelLite1.webp",
         alt: "Panel Lights",
         items: [
             { text: "Diamond Grade Sheeting", icon: <FaLightbulb /> },
@@ -225,7 +225,7 @@ const products: Product[] = [
     },
     {
         title: "Sand Bags",
-        image: "/sand-bags.jpg",
+        image: "/sand-bags1.webp",
         alt: "Sand Bags",
         items: [
             { text: "14″ x 27″", icon: <FaShieldAlt /> },
@@ -234,7 +234,7 @@ const products: Product[] = [
     },
     {
         title: "Temporary Removable Tape",
-        image: "/TempRemovableTape.jpg",
+        image: "/TempRemovableTape1.webp",
         alt: "Temporary Removable Tape",
         items: [
             { text: "White and Yellow", icon: <FaTape /> },
@@ -243,7 +243,7 @@ const products: Product[] = [
     },
     {
         title: "Foil Back Temporary Removable Tape",
-        image: "/FoilBackRemovableTape.png",
+        image: "/FoilBackRemovableTape1.webp",
         alt: "Temporary Removable Tape",
         items: [
             { text: "White and Yellow", icon: <FaTape /> },
@@ -252,7 +252,7 @@ const products: Product[] = [
     },
     {
         title: "Pennant Flagline",
-        image: "/PennantFlagline.png",
+        image: "/PennantFlagline1.webp",
         alt: "Pennant Flagline",
         items: [
             { text: "60 ft.", icon: <FaFlag /> },
@@ -262,7 +262,7 @@ const products: Product[] = [
 
 export default function SafetyProducts() {
     return (
-        <section id="safety-products" className="relative min-h-screen py-16 bg-yellow-300 mt-8" style={{background: "url('/caution-background.jpg')"}}>
+        <section id="safety-products" className="relative min-h-screen py-16 bg-yellow-300 mt-8" style={{background: "url('/caution-background1.webp')"}}>
 
             {/* Banner for Rentals */}
             <div className="relative w-full h-96 bg-cover bg-center mb-10" style={{ backgroundImage: "url('/PavementMarkingsBanner.jpg')" }}>

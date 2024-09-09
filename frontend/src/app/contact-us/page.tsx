@@ -1,23 +1,142 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactPage = () => {
-    // @ts-ignore
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        reason: '',
+        message: '',
+    });
+
+    const handleInputChange = (
+        e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    ) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+            alert('Form sent successfully!');
+            setFormData({
+                name: '',
+                email: '',
+                reason: '',
+                message: '',
+            });
+        } else {
+            alert('There was an error sending the form.');
+        }
+    };
+
     return (
-        <div className="contact-page">
-            <div className="form-container px-4 py-8 md:px-12 lg:px-16 bg-white">
+        <div className="contact-page grid grid-cols-1 lg:grid-cols-3 min-h-screen mt-40">
+            {/* Left Side Image Section */}
+            <div className="relative col-span-1">
+                {/* Background Image */}
+                <img
+                    src="/path-to-your-image.jpg"
+                    alt="Contact Us"
+                    className="object-cover w-full h-full"
+                />
+                {/* Contact Us text over the image */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <h1 className="text-white text-4xl lg:text-6xl font-bold">
+                        Contact Us
+                    </h1>
+                </div>
+            </div>
+
+            {/* Right Side Form Section */}
+            <div className="col-span-2 p-8 bg-white">
                 <div className="max-w-3xl mx-auto">
-                    <iframe
-                        width="100%"
-                        height="2000px"
-                        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAAKkefKJUNFkwRzFQUFZCRFZWQUZLVFNVWTY4MkFUMy4u&embed=true"
-                        frameBorder="0"
-                        marginWidth={0}
-                        marginHeight={0}
-                        style={{ border: 'none', maxWidth: '100%', maxHeight: '100%' }}
-                        allowFullScreen>
-                    </iframe>
+                    <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Name Field */}
+                        <div>
+                            <label htmlFor="name" className="block text-lg font-medium">
+                                Name:
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleInputChange}
+                                required
+                                className="border w-full px-3 py-2 mt-1"
+                            />
+                        </div>
+
+                        {/* Email Field */}
+                        <div>
+                            <label htmlFor="email" className="block text-lg font-medium">
+                                Email:
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleInputChange}
+                                required
+                                className="border w-full px-3 py-2 mt-1"
+                            />
+                        </div>
+
+                        {/* Reason for Inquiry Field */}
+                        <div>
+                            <label htmlFor="reason" className="block text-lg font-medium">
+                                Reason for Inquiry:
+                            </label>
+                            <select
+                                id="reason"
+                                name="reason"
+                                value={formData.reason}
+                                onChange={handleInputChange}
+                                required
+                                className="border w-full px-3 py-2 mt-1"
+                            >
+                                <option value="">Select a reason</option>
+                                <option value="General Inquiry">Estimating</option>
+                                <option value="Support">Materials / Supplies / Equipment sales/ Rentals</option>
+                                <option value="Sales">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        {/* Message Field */}
+                        <div>
+                            <label htmlFor="message" className="block text-lg font-medium">
+                                Message:
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleInputChange}
+                                required
+                                className="border w-full px-3 py-2 mt-1 h-32"
+                            />
+                        </div>
+
+                        {/* Submit Button */}
+                        <button
+                            type="submit"
+                            className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-200"
+                        >
+                            Submit
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

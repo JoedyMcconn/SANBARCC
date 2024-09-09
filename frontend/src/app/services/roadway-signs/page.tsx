@@ -6,7 +6,7 @@ export default function RoadwaySigns() {
     return (
         <section id="roadway-signs" className="relative min-h-screen py-16 bg-center bg-[#F7D117] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover" style={{ backgroundImage: "url('/SignShop1.JPG')" }}>
+            <div className="relative w-full h-96 bg-cover" style={{ backgroundImage: "url('/SignShop1.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">

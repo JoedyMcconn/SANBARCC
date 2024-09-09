@@ -148,7 +148,7 @@ const PavementMarkingsPage: React.FC = () => {
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img src="/placeholder.png" alt="Symbols and Legends"
-                                 className="m-5 w-full h-auto rounded-lg"/>
+                             className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Symbols and Legends"
                                  className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Symbols and Legends"
@@ -189,7 +189,7 @@ const PavementMarkingsPage: React.FC = () => {
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img src="/placeholder.png" alt="Raised Pavement Markers"
-                                 className="m-5 w-full h-auto rounded-lg"/>
+                             className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Raised Pavement Markers"
                                  className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="Raised Pavement Markers"
@@ -230,7 +230,7 @@ const PavementMarkingsPage: React.FC = () => {
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img src="/placeholder.png" alt="High-Performance Pavement Markings"
-                                 className="m-5 w-full h-auto rounded-lg"/>
+                             className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="High-Performance Pavement Markings"
                                  className="m-5 w-full h-auto rounded-lg"/>
                             <img src="/placeholder.png" alt="High-Performance Pavement Markings"

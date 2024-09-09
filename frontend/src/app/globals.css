@@ -106,39 +106,4 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  /* Road Border Styling */
-  .road-border {
-    position: relative;
-    padding: 40px;
-  }
-
-  .road-border::before,
-  .road-border::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
-  }
-
-  .road-border::before {
-    border: 2px solid #F7D117;
-    border-left: 2px solid #F7D117;
-    border-right: 2px solid #F7D117;
-    box-sizing: border-box;
-  }
-
-  .road-border::after {
-    border-top: 2px dashed white;
-    border-bottom: 2px dashed white;
-    border-left: 2px solid #F7D117;
-    border-right: 2px solid #F7D117;
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    box-sizing: border-box;
-  }
 }

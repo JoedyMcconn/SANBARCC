@@ -3,20 +3,18 @@ import React from "react";
 const MusicalRoad = () => {
     return (
         <section id="about" className="bg-white bg-gradient-to-r from-yellow-400/10 to-black/10 py-36">
-            <div className="text-center">
-                <h1 className="text-6xl font-extrabold text-gray-800 mb-4 text-center font-sans">
-                    Musical Roads
-                </h1>
-            </div>
-            {/* Underline */}
-            <div className="flex justify-center">
-                <hr className="my-4 border-t-4 border-amber-400 w-1/2 lg:w-1/3 mb-20"/>
+            <div className="flex justify-center mb-4">
+                <div className="bg-yellow-500 p-2 mx-5">
+                    <div className="bg-black p-4 shadow-lg">
+                        <h2 className="text-white text-3xl lg:text-8xl font-semibold">Musical Roads</h2>
+                    </div>
+                </div>
             </div>
 
-            <div className="container mx-auto px-6 lg:px-12">
+            <div className="container mx-auto px-6 lg:px-12 mt-20">
                 {/* Grid Layout for Large Screens */}
                 <div className="hidden lg:grid lg:grid-cols-2 gap-12 items-start">
-                    <div className="w-full h-full flex flex-col">
+                <div className="w-full h-full flex flex-col">
                         {/* Musical Road Logo on the left for large screens */}
                         <div className="relative w-full h-1/2 rounded-lg overflow-hidden shadow-2xl mb-8">
                             <img

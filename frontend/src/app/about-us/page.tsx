@@ -64,7 +64,7 @@ export default function AboutUs() {
 
                         {/* Image Section */}
                         <div className="md:w-1/2 mt-8 md:mt-0 border-8 border-[#F7D117] rounded-xl">
-                            <img src="/SignShop1.JPG" alt="Who We Are"
+                            <img src="/SignShop1-1.webp" alt="Who We Are"
                                  className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300"/>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ export default function AboutUs() {
 
                     {/* Image - Responsive Sizing */}
                     <div className="relative z-10 flex justify-center mb-10">
-                        <img src="/History2.jpg" alt="Our History"
+                        <img src="/History2-1.webp" alt="Our History"
                              className="w-full sm:w-3/4 md:w-1/2 h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
                     </div>
 
@@ -126,7 +126,7 @@ export default function AboutUs() {
                     {/* Image block */}
                     <div className="w-full md:w-1/2 p-6">
                         <div className="w-full h-96 rounded-lg overflow-hidden shadow-md mb-8 md:mb-0">
-                            <img src="/HossieHistory.JPG" alt="David 'Hossie' Sanchez"
+                            <img src="/HossieHistory1.webp" alt="David 'Hossie' Sanchez"
                                  className="w-full h-full object-cover rounded-lg shadow-2xl transform hover:scale-105 transition duration-300"/>
                         </div>
                     </div>
@@ -159,11 +159,16 @@ export default function AboutUs() {
 
 
             {/* Core Values */}
-            <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen">
+            <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen text-center">
+
+                <div className="bg-yellow-500 p-2 text-center max-w-2xl ml-40">
+                    <div className="bg-black p-4 shadow-lg">
+                        <h2 className="text-white text-3xl lg:text-6xl font-semibold">Our Core Values</h2>
+                    </div>
+                </div>
+
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                     <div className="md:w-1/2 p-8">
-                        <h2 className="text-6xl font-bold mb-4 text-gray-800">Our Core Values</h2>
-                        <hr className="w-1/2 mb-4 border-t-4 border-amber-400"/>
                         <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
                             <ul className="list-disc list-inside">
                                 <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">Integrity: We
@@ -182,7 +187,7 @@ export default function AboutUs() {
                         </div>
                     </div>
                     <div className="md:w-1/2 p-8">
-                        <img src="/Employees1.JPG" alt="Employees"
+                        <img src="/Employees1-1.webp" alt="Employees"
                              className="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300"/>
                     </div>
                 </div>

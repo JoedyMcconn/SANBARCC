@@ -2,25 +2,25 @@ import React from "react";
 
 const servicesData = [
     {
-        src: "/SignShop2-1.webp",
+        src: "/SanFidelSign.webp",
         alt: "Sign Printing",
         title: "Signage",
         description: "We offer high-quality signage for various purposes."
     },
     {
-        src: "/Striping1-1.webp",
+        src: "/HighwayStripingProject1.webp",
         alt: "Striping",
         title: "Pavement Markings",
         description: "Professional striping services for roads and airports."
     },
     {
-        src: "/Guardrail4-1.webp",
+        src: "/GuardRailTruck4.webp",
         alt: "Guard rails and repairs",
         title: "Guard Rail Repair/Installation",
         description: "Repair and install guard rails effectively."
     },
     {
-        src: "/ABQoverheadSign1.webp",
+        src: "/SignStructure3-1.webp",
         alt: "Overhead Signs and Structures",
         title: "Overhead Signs/Structures",
         description: "Overhead signs and structures for guidance."
@@ -47,14 +47,16 @@ const Services = () => {
 
 
                     <div className="max-w-screen-lg mx-auto">
-                        <div className="text-center">
-                            <h2 className="bg-[#F7D117] text-6xl lg:text-5xl font-bold text-center mb-8 border-4 text-black p-2 inline-block">
-                                Contracting Services
-                            </h2>
+                        <div className="flex justify-center mb-4">
+                            <div className="bg-yellow-500 p-2 mx-5 mb-12">
+                                <div className="bg-black p-4 shadow-lg">
+                                    <h2 className="text-white text-3xl lg:text-6xl font-semibold">Contracting Services</h2>
+                                </div>
+                            </div>
                         </div>
 
                         {/* Paragraph */}
-                        <div className=" justify-between items-center mb-8 space-y-6 mx-auto">
+                        <div className=" justify-between items-center mb-8 space-y-6 mx-auto mt-8 ">
                             <div
                                 className="bg-white text-black p-6 border-2 border-[#F7D117] rounded-2xl shadow-lg lg:w-auto">
                                 <p className="text-2xl font-serif">
@@ -64,11 +66,17 @@ const Services = () => {
                                     technologies.
                                 </p>
                                 <p className="text-2xl font-serif mt-3">
-                                    As the industry evolves, <strong>San Bar Construction Corp.</strong> will continue to adapt and meet its needs well into the future.
-                                    Whether we work as the prime or subcontractor, rest assured we will provide the highest level of quality and service to meet your needs.
+                                    As the industry evolves, <strong>San Bar Construction Corp.</strong> will continue
+                                    to adapt and meet its needs well into the future.
+                                    Whether we work as the prime or subcontractor, rest assured we will provide the
+                                    highest level of quality and service to meet your needs.
+                                </p>
+                                <p className="text-2xl font-serif mt-6">
+                                    A few services we provide include;
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </section>
 
@@ -81,7 +89,7 @@ const Services = () => {
                         <div key={service.title}
                              className="shadow-lg rounded-lg overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105">
                             <img src={service.src} alt={service.alt}
-                                 className="w-full h-60 object-cover "/>
+                                 className="w-full h-60 object-cover"/>
                             <div className="p-4 bg-white">
                                 <h2 className="font-bold text-xl mb-2 font-sans">{service.title}</h2>
                                 <p className="text-gray-700 font-serif">{service.description}</p>

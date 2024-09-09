@@ -67,7 +67,7 @@ const About = () => {
                                  data-direction="up"/>
                         </div>
                         <div className="col-span-1 row-span-1">
-                            <img src="/SanFidelSign.webp" alt="Striping"
+                            <img src="/TrafficTruck.webp" alt="Truck"
                                  className="fade-slide-image w-full h-full object-cover rounded-lg"
                                  data-direction="left"/>
                         </div>
