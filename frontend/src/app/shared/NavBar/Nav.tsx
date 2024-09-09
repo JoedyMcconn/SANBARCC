@@ -11,7 +11,7 @@ const Nav = ({ openNav }:Props) => {
 
             {/* Logo */}
             <div className="text-[35px] font-semibold text-white">
-                <img src='/SanBarTextLogo.png' alt="San Bar Logo" className="h-[75px] w-[160px]"/>
+                <img src='/SanBarTextLogo1.webp' alt="San Bar Logo" className="h-[75px] w-[160px]"/>
             </div>
 
             {/* Nav Links*/}
