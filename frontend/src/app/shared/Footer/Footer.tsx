@@ -46,7 +46,7 @@ export default function Footer() {
                     </p>
                     <p className="text-lg lg:text-xl mt-6 lg:mt-4">
                         San Bar Construction Corp. <br/>
-                        5109 Edith Blvd NE, Albuquerque, NM 87107
+                        9101 Broadway S.E Albuquerque, NM 87105
                     </p>
 
                 </div>

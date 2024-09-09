@@ -1,6 +1,4 @@
 import React from "react";
-import { FaRoadBarrier, FaGears, FaRoadCircleCheck } from 'react-icons/fa';
-
 export default function CableBarrier() {
     return (
         <div className="flex flex-wrap mb-12 md:mb-24">
@@ -21,9 +19,9 @@ export default function CableBarrier() {
                         </p>
 
                         <ul className="space-y-2">
-                            <li className="flex items-start"><FaRoadBarrier /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
-                            <li className="flex items-start"><FaGears /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
-                            <li className="flex items-start"><FaRoadCircleCheck /><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
+                            <li className="flex items-start"><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Installation</span></li>
+                            <li className="flex items-start"><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Cable Barrier Repair</span></li>
+                            <li className="flex items-start"><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Custom Cable Barrier Solutions</span></li>
                         </ul>
                         <div className="mt-6 text-center">
                             <a
