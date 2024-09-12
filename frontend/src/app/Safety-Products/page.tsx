@@ -167,7 +167,7 @@ const products: Product[] = [
         ]
     },
     {
-        title: "Traffic Paint & Glass Beads",
+        title: "OZARK Traffic Paint & Glass Beads",
         image: "/",
         alt: "Traffic Paint & Glass Beads",
         items: [
