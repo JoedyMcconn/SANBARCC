@@ -88,173 +88,6 @@ const Services: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Roadway signage */}
-                <div className="flex flex-wrap mb-12 md:mb-24">
-                    <div className="w-full bg-black p-6 rounded-lg">
-                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                            {/* Text block */}
-                            <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Roadway Signs</h2>
-
-                                {/* Image block */}
-                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                    <img src="/SanFidelSign.webp" alt="Roadway Signs"
-                                         className="w-full h-auto rounded-lg"/>
-                                </div>
-
-                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                    San Bar continually updates our procedures, materials, and equipment to meet or
-                                    exceed project specifications and comply with the latest MUTCD regulations. We
-                                    ensure your signs meet all Local, State, and Federal standards.
-                                    <br/><br/>
-                                    As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot
-                                    state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture
-                                    and install any type of sign, from single Handicap signs to large overhead structure
-                                    mounted signs, including custom designs.
-                                </p>
-
-                                <ul className="space-y-2">
-                                    <li className="flex items-start"><FaDirections/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span>
-                                    </li>
-                                    <li className="flex items-start"><FaExclamationTriangle/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span>
-                                    </li>
-                                    <li className="flex items-start"><FaArrowUpAZ/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span>
-                                    </li>
-                                    <li className="flex items-start"><FaSignHanging/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span>
-                                    </li>
-                                    <li className="flex items-start"><FaShieldAlt/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs/Banners</span>
-                                    </li>
-                                    <li className="flex items-start"><FaShieldAlt/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Temporary/Permanent Construction Signs</span>
-                                    </li>
-                                </ul>
-                                <div className="mt-6 text-center">
-                                    <a
-                                        href="/services/roadway-signs"
-                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Image block */}
-                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                <img src="/SanFidelSign.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                {/* Erecting Overhead Sign Structures */}
-                <div className="flex flex-wrap mb-12 md:mb-24">
-                    <div className="w-full bg-black p-6 rounded-lg">
-                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                            {/* Text block */}
-                            <div className="w-full lg:w-1/2 md:p-12">
-                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting Overhead
-                                    Sign Structures</h2>
-
-                                {/* Image block */}
-                                <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
-                                    <img src="/SignStructure3-1.webp" alt="Erecting Overhead Sign Structures"
-                                         className="w-auto h-64 rounded-lg"/>
-                                </div>
-
-                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                    If you've traveled any of the interstates in New Mexico, you've likely driven under
-                                    a San Bar installed sign structure.
-                                    <br/><br/>
-                                    San Bar also installs structures for Variable Message Systems, which are increasing
-                                    in popularity on interstates nationwide.
-                                </p>
-
-                                <ul className="space-y-2">
-                                    <li className="flex items-start"><FaScrewdriver/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span>
-                                    </li>
-                                    <li className="flex items-start"><FaGears/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span>
-                                    </li>
-                                </ul>
-                                <div className="mt-6 text-center">
-                                    <a
-                                        href="/services/overhead-sign-structures"
-                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Image block */}
-                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                <img src="/SignStructure3-1.webp" alt="Erecting Overhead Sign Structures"
-                                     className="w-auto h-auto rounded-lg "/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Pavement Markings */}
-                <div className="flex flex-wrap mb-12 md:mb-24">
-                    <div className="w-full bg-black p-6 rounded-lg">
-                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
-                            {/* Text block */}
-                            <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Pavement
-                                    Markings</h2>
-
-                                {/* Image block */}
-                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                    <img src="/IntersectionStriping1.webp" alt="Pavement Markings"
-                                         className="w-full h-auto rounded-lg"/>
-                                </div>
-
-                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
-                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
-                                    San Bar provides quality pavement markings for roadways and parking areas, ensuring
-                                    safety and efficiency.
-                                </p>
-
-                                <ul className="space-y-2">
-                                    <li className="flex items-start"><FaRoad/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Hot applied Thermoplastic Pavement Markings</span>
-                                    </li>
-                                    <li className="flex items-start"><FaRoad/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Painted Pavement Markings & Symbols</span>
-                                    </li>
-                                    <li className="flex items-start"><FaRoad/><span
-                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Preformed (Tape) Pavement Markings & Symbols</span>
-                                    </li>
-                                </ul>
-                                <div className="mt-6 text-center">
-                                    <a
-                                        href="/services/pavement-markings"
-                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-
-                            {/* Image block */}
-                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                <img src="/IntersectionStriping1.webp" alt="Pavement Markings"
-                                     className="w-full h-auto rounded-lg"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 {/* Guardrail repair and installation */}
                 <div className="flex flex-wrap mb-12 md:mb-24">
                     <div className="w-full bg-black p-6 rounded-lg">
@@ -266,7 +99,7 @@ const Services: React.FC = () => {
 
                                 {/* Image block */}
                                 <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                    <img src="/GuardRailTruck2-1.webp" alt="Guardrail: Installation & Repair"
+                                    <img src="/CableBarrierBanner.webp" alt="Guardrail: Installation & Repair"
                                          className="w-full h-auto rounded-lg"/>
                                 </div>
 
@@ -305,6 +138,57 @@ const Services: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Roadway signage */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg lg:flex justify-between items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 p-1 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Roadway Signs</h2>
+
+                                {/* Image block for small screens */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
+                                    <img src="/SignShop3.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg"/>
+                                </div>
+
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    San Bar continually updates our procedures, materials, and equipment to meet or exceed project specifications and comply with the latest MUTCD regulations. We ensure your signs meet all Local, State, and Federal standards.
+                                    <br/><br/>
+                                    As a 3M Certified™ Sign Fabricator, San Bar operates a 13,000-square-foot state-of-the-art sign shop, one of the largest in the Southwest. We can manufacture and install any type of sign, from single Handicap signs to large overhead structure mounted signs, including custom designs.
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaDirections/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Regulatory Signs</span></li>
+                                    <li className="flex items-start"><FaExclamationTriangle/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Warning Signs</span></li>
+                                    <li className="flex items-start"><FaArrowUpAZ/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Guide Signs</span></li>
+                                    <li className="flex items-start"><FaSignHanging/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Political Signs</span></li>
+                                    <li className="flex items-start"><FaShieldAlt/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Specialty Signs/Banners</span></li>
+                                    <li className="flex items-start"><FaShieldAlt/><span className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Temporary/Permanent Construction Signs</span></li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/roadway-signs"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Image block for large screens */}
+                            <div className="hidden lg:block lg:w-1/2 p-6 md:p-12">
+                                <div className="grid grid-cols-1 gap-4">
+                                    <img src="/SignShop3.webp" alt="Sign Shop" className="w-full h-auto rounded-lg"/>
+
+                                    <img src="/SignShopWarehouse.webp" alt="Roadway Signs" className="w-full h-auto rounded-lg mt-7"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 {/* Rumble Strip Installation */}
                 <div className="flex flex-wrap mb-12 md:mb-24">
@@ -414,8 +298,7 @@ const Services: React.FC = () => {
                         <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
                             {/* Text block */}
                             <div className="w-full lg:w-1/2 p-1 md:p-12">
-                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Water Blasting
-                                    Services</h2>
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Water Blasting</h2>
 
                                 {/* Image block */}
                                 <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
@@ -437,7 +320,7 @@ const Services: React.FC = () => {
                                 </ul>
                                 <div className="mt-6 text-center">
                                     <a
-                                        href="/services/Water&Sand-Blasting"
+                                        href="/services/WaterBlasting"
                                         className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
                                     >
                                         Learn More
@@ -555,6 +438,56 @@ const Services: React.FC = () => {
                     </div>
                 </div>
 
+                {/* Erecting Overhead Sign Structures */}
+                <div className="flex flex-wrap mb-12 md:mb-24">
+                    <div className="w-full bg-black p-6 rounded-lg">
+                        <div className="w-full bg-white p-6 rounded-lg flex lg:flex-wrap justify-center items-center">
+                            {/* Text block */}
+                            <div className="w-full lg:w-1/2 md:p-12">
+                                <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Erecting Overhead
+                                    Sign Structures</h2>
+
+                                {/* Image block */}
+                                <div className="lg:hidden flex w-full lg:w-1/2 my-20 md:my-24">
+                                    <img src="/SignStructure3-1.webp" alt="Erecting Overhead Sign Structures"
+                                         className="w-auto h-64 rounded-lg"/>
+                                </div>
+
+                                <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
+                                <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
+                                    If you've traveled any of the interstates in New Mexico, you've likely driven under
+                                    a San Bar installed sign structure.
+                                    <br/><br/>
+                                    San Bar also installs structures for Variable Message Systems, which are increasing
+                                    in popularity on interstates nationwide.
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-start"><FaScrewdriver/><span
+                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Installation Services</span>
+                                    </li>
+                                    <li className="flex items-start"><FaGears/><span
+                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Maintenance</span>
+                                    </li>
+                                </ul>
+                                <div className="mt-6 text-center">
+                                    <a
+                                        href="/services/overhead-sign-structures"
+                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
+                                    >
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            {/* Image block */}
+                            <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
+                                <img src="/SignStructure3-1.webp" alt="Erecting Overhead Sign Structures"
+                                     className="w-auto h-auto rounded-lg "/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

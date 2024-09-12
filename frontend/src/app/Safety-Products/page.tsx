@@ -53,6 +53,16 @@ const rentals: Product[] = [
         ]
     },
     {
+        title: "Impact Attenuator",
+        image: "/rental-placeholder.webp",
+        alt: "Impact Attenuator",
+        items: [
+            { text: "", icon: <FaTrafficLight /> },
+            { text: "", icon: <FaRoadBarrier /> },
+            { text: "P", icon: <FaSign /> },
+        ]
+    },
+    {
         title: "Other Rentals",
         image: "/rental-placeholder.webp",
         alt: "Other Rentals",
@@ -210,6 +220,16 @@ const products: Product[] = [
         items: [
             { text: "3″ X 100′ roll yellow", icon: <FaTape /> },
             { text: "Polyethylene (non-reflective)", icon: <FaTape /> }
+        ]
+    },
+    {
+        title: "Impact Attenuator",
+        image: "/rental-placeholder.webp",
+        alt: "Impact Attenuator",
+        items: [
+            { text: "", icon: <FaTrafficLight /> },
+            { text: "", icon: <FaRoadBarrier /> },
+            { text: "P", icon: <FaSign /> },
         ]
     },
     {

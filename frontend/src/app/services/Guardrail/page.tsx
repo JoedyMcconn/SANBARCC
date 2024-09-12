@@ -1,9 +1,9 @@
 import React from 'react';
 export default function GuardrailPage()  {
     return (
-        <section id="guardrail" className="relative min-h-screen py-16 bg-[#F7D117] mt-8">
+        <section id="guardrail" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
             {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/GuardrailTruck1.webp')" }}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/Guardrail4-1.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -23,7 +23,7 @@ export default function GuardrailPage()  {
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/GuardRailTruck2-1.webp" alt="Professional Guardrail Services"
+                                <img src="/CableBarrierBanner.webp" alt="Professional Guardrail Services"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 
@@ -53,7 +53,7 @@ export default function GuardrailPage()  {
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/placeholder.png" alt="Expertise and Experience"
+                                <img src="/GuardRailProject1.webp" alt="Expertise and Experience"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 
@@ -65,7 +65,7 @@ export default function GuardrailPage()  {
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">
-                            <img src="/placeholder.png" alt="Expertise and Experience"
+                            <img src="/GuardRailProject1.webp" alt="Expertise and Experience"
                                  className=" m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function GuardrailPage()  {
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/placeholder.png" alt="Safety and Compliance"
+                                <img src="/GuardRailTruck8.webp" alt="Safety and Compliance"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 
@@ -99,7 +99,7 @@ export default function GuardrailPage()  {
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">
-                            <img src="/placeholder.png" alt="Safety and Compliance"
+                            <img src="/GuardRailTruck8.webp" alt="Safety and Compliance"
                                  className=" m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>

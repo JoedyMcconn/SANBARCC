@@ -23,7 +23,7 @@ export async function POST(req: Request) {
         let recipient;
         switch (reason) {
             case 'Estimating':
-                recipient = 'Estimating@sanbarcc.com';
+                recipient = 'jdmconnell@gmail.com';
                 break;
             case 'Materials / Supplies / Equipment sales/ Rentals':
                 recipient = 'orders@sanbarcc.com';

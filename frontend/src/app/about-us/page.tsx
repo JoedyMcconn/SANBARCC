@@ -44,7 +44,7 @@ export default function AboutUs() {
                                         <span className="text-[#F7D117]">•</span> <span>MUTCD Sign Design, Manufacturing, and Installation</span>
                                     </li>
                                     <li className="text-xl font-sans flex items-center space-x-2">
-                                        <span className="text-[#F7D117]">•</span> <span>Water Blasting Services</span>
+                                        <span className="text-[#F7D117]">•</span> <span>Water Blasting</span>
                                     </li>
                                     <li className="text-xl font-sans flex items-center space-x-2">
                                         <span className="text-[#F7D117]">•</span> <span>Rumble Strip Installation</span>
@@ -73,7 +73,7 @@ export default function AboutUs() {
                     <div className="md:w-3/4 mt-10 p-6 bg-white border-8 border-[#F7D117] rounded-xl shadow-lg">
                         <p className="text-black text-2xl font-serif leading-relaxed">
                             We are dedicated to delivering high-quality, reliable solutions for the highway and road
-                            construction industry in New Mexico and the Southwest. <br /> Our team of experienced
+                            construction industry in New Mexico. <br /> Our team of experienced
                             professionals, state-of-the-art equipment, and commitment to excellence ensure that every
                             project meets the highest standards of safety and quality. We pride ourselves on our
                             reputation for integrity, innovation, and outstanding customer service.
@@ -88,12 +88,12 @@ export default function AboutUs() {
                 <div className="container mx-auto px-6 relative z-10">
 
                     {/* Header at the top */}
-                    <h2 className="text-6xl font-extrabold text-black mb-10 text-center border-b-4 border-black pb-4 tracking-wide uppercase">
+                    <h2 className="text-8xl font-extrabold text-black mb-10 text-center border-b-4 border-black pb-4 uppercase w-fit">
                         Our History
                     </h2>
 
                     {/* First Paragraph */}
-                    <div className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mb-10 mx-auto max-w-lg md:max-w-3xl text-left">
+                    <div className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mb-10 mx-auto max-w-lg md:max-w-3xl text-left ">
                         <p className="text-gray-800 leading-relaxed text-xl font-serif">
                             <strong className="font-bold">San Bar Construction Corp.</strong> was founded in 1990 by David "Hossie" Sanchez, starting as a pavement markings specialist operating out of a one-bay garage in Los Lunas, New Mexico. Over the years, the company has grown significantly, moving to a 34,000 sq. ft. facility in Albuquerque in 1999.
                         </p>
@@ -108,7 +108,7 @@ export default function AboutUs() {
                     {/* Second Paragraph */}
                     <div className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mx-auto max-w-lg md:max-w-3xl">
                         <p className="text-gray-800 leading-relaxed text-xl font-serif">
-                            From this strategic location, <strong className="font-bold">San Bar Construction Corp.</strong> provides comprehensive road construction services and specializes in the design, manufacture, and installation of signs. The company operates a retail store offering traffic safety items and PPE construction gear. We also sell and rent message boards, arrow boards, and impact attenuators.
+                            From this strategic location, <strong className="font-bold">San Bar Construction Corp.</strong> provides comprehensive road construction services and specializes in the design, manufacture, and installation of signs. The company operates a retail store offering traffic safety products. We also sell and rent message boards, arrow boards, and impact attenuators.
                         </p>
                     </div>
                 </div>
@@ -119,8 +119,8 @@ export default function AboutUs() {
             {/* Leadership Section */}
             <section className="py-20 bg-[#F7D117] shadow-inner h-full flex flex-col items-center">
                 {/* Header */}
-                <h2 className="text-8xl md:text-6xl text-center mb-4 text-white">Leadership</h2>
-                <hr className="w-full max-w-3xl mb-4 border-t-4 border-black"/>
+                <h2 className="text-8xl text-center mb-4 text-white">Leadership</h2>
+                <hr className="w-full max-w-lg mb-4 border-t-4 border-black"/>
 
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                     {/* Image block */}

@@ -108,7 +108,7 @@ function OverheadSignStructuresPage() {
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex lg:justify-center">
-                            <img src="/SignStructure3.JPG" alt="Professional Overhead Sign Structures" className="m-5 w-full h-auto rounded-lg" />
+                            <img src="/SignStructureDark1.webp" alt="Professional Overhead Sign Structures" className="m-5 w-full h-auto -rotate-90 rounded-lg" />
                         </div>
                     </div>
                 </div>

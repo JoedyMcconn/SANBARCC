@@ -2,9 +2,15 @@ import React from "react";
 
 const servicesData = [
     {
-        src: "/SanFidelSign.webp",
+        src: "/EFIprinter.webp",
         alt: "Sign Printing",
-        title: "Signage",
+        title: "Sign Manufacturing",
+        description: "We offer high-quality signage for various purposes."
+    },
+    {
+        src: "/SanFidelSign.webp",
+        alt: "Sign Installation",
+        title: "Sign Installation",
         description: "We offer high-quality signage for various purposes."
     },
     {
@@ -14,10 +20,22 @@ const servicesData = [
         description: "Professional striping services for roads and airports."
     },
     {
+        src: "/WaterBlastingTruck.webp",
+        alt: "Water Blasting Services",
+        title: "Water Blasting",
+        description: "High pressure water blasting"
+    },
+    {
         src: "/GuardRailTruck4.webp",
         alt: "Guard rails and repairs",
-        title: "Guard Rail Repair/Installation",
-        description: "Repair and install guard rails effectively."
+        title: "Guardrail Repair/Installation",
+        description: "Repair and install guardrails effectively."
+    },
+    {
+        src: "/",
+        alt: "Cable Barrier",
+        title: "Post and Cable Barrier",
+        description: "Post and Cable Barrier installation."
     },
     {
         src: "/SignStructure3-1.webp",
@@ -26,7 +44,7 @@ const servicesData = [
         description: "Overhead signs and structures for guidance."
     },
     {
-        src: "/RumbleStripProject1.webp",
+        src: "/RumbleStrips.webp",
         alt: "Rumble strip installation",
         title: "Rumble Strip Installation",
         description: "Rumble Strip Installation and service."
@@ -37,6 +55,7 @@ const servicesData = [
         title: "Airport Striping",
         description: "Lines and Symbols."
     }
+
 ];
 
 const Services = () => {

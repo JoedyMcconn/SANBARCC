@@ -33,12 +33,17 @@ const Hero = () => {
                     className="h-24"
                 />
                 <img
-                    src="/TopLeftHeroLogos1.webp"
-                    alt="ACON New Mexico & ATSSA"
+                    src="/ACONM.webp"
+                    alt="ACONM"
                     className="h-24"
                 />
                 <img
-                    src="/3M_CertifiedEB!1.webp"
+                    src="/ATSSA.webp"
+                    alt="ATTSA"
+                    className="h-24"
+                />
+                <img
+                    src="/Certified1.webp"
                     alt="3M certified"
                     className="h-24"
                 />
@@ -46,7 +51,7 @@ const Hero = () => {
 
             {/* Top Left Images for Large Screens */}
             <div
-                className="hidden md:flex absolute top-0 left-0 lg:flex lg:mt-10 md:mt-6 space-x-4 pt-6 md:h-40 md:mt-10">
+                className="hidden md:flex absolute top-0 left-0 lg:flex lg:mt-10 space-x-4 pt-6 md:h-40 md:mt-10">
                 <img
                     src="/NMDOT.webp"
                     alt="NM DOT"

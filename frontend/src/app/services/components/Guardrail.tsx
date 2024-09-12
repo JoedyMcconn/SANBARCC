@@ -12,7 +12,7 @@
 //
 //                         {/* Image block */}
 //                         <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-//                             <img src="/GuardRailTruck2-1.webp" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg" />
+//                             <img src="/CableBarrierBanner.webp" alt="Guardrail: Installation & Repair" className="w-full h-auto rounded-lg" />
 //                         </div>
 //
 //                         <hr className="w-full border-t-4 border-yellow-500 mb-4" />

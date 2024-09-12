@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="grid grid-cols-2 gap-4 mb-4">
                         <img src="/ACONM.webp" alt="ACON New Mexico" className="h-24 w-full object-contain" />
                         <img src="/ATSSA.webp" alt="ATTSA" className="h-24 w-full object-contain" />
-                        <img src="/Certified1.webp" alt="3M certified" className="h-48 w-full object-contain" />
+                        <img src="/CertifiedNEW.png" alt="3M certified" className="w-full h-40 object-contain" />
                         <img src="/NMDOT.webp" alt="NMDOT certified" className="h-36 w-full object-contain" />
                     </div>
                 </div>
@@ -46,7 +46,8 @@ export default function Footer() {
                     </p>
                     <p className="text-lg lg:text-xl mt-6 lg:mt-4">
                         San Bar Construction Corp. <br/>
-                        9101 Broadway S.E Albuquerque, NM 87105
+                        9101 Broadway S.E.<br />
+                        Albuquerque, NM 87105
                     </p>
 
                 </div>

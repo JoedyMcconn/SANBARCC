@@ -83,7 +83,7 @@ export default function JobOpportunities() {
                     Apply now online or in person. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
                 <p className=" font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
-                    San Bar is a Drug Free work place.
+                    San Bar is a Drug Free workplace.
                 </p>
 
                 <JobPosition
@@ -171,7 +171,33 @@ export default function JobOpportunities() {
                         "Operate a variety of saws and other equipment in the manufacturing process"
                     ]}
                     jobType="Full-time, Summer Hire"
-                    compensation="$13.50/Hr"
+                    compensation="$14.50/Hr"
+                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
+                />
+
+                <JobPosition
+                    title="Graphic Designer"
+                    icon={<FaSign />}
+                    summary="."
+                    qualifications={[
+                        "Detail oriented.",
+                        "Dependable and reliable.",
+                        "Ability to work in a fast paced environment.",
+                        "Team player with ability to work independently",
+                        "A self-starter",
+                        "Ability to multi-task",
+                        "Ability to lift 25-30 lbs.",
+                        "Stand for long periods of time.",
+                        "Knowledge and experience working with a tape measure preferred.",
+                        "Good communication skills."
+                    ]}
+                    responsibilities={[
+                        "Manufacture signs, banners, and digital printed media.",
+                        "Cut metal, wood, and other materials per designated order.",
+                        "Operate a variety of saws and other equipment in the manufacturing process"
+                    ]}
+                    jobType="Full-time, Summer Hire"
+                    compensation="$14.50/Hr"
                     benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
