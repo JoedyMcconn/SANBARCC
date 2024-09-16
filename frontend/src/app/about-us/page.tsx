@@ -134,11 +134,11 @@ export default function AboutUs() {
                     {/* Text block */}
                     <div className="w-full md:w-1/2 p-6">
                         <div className="p-6 bg-white rounded-2xl border-8 border-black">
-                            <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
+                            <p className="text-black leading-relaxed mb-6 text-left md:text-left font-serif text-xl">
                                 David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's
                                 success.
                             </p>
-                            <p className="text-black leading-relaxed mb-6 text-center md:text-left font-serif text-xl">
+                            <p className="text-black leading-relaxed mb-6 text-left md:text-left font-serif text-xl">
                                 Our team ensures every project meets the highest standards of quality and safety.
                                 Together, we bring innovation, integrity, and the best customer service to every
                                 endeavor, making <strong>San Bar Construction Corp.</strong> a trusted leader in the
@@ -159,9 +159,9 @@ export default function AboutUs() {
 
 
             {/* Core Values */}
-            <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen text-center">
+            <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen text-cente```r">
 
-                <div className="bg-yellow-500 p-2 text-center max-w-2xl ml-40">
+                <div className="bg-yellow-500 p-2 max-w-lg text-center ml-40">
                     <div className="bg-black p-4 shadow-lg">
                         <h2 className="text-white text-3xl lg:text-6xl font-semibold">Our Core Values</h2>
                     </div>

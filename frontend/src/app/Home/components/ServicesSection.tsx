@@ -32,7 +32,7 @@ const servicesData = [
         description: "Repair and install guardrails effectively."
     },
     {
-        src: "/",
+        src: "/cableBarrier.webp",
         alt: "Cable Barrier",
         title: "Post and Cable Barrier",
         description: "Post and Cable Barrier installation."

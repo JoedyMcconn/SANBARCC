@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { FaHardHat, FaTools, FaWarehouse, FaSign } from 'react-icons/fa';
 
 interface JobPositionProps {
@@ -82,13 +83,24 @@ export default function JobOpportunities() {
                 <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-xl">
                     Apply now online or in person. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
-                <p className=" font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
+                <p className="font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
                     San Bar is a Drug Free workplace.
                 </p>
 
+
+                <div className="flex justify-center">
+                    <Link href="/job-application">
+                        <button
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-xl shadow-xl mb-8"
+                        >
+                            Application
+                        </button>
+                    </Link>
+                </div>
+
                 <JobPosition
                     title="Field Technician/Laborer"
-                    icon={<FaHardHat />}
+                    icon={<FaHardHat/>}
                     summary="The Field Technician/Laborer will load and unload required material to and from work sites, operate various types of equipment required for the job in a safe manner to include company vehicles and perform basic maintenance and repair of equipment."
                     qualifications={[
                         "1 – 2 years of road construction experience preferred",
@@ -121,86 +133,7 @@ export default function JobOpportunities() {
                     benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
-                <JobPosition
-                    title="Warehouse Worker"
-                    icon={<FaWarehouse />}
-                    summary="The Warehouse Worker will perform a variety of functions that include receiving and processing incoming stock, materials or equipment verifying proper documentation. Load and unload vehicles utilizing forklift as required. Pick and fill orders from stock, pack and ship orders."
-                    qualifications={[
-                        "Regularly lift or move objects 10 to 50 lbs.",
-                        "Occasionally lift or move objects that weigh more than 100lbs utilizing equipment provided",
-                        "Frequently required to stand, walk, stoop, kneel, crouch or crawl",
-                        "Occasionally required to sit and climb or balance",
-                        "Dependable and reliable",
-                        "Good driving record",
-                        "Team player with ability to work independently"
-                    ]}
-                    responsibilities={[
-                        "Prepare orders by processing requests and supply orders, pull materials, pack boxes and place orders in delivery area",
-                        "Load and secure merchandise for transportation",
-                        "Unload trucks and check in merchandise",
-                        "Verify bill-of-lading and file appropriately",
-                        "Sort and place materials in designated areas",
-                        "Maintain a safe and clean environment; organize, clean, sweep, mop and keep areas the warehouse orderly",
-                        "Wear proper safety equipment and follow safety requirements",
-                        "Deliver orders to customers when necessary"
-                    ]}
-                    jobType="Full-time, Summer Hire"
-                    compensation="$13.50/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
-                />
-
-                <JobPosition
-                    title="Sign Shop Laborer"
-                    icon={<FaSign />}
-                    summary="San Bar Construction Corp. is a company specializing in fast paced road construction primarily focusing on roadway striping, signs and installation of guardrails and is currently hiring full time entry-level Sign Shop Laborers. Experience in the industry is not required and training will be provided to those with the desire to learn and advance with this dynamic company."
-                    qualifications={[
-                        "Detail oriented.",
-                        "Dependable and reliable.",
-                        "Ability to work in a fast paced environment.",
-                        "Team player with ability to work independently",
-                        "A self-starter",
-                        "Ability to multi-task",
-                        "Ability to lift 25-30 lbs.",
-                        "Stand for long periods of time.",
-                        "Knowledge and experience working with a tape measure preferred.",
-                        "Good communication skills."
-                    ]}
-                    responsibilities={[
-                        "Manufacture signs, banners, and digital printed media.",
-                        "Cut metal, wood, and other materials per designated order.",
-                        "Operate a variety of saws and other equipment in the manufacturing process"
-                    ]}
-                    jobType="Full-time, Summer Hire"
-                    compensation="$14.50/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
-                />
-
-                <JobPosition
-                    title="Graphic Designer"
-                    icon={<FaSign />}
-                    summary="."
-                    qualifications={[
-                        "Detail oriented.",
-                        "Dependable and reliable.",
-                        "Ability to work in a fast paced environment.",
-                        "Team player with ability to work independently",
-                        "A self-starter",
-                        "Ability to multi-task",
-                        "Ability to lift 25-30 lbs.",
-                        "Stand for long periods of time.",
-                        "Knowledge and experience working with a tape measure preferred.",
-                        "Good communication skills."
-                    ]}
-                    responsibilities={[
-                        "Manufacture signs, banners, and digital printed media.",
-                        "Cut metal, wood, and other materials per designated order.",
-                        "Operate a variety of saws and other equipment in the manufacturing process"
-                    ]}
-                    jobType="Full-time, Summer Hire"
-                    compensation="$14.50/Hr"
-                    benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
-                />
-
+                {/* Other JobPosition Components Here */}
             </div>
         </section>
     );
