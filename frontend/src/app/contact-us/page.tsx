@@ -1,6 +1,62 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useState } from "react";
+
+// Declare grecaptcha as a global object
+declare global {
+    interface Window {
+        grecaptcha: any;
+    }
+}
 
 export default function ContactForm() {
+    const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+
+    useEffect(() => {
+        // Load the reCAPTCHA script once
+        const script = document.createElement("script");
+        script.src = "https://www.google.com/recaptcha/api.js";
+        script.async = true;
+        script.defer = true;
+
+        // Append the script to the document head
+        document.head.appendChild(script);
+
+        script.onload = () => {
+            if (window.grecaptcha) {
+                window.grecaptcha.ready(() => {
+                    // Check if the reCAPTCHA widget has already been rendered
+                    const existingRecaptcha = document.getElementById("recaptcha-container")?.childElementCount;
+                    if (existingRecaptcha === 0) {
+                        // Render the reCAPTCHA widget if it hasn't been rendered yet
+                        window.grecaptcha.render("recaptcha-container", {
+                            sitekey: "6LdZKUYqAAAAAJgimqqGQG0cfJ4-IqWP3equbrMJ",
+                            callback: handleRecaptchaSuccess,
+                        });
+                    }
+                });
+            }
+        };
+    }, []);
+
+    // Function that is called when reCAPTCHA is completed successfully
+    const handleRecaptchaSuccess = (token: string) => {
+        setRecaptchaToken(token); // Save the token in state
+    };
+
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault(); // Prevent form submission
+
+        // Check if reCAPTCHA has been completed
+        if (!recaptchaToken) {
+            alert("Please complete the reCAPTCHA before submitting the form.");
+            return;
+        }
+
+        // If reCAPTCHA is completed, proceed with form submission
+        (event.target as HTMLFormElement).submit();
+    };
+
     return (
         <section className="mx-auto px-6 md:px-12 lg:px-16 py-20 mt-20 bg-black">
             <div className="flex justify-center mb-4">
@@ -10,7 +66,7 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>
-            <form action="https://getform.io/f/ajjewvja" method="POST" className="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <form action="https://getform.io/f/ajjewvja" method="POST" onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-lg">
 
                 {/* Name Field */}
                 <div className="mb-4">
@@ -50,6 +106,9 @@ export default function ContactForm() {
                     <textarea name="message" id="message" rows={5} required
                               className="w-full p-3 rounded-md border border-gray-300"></textarea>
                 </div>
+
+                {/* reCAPTCHA v2 widget */}
+                <div id="recaptcha-container" className="g-recaptcha mb-6"></div>
 
                 {/* Submit Button */}
                 <div className="flex justify-center">

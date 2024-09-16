@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import {Bebas_Neue } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/app/shared/NavBar/ResponsiveNav";
 import Footer from "@/app/shared/Footer/Footer";
+import Script from 'next/script';
 
 const bebas = Bebas_Neue({
-  weight:['400'],
-  subsets:['latin']});
+    weight: ['400'],
+    subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
-  title: "SanBar CC",
-  description: "San Bar Construction Corp. is a premier specialized Construction Company.",
+    title: "SanBar CC",
+    description: "San Bar Construction Corp. is a premier specialized Construction Company.",
 };
 
 export default function RootLayout({
@@ -34,6 +36,12 @@ export default function RootLayout({
             <meta property="og:image" content="/SanBarTextLogo-1.webp" />
             <meta property="og:url" content="https://www.sanbarcc.com" />
             <meta property="og:type" content="website" />
+
+            {/* Google reCAPTCHA v3 Script */}
+            <Script
+                src={`https://www.google.com/recaptcha/api.js?render=explicit`}
+                strategy="beforeInteractive"
+            />
         </head>
         <body className={bebas.className}>
         <ResponsiveNav />
