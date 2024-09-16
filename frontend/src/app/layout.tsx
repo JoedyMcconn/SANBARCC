@@ -10,7 +10,7 @@ const bebas = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "SanBar CC",
-  description: "SanBar Construction Corp.",
+  description: "San Bar Construction Corp. is a premier specialized Construction Company.",
 };
 
 export default function RootLayout({
@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
       <html lang="en">
       <head>
-
-          <link rel="icon" type="image/png" href="/sanbarconst.png" sizes="24x36"/>
-          <meta name="description" content="SanBar Construction Corp."/>
-          <title>SanBar Construction Corp.</title>
+          <link rel="icon" type="image/png" href="/sanbarconst.png" sizes="24x48"/>
+          <meta name="description"
+                content="San Bar Construction Corp specializes in road services, including pavement markings, guardrail installation, sign design, water blasting, and more."/>
+          <title>San Bar Construction Corp | Specialized Construction Company. </title>
       </head>
       <body className={bebas.className}>
       <ResponsiveNav/>

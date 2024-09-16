@@ -12,7 +12,7 @@ export default function Footer() {
                     <div className="grid grid-cols-2 gap-4 mb-4">
                         <img src="/ACONM.webp" alt="ACON New Mexico" className="h-24 w-full object-contain" />
                         <img src="/ATSSA.webp" alt="ATTSA" className="h-24 w-full object-contain" />
-                        <img src="/CertifiedNEW.png" alt="3M certified" className="w-full h-40 object-contain" />
+                        <img src="/3mLogo.webp" alt="3M certified" className="w-full h-24 mt-4 object-contain" />
                         <img src="/NMDOT.webp" alt="NMDOT certified" className="h-36 w-full object-contain" />
                     </div>
                 </div>
