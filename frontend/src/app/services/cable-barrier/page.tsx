@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CableBarrierPage() {
     return (
-        <section id="cable-barrier" className="relative min-h-screen py-16 bg-[#E0AF2A] mt-6">
+        <section id="cable-barrier" className="relative min-h-screen py-16 bg-bg-[#F7D117] mt-6">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center" style={{ backgroundImage: "url('/CableBarrierBanner.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">

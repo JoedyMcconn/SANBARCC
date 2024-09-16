@@ -368,14 +368,14 @@ const Services: React.FC = () => {
                                         className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Safety Enhancements</span>
                                     </li>
                                 </ul>
-                                <div className="mt-6 text-center">
-                                    <a
-                                        href="/services/musical-roads"
-                                        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"
-                                    >
-                                        Learn More
-                                    </a>
-                                </div>
+                                {/*<div className="mt-6 text-center">*/}
+                                {/*    <a*/}
+                                {/*        href="/services/musical-roads"*/}
+                                {/*        className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300"*/}
+                                {/*    >*/}
+                                {/*        Learn More*/}
+                                {/*    </a>*/}
+                                {/*</div>*/}
                             </div>
 
                             {/* Image block */}

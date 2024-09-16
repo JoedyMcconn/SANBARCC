@@ -18,8 +18,14 @@ export default function RootLayout({
                                    }: Readonly<{ children: React.ReactNode; }>) {
   return (
       <html lang="en">
+      <head>
+
+          <link rel="icon" type="image/png" href="/sanbarconst.png" sizes="24x36"/>
+          <meta name="description" content="SanBar Construction Corp."/>
+          <title>SanBar Construction Corp.</title>
+      </head>
       <body className={bebas.className}>
-      <ResponsiveNav />
+      <ResponsiveNav/>
       {children}
       <Footer/>
       </body>

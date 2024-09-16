@@ -117,7 +117,7 @@ const Services = () => {
                     ))}
                 </div>
                 <a href="/services"
-                   className="mt-12 inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300 shadow-md hover:shadow-lg">
+                   className="mt-12 inline-block bg-blue-500 hover:bg-blue-800 text-white font-sans py-3 px-7 rounded transition duration-300 shadow-md hover:shadow-lg">
                     View All Services
                 </a>
             </div>

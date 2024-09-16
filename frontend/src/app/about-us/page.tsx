@@ -2,18 +2,17 @@ import React from 'react';
 
 export default function AboutUs() {
     return (
-        <div className="bg-gray-100 mt-20">
+        <div className="bg-gray-100 mt-28">
             {/* Banner Section */}
-            <div
-                className="relative h-96 bg-cover bg-center flex items-center justify-center mt-6"
-                style={{backgroundImage: "url('/placeholder.png')"}}>
+            <div className="relative h-96 bg-cover bg-center flex items-center justify-center mt-12"
+                style={{backgroundImage: "url('/OtherProject1.webp')"}}>
 
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black opacity-70"></div>
-                {/* Banner Text */}
-                <div className="relative z-10 text-center text-white">
-                    <h1 className="text-6xl font-extrabold drop-shadow-lg">About Us</h1>
-                    <p className="mt-4 text-xl drop-shadow-lg">Learn more about the company.</p>
+                <div className="flex justify-center mb-4">
+                    <div className="bg-yellow-500 p-2 mx-5 mb-12">
+                        <div className="bg-black p-4 shadow-lg">
+                            <h2 className="text-white text-3xl lg:text-6xl font-semibold">About San Bar</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -118,9 +117,14 @@ export default function AboutUs() {
 
             {/* Leadership Section */}
             <section className="py-20 bg-[#F7D117] shadow-inner h-full flex flex-col items-center">
-                {/* Header */}
-                <h2 className="text-8xl text-center mb-4 text-white">Leadership</h2>
-                <hr className="w-full max-w-lg mb-4 border-t-4 border-black"/>
+                <div className="flex justify-center mb-4">
+
+                    <div className="bg-yellow-500 bg-opacity-70 p-2 mx-5 mb-12">
+                        <div className="bg-black p-4 shadow-lg">
+                            <h2 className="text-white text-3xl lg:text-6xl font-semibold">Leadership</h2>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
                     {/* Image block */}
@@ -151,7 +155,7 @@ export default function AboutUs() {
                 {/* Button */}
                 <div className="w-full text-center mt-10">
                     <a href="/leadership" id="Leadership" aria-label="Leadership"
-                       className="inline-block bg-black hover:bg-gray-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                       className="inline-block bg-black hover:bg-gray-500 text-white font-serif text-xl py-3 px-6 rounded-full shadow-lg transition duration-300">
                         Meet the Team
                     </a>
                 </div>

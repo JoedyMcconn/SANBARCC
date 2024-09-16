@@ -12,7 +12,7 @@ const JobOpportunitiesSection = () => {
                     </p>
                     <a
                         href="/job-opportunities"
-                        className="inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-6 rounded transition duration-300">
+                        className="inline-block bg-blue-500 hover:bg-yellow-500 text-white text-lg font-sans py-2 px-6 rounded transition duration-300">
                         View Job Opportunities
                     </a>
                 </div>

@@ -30,22 +30,22 @@ const Hero = () => {
                 <img
                     src="/NMDOT.webp"
                     alt="NM DOT"
-                    className="h-24"
+                    className="h-16 lg:mt-4"
                 />
                 <img
                     src="/ACONM.webp"
                     alt="ACONM"
-                    className="h-24"
+                    className="h-16"
                 />
                 <img
                     src="/ATSSA.webp"
                     alt="ATTSA"
-                    className="h-24"
+                    className="h-16 mt-2"
                 />
                 <img
-                    src="/Certified1.webp"
+                    src="/3mLogo.webp"
                     alt="3M certified"
-                    className="h-24"
+                    className="h-16 lg:h-24 mt-2"
                 />
             </div>
 

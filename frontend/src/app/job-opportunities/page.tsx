@@ -73,18 +73,21 @@ export default function JobOpportunities() {
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
-                            <h1 className="text-4xl lg:text-5xl font-bold text-white text-center">Job Opportunities</h1>
+                            <h1 className="text-4xl lg:text-7xl font-bold text-white text-center">Job Opportunities</h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10 bg">
+            <div className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-10">
                 <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-xl">
                     Apply now online or in person. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
                 <p className="font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
                     San Bar is a Drug Free workplace.
+                </p>
+                <p className="font-sans md:text-2xl lg:text-3xlxl text-gray-800 leading-relaxed mb-8 text-center bg-white rounded-2xl">
+                    To apply, please click the button below and submit your application.
                 </p>
 
 

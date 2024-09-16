@@ -61,16 +61,6 @@ const rentals: Product[] = [
             { text: "", icon: <FaRoadBarrier /> },
             { text: "P", icon: <FaSign /> },
         ]
-    },
-    {
-        title: "Other Rentals",
-        image: "/rental-placeholder.webp",
-        alt: "Other Rentals",
-        items: [
-            { text: "Traffic Cones", icon: <FaTrafficLight /> },
-            { text: "Barricades", icon: <FaRoadBarrier /> },
-            { text: "Portable Signage", icon: <FaSign /> },
-        ]
     }
 ];
 
@@ -168,7 +158,7 @@ const products: Product[] = [
     },
     {
         title: "OZARK Traffic Paint & Glass Beads",
-        image: "/",
+        image: "/ozarkPaint.webp",
         alt: "Traffic Paint & Glass Beads",
         items: [
             { text: "5 gallon water-based white, yellow, black, red & blue paint", icon: <FaPaintBrush /> },
