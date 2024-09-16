@@ -84,7 +84,7 @@ export default function JobOpportunities() {
                     Apply now online or in person. San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
                 <p className="font-bold md:text-2xl lg:text-4xl text-gray-800 leading-relaxed mb-8 font-sans text-center bg-white rounded-2xl">
-                    San Bar is a Drug Free workplace.
+                    San Bar is a Drug Free Workplace
                 </p>
                 <p className="font-sans md:text-2xl lg:text-3xlxl text-gray-800 leading-relaxed mb-8 text-center bg-white rounded-2xl">
                     To apply, please click the button below and submit your application.
@@ -94,9 +94,9 @@ export default function JobOpportunities() {
                 <div className="flex justify-center">
                     <Link href="/job-application">
                         <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-lg text-xl shadow-xl mb-8"
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-sans py-4 px-6 rounded-lg text-2xl shadow-xl mb-8"
                         >
-                            Application
+                            Apply Here
                         </button>
                     </Link>
                 </div>
@@ -136,7 +136,55 @@ export default function JobOpportunities() {
                     benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
                 />
 
-                {/* Other JobPosition Components Here */}
+                <JobPosition
+                    title="Sign Installer"
+                    icon={<FaSign />}
+                    summary="The Sign Installer will install various types of traffic signs and posts for roads, highways, and parking lots in accordance with MUTCD standards."
+                    qualifications={[
+                        "1 – 2 years of experience preferred",
+                        "Experience in sign installation or similar field",
+                        "Ability to read and follow installation plans",
+                        "Knowledge of MUTCD standards is a plus",
+                        "Ability to lift heavy materials and work in various weather conditions",
+                        "Possess a valid driver’s license"
+                    ]}
+                    responsibilities={[
+                        "Install road signs, poles, and other traffic control devices",
+                        "Read and interpret sign placement instructions and blueprints",
+                        "Operate tools and equipment safely",
+                        "Follow safety procedures at all times",
+                        "Travel to various job sites to install signs",
+                        "Other duties as assigned"
+                    ]}
+                    jobType="Full-time"
+                    compensation="$14.50"
+                    benefits="Medical, Dental, Vision Insurance, 401k, Paid Holidays"
+                />
+
+                <JobPosition
+                    title="Warehouse Laborer"
+                    icon={<FaWarehouse />}
+                    summary="The Warehouse Technician will manage the receiving, storing, and shipping of materials and equipment needed for construction projects."
+                    qualifications={[
+                        "2+ years of warehouse or logistics experience",
+                        "Knowledge of construction materials and equipment",
+                        "Ability to operate forklifts and other warehouse equipment",
+                        "Organizational skills and attention to detail",
+                        "Ability to lift heavy materials",
+                        "Possess a valid driver’s license"
+                    ]}
+                    responsibilities={[
+                        "Receive and verify incoming materials and equipment",
+                        "Organize and store items in the warehouse",
+                        "Prepare materials for delivery to job sites",
+                        "Maintain accurate inventory records",
+                        "Ensure the cleanliness and safety of the warehouse",
+                        "Other duties as assigned"
+                    ]}
+                    jobType="Full-time"
+                    compensation="$13.50"
+                    benefits="Medical, Dental, Vision Insurance, 401k, Paid Holidays"
+                />
             </div>
         </section>
     );

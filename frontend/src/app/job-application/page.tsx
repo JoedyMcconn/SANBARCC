@@ -91,22 +91,13 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-semibold mb-2">Position(s) Applying for</label>
                     <div className="flex flex-wrap">
                         <label className="mr-4">
-                            <input type="checkbox" name="position" value="Laborer"/> Laborer
+                            <input type="checkbox" name="position" value="Laborer"/> Sign Shop Laborer
                         </label>
                         <label className="mr-4">
-                            <input type="checkbox" name="position" value="Striper"/> Striper
+                            <input type="checkbox" name="position" value="Striper"/> Warehouse Laborer
                         </label>
                         <label className="mr-4">
-                            <input type="checkbox" name="position" value="Driver"/> Driver
-                        </label>
-                        <label className="mr-4">
-                            <input type="checkbox" name="position" value="Striper Operator"/> Striper Operator
-                        </label>
-                        <label className="mr-4">
-                            <input type="checkbox" name="position" value="Truck Driver"/> Truck Driver
-                        </label>
-                        <label>
-                            <input type="checkbox" name="position" value="Clerical"/> Clerical
+                            <input type="checkbox" name="position" value="Driver"/> Field Technician
                         </label>
                     </div>
                 </div>

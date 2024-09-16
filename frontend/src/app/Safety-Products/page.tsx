@@ -54,7 +54,7 @@ const rentals: Product[] = [
     },
     {
         title: "Impact Attenuator",
-        image: "/rental-placeholder.webp",
+        image: "/ImpactAttenuator.webp",
         alt: "Impact Attenuator",
         items: [
             { text: "", icon: <FaTrafficLight /> },
