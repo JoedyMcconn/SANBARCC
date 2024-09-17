@@ -346,7 +346,7 @@ const Services: React.FC = () => {
 
                                 {/* Image block */}
                                 <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                    <img src="/MusicalRoadExample1.webp" alt="Musical Roads"
+                                    <img src="/MusicRoadLogo.webp" alt="Musical Roads"
                                          className="w-full h-auto rounded-lg"/>
                                 </div>
 

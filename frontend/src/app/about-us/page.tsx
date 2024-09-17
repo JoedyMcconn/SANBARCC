@@ -121,9 +121,9 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center relative">
+                <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-16 relative">
                     {/* Text block */}
-                    <div className="w-full md:w-1/2 p-6 z-10">
+                    <div className="w-full lg:w-1/2 p-6">
                         <div className="p-6 bg-white rounded-2xl border-8 border-black shadow-lg">
                             <p className="text-black leading-relaxed mb-6 text-left font-serif text-xl">
                                 David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's success.
@@ -137,17 +137,18 @@ export default function AboutUs() {
                         </div>
                     </div>
 
-                    {/* Floating Image block */}
-                    <img
-                        src="/HossieHistory1.webp"
-                        alt="David 'Hossie' Sanchez"
-                        className="absolute right-0 top-0 mt-20 w-2/3 h-auto lg:w-1/3 lg:mt-0 rounded-lg shadow-2xl transform hover:scale-105 transition duration-300 object-contain"
-                        style={{ zIndex: -1 }}
-                    />
+                    {/* Image block */}
+                    <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
+                        <img
+                            src="/HossieHistory1.webp"
+                            alt="David 'Hossie' Sanchez"
+                            className="w-full h-auto lg:w-4/5 rounded-lg shadow-2xl transform hover:scale-105 transition duration-300 object-contain"
+                        />
+                    </div>
                 </div>
 
                 {/* Button */}
-                <div className="w-full text-center mt-10 z-10">
+                <div className="w-full text-center mt-10">
                     <a
                         href="/leadership"
                         id="Leadership"
@@ -158,6 +159,7 @@ export default function AboutUs() {
                     </a>
                 </div>
             </section>
+
 
 
             {/* Core Values */}
