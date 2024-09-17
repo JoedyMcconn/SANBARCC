@@ -137,24 +137,24 @@ export default function JobOpportunities() {
                 />
 
                 <JobPosition
-                    title="Sign Installer"
+                    title="Sign Shop Laborer"
                     icon={<FaSign />}
                     summary="The Sign Installer will install various types of traffic signs and posts for roads, highways, and parking lots in accordance with MUTCD standards."
                     qualifications={[
-                        "1 – 2 years of experience preferred",
-                        "Experience in sign installation or similar field",
-                        "Ability to read and follow installation plans",
-                        "Knowledge of MUTCD standards is a plus",
-                        "Ability to lift heavy materials and work in various weather conditions",
-                        "Possess a valid driver’s license"
+                        "Detail oriented" ,
+                        "Dependable and reliable",
+                        "Ability to work in a fast-paced environment",
+                        "Work independently and in a team environment",
+                        "A self -starter",
+                        "Ability to multi-task",
+                        "Ability to lift 25 to 30 lbs",
+                        "Stand for long periods of time",
+                        "Knowledge and experience working with a tape measurer preferred",
                     ]}
                     responsibilities={[
-                        "Install road signs, poles, and other traffic control devices",
-                        "Read and interpret sign placement instructions and blueprints",
-                        "Operate tools and equipment safely",
-                        "Follow safety procedures at all times",
-                        "Travel to various job sites to install signs",
-                        "Other duties as assigned"
+                       "Manufacturing signs, banner and digital printed media",
+                        "Cut metal, wood and other materials per designated order",
+                        "Operate a variety of saws and equipment in the manufacturing process"
                     ]}
                     jobType="Full-time"
                     compensation="$14.50"

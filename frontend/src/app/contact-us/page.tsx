@@ -11,6 +11,7 @@ declare global {
 
 export default function ContactForm() {
     const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+    const [formAction, setFormAction] = useState("https://getform.io/f/ajjewvja"); // Default action for General Inquiry
 
     useEffect(() => {
         // Load the reCAPTCHA script once
@@ -44,6 +45,19 @@ export default function ContactForm() {
         setRecaptchaToken(token); // Save the token in state
     };
 
+    // Function to handle form action URL change
+    const handleReasonChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const selectedReason = event.target.value;
+
+        if (selectedReason === "Estimating") {
+            setFormAction("https://getform.io/f/bxojeexa");
+        } else if (selectedReason === "Materials/Equipment Sales/Rentals") {
+            setFormAction("https://getform.io/f/aejyxxwb");
+        } else {
+            setFormAction("https://getform.io/f/ajjewvja"); // Default for General Inquiry
+        }
+    };
+
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault(); // Prevent form submission
 
@@ -66,7 +80,7 @@ export default function ContactForm() {
                     </div>
                 </div>
             </div>
-            <form action="https://getform.io/f/ajjewvja" method="POST" onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <form action={formAction} method="POST" onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-lg">
 
                 {/* Name Field */}
                 <div className="mb-4">
@@ -92,7 +106,7 @@ export default function ContactForm() {
                 {/* Reason for Inquiry */}
                 <div className="mb-4">
                     <label htmlFor="reason" className="block text-2xl font-serif mb-2">Reason for Inquiry</label>
-                    <select name="reason" id="reason" required className="w-full p-3 rounded-md border border-gray-300">
+                    <select name="reason" id="reason" required className="w-full p-3 rounded-md border border-gray-300" onChange={handleReasonChange}>
                         <option value="">Select a reason</option>
                         <option value="Estimating">Estimating</option>
                         <option value="Materials/Equipment Sales/Rentals">Materials/Equipment Sales/Rentals</option>

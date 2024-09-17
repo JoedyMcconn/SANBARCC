@@ -82,7 +82,7 @@ const Hero = () => {
 
                 {/* Text centered for small screens */}
                 <div className="md:hidden text-white text-xl font-sans mb-8">
-                    <p>Serving all of New Mexico since 1989.</p>
+                    <p>Serving all of New Mexico since 1990.</p>
                     <p>Contact us today to find out how we can help.</p>
                 </div>
 

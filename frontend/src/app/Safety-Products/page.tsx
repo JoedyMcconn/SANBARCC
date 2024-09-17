@@ -34,7 +34,7 @@ interface Product {
 const rentals: Product[] = [
     {
         title: "Message Boards",
-        image: "/MessageBoard.webp",
+        image: "/MessageBoard2.webp",
         alt: "Message Board",
         items: [
             { text: "Solar Powered", icon: <FaLightbulb /> },
@@ -54,12 +54,10 @@ const rentals: Product[] = [
     },
     {
         title: "Impact Attenuator",
-        image: "/ImpactAttenuator.webp",
+        image: "/RentalAttenuator.webp",
         alt: "Impact Attenuator",
         items: [
-            { text: "", icon: <FaTrafficLight /> },
-            { text: "", icon: <FaRoadBarrier /> },
-            { text: "P", icon: <FaSign /> },
+            { text: "TBD", icon: <FaTrafficLight /> },
         ]
     }
 ];
@@ -303,7 +301,7 @@ export default function SafetyProducts() {
                                 </ul>
                             </div>
                             <div className="w-full md:w-1/2 flex justify-center items-center">
-                                <img src={rental.image} alt={rental.alt} className="m-5 w-full h-auto max-w-xs rounded-lg" />
+                                <img src={rental.image} alt={rental.alt} className="m-5 w-full h-auto rounded-lg" />
                             </div>
                         </div>
                     </div>

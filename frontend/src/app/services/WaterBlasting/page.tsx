@@ -35,7 +35,7 @@ const WaterBlastingPage: React.FC = () => {
                             </p>
                         </div>
                         <div className="w-full lg:w-1/2 hidden lg:flex">
-                            <img src="/waterblasters2.webp" alt="Professional Water Blasting Services"
+                            <img src="/WaterBlasting2.webp" alt="Professional Water Blasting Services"
                                  className="m-5 w-full h-auto rounded-lg"/>
                         </div>
                     </div>

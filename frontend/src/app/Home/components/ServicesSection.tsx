@@ -20,7 +20,7 @@ const servicesData = [
         description: "Professional striping services for roads and airports."
     },
     {
-        src: "/WaterBlastingTruck.webp",
+        src: "/WaterBlasting2.webp",
         alt: "Water Blasting Services",
         title: "Water Blasting",
         description: "High pressure water blasting"
@@ -50,7 +50,7 @@ const servicesData = [
         description: "Rumble Strip Installation and service."
     },
     {
-        src: "/Striping1-1.webp",
+        src: "/Airport3.webp",
         alt: "Airport Striping",
         title: "Airport Striping",
         description: "Lines and Symbols."
