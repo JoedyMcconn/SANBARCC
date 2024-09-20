@@ -63,9 +63,9 @@ const Hero = () => {
                     className="lg:h-[30vh]"
                 />
                 <img
-                    src="/3M_CertifiedEB!1.webp"
+                    src="/3m.webp"
                     alt="3M certified"
-                    className="lg:h-[20vh] lg:mt-10"
+                    className="lg:h-[10vh] lg:mt-20"
                 />
             </div>
 

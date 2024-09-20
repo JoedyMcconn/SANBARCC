@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en">
         <head>
-            <link rel="icon" type="image/png" href="/sanbarconst.png" sizes="24x36" />
+            <link rel="icon" type="image/png" href="/SanBarLogo2.png" sizes="24x36" />
 
             {/* Title for Google Search */}
             <title>San Bar Construction Corp | Specialized Construction Company | Sign Manufacturer </title>
