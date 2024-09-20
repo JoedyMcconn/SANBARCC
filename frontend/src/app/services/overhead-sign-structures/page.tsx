@@ -23,7 +23,7 @@ function OverheadSignStructuresPage() {
                             <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Professional Overhead Sign Structures</h2>
                             <hr className="w-full border-t-4 border-yellow-300 mb-4" />
                             <div className='lg:hidden flex mb-4'>
-                                <ProfOverheadSignImages />
+
                             </div>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
                                 Sign structures come in 3 different styles; Cantilever, Bridge or Butterfly (“T” shape) and in various sizes ranging from 18” in diameter up to the larger 40” diameter structures. The basic components of any sign structure installation consist of a drilled shaft; rebar cage, bolt assembly, 3000 psi concrete, sign structure and the sign(s) themselves. Some drilled shafts can reach up to 65’ in depth depending on the terrain and size of the structure.
@@ -42,7 +42,7 @@ function OverheadSignStructuresPage() {
                             <h2 className="text-2xl lg:text-6xl font-semibold text-black mb-4">Installation Services</h2>
                             <hr className="w-full border-t-4 border-yellow-500 mb-4" />
                             <div className='lg:hidden flex mb-4'>
-                                <InstallationServiceImages />
+
                             </div>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
                                 Our installation services ensure that your overhead sign structures are installed with precision and expertise. We use high-quality materials and advanced equipment to deliver reliable and durable installations.
