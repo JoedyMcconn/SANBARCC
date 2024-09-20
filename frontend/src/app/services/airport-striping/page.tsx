@@ -1,7 +1,7 @@
 import React from 'react';
 export default function AirportStripingPage() {
     return (
-        <section id="airport-striping" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
+        <section id="airport-striping" className="relative min-h-screen bg-[#F7D117] bg-top  mt-20 mb-16">
             {/* Banner */}
             <div className="relative w-full h-96 bg-cover bg-center mt-8" style={{ backgroundImage: "url('/Striping1-1.webp')" }}>
                 <div className="absolute inset-0 flex justify-center items-center">
@@ -22,7 +22,7 @@ export default function AirportStripingPage() {
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
 
                             <div className="lg:hidden flex w-full">
-                                <img src="/" alt="Professional Airport Striping Services"
+                                <img src="/WaterBlasting2.webp" alt="Professional Airport Striping Services"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
 
