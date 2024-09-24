@@ -18,9 +18,12 @@ const Carousel: React.FC<CarouselProps> = ({ props }) => {
     return (
         <div className="relative w-full max-w-3xl mx-auto">
             <a href="/Safety-Products">
-                <div className="text-center bg-white py-5">
-                    <h2 className="text-4xl lg:text-5xl font-bold mb-2">{props[currentIndex].title}</h2>
-                    <pre className="text-xl lg:text-2xl leading-9 text-gray-800">{props[currentIndex].text}</pre>
+                {/* Text container with flexbox centering and left-aligned text */}
+                <div className="flex justify-center bg-white py-5">
+                    <div className="text-left">
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-2">{props[currentIndex].title}</h2>
+                        <pre className="text-xl lg:text-2xl leading-9 text-gray-800">{props[currentIndex].text}</pre>
+                    </div>
                 </div>
                 <div className="overflow-hidden md:rounded-xl relative">
                     <img
@@ -79,15 +82,15 @@ const props = [
     },
     {
         src: '/PavementMarkers1.webp',
-        title: 'Pavement Markers',
-        text: `Raised Pavement Markers  
- Barrier Wall Markers 
- Chip Seal Markers`
+        title:'Pavement Markers',
+        text: `Raised Pavement Markers      
+Barrier Wall Markers    
+Chip Seal Markers`
     },
     {
         src: '/road-construction-raffic-safety1.webp',
         title: 'Click Here to View Full Shop!',
-        text: '...'
+        text: ''
     }
 ];
 
@@ -106,8 +109,8 @@ const Shop = () => {
             </div>
 
             {/* Description Paragraph */}
-            <div className="max-w-4xl mx-auto text-left mb-12 bg-white">
-                <p className="text-left text-xl lg:text-2xl text-gray-700">
+            <div className="max-w-4xl mx-5 text-left mb-12 bg-white ">
+                <p className="text-left text-2xl font-sans p-6 border-2 border-[#F7D117] rounded-xl shadow-xl">
                     We offer a full range of retail services, including traffic safety items and PPE, along with
                     rentals of equipment like traffic cones, message boards, and more. Visit our retail store on-site
                     for a complete selection of products to suit your project needs.
@@ -115,7 +118,7 @@ const Shop = () => {
             </div>
 
             {/* Carousel */}
-            <h3 className="text-center text-2xl pb-5">Some Items We Offer...</h3>
+            <h3 className="text-center text-6xl font-normal pb-5">Some Items We Offer...</h3>
             <Carousel props={props} />
         </section>
     );

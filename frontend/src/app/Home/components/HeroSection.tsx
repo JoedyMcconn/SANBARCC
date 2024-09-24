@@ -74,7 +74,7 @@ const Hero = () => {
                 className="z-10 flex flex-col justify-end md:justify-center w-full md:max-w-lg lg:max-w-xl md:mr-8 h-full text-center md:text-right px-4 lg:mt-40 md:mt-40">
                 {/* Large Screen Text */}
                 <p className="hidden md:block text-base md:text-xl lg:border-r-amber-400 lg:border-r-4 lg:pr-1 text-gray-300">
-                    Serving all of New Mexico since 1989.
+                    Serving all of New Mexico since 1990.
                 </p>
                 <p className="hidden md:block text-base md:text-xl lg:border-r-amber-400 lg:border-r-4 lg:pr-1 mb-10 text-gray-300">
                     Contact us today to find out how we can help.

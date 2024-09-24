@@ -75,7 +75,7 @@ const Services = () => {
                         </div>
 
                         {/* Paragraph */}
-                        <div className=" justify-between items-center mb-8 space-y-6 mx-auto mt-8 ">
+                        <div className=" justify-between text-left mb-8 space-y-6 mx-auto mt-8 ">
                             <div
                                 className="bg-white text-black p-6 border-2 border-[#F7D117] rounded-2xl shadow-lg lg:w-auto">
                                 <p className="text-2xl font-serif">

@@ -39,10 +39,10 @@ const MusicalRoad = () => {
                     </div>
 
                     {/* Description and Information on the right for large screens */}
-                    <div className="flex flex-col justify-center h-full text-left space-y-6">
+                    <div className="flex flex-col h-full text-left space-y-6">
                         {/* Paragraph with white background */}
-                        <div className="bg-white p-6 rounded-lg shadow-md">
-                            <p className="text-xl text-gray-700 leading-relaxed mb-4 font-serif">
+                        <div className="bg-white p-6 rounded-lg shadow-md text-left">
+                            <p className="text-xl text-gray-700 leading-relaxed mb-4 font-serif text-left">
                                 When it comes to new products and services <br/> <strong className="text-xl">San Bar
                                 Construction Corp. </strong> has always been and always will be a leader in innovation.
                                 Because of this reputation in the market, we were approached by National Geographic and
@@ -73,10 +73,10 @@ const MusicalRoad = () => {
                     </div>
 
                     {/* Description and Information */}
-                    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div className="bg-white p-6 rounded-lg shadow-md">
                         <p className="text-xl text-gray-700 leading-relaxed mb-4 font-serif">
                             When it comes to new products and services <br/> <strong className="text-xl">San Bar
-                            Construction Corp. </strong> has always been and always will be a leader in innovation.
+                            Construction Corp. </strong> has been, and always will be a leader in innovation.
                             Because of this reputation in the market, we were approached by National Geographic and
                             City of Palmdale, California to help them create two of the most high profile Musical
                             Roads in the United States.
