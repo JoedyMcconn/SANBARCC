@@ -7,7 +7,7 @@ import {
     FaSign,
     FaShieldAlt,
     FaScrewdriver,
-    FaExclamationTriangle, FaMapSigns, FaDirections, FaHardHat, FaTruckMoving
+    FaExclamationTriangle, FaMapSigns, FaDirections, FaHardHat, FaTruckMoving, FaStripe
 } from 'react-icons/fa';
 import {
     FaArrowDownLong,
@@ -302,7 +302,7 @@ const Services: React.FC = () => {
 
                                 {/* Image block */}
                                 <div className="lg:hidden flex w-full lg:w-1/2 mb-4">
-                                    <img src="/WaterBlastingTruck.webp" alt="Water Blasting"
+                                    <img src="/WaterBlasting2.webp" alt="Water Blasting"
                                          className="w-full h-auto rounded-lg"/>
                                 </div>
 
@@ -330,7 +330,7 @@ const Services: React.FC = () => {
 
                             {/* Image block */}
                             <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                <img src="/WaterBlastingTruck.webp" alt="Water Blasting"
+                                <img src="/WaterBlasting2.webp" alt="Water Blasting"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
                         </div>
@@ -380,7 +380,7 @@ const Services: React.FC = () => {
 
                             {/* Image block */}
                             <div className="hidden lg:flex w-full lg:w-1/2 p-6 md:p-12">
-                                <img src="/musicalRoad1.webp" alt="Musical Roads"
+                                <img src="/MusicRoadTruck.webp" alt="Musical Roads"
                                      className="w-full h-auto rounded-lg"/>
                             </div>
                         </div>
@@ -408,8 +408,9 @@ const Services: React.FC = () => {
                                 </p>
 
                                 <ul className="space-y-2">
-                                    <li className="flex items-start">
-                                        Runway Striping
+                                    <li className="flex items-start"><FaStripe/><span
+                                        className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">
+                                        Runway Striping</span>
                                     </li>
                                     <li className="flex items-start"><FaRoad/><span
                                         className="text-lg md:text-xl text-gray-800 leading-relaxed ml-2">Taxiway Markings</span>

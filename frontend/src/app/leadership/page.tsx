@@ -10,17 +10,22 @@ const Leadership = () => {
                     alt="Leadership Banner"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
-                <h1 className="relative z-10 text-5xl font-bold">Leadership</h1>
+                <div className="flex justify-center mb-10">
+                    <div className="bg-yellow-500 p-2">
+                        <div className="bg-black p-4 shadow-lg">
+                            <h2 className="text-white text-3xl lg:text-6xl font-semibold">Leadership</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Content Section */}
             <div className="container mx-auto px-6 py-8">
 
                 {/* Top Paragraph with Border and Background */}
-                <div className="bg-gray-900 border-4 border-[#F7D117] text-white p-6 rounded-lg mx-auto max-w-lg md:max-w-3xl">
+                <div className="bg-gray-900 border-4 border-[#F7D117] text-white p-6 rounded-lg mx-auto max-w-lg md:max-w-3xl mb-6">
                     <p className="text-xl md:text-2xl">
-                        Our leadership team at SanBar Construction is composed of experienced and dedicated professionals who ensure the highest standards of excellence, innovation, and safety across all our projects.
+                    Our leadership team at SanBar Construction is composed of experienced and dedicated professionals who ensure the highest standards of excellence, innovation, and safety across all our projects.
                     </p>
                 </div>
 

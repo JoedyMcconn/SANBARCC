@@ -71,15 +71,19 @@ export default function AboutUs() {
                     {/* Bottom Paragraph Section */}
                     <div className="md:w-3/4 mt-10 p-6 bg-white border-8 border-[#F7D117] rounded-xl shadow-lg">
                         <p className="text-black text-2xl font-serif leading-relaxed">
-                            We are dedicated to delivering high-quality, reliable solutions for the highway and road construction industry in New Mexico. <br /> Our team of experienced
-                            professionals, state-of-the-art equipment, and commitment to excellence ensure that every project meets the highest standards of safety and quality. We pride ourselves on our reputation for integrity, innovation, and outstanding customer service.
+                            We are dedicated to delivering high-quality, reliable solutions for the highway and road
+                            construction industry in New Mexico. <br/> Our team of experienced
+                            professionals, state-of-the-art equipment, and commitment to excellence ensure that every
+                            project meets the highest standards of safety and quality. We pride ourselves on our
+                            reputation for integrity, innovation, and outstanding customer service.
                         </p>
                     </div>
                 </div>
             </div>
 
             {/* History Section */}
-            <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen relative overflow-hidden">
+            <div
+                className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen relative overflow-hidden">
                 <div className="container mx-auto px-6 relative z-10">
 
                     {/* Header at the top */}
@@ -88,24 +92,33 @@ export default function AboutUs() {
                     </h2>
 
                     {/* First Paragraph */}
-                    <div className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mb-10 mx-auto max-w-lg md:max-w-3xl text-left ">
+                    <div
+                        className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mb-10 mx-auto max-w-lg md:max-w-3xl text-left ">
                         <p className="text-gray-800 leading-relaxed text-xl font-serif">
                             {/* Content */}
-                            <strong className="font-bold">San Bar Construction Corp.</strong> was founded in 1990 by David "Hossie" Sanchez, starting as a pavement markings specialist operating out of a one-bay garage in Los Lunas, New Mexico. Over the years, the company has grown significantly, moving to a 34,000 sq. ft. facility in Albuquerque in 1999.
+                            <strong className="font-bold">San Bar Construction Corp.</strong> was founded in 1990 by
+                            David "Hossie" Sanchez, starting as a pavement markings specialist operating out of a
+                            one-bay garage in Los Lunas, New Mexico. Over the years, the company has grown
+                            significantly, moving to a 34,000 sq. ft. facility in Albuquerque in 1999.
                         </p>
                     </div>
 
                     {/* Image - Responsive Sizing */}
                     <div className="relative z-10 flex justify-center mb-10">
                         <img src="/History2-1.webp" alt="Our History"
-                             className="w-full sm:w-3/4 md:w-1/2 h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300" />
+                             className="w-full sm:w-3/4 md:w-1/2 h-auto rounded-lg shadow-2xl transform hover:scale-105 transition duration-300"/>
                     </div>
 
                     {/* Second Paragraph */}
-                    <div className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mx-auto max-w-lg md:max-w-3xl">
+                    <div
+                        className="relative z-10 bg-white p-6 rounded-xl border-8 border-black shadow-lg mx-auto max-w-lg md:max-w-3xl">
                         <p className="text-gray-800 leading-relaxed text-xl font-serif">
                             {/* Content */}
-                            From this strategic location, <strong className="font-bold">San Bar Construction Corp.</strong> provides comprehensive road construction services and specializes in the design, manufacture, and installation of signs. The company operates a retail store offering traffic safety products. We also sell and rent message boards, arrow boards, and impact attenuators.
+                            From this strategic location, <strong className="font-bold">San Bar Construction
+                            Corp.</strong> provides comprehensive road construction services and specializes in the
+                            design, manufacture, and installation of signs. The company operates a retail store offering
+                            traffic safety products. We also sell and rent message boards, arrow boards, and impact
+                            attenuators.
                         </p>
                     </div>
                 </div>
@@ -121,17 +134,22 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-16 relative">
+                <div
+                    className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-16 relative">
                     {/* Text block */}
                     <div className="w-full lg:w-1/2 p-6">
                         <div className="p-6 bg-white rounded-2xl border-8 border-black shadow-lg">
                             <p className="text-black leading-relaxed mb-6 text-left font-serif text-xl">
-                                David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's success.
+                                David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's
+                                success.
                             </p>
                             <p className="text-black leading-relaxed mb-6 text-left font-serif text-xl">
-                                Our team ensures every project meets the highest standards of quality and safety. Together, we bring
-                                innovation, integrity, and the best customer service to every endeavor, making <strong>San Bar
-                                Construction Corp.</strong> a trusted leader in the road construction and signage industry across
+                                Our team ensures every project meets the highest standards of quality and safety.
+                                Together, we bring
+                                innovation, integrity, and the best customer service to every endeavor, making <strong>San
+                                Bar
+                                Construction Corp.</strong> a trusted leader in the road construction and signage
+                                industry across
                                 the Southwest.
                             </p>
                         </div>
@@ -161,34 +179,37 @@ export default function AboutUs() {
             </section>
 
 
-
             {/* Core Values */}
             <div className="py-20 bg-gradient-to-r from-gray-100 to-gray-250 shadow-inner min-h-screen text-center">
                 {/* Center the heading */}
                 <div className="flex justify-center mb-10">
                     <div className="bg-yellow-500 p-2">
                         <div className="bg-black p-4 shadow-lg">
-                        <h2 className="text-white text-3xl lg:text-6xl font-semibold">Our Core Values</h2>
+                            <h2 className="text-white text-3xl lg:text-6xl font-semibold">Our Core Values</h2>
                         </div>
                     </div>
                 </div>
 
-                <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+                {/* Core Values Container */}
+                <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between">
                     {/* Text Section */}
                     <div className="md:w-1/2 p-8">
                         <div className="bg-white p-4 rounded-xl mb-6 border-8 border-black">
-                            <ul className="list-disc list-inside">
+                            {/* Ensure the text is aligned to the left */}
+                            <ul className="list-disc list-inside text-left">
                                 {/* Core Values */}
-                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">Integrity: We
+                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif"><strong>Integrity:</strong>We
                                     conduct our business with the highest level of honesty and ethical standards.
                                 </li>
-                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">Quality: We are
+                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
+                                    <strong>Quality:</strong> We are
                                     committed to delivering superior workmanship and materials on every project.
                                 </li>
-                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">Safety: We
+                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">
+                                    <strong>Safety:</strong> We
                                     prioritize the safety of our employees, clients, and the community.
                                 </li>
-                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif">Innovation: We
+                                <li className="text-gray-700 mb-6 leading-relaxed text-xl font-serif"><strong>Innovation:</strong> We
                                     embrace modern technology and innovative practices to enhance our services.
                                 </li>
                             </ul>
@@ -202,6 +223,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }

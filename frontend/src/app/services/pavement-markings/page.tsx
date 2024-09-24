@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 
 const PavementMarkingsPage: React.FC = () => {
@@ -19,8 +17,9 @@ const PavementMarkingsPage: React.FC = () => {
             {/* Introduction */}
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-16 mt-10">
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap lg:flex-nowrap items-center">
-                        <div className="w-full lg:w-1/2">
+                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
+                        {/* Text Section */}
+                        <div className="w-full lg:w-1/2 text-left mb-8 lg:mb-0 lg:pr-8">
                             <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4">Professional Pavement Marking Services</h2>
                             <hr className="w-full border-t-4 border-yellow-300 mb-4"/>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
@@ -30,16 +29,18 @@ const PavementMarkingsPage: React.FC = () => {
                                 using high-quality materials and state-of-the-art application techniques.
                             </p>
                         </div>
+                        {/* Image Section */}
                         <div className="w-full lg:w-1/2">
-                            <img src="/Striping1-1.webp" alt="Intersection Striping" className="m-5 w-full h-auto rounded-lg"/>
+                            <img src="/Striping1-1.webp" alt="Intersection Striping" className="mx-auto w-full lg:w-[90%] h-auto rounded-lg"/>
                         </div>
                     </div>
                 </div>
 
                 {/* Section 1: Longitudinal Markings */}
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap lg:flex-nowrap items-center">
-                        <div className="w-full lg:w-1/2">
+                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
+                        {/* Text Section */}
+                        <div className="w-full lg:w-1/2 text-left mb-8 lg:mb-0 lg:pr-8">
                             <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4">Long Line Pavement Markings</h2>
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
@@ -59,8 +60,9 @@ const PavementMarkingsPage: React.FC = () => {
                                 </ul>
                             </div>
                         </div>
+                        {/* Video Section */}
                         <div className="w-full lg:w-1/2">
-                            <video controls className="w-full rounded-lg">
+                            <video controls className="mx-auto w-full lg:w-[90%] rounded-lg">
                                 <source src="/OverheadStripingTucumcari.mp4" type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
@@ -70,8 +72,9 @@ const PavementMarkingsPage: React.FC = () => {
 
                 {/* Section 3: Symbols and Legends */}
                 <div className="w-full bg-black p-6 rounded-lg mb-12">
-                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap lg:flex-nowrap items-center">
-                        <div className="w-full lg:w-1/2">
+                    <div className="bg-white p-4 md:p-6 rounded-lg flex flex-wrap items-center">
+                        {/* Text Section */}
+                        <div className="w-full lg:w-1/2 text-left mb-8 lg:mb-0 lg:pr-8">
                             <h2 className="text-2xl lg:text-4xl font-semibold text-black mb-4">Symbols and Legends</h2>
                             <hr className="w-full border-t-4 border-yellow-500 mb-4"/>
                             <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-4 font-sans">
@@ -90,9 +93,9 @@ const PavementMarkingsPage: React.FC = () => {
                                 </ul>
                             </div>
                         </div>
+                        {/* Image Section */}
                         <div className="w-full lg:w-1/2">
-                            <img src="/Airport4.webp" alt="Symbols and Legends"
-                                 className="m-5 w-full h-auto rounded-lg"/>
+                            <img src="/Airport4.webp" alt="Symbols and Legends" className="mx-auto w-full lg:w-[90%] h-auto rounded-lg"/>
                         </div>
                     </div>
                 </div>
