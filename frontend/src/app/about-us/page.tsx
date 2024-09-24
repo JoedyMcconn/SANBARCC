@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutUs() {
     return (
-        <div className="bg-gray-100 mt-28">
+        <div className="bg-gray-100 mt-20">
             {/* Banner Section */}
             <div className="relative h-96 bg-cover bg-center flex items-center justify-center mt-12"
                  style={{backgroundImage: "url('/OtherProject1.webp')"}}>
