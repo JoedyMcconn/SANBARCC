@@ -108,8 +108,8 @@ const Shop = () => {
                 </div>
             </div>
 
-            {/* Description Paragraph */}
-            <div className="max-w-4xl mx-5 text-left mb-12 bg-white ">
+            {/* Centered Description Paragraph */}
+            <div className="max-w-4xl mx-auto mb-12 bg-white">
                 <p className="text-left text-2xl font-sans p-6 border-2 border-[#F7D117] rounded-xl shadow-xl">
                     We offer a full range of retail services, including traffic safety items and PPE, along with
                     rentals of equipment like traffic cones, message boards, and more. Visit our retail store on-site
