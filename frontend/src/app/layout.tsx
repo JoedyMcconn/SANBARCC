@@ -24,14 +24,14 @@ export default function RootLayout({
             <link rel="icon" type="image/png" href="/SanBarLogo2.png" sizes="24x36" />
 
             {/* Title for Google Search */}
-            <title>San Bar Construction Corp | Specialized Construction Company | Sign Manufacturer </title>
+            <title>San Bar Construction Corp. | Specialized Construction Company | Sign Manufacturer </title>
 
             {/* Meta Description for Google Search */}
             <meta name="description"
-                  content="San Bar Construction Corp specializes in road services, including pavement markings, guardrail installation, sign design, and more." />
+                  content="San Bar Construction Corp. specializes in specialized services, including Pavement Markings, Sign Design & Manufacturing, Guardrail Installation, Cable Barrier Installation, Overhead Sign Structure Installation, Rumble Strip Installation and more." />
 
             {/* Open Graph Tags for Social Media */}
-            <meta property="og:title" content="San Bar Construction Corp | Road Services & Sign Manufacturing" />
+            <meta property="og:title" content="San Bar Construction Corp. | Road Services & Sign Manufacturing" />
             <meta property="og:description" content="San Bar Construction Corp specializes in road construction, guardrail installation, and sign manufacturing across New Mexico." />
             <meta property="og:image" content="/SanBarTextLogo-1.webp" />
             <meta property="og:url" content="https://www.sanbarcc.com" />
