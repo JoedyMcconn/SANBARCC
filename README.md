@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to SanBar Construction Corp., the official website for connecting clients with our comprehensive range of construction services. Founded in 1989 and serving all of New Mexico, SanBar Construction Corp. has been a cornerstone in the construction industry, delivering high-quality, reliable services for over three decades. Our website, sanbarcc.com, is designed to provide detailed information about our company, the services we offer, and how to get in touch with us.
+Welcome to SanBar Construction Corp., the official website for connecting clients with our comprehensive range of construction services. Founded in 1990 and serving all of New Mexico, San Bar Construction Corp. has been a cornerstone in the construction industry, delivering high-quality, reliable services for over three decades. Our website, sanbarcc.com, is designed to provide detailed information about our company, the services we offer, and how to get in touch with us.
 
 # Table of Contents:
 
@@ -19,7 +19,7 @@ Welcome to SanBar Construction Corp., the official website for connecting client
 
 # Introduction
 
-sanbarcc.com serves as the digital face of SanBar Construction Corp. It is designed to be an intuitive, user-friendly platform where potential clients can learn more about our company, explore the services we provide, and easily contact us for further inquiries.
+sanbarcc.com serves as the digital face of San Bar Construction Corp. It is designed to be an intuitive, user-friendly platform where potential clients can learn more about our company, explore the services we provide, and easily contact us for further inquiries.
 
 ## The primary objectives of this website are:
 
