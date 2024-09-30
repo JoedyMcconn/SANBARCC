@@ -25,8 +25,48 @@ const nextConfig = {
 
             // Redirect old guardrail page to the new "Guardrail" page
             {
+                source: '/kyle-moritomo',
+                destination: '/leadership',
+                permanent: true,
+            },
+            {
                 source: '/guardrail-installation-repair',
                 destination: '/services/Guardrail',
+                permanent: true,
+            },
+            {
+                source: '/george-thompson',
+                destination: '/leadership',
+                permanent: true,
+            },
+            {
+                source: '/work-zone-safety',
+                destination: '/Safety-products',
+                permanent: true,
+            },
+            {
+                source: '/orange-safety-fence',
+                destination: '/Safety-products',
+                permanent: true,
+            },
+            {
+                source: '/work-zone-warning',
+                destination: '/Safety-products',
+                permanent: true,
+            },
+            {
+                source: '/little-buster-sign-stand',
+                destination: '/Safety-products',
+                permanent: true,
+            },
+            {
+                source: '/rumble-bars',
+                destination: '/services',
+                permanent: true,
+            },
+            {
+                source: '/personal-protection-equipment',
+                destination: '/Safety-products',
                 permanent: true,
             },
 
