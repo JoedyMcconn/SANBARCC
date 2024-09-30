@@ -12,7 +12,7 @@ const nextConfig = {
             // Redirect old "signs" page to the new "roadway-signs" page
             {
                 source: '/signs',
-                destination: '/roadway-signs',
+                destination: 'services/roadway-signs',
                 permanent: true,
             },
 
