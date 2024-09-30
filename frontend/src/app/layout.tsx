@@ -32,7 +32,7 @@ export default function RootLayout({
 
             {/* Open Graph Tags for Social Media */}
             <meta property="og:title" content="San Bar Construction Corp. | Road Services & Sign Manufacturing" />
-            <meta property="og:description" content="San Bar Construction Corp specializes in road construction, guardrail installation, and sign manufacturing across New Mexico." />
+            <meta property="og:description" content="San Bar Construction Corp specializes in specialty construction services across New Mexico." />
             <meta property="og:image" content="/SanBarTextLogo-1.webp" />
             <meta property="og:url" content="https://www.sanbarcc.com" />
             <meta property="og:type" content="website" />
