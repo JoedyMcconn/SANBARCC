@@ -17,10 +17,13 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
     return (
         <div className="w-full max-w-4xl mx-auto bg-black p-6 rounded-lg mb-12">
             <div className="bg-white p-6 rounded-lg flex flex-wrap">
-                <div className="w-auto text-center mb-6">
-                    <h2 className="text-4xl lg:text-5xl font-semibold text-black mb-4 flex justify-center items-center">
-                        {icon}
-                        <span className="ml-4">{title}</span>
+                <div className="w-full text-center mb-6">
+                    {/* Move the icon above the title and make it centered */}
+                    <div className="flex justify-center mb-4">
+                        <span className="text-5xl lg:text-6xl">{icon}</span>
+                    </div>
+                    <h2 className="text-4xl lg:text-5xl font-semibold text-black">
+                        {title}
                     </h2>
                 </div>
                 <div className="w-full">
