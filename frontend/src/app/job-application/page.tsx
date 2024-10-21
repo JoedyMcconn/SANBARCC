@@ -68,48 +68,46 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label htmlFor="fullName" className="block text-lg font-sans mb-2">Full Name</label>
-                        <input type="text" name="fullName" id="fullName" required
+                        <input type="text" name="Full-Name" id="fullName" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="date" className="block text-lg font-sans mb-2">Date</label>
-                        <input type="date" name="date" id="date" required
+                        <input type="date" name="Date" id="date" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 {/* Address */}
                 <div>
-                    <label htmlFor="address" className="block text-lg font-sans my-2">Address (Street Address, City,
-                        State, Zip Code )</label>
-                    <input type="text" name="address" id="address" required
+                    <label htmlFor="address" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <input type="text" name="Address" id="address" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
-                {/* Phone, Cell, Driver's License, and Class */}
+                {/* Phone, Email, Driver's License, and Class */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label htmlFor="phone" className="block text-lg font-sans my-2">Cell #</label>
-                        <input type="tel" name="phone" id="phone" required
+                        <input type="tel" name="Phone" id="phone" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="cell" className="block text-lg font-sans my-2">Email Address</label>
-                        <input type="email" name="email" id="email" required
+                        <label htmlFor="email" className="block text-lg font-sans my-2">Email Address</label>
+                        <input type="email" name="Email-Address" id="email" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label htmlFor="driversLicense" className="block text-lg font-sans my-2">Driver’s License
-                            #</label>
-                        <input type="text" name="driversLicense" id="driversLicense" required
+                        <label htmlFor="driversLicense" className="block text-lg font-sans my-2">Driver’s License #</label>
+                        <input type="text" name="Drivers-License" id="driversLicense" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="class" className="block text-lg font-sans my-2">Class of Drivers License</label>
-                        <input type="text" name="class" id="class" required
+                        <input type="text" name="Drivers-License-Class" id="class" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -117,14 +115,13 @@ export default function JobApplicationForm() {
                 {/* Date Available and Wage Desired */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label htmlFor="dateAvailable" className="block text-lg font-sans my-2">Date
-                            Available</label>
-                        <input type="date" name="dateAvailable" id="dateAvailable" required
+                        <label htmlFor="dateAvailable" className="block text-lg font-sans my-2">Date Available</label>
+                        <input type="date" name="Date-Available" id="dateAvailable" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="wageDesired" className="block text-lg font-sans my-2">Wage Desired</label>
-                        <input type="text" name="wageDesired" id="wageDesired" required
+                        <input type="text" name="Wage-Desired" id="wageDesired" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -134,11 +131,11 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-4">Employment Desired</label>
                     <div className="flex gap-4 font-sans">
                         <label className="flex items-center">
-                            <input type="radio" name="employmentType" value="Full-time" required
+                            <input type="radio" name="Employment-Type" value="Full-time" required
                                    className="mr-2"/> Full-time
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="employmentType" value="Part-time" required
+                            <input type="radio" name="Employment-Type" value="Part-time" required
                                    className="mr-2"/> Part-time
                         </label>
                     </div>
@@ -149,10 +146,10 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">Are you currently employed?</label>
                     <div className="flex gap-4 font-sans mt-2">
                         <label className="flex items-center">
-                            <input type="radio" name="currentlyEmployed" value="Yes" required className="mr-2"/> Yes
+                            <input type="radio" name="Currently-Employed" value="Yes" required className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="currentlyEmployed" value="No" required className="mr-2"/> No
+                            <input type="radio" name="Currently-Employed" value="No" required className="mr-2"/> No
                         </label>
                     </div>
                 </div>
@@ -161,27 +158,29 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">May we contact your employer?</label>
                     <div className="flex gap-4 font-sans">
                         <label className="flex items-center">
-                            <input type="radio" name="contactEmployer" value="Yes" required className="mr-2"/> Yes
+                            <input type="radio" name="Contact-Employer" value="Yes" required className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="contactEmployer" value="No" required className="mr-2"/> No
+                            <input type="radio" name="Contact-Employer" value="No" required className="mr-2"/> No
                         </label>
                     </div>
                 </div>
 
                 {/* Cannabis/Marijuana Card */}
                 <div>
-                    <label className="block text-lg font-sans my-2">Do you possess a medical cannabis/marijuana
-                        card?</label>
+                    <label className="block text-lg font-sans my-2">Do you possess a medical cannabis/marijuana card?</label>
                     <div className="flex gap-4 font-sans">
                         <label className="flex items-center">
-                            <input type="radio" name="marijuanaCard" value="Yes" required className="mr-2"/> Yes
+                            <input type="radio" name="Marijuana-Card" value="Yes" required className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="marijuanaCard" value="No" required className="mr-2"/> No
+                            <input type="radio" name="Marijuana-Card" value="No" required className="mr-2"/> No
                         </label>
                     </div>
                 </div>
+
+
+
 
                 {/* Positions Applying For */}
                 <h3 className="text-2xl font-sans my-6">Position(s) Applying for</h3>
@@ -281,32 +280,31 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="company1" className="block text-lg ">Company</label>
-                        <input type="text" name="company1" id="company1" required
+                        <input type="text" name="Company-1" id="company1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="phone1" className="block text-lg ">Phone</label>
-                        <input type="tel" name="phone1" id="phone1" required
+                        <input type="tel" name="Phone-1" id="phone1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="address1" className="block text-lg font-sans my-2">Address (Street Address, City,
-                        State, Zip Code )</label>
-                    <input type="text" name="address1" id="address1" required
+                    <label htmlFor="address1" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <input type="text" name="Address-1" id="address1" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="supervisor1" className="block text-lg ">Supervisor</label>
-                        <input type="text" name="supervisor1" id="supervisor1" required
+                        <input type="text" name="Supervisor-1" id="supervisor1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="jobTitle1" className="block text-lg ">Job Title</label>
-                        <input type="text" name="jobTitle1" id="jobTitle1" required
+                        <input type="text" name="Job-Title-1" id="jobTitle1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -314,56 +312,53 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="startingSalary1" className="block text-lg ">Starting Salary</label>
-                        <input type="text" name="startingSalary1" id="startingSalary1" required
+                        <input type="text" name="Starting-Salary-1" id="startingSalary1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="endingSalary1" className="block text-lg">Ending
-                            Salary</label>
-                        <input type="text" name="endingSalary1" id="endingSalary1" required
+                        <label htmlFor="endingSalary1" className="block text-lg">Ending Salary</label>
+                        <input type="text" name="Ending-Salary-1" id="endingSalary1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="responsibilities1"
-                           className="block text-lg font-sans my-2 ">Responsibilities</label>
-                    <textarea name="responsibilities1" id="responsibilities1" required
+                    <label htmlFor="responsibilities1" className="block text-lg font-sans my-2">Responsibilities</label>
+                    <textarea name="Responsibilities-1" id="responsibilities1" required
                               className="w-full p-3 rounded-md border border-gray-300"></textarea>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="startDate1" className="block text-lg ">Start Date</label>
-                        <input type="date" name="startDate1" id="startDate1" required
+                        <input type="date" name="Start-Date-1" id="startDate1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="endDate1" className="block text-lg ">End Date</label>
-                        <input type="date" name="endDate1" id="endDate1" required
+                        <input type="date" name="End-Date-1" id="endDate1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="reasonForLeaving1" className="block text-lg font-sans my-2">Reason for
-                        Leaving</label>
-                    <input type="text" name="reasonForLeaving1" id="reasonForLeaving1" required
+                    <label htmlFor="reasonForLeaving1" className="block text-lg font-sans my-2">Reason for Leaving</label>
+                    <input type="text" name="Reason-For-Leaving-1" id="reasonForLeaving1" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div>
-                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a
-                        reference?</label>
+                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a reference?</label>
                     <div className="flex gap-4">
                         <label className="flex items-center">
-                            <input type="radio" name="contactSupervisor1" value="Yes" className="mr-2" required/> Yes
+                            <input type="radio" name="Contact-Supervisor-1" value="Yes" className="mr-2" required/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="contactSupervisor1" value="No" className="mr-2" required/> No
+                            <input type="radio" name="Contact-Supervisor-1" value="No" className="mr-2" required/> No
                         </label>
                     </div>
                 </div>
+
 
                 {/* Second Previous Employment (Optional) */}
                 <div className="my-8">
@@ -373,89 +368,85 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="company2" className="block text-lg">Company</label>
-                        <input type="text" name="company2" id="company2"
+                        <input type="text" name="Company-2" id="company2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="phone2" className="block text-lg ">Phone</label>
-                        <input type="tel" name="phone2" id="phone2"
+                        <input type="tel" name="Phone-2" id="phone2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="address2" className="block text-lg font-sans my-2">Address (Street Address, City,
-                        State, Zip Code )</label>
-                    <input type="text" name="address2" id="address2"
+                    <label htmlFor="address2" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <input type="text" name="Address-2" id="address2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="supervisor2" className="block text-lg ">Supervisor</label>
-                        <input type="text" name="supervisor2" id="supervisor2"
+                        <input type="text" name="Supervisor-2" id="supervisor2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="jobTitle2" className="block text-lg ">Job Title</label>
-                        <input type="text" name="jobTitle2" id="jobTitle2"
+                        <input type="text" name="Job-Title-2" id="jobTitle2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
-                        <label htmlFor="startingSalary2" className="block text-lg">Starting
-                            Salary</label>
-                        <input type="text" name="startingSalary2" id="startingSalary2"
+                        <label htmlFor="startingSalary2" className="block text-lg">Starting Salary</label>
+                        <input type="text" name="Starting-Salary-2" id="startingSalary2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="endingSalary2" className="block text-lg">Ending
-                            Salary</label>
-                        <input type="text" name="endingSalary2" id="endingSalary2"
+                        <label htmlFor="endingSalary2" className="block text-lg">Ending Salary</label>
+                        <input type="text" name="Ending-Salary-2" id="endingSalary2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="responsibilities2"
-                           className="block text-lg font-sans my-2">Responsibilities</label>
-                    <textarea name="responsibilities2" id="responsibilities2"
+                    <label htmlFor="responsibilities2" className="block text-lg font-sans my-2">Responsibilities</label>
+                    <textarea name="Responsibilities-2" id="responsibilities2"
                               className="w-full p-3 rounded-md border border-gray-300"></textarea>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="startDate2" className="block text-lg ">Start Date</label>
-                        <input type="date" name="startDate2" id="startDate2"
+                        <input type="date" name="Start-Date-2" id="startDate2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="endDate2" className="block text-lg ">End Date</label>
-                        <input type="date" name="endDate2" id="endDate2"
+                        <input type="date" name="End-Date-2" id="endDate2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="reasonForLeaving2" className="block text-lg font-sans my-2">Reason for
-                        Leaving</label>
-                    <input type="text" name="reasonForLeaving2" id="reasonForLeaving2"
+                    <label htmlFor="reasonForLeaving2" className="block text-lg font-sans my-2">Reason for Leaving</label>
+                    <input type="text" name="Reason-For-Leaving-2" id="reasonForLeaving2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
+
                 <div>
-                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a
-                        reference?</label>
+                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a reference?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
-                            <input type="radio" name="contactSupervisor1" value="Yes" className="mr-2"/> Yes
+                            <input type="radio" name="Contact-Supervisor-2" value="Yes" className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="contactSupervisor1" value="No" className="mr-2"/> No
+                            <input type="radio" name="Contact-Supervisor-2" value="No" className="mr-2"/> No
                         </label>
                     </div>
                 </div>
+
 
 
                 <h3 className="text-4xl font-semibold my-8">Education</h3>
@@ -464,12 +455,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="highSchool" className="block text-2xl">High School</label>
-                        <input type="text" name="highSchool" id="highSchool" required
+                        <input type="text" name="High-School" id="highSchool" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="highSchoolAddress" className="block text-lg">Address</label>
-                        <input type="text" name="highSchoolAddress" id="highSchoolAddress" required
+                        <input type="text" name="High-School-Address" id="highSchoolAddress" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -477,12 +468,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="highSchoolFrom" className="block text-lg ">From</label>
-                        <input type="date" name="highSchoolFrom" id="highSchoolFrom" required
+                        <input type="date" name="High-School-From" id="highSchoolFrom" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="highSchoolTo" className="block text-lg ">To</label>
-                        <input type="date" name="highSchoolTo" id="highSchoolTo" required
+                        <input type="date" name="High-School-To" id="highSchoolTo" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -491,10 +482,10 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">Did you graduate?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
-                            <input type="radio" name="highSchoolGraduate" value="Yes" required className="mr-2"/> Yes
+                            <input type="radio" name="High-School-Graduate" value="Yes" required className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="highSchoolGraduate" value="No" required className="mr-2"/> No
+                            <input type="radio" name="High-School-Graduate" value="No" required className="mr-2"/> No
                         </label>
                     </div>
                 </div>
@@ -503,12 +494,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans mt-16 mb-4">
                     <div>
                         <label htmlFor="college" className="block text-2xl">College</label>
-                        <input type="text" name="college" id="college"
+                        <input type="text" name="College" id="college"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="collegeAddress" className="block text-lg">Address</label>
-                        <input type="text" name="collegeAddress" id="collegeAddress"
+                        <input type="text" name="College-Address" id="collegeAddress"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -516,12 +507,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="collegeFrom" className="block text-lg">From</label>
-                        <input type="date" name="collegeFrom" id="collegeFrom"
+                        <input type="date" name="College-From" id="collegeFrom"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="collegeTo" className="block text-lg">To</label>
-                        <input type="date" name="collegeTo" id="collegeTo"
+                        <input type="date" name="College-To" id="collegeTo"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -530,17 +521,17 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">Did you graduate?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
-                            <input type="radio" name="collegeGraduate" value="Yes" className="mr-2"/> Yes
+                            <input type="radio" name="College-Graduate" value="Yes" className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="collegeGraduate" value="No" className="mr-2"/> No
+                            <input type="radio" name="College-Graduate" value="No" className="mr-2"/> No
                         </label>
                     </div>
                 </div>
 
-                <div className="mt-4 font-sans mb-4 ">
+                <div className="mt-4 font-sans mb-4">
                     <label htmlFor="collegeDegree" className="block text-lg ">Degree</label>
-                    <input type="text" name="collegeDegree" id="collegeDegree"
+                    <input type="text" name="College-Degree" id="collegeDegree"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
@@ -548,12 +539,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans mb-4 mt-16">
                     <div>
                         <label htmlFor="other" className="block text-2xl">Other Education</label>
-                        <input type="text" name="other" id="other"
+                        <input type="text" name="Other-Education" id="other"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="otherAddress" className="block text-lg">Address</label>
-                        <input type="text" name="otherAddress" id="otherAddress"
+                        <input type="text" name="Other-Education-Address" id="otherAddress"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -561,12 +552,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="otherFrom" className="block text-lg">From</label>
-                        <input type="date" name="otherFrom" id="otherFrom"
+                        <input type="date" name="Other-Education-From" id="otherFrom"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="otherTo" className="block text-lg">To</label>
-                        <input type="date" name="otherTo" id="otherTo"
+                        <input type="date" name="Other-Education-To" id="otherTo"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -575,33 +566,33 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">Did you graduate?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
-                            <input type="radio" name="otherGraduate" value="Yes" className="mr-2"/> Yes
+                            <input type="radio" name="Other-Education-Graduate" value="Yes" className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="otherGraduate" value="No" className="mr-2"/> No
+                            <input type="radio" name="Other-Education-Graduate" value="No" className="mr-2"/> No
                         </label>
                     </div>
                 </div>
 
                 <div className="mt-4 font-sans my-2">
                     <label htmlFor="otherDegree" className="block text-lg">Degree</label>
-                    <input type="text" name="otherDegree" id="otherDegree"
+                    <input type="text" name="Other-Education-Degree" id="otherDegree"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
 
+
                 {/* Military Service */}
                 <h3 className="text-4xl font-semibold my-8">Military Service (Optional)</h3>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="branch" className="block text-lg">Branch</label>
-                        <input type="text" name="branch" id="branch"
+                        <input type="text" name="Military-Branch" id="branch"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="fromMilitary" className="block text-lg">From</label>
-                        <input type="date" name="fromMilitary" id="fromMilitary"
+                        <input type="date" name="Military-From" id="fromMilitary"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -609,54 +600,49 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="toMilitary" className="block text-lg">To</label>
-                        <input type="date" name="toMilitary" id="toMilitary"
+                        <input type="date" name="Military-To" id="toMilitary"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="rankAtDischarge" className="block text-lg">Rank at
-                            Discharge</label>
-                        <input type="text" name="rankAtDischarge" id="rankAtDischarge"
+                        <label htmlFor="rankAtDischarge" className="block text-lg">Rank at Discharge</label>
+                        <input type="text" name="Military-Rank-At-Discharge" id="rankAtDischarge"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
-                        <label htmlFor="typeOfDischarge" className="block text-lg">Type of
-                            Discharge</label>
-                        <input type="text" name="typeOfDischarge" id="typeOfDischarge"
+                        <label htmlFor="typeOfDischarge" className="block text-lg">Type of Discharge</label>
+                        <input type="text" name="Military-Type-Of-Discharge" id="typeOfDischarge"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
-                    <label htmlFor="dischargeExplanation" className="block text-lg font-sans my-2">If other than
-                        honorable, explain</label>
-                    <textarea name="dischargeExplanation" id="dischargeExplanation"
+                    <label htmlFor="dischargeExplanation" className="block text-lg font-sans my-2">If other than honorable, explain</label>
+                    <textarea name="Military-Discharge-Explanation" id="dischargeExplanation"
                               className="w-full p-3 rounded-md border border-gray-300"></textarea>
                 </div>
 
-                {/* Reference Section */}
+                {/* References */}
                 <h3 className="text-4xl font-semibold my-8">References:</h3>
-
                 {/* Reference 1 */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="referenceName1" className="block text-lg">Name</label>
-                        <input type="text" name="referenceName1" id="referenceName1"
-                              required className="w-full p-3 rounded-md border border-gray-300"/>
+                        <input type="text" name="Reference-Name-1" id="referenceName1"
+                               required className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="referenceCompany1"
-                               className="block text-lg">Company/Title</label>
-                        <input type="text" name="referenceCompany1" id="referenceCompany1"
+                        <label htmlFor="referenceCompany1" className="block text-lg">Company/Title</label>
+                        <input type="text" name="Reference-Company-1" id="referenceCompany1"
                                required className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
                     <label htmlFor="referencePhone1" className="block text-lg font-sans my-2">Phone #</label>
-                    <input type="tel" name="referencePhone1" id="referencePhone1"
+                    <input type="tel" name="Reference-Phone-1" id="referencePhone1"
                            required className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
@@ -664,20 +650,19 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 font-sans my-2">
                     <div>
                         <label htmlFor="referenceName2" className="block text-lg">Name</label>
-                        <input type="text" name="referenceName2" id="referenceName2"
+                        <input type="text" name="Reference-Name-2" id="referenceName2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="referenceCompany2"
-                               className="block text-lg">Company/Title</label>
-                        <input type="text" name="referenceCompany2" id="referenceCompany2"
+                        <label htmlFor="referenceCompany2" className="block text-lg">Company/Title</label>
+                        <input type="text" name="Reference-Company-2" id="referenceCompany2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
                     <label htmlFor="referencePhone2" className="block text-lg font-sans my-2">Phone #</label>
-                    <input type="tel" name="referencePhone2" id="referencePhone2"
+                    <input type="tel" name="Reference-Phone-2" id="referencePhone2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
@@ -685,22 +670,22 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 font-sans my-2">
                     <div>
                         <label htmlFor="referenceName3" className="block text-lg font-semibold mb-2">Name</label>
-                        <input type="text" name="referenceName3" id="referenceName3"
+                        <input type="text" name="Reference-Name-3" id="referenceName3"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="referenceCompany3"
-                               className="block text-lg font-semibold mb-2">Company/Title</label>
-                        <input type="text" name="referenceCompany3" id="referenceCompany3"
+                        <label htmlFor="referenceCompany3" className="block text-lg font-semibold mb-2">Company/Title</label>
+                        <input type="text" name="Reference-Company-3" id="referenceCompany3"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
                     <label htmlFor="referencePhone3" className="block text-lg font-sans my-2">Phone #</label>
-                    <input type="tel" name="referencePhone3" id="referencePhone3"
+                    <input type="tel" name="Reference-Phone-3" id="referencePhone3"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
+
 
 
                 <h3 className="text-4xl font-bold my-8">Disclaimer and E-Signature</h3>

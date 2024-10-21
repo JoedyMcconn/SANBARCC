@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaHardHat, FaTools, FaWarehouse, FaSign } from 'react-icons/fa';
+import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck } from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -18,7 +18,6 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
         <div className="w-full max-w-4xl mx-auto bg-black p-6 rounded-lg mb-12">
             <div className="bg-white p-6 rounded-lg flex flex-wrap">
                 <div className="w-full text-center mb-6">
-                    {/* Move the icon above the title and make it centered */}
                     <div className="flex justify-center mb-4">
                         <span className="text-5xl lg:text-6xl">{icon}</span>
                     </div>
@@ -71,9 +70,7 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
 export default function JobOpportunities() {
     return (
         <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
-            {/* Banner */}
-            <div className="relative w-full h-96 bg-cover bg-center"
-                 style={{backgroundImage: "url('/LogoBackground.png')"}}>
+            <div className="relative w-full h-96 bg-cover bg-center" style={{backgroundImage: "url('/LogoBackground.png')"}}>
                 <div className="absolute inset-0 flex justify-center items-center">
                     <div className="bg-black p-4">
                         <div className="bg-yellow-500 p-4">
@@ -83,7 +80,6 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
-            {/* Text and Apply Button Section */}
             <div className="container px-6 md:px-12 lg:px-16 py-12 mt-10 bg-white rounded-2xl shadow-lg mb-16 max-w-4xl mx-auto">
                 <p className="text-left text-xl md:text-2xl lg:text-3xl leading-relaxed mb-6 font-sans">
                     Apply now online or in person. <br/> <strong>San Bar Construction Corp.</strong> is an Equal Opportunity Employer and encourages diversity in the workforce.
@@ -108,46 +104,39 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
-            {/* Job Listings */}
             <JobPosition
-                title="Field Technician/Laborer"
+                title="Crew Foreman"
                 icon={<FaHardHat />}
-                summary="The Field Technician/Laborer will load and unload required material to and from work sites, operate various types of equipment required for the job in a safe manner to include company vehicles and perform basic maintenance and repair of equipment."
+                summary="San Bar Construction Corp. is currently recruiting to fill the position of crew foreman who will supervise and coordinate the work for highway construction crew members in guardrail and/or sign installation."
                 qualifications={[
-                    "1 – 2 years of road construction experience preferred",
-                    "Possess a CDL preferred",
-                    "Experience working in a team or crew",
-                    "Good hand and eye coordination",
-                    "Detailed and safety oriented",
-                    "Flexible and adaptable to change",
-                    "Ability to work independently on assigned duties",
-                    "Experience operating construction equipment",
-                    "Ability to travel 100% of the time on work assignments",
-                    "Ability to lift up to 50 to 75# for extended periods of time",
-                    "Ability to follow processes",
-                    "Ability to manage a variety of priorities simultaneously while meeting deadlines",
-                    "Possess a valid driver’s license"
+                    "5 plus years in the highway construction industry",
+                    "2-4 years of experience as a lead, foreman, or supervisor",
+                    "Good communication skills both written and verbal",
+                    "Must perform heavy physical activity",
+                    "Ability to operate hydraulically operated jack hammers and other heavy equipment",
+                    "Work outdoors with exposure to changing weather conditions",
+                    "Good understanding of the construction industry",
+                    "Must possess a valid driver’s license"
                 ]}
                 responsibilities={[
-                    "Responsible transporting material, equipment and vehicles to and from job sites",
-                    "Responsible for proper operation of the equipment ensuring proper quality and consistency standards are followed",
-                    "Responsible for the safe operation of all company vehicles",
-                    "Manually load and lift material as part of work process",
-                    "Read and execute plans and place layout marks",
-                    "Perform basic repair and maintenance of equipment",
-                    "Safely operate a variety of hand and power tools to include a forklift",
-                    "Keep vehicles and job sites clean and free of debris",
-                    "Other duties as assigned"
+                    "Coordinate daily tasks according to plans, adjust as necessary due to weather and personnel",
+                    "Delegate responsibilities to crew members and contractors",
+                    "Provide leadership through example and sharing of knowledge/skills",
+                    "Plan the work schedule to achieve maximum production",
+                    "Ensure safe operation and transportation of equipment",
+                    "Instruct crews on procedures and methods to be used",
+                    "Monitor and collaborate with crew members to complete projects",
+                    "Maintain accurate records and meet deadlines"
                 ]}
                 jobType="Full-time"
-                compensation="Dependent on Project"
-                benefits="Medical, Dental, and Vision Insurance, Health Reimbursement, Supplemental Insurance, Paid Holidays, H.W.A. (Healthy Workplace Act), 401k"
+                compensation="Dependent on experience"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
             <JobPosition
-                title="Sign Shop Laborer"
+                title="Sign Shop Laborer - Entry Level"
                 icon={<FaSign />}
-                summary="The Sign Installer will install various types of traffic signs and posts for roads, highways, and parking lots in accordance with MUTCD standards."
+                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."
                 qualifications={[
                     "Detail oriented",
                     "Dependable and reliable",
@@ -155,43 +144,91 @@ export default function JobOpportunities() {
                     "Work independently and in a team environment",
                     "A self-starter",
                     "Ability to multi-task",
-                    "Ability to lift 25 to 30 lbs",
+                    "Ability to lift 25 to 30 lbs.",
                     "Stand for long periods of time",
-                    "Knowledge and experience working with a tape measurer preferred",
+                    "Knowledge of using a tape measurer preferred",
+                    "Good communication skills"
                 ]}
                 responsibilities={[
-                    "Manufacturing signs, banner and digital printed media",
-                    "Cut metal, wood and other materials per designated order",
-                    "Operate a variety of saws and equipment in the manufacturing process"
+                    "Manufacture signs, banners, and digital printed media",
+                    "Cut metal, wood, and other materials as required",
+                    "Operate various saws and equipment"
                 ]}
                 jobType="Full-time"
-                compensation="$14.50"
-                benefits="Medical, Dental, Vision Insurance, 401k, Paid Holidays"
+                compensation="$14.50 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
             <JobPosition
-                title="Warehouse Laborer"
+                title="Warehouse Worker"
                 icon={<FaWarehouse />}
-                summary="The Warehouse Technician will manage the receiving, storing, and shipping of materials and equipment needed for construction projects."
+                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
                 qualifications={[
-                    "2+ years of warehouse or logistics experience",
-                    "Knowledge of construction materials and equipment",
-                    "Ability to operate forklifts and other warehouse equipment",
-                    "Organizational skills and attention to detail",
-                    "Ability to lift heavy materials",
-                    "Possess a valid driver’s license"
+                    "Regularly lift or move objects 10 to 50 lbs.",
+                    "Occasionally lift or move objects over 100 lbs. using equipment",
+                    "Frequently required to stand, walk, stoop, kneel, or crawl",
+                    "Good driving record",
+                    "Dependable and reliable",
+                    "Team player with the ability to work independently"
                 ]}
                 responsibilities={[
-                    "Receive and verify incoming materials and equipment",
-                    "Organize and store items in the warehouse",
-                    "Prepare materials for delivery to job sites",
-                    "Maintain accurate inventory records",
-                    "Ensure the cleanliness and safety of the warehouse",
-                    "Other duties as assigned"
+                    "Process requests, pull materials, and prepare orders",
+                    "Load and unload trucks and check in merchandise",
+                    "Maintain a clean and safe environment",
+                    "Deliver orders to customers when needed"
                 ]}
                 jobType="Full-time"
-                compensation="$13.50"
-                benefits="Medical, Dental, Vision Insurance, 401k, Paid Holidays"
+                compensation="$13.50 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+            <JobPosition
+                title="CDL Driver"
+                icon={<FaTruck />}
+                summary="The CDL Driver will load, transport, and unload materials to and from work sites, operating various equipment safely, and performing basic maintenance."
+                qualifications={[
+                    "Possess a valid Class A or B CDL License",
+                    "Excellent driving record",
+                    "1-2 years of road construction experience preferred",
+                    "Safety and detail-oriented",
+                    "Experience operating construction equipment",
+                    "Ability to lift up to 75 lbs. for extended periods",
+                    "Flexible and adaptable to change"
+                ]}
+                responsibilities={[
+                    "Transport materials, equipment, and vehicles to job sites",
+                    "Perform pre-trip and post-trip inspections",
+                    "Load and manually lift materials",
+                    "Keep vehicles and job sites clean",
+                    "Perform basic repairs as needed"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Project"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+            <JobPosition
+                title="Field Technician/Laborer"
+                icon={<FaTools />}
+                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
+                qualifications={[
+                    "1-2 years of road construction experience preferred",
+                    "Possess a CDL preferred",
+                    "Experience operating construction equipment",
+                    "Ability to travel 100% of the time",
+                    "Ability to lift up to 75 lbs. for extended periods",
+                    "Flexible and adaptable to change"
+                ]}
+                responsibilities={[
+                    "Transport materials and equipment to job sites",
+                    "Perform maintenance of equipment",
+                    "Safely operate tools and machinery",
+                    "Maintain cleanliness of job sites",
+                    "Read and execute plans for layout marks"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Project"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
         </section>
     );
