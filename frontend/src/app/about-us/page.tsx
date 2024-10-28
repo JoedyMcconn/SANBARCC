@@ -19,9 +19,13 @@ export default function AboutUs() {
             {/* Who We Are */}
             <div className="py-20 bg-black shadow-inner min-h-screen">
                 <div className="container mx-auto px-6 flex flex-col justify-between items-center">
-                    {/* Centered H2 at the top */}
-                    <h2 className="text-8xl font-bold mb-4 text-center text-white border-b-4 border-b-amber-400">Who We
-                        Are</h2>
+                    <div className="flex justify-center mb-4">
+                        <div className="bg-[#F7D117] p-2 mx-5 mb-12">
+                            <div className="bg-black p-4 shadow-lg">
+                                <h2 className="text-white text-3xl lg:text-6xl font-semibold">Who we are</h2>
+                            </div>
+                        </div>
+                    </div>
 
 
                     <div className="flex flex-col md:flex-row md:justify-between md:items-center w-full">
@@ -87,9 +91,13 @@ export default function AboutUs() {
                 <div className="container mx-auto px-6 relative z-10">
 
                     {/* Header at the top */}
-                    <h2 className="text-8xl font-extrabold text-black mb-10 text-center border-b-4 border-black pb-4 uppercase w-fit">
-                        Our History
-                    </h2>
+                    <div className="flex justify-center mb-4">
+                        <div className="bg-[#F7D117] p-2 mx-5 mb-12">
+                            <div className="bg-black p-4 shadow-lg">
+                                <h2 className="text-white text-3xl lg:text-6xl font-semibold">Our History</h2>
+                            </div>
+                        </div>
+                    </div>
 
                     {/* First Paragraph */}
                     <div
@@ -125,9 +133,9 @@ export default function AboutUs() {
             </div>
 
             {/* Leadership Section */}
-            <section className="py-20 bg-[#F7D117] shadow-inner h-full flex flex-col items-center relative">
+            <section className="py-20 bg-black shadow-inner h-full flex flex-col items-center relative">
                 <div className="flex justify-center mb-4">
-                    <div className="bg-yellow-500 bg-opacity-70 p-2 mx-5 mb-12">
+                    <div className="bg-[#F7D117] p-2 mx-5 mb-12">
                         <div className="bg-black p-4 shadow-lg">
                             <h2 className="text-white text-3xl lg:text-6xl font-semibold">Leadership</h2>
                         </div>
@@ -138,7 +146,7 @@ export default function AboutUs() {
                     className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-16 relative">
                     {/* Text block */}
                     <div className="w-full lg:w-1/2 p-6">
-                        <div className="p-6 bg-white rounded-2xl border-8 border-black shadow-lg">
+                        <div className="p-6 bg-white rounded-2xl border-8 border-[#F7D117] shadow-lg">
                             <p className="text-black leading-relaxed mb-6 text-left font-serif text-xl">
                                 David "Hossie" Sanchez, leads a dedicated team of professionals who drive the company's
                                 success.
@@ -171,7 +179,7 @@ export default function AboutUs() {
                         href="/leadership"
                         id="Leadership"
                         aria-label="Leadership"
-                        className="inline-block bg-black hover:bg-gray-500 text-white font-serif text-xl py-3 px-6 rounded-full shadow-lg transition duration-300"
+                        className="inline-block bg-blue-500 hover:bg-[#F7D117] text-white font-serif text-xl py-3 px-6 rounded-full shadow-lg transition duration-300"
                     >
                         Meet the Team
                     </a>
