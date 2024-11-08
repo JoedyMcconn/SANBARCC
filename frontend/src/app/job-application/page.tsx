@@ -226,16 +226,16 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans mb-2">Have you ever worked for this company?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
-                            <input type="radio" name="workedForCompany" value="Yes" required className="mr-2"/> Yes
+                            <input type="radio" name="Worked-For-Company" value="Yes" required className="mr-2"/> Yes
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="workedForCompany" value="No" required className="mr-2"/> No
+                            <input type="radio" name="Worked-For-Company" value="No" required className="mr-2"/> No
                         </label>
                     </div>
                     <div className="mt-2">
                         <label htmlFor="workedForCompanyWhen" className="block text-lg font-sans my-2">If yes,
                             when?</label>
-                        <input type="text" name="workedForCompanyWhen" id="workedForCompanyWhen"
+                        <input type="text" name="Worked-For-Company-When" id="workedForCompanyWhen"
                                className="w-full p-3 rounded-md border border-gray-300 mb-4"/>
                     </div>
                 </div>
@@ -249,27 +249,27 @@ export default function JobApplicationForm() {
                     <label className="block text-lg font-sans my-2">Referral Source</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center ">
-                            <input type="radio" name="referralSource" value="Advertisement"
+                            <input type="radio" name="Referral-Source" value="Advertisement"
                                    className="mr-2"/> Advertisement
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="referralSource" value="Employment Agency"
+                            <input type="radio" name="Referral-Source" value="Employment Agency"
                                    className="mr-2"/> Employment Agency
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="referralSource" value="Friend" className="mr-2"/> Friend
+                            <input type="radio" name="Referral-Source" value="Friend" className="mr-2"/> Friend
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="referralSource" value="Relative" className="mr-2"/> Relative
+                            <input type="radio" name="Referral-Source" value="Relative" className="mr-2"/> Relative
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="referralSource" value="Other" className="mr-2"/> Other
+                            <input type="radio" name="Referral-Source" value="Other" className="mr-2"/> Other
                         </label>
                     </div>
                     <div className="mt-2">
                         <label htmlFor="referralSourceName" className="block text-lg font-sans my-2">If other,
                             please specify Name:</label>
-                        <input type="text" name="referralSourceName" id="referralSourceName"
+                        <input type="text" name="Referral-Source-Name" id="referralSourceName"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -280,26 +280,26 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="company1" className="block text-lg ">Company</label>
-                        <input type="text" name="Company-1" id="company1" required
+                        <input type="text" name="Company-Name-1" id="company1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="phone1" className="block text-lg ">Phone</label>
-                        <input type="tel" name="Phone-1" id="phone1" required
+                        <input type="tel" name="Company-Phone-1" id="phone1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
                     <label htmlFor="address1" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
-                    <input type="text" name="Address-1" id="address1" required
+                    <input type="text" name="Company-Address-1" id="address1" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="supervisor1" className="block text-lg ">Supervisor</label>
-                        <input type="text" name="Supervisor-1" id="supervisor1" required
+                        <input type="text" name="Company-Supervisor-1" id="supervisor1" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
@@ -368,19 +368,19 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="company2" className="block text-lg">Company</label>
-                        <input type="text" name="Company-2" id="company2"
+                        <input type="text" name="Company-Name-2" id="company2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="phone2" className="block text-lg ">Phone</label>
-                        <input type="tel" name="Phone-2" id="phone2"
+                        <input type="tel" name="Company-Phone-2" id="phone2"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
 
                 <div>
                     <label htmlFor="address2" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
-                    <input type="text" name="Address-2" id="address2"
+                    <input type="text" name="Company-Address-2" id="address2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
@@ -468,12 +468,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="highSchoolFrom" className="block text-lg ">From</label>
-                        <input type="date" name="High-School-From" id="highSchoolFrom" required
+                        <input type="date" name="High-School-Start" id="highSchoolFrom" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="highSchoolTo" className="block text-lg ">To</label>
-                        <input type="date" name="High-School-To" id="highSchoolTo" required
+                        <input type="date" name="High-School-End" id="highSchoolTo" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -507,12 +507,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="collegeFrom" className="block text-lg">From</label>
-                        <input type="date" name="College-From" id="collegeFrom"
+                        <input type="date" name="College-Start" id="collegeFrom"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="collegeTo" className="block text-lg">To</label>
-                        <input type="date" name="College-To" id="collegeTo"
+                        <input type="date" name="College-End" id="collegeTo"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -552,12 +552,12 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="otherFrom" className="block text-lg">From</label>
-                        <input type="date" name="Other-Education-From" id="otherFrom"
+                        <input type="date" name="Other-Education-Start" id="otherFrom"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
                         <label htmlFor="otherTo" className="block text-lg">To</label>
-                        <input type="date" name="Other-Education-To" id="otherTo"
+                        <input type="date" name="Other-Education-End" id="otherTo"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -592,7 +592,7 @@ export default function JobApplicationForm() {
                     </div>
                     <div>
                         <label htmlFor="fromMilitary" className="block text-lg">From</label>
-                        <input type="date" name="Military-From" id="fromMilitary"
+                        <input type="date" name="Military-Start" id="fromMilitary"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                 </div>
@@ -600,7 +600,7 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
                     <div>
                         <label htmlFor="toMilitary" className="block text-lg">To</label>
-                        <input type="date" name="Military-To" id="toMilitary"
+                        <input type="date" name="Military-End" id="toMilitary"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
