@@ -26,11 +26,11 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
                     </h2>
                 </div>
                 <div className="w-full">
-                    <p className="text-xl md:text-2xl text-gray-800 leading-relaxed mb-6"><strong>Position Summary:</strong> {summary}</p>
+                    <p className=" font-sans text-xl md:text-2xl text-gray-800 leading-relaxed mb-6"><strong>Position Summary:</strong> {summary}</p>
                 </div>
                 <div className="w-full md:w-1/2 mb-6">
                     <h3 className="text-xl font-semibold text-black mb-2"><strong>Qualifications:</strong></h3>
-                    <ul className="list-disc list-inside text-gray-800 mb-4">
+                    <ul className="list-disc list-inside text-gray-800 mb-4 font-sans">
                         {qualifications.map((qualification, index) => (
                             <li key={index}>{qualification}</li>
                         ))}
@@ -38,7 +38,7 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
                 </div>
                 <div className="w-full md:w-1/2 mb-6">
                     <h3 className="text-xl font-semibold text-black mb-2"><strong>Duties & Responsibilities:</strong></h3>
-                    <ul className="list-disc list-inside text-gray-800 mb-4">
+                    <ul className="list-disc list-inside text-gray-800 mb-4 font-sans">
                         {responsibilities.map((responsibility, index) => (
                             <li key={index}>{responsibility}</li>
                         ))}
@@ -47,19 +47,19 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
                 {jobType && (
                     <div className="w-full md:w-1/2 mb-6">
                         <h3 className="text-xl font-semibold text-black mb-2"><strong>Job Type:</strong></h3>
-                        <p className="text-gray-800">{jobType}</p>
+                        <p className="text-gray-800 font-sans">{jobType}</p>
                     </div>
                 )}
                 {compensation && (
                     <div className="w-full md:w-1/2 mb-6">
                         <h3 className="text-xl font-semibold text-black mb-2"><strong>Compensation:</strong></h3>
-                        <p className="text-gray-800">{compensation}</p>
+                        <p className="text-gray-800 font-sans">{compensation}</p>
                     </div>
                 )}
                 {benefits && (
                     <div className="w-full md:w-1/2">
                         <h3 className="text-xl font-semibold text-black mb-2"><strong>Benefits:</strong></h3>
-                        <p className="text-gray-800">{benefits}</p>
+                        <p className="text-gray-800 font-sans">{benefits}</p>
                     </div>
                 )}
             </div>
@@ -103,6 +103,34 @@ export default function JobOpportunities() {
                     </Link>
                 </div>
             </div>
+
+            <JobPosition
+                title="Sign Designer - Signage"
+                icon={<FaSign />}
+                summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."
+                qualifications={[
+                    "Ability to establish priorities, work independently, and achieve objectives without supervision",
+                    "Time management and multi-tasking skills while being detail-oriented with a positive attitude",
+                    "Proven ability to work collaboratively",
+                    "Excellent analytical and problem-solving skills",
+                    "Excellent verbal and written communication skills",
+                    "Able to create excellent graphics and presentations based on customer orders",
+                    "Works well in a fast-paced environment",
+                    "Possess intermediate computer skills, can import/export files",
+                    "Intermediate skills in Adobe Illustrator and/or Photoshop (Flexprint experience is a plus)",
+                    "Able to lift up to 50 pounds on occasion"
+                ]}
+                responsibilities={[
+                    "Work with sign shop manager, sales department, and contracting department to execute initial designs that meet project requirements",
+                    "Ensure all printing jobs stay on schedule to meet the various department timelines",
+                    "Understand the proofing process, make corrections, and provide submittals for approval",
+                    "Communicate professionally and courteously with the team and (on occasion) customers",
+                    "Ensure proper supplies and materials are available to complete printing jobs"
+                ]}
+                jobType="Full-time"
+                compensation="Based on Experience"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
 
             <JobPosition
                 title="Crew Foreman"
