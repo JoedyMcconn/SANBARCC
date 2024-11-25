@@ -15,57 +15,70 @@ interface JobPositionProps {
 
 function JobPosition({ title, icon, summary, qualifications, responsibilities, jobType, compensation, benefits }: JobPositionProps) {
     return (
-        <div className="w-full max-w-4xl mx-auto bg-black p-6 rounded-lg mb-12">
-            <div className="bg-white p-6 rounded-lg flex flex-wrap">
-                <div className="w-full text-center mb-6">
-                    <div className="flex justify-center mb-4">
-                        <span className="text-5xl lg:text-6xl">{icon}</span>
+        <div className="w-full max-w-6xl mx-auto bg-black p-8 rounded-lg mb-16">
+            <div className="bg-white p-8 rounded-lg flex flex-wrap">
+                <div className="w-full text-center mb-8">
+                    <div className="flex justify-center mb-6">
+                        <span className="text-6xl lg:text-7xl">{icon}</span>
                     </div>
-                    <h2 className="text-4xl lg:text-5xl font-semibold text-black">
+                    <h2 className="text-5xl lg:text-6xl font-semibold text-black">
                         {title}
                     </h2>
                 </div>
                 <div className="w-full">
-                    <p className=" font-sans text-xl md:text-2xl text-gray-800 leading-relaxed mb-6"><strong>Position Summary:</strong> {summary}</p>
+                    <p className="font-sans text-2xl md:text-3xl text-gray-700 leading-relaxed mb-8">
+                        <strong>Position Summary:</strong> {summary}
+                    </p>
                 </div>
-                <div className="w-full md:w-1/2 mb-6">
-                    <h3 className="text-xl font-semibold text-black mb-2"><strong>Qualifications:</strong></h3>
-                    <ul className="list-disc list-inside text-gray-800 mb-4 font-sans">
+                <div className="w-full md:w-1/2 mb-8">
+                    <h3 className="text-2xl font-semibold text-black mb-4">
+                        <strong>Qualifications:</strong>
+                    </h3>
+                    <ul className="list-disc list-inside text-gray-700 mb-6 font-sans text-lg md:text-xl">
                         {qualifications.map((qualification, index) => (
                             <li key={index}>{qualification}</li>
                         ))}
                     </ul>
                 </div>
-                <div className="w-full md:w-1/2 mb-6">
-                    <h3 className="text-xl font-semibold text-black mb-2"><strong>Duties & Responsibilities:</strong></h3>
-                    <ul className="list-disc list-inside text-gray-800 mb-4 font-sans">
+                <div className="w-full md:w-1/2 mb-8">
+                    <h3 className="text-2xl font-semibold text-black mb-4">
+                        <strong>Duties & Responsibilities:</strong>
+                    </h3>
+                    <ul className="list-disc list-inside text-gray-700 mb-6 font-sans text-lg md:text-xl">
                         {responsibilities.map((responsibility, index) => (
                             <li key={index}>{responsibility}</li>
                         ))}
                     </ul>
                 </div>
                 {jobType && (
-                    <div className="w-full md:w-1/2 mb-6">
-                        <h3 className="text-xl font-semibold text-black mb-2"><strong>Job Type:</strong></h3>
-                        <p className="text-gray-800 font-sans">{jobType}</p>
+                    <div className="w-full md:w-1/2 mb-8">
+                        <h3 className="text-2xl font-semibold text-black mb-4">
+                            <strong>Job Type:</strong>
+                        </h3>
+                        <p className="text-gray-700 font-sans text-lg md:text-xl">{jobType}</p>
                     </div>
                 )}
                 {compensation && (
-                    <div className="w-full md:w-1/2 mb-6">
-                        <h3 className="text-xl font-semibold text-black mb-2"><strong>Compensation:</strong></h3>
-                        <p className="text-gray-800 font-sans">{compensation}</p>
+                    <div className="w-full md:w-1/2 mb-8">
+                        <h3 className="text-2xl font-semibold text-black mb-4">
+                            <strong>Compensation:</strong>
+                        </h3>
+                        <p className="text-gray-700 font-sans text-lg md:text-xl">{compensation}</p>
                     </div>
                 )}
                 {benefits && (
                     <div className="w-full md:w-1/2">
-                        <h3 className="text-xl font-semibold text-black mb-2"><strong>Benefits:</strong></h3>
-                        <p className="text-gray-800 font-sans">{benefits}</p>
+                        <h3 className="text-2xl font-semibold text-black mb-4">
+                            <strong>Benefits:</strong>
+                        </h3>
+                        <p className="text-gray-700 font-sans text-lg md:text-xl">{benefits}</p>
                     </div>
                 )}
             </div>
         </div>
     );
 }
+
 
 export default function JobOpportunities() {
     return (
@@ -103,6 +116,32 @@ export default function JobOpportunities() {
                     </Link>
                 </div>
             </div>
+
+            <JobPosition
+                title="Parts Specialist"
+                icon={<FaTools />}
+                summary="The Parts Specialist is responsible for managing and maintaining the inventory of parts and supplies, coordinating with vendors, and ensuring accurate and timely distribution of materials to meet the needs of the company’s operations. This role requires strong organizational skills, attention to detail, and the ability to work collaboratively with various departments."
+                qualifications={[
+                    "5+ years experience with parts or mechanical work",
+                    "Strong organizational and time management skills",
+                    "Excellent verbal and written communication skills",
+                    "Dependable",
+                ]}
+                responsibilities={[
+                    "Manage inventory of parts and supplies, ensuring accurate stock levels",
+                    "Order and receive parts from vendors in a timely manner",
+                    "Maintain accurate records of inventory and transactions",
+                    "Coordinate with the maintenance and operations teams to provide necessary parts and materials",
+                    "Ensure proper storage and labeling of parts and supplies",
+                    "Assist in resolving discrepancies in inventory or shipments",
+                    "Provide excellent customer service to internal and external stakeholders",
+                    "Ensure the parts area is clean, organized, and complies with safety standards"
+                ]}
+                jobType="Full-time"
+                compensation="Based on Experience"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
 
             <JobPosition
                 title="Sign Designer - Signage"
