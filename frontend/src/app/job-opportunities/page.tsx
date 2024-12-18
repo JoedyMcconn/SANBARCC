@@ -125,7 +125,7 @@ export default function JobOpportunities() {
                     "5+ years experience with parts or mechanical work",
                     "Strong organizational and time management skills",
                     "Excellent verbal and written communication skills",
-                    "Dependable ",
+                    "Dependable",
                 ]}
                 responsibilities={[
                     "Manage inventory of parts and supplies, ensuring accurate stock levels",
