@@ -40,7 +40,7 @@ const Home = () => {
                 <HeroSection />
                 <AboutSection />
                 <JobOpportunitiesSection />
-                <ServicesSection />
+                <ServicesSection  />
                 <MusicalRoadSection />
                 <ShopSection />
             </Suspense>
