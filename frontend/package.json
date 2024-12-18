@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google-cloud/recaptcha-enterprise": "^5.11.0",
+    "@vercel/analytics": "^1.4.1",
     "aos": "^2.3.4",
     "dotenv": "^16.4.5",
     "formidable": "^3.5.1",

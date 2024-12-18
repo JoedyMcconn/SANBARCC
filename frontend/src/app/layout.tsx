@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/app/shared/NavBar/ResponsiveNav";
 import Footer from "@/app/shared/Footer/Footer";
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/react";
 
 const bebas = Bebas_Neue({
     weight: ['400'],
@@ -24,11 +25,11 @@ export default function RootLayout({
             <link rel="icon" type="image/png" href="/SanBarLogo2.png" sizes="24x36" />
 
             {/* Title for Google Search */}
-            <title>San Bar Construction Corp. | Specialized Construction Company | Sign Manufacturer </title>
+            <title>San Bar Construction Corp. | Specialized Construction Company | Sign Manufacturer</title>
 
             {/* Meta Description for Google Search */}
             <meta name="description"
-                  content="San Bar Construction Corp. specializes in specialized services, including Pavement Markings, Sign Design & Manufacturing, Guardrail Installation, Cable Barrier Installation, Overhead Sign Structure Installation, Rumble Strip Installation and more." />
+                  content="San Bar Construction Corp. sets the standard for excellence in specialized services, including pavement markings, sign design and manufacturing, guardrail installation, cable barrier installation, overhead sign structure installation, rumble strip installation, and more." />
 
             {/* Open Graph Tags for Social Media */}
             <meta property="og:title" content="San Bar Construction Corp. | Road Services & Sign Manufacturing" />
@@ -47,6 +48,7 @@ export default function RootLayout({
         <ResponsiveNav />
         {children}
         <Footer />
+        <Analytics />
         </body>
         </html>
     );
