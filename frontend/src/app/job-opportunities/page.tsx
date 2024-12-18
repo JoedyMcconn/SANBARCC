@@ -40,7 +40,7 @@ function JobPosition({ title, icon, summary, qualifications, responsibilities, j
                         ))}
                     </ul>
                 </div>
-                <div className="w-full md:w-1/2 mb-8">
+                <div className="w-full md:w-1/2 mb-8 ">
                     <h3 className="text-2xl font-semibold text-black mb-4">
                         <strong>Duties & Responsibilities:</strong>
                     </h3>
