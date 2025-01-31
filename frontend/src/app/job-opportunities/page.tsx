@@ -200,31 +200,31 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            <JobPosition
-                title="Sign Shop Laborer - Entry Level"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."
-                qualifications={[
-                    "Detail oriented",
-                    "Dependable and reliable",
-                    "Ability to work in a fast-paced environment",
-                    "Work independently and in a team environment",
-                    "A self-starter",
-                    "Ability to multi-task",
-                    "Ability to lift 25 to 30 lbs.",
-                    "Stand for long periods of time",
-                    "Knowledge of using a tape measurer preferred",
-                    "Good communication skills"
-                ]}
-                responsibilities={[
-                    "Manufacture signs, banners, and digital printed media",
-                    "Cut metal, wood, and other materials as required",
-                    "Operate various saws and equipment"
-                ]}
-                jobType="Full-time"
-                compensation="$14.50 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Sign Shop Laborer - Entry Level"*/}
+            {/*    icon={<FaSign />}*/}
+            {/*    summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."*/}
+            {/*    qualifications={[*/}
+            {/*        "Detail oriented",*/}
+            {/*        "Dependable and reliable",*/}
+            {/*        "Ability to work in a fast-paced environment",*/}
+            {/*        "Work independently and in a team environment",*/}
+            {/*        "A self-starter",*/}
+            {/*        "Ability to multi-task",*/}
+            {/*        "Ability to lift 25 to 30 lbs.",*/}
+            {/*        "Stand for long periods of time",*/}
+            {/*        "Knowledge of using a tape measurer preferred",*/}
+            {/*        "Good communication skills"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Manufacture signs, banners, and digital printed media",*/}
+            {/*        "Cut metal, wood, and other materials as required",*/}
+            {/*        "Operate various saws and equipment"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$14.50 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Warehouse Worker"
@@ -274,29 +274,29 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            <JobPosition
-                title="Field Technician/Laborer"
-                icon={<FaTools />}
-                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
-                qualifications={[
-                    "1-2 years of road construction experience preferred",
-                    "Possess a CDL preferred",
-                    "Experience operating construction equipment",
-                    "Ability to travel 100% of the time",
-                    "Ability to lift up to 75 lbs. for extended periods",
-                    "Flexible and adaptable to change"
-                ]}
-                responsibilities={[
-                    "Transport materials and equipment to job sites",
-                    "Perform maintenance of equipment",
-                    "Safely operate tools and machinery",
-                    "Maintain cleanliness of job sites",
-                    "Read and execute plans for layout marks"
-                ]}
-                jobType="Full-time"
-                compensation="Dependent on Project"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Field Technician/Laborer"*/}
+            {/*    icon={<FaTools />}*/}
+            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
+            {/*    qualifications={[*/}
+            {/*        "1-2 years of road construction experience preferred",*/}
+            {/*        "Possess a CDL preferred",*/}
+            {/*        "Experience operating construction equipment",*/}
+            {/*        "Ability to travel 100% of the time",*/}
+            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
+            {/*        "Flexible and adaptable to change"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Transport materials and equipment to job sites",*/}
+            {/*        "Perform maintenance of equipment",*/}
+            {/*        "Safely operate tools and machinery",*/}
+            {/*        "Maintain cleanliness of job sites",*/}
+            {/*        "Read and execute plans for layout marks"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Dependent on Project"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
         </section>
     );
 }
