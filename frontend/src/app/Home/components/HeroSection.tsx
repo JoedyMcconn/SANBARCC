@@ -97,7 +97,7 @@ const Hero = () => {
                         Contact Us
                     </a>
                     <div className="bg-white text-black p-1 md:p-2 rounded text-sm md:text-lg flex items-center font-sans">
-                        Call Us: +1 505-452-8800
+                        Call Us: +1 505-452-8000
                     </div>
                 </div>
             </div>
