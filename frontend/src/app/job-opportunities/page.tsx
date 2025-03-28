@@ -117,6 +117,59 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
+            {/*<JobPosition*/}
+            {/*    title="Parts Specialist"*/}
+            {/*    icon={<FaTools />}*/}
+            {/*    summary="The Parts Specialist is responsible for managing and maintaining the inventory of parts and supplies, coordinating with vendors, and ensuring accurate and timely distribution of materials to meet the needs of the company’s operations. This role requires strong organizational skills, attention to detail, and the ability to work collaboratively with various departments."*/}
+            {/*    qualifications={[*/}
+            {/*        "5+ years experience with parts or mechanical work",*/}
+            {/*        "Strong organizational and time management skills",*/}
+            {/*        "Excellent verbal and written communication skills",*/}
+            {/*        "Dependable",*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Manage inventory of parts and supplies, ensuring accurate stock levels",*/}
+            {/*        "Order and receive parts from vendors in a timely manner",*/}
+            {/*        "Maintain accurate records of inventory and transactions",*/}
+            {/*        "Coordinate with the maintenance and operations teams to provide necessary parts and materials",*/}
+            {/*        "Ensure proper storage and labeling of parts and supplies",*/}
+            {/*        "Assist in resolving discrepancies in inventory or shipments",*/}
+            {/*        "Provide excellent customer service to internal and external stakeholders",*/}
+            {/*        "Ensure the parts area is clean, organized, and complies with safety standards"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Based on Experience"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
+
+
+            {/*<JobPosition*/}
+            {/*    title="Sign Designer - Signage"*/}
+            {/*    icon={<FaSign />}*/}
+            {/*    summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."*/}
+            {/*    qualifications={[*/}
+            {/*        "Ability to establish priorities, work independently, and achieve objectives without supervision",*/}
+            {/*        "Time management and multi-tasking skills while being detail-oriented with a positive attitude",*/}
+            {/*        "Proven ability to work collaboratively",*/}
+            {/*        "Excellent analytical and problem-solving skills",*/}
+            {/*        "Excellent verbal and written communication skills",*/}
+            {/*        "Able to create excellent graphics and presentations based on customer orders",*/}
+            {/*        "Works well in a fast-paced environment",*/}
+            {/*        "Possess intermediate computer skills, can import/export files",*/}
+            {/*        "Intermediate skills in Adobe Illustrator and/or Photoshop (Flexprint experience is a plus)",*/}
+            {/*        "Able to lift up to 50 pounds on occasion"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Work with sign shop manager, sales department, and contracting department to execute initial designs that meet project requirements",*/}
+            {/*        "Ensure all printing jobs stay on schedule to meet the various department timelines",*/}
+            {/*        "Understand the proofing process, make corrections, and provide submittals for approval",*/}
+            {/*        "Communicate professionally and courteously with the team and (on occasion) customers",*/}
+            {/*        "Ensure proper supplies and materials are available to complete printing jobs"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Based on Experience"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Crew Foreman"
