@@ -118,32 +118,65 @@ export default function JobOpportunities() {
             </div>
 
             <JobPosition
-                title="Parts & Delivery Driver"
-                icon={<FaTruck />}
-                summary="San Bar Construction Corp. is currently hiring for a Parts & Delivery Driver who will pick up and deliver parts and supplies throughout Albuquerque and the surrounding area."
+                title="Administrative Assistant/Receptionist"
+                icon={<FaTools />}
+                summary="Administrative Assistant/Receptionist will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."
                 qualifications={[
-                    "Excellent driving record and a valid driver’s license",
-                    "Good attention to detail",
-                    "Ability to work independently and manage multiple tasks",
-                    "Good communication skills",
-                    "Dependable and reliable",
-                    "Organizational skills to keep track of paperwork",
-                    "Ability to lift 25 to 50 lbs"
+                    "3+ years of experience",
+                    "Excellent organizational, time management, good listening skills",
+                    "Proficient knowledge of Microsoft Office Applications, including Excel",
+                    "Proficient database application software experience",
+                    "Knowledge of Pro Contractor by Viewpoint preferred",
+                    "Ability to multi-task, prioritize, and problem solve",
+                    "Self-starter and dependable",
+                    "Excellent communication skills both written and verbal",
+                    "Construction industry experience preferred",
+                    "Ability to work with confidential information"
                 ]}
                 responsibilities={[
-                    "Pick up vehicle parts and supplies from various vendors",
-                    "Make deliveries to vendors",
-                    "Track and maintain accurate records of invoices, receipts, and checks",
-                    "Prepare a weekly expense report",
-                    "Keep vehicle clean of trash and report maintenance issues to fleet manager",
-                    "Perform light janitorial duties including restrooms and breakroom",
-                    "Restock the popcorn machine and vending machines",
-                    "Perform other duties as assigned"
+                    "Answer phones, greet customers, and direct accordingly",
+                    "Collect and distribute mail",
+                    "Order and maintain office supplies",
+                    "Maintain printer usage, postage downloads, and prepare and stamp mail",
+                    "Collect, code and reconcile statements and credit card expense reports on a weekly basis",
+                    "Assist cardholders with expense reports, upload activities, and maintain credit card files",
+                    "Scan AP Invoices",
+                    "Process Customer Credit applications",
+                    "Oversee employment applications and process new hire paperwork",
+                    "Perform additional administrative tasks as needed"
                 ]}
                 jobType="Full-time"
-                compensation="$15.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+                compensation="$16.00/hr - $17.50/hr"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
             />
+
+            {/*<JobPosition*/}
+            {/*    title="Parts & Delivery Driver"*/}
+            {/*    icon={<FaTruck />}*/}
+            {/*    summary="San Bar Construction Corp. is currently hiring for a Parts & Delivery Driver who will pick up and deliver parts and supplies throughout Albuquerque and the surrounding area."*/}
+            {/*    qualifications={[*/}
+            {/*        "Excellent driving record and a valid driver’s license",*/}
+            {/*        "Good attention to detail",*/}
+            {/*        "Ability to work independently and manage multiple tasks",*/}
+            {/*        "Good communication skills",*/}
+            {/*        "Dependable and reliable",*/}
+            {/*        "Organizational skills to keep track of paperwork",*/}
+            {/*        "Ability to lift 25 to 50 lbs"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Pick up vehicle parts and supplies from various vendors",*/}
+            {/*        "Make deliveries to vendors",*/}
+            {/*        "Track and maintain accurate records of invoices, receipts, and checks",*/}
+            {/*        "Prepare a weekly expense report",*/}
+            {/*        "Keep vehicle clean of trash and report maintenance issues to fleet manager",*/}
+            {/*        "Perform light janitorial duties including restrooms and breakroom",*/}
+            {/*        "Restock the popcorn machine and vending machines",*/}
+            {/*        "Perform other duties as assigned"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$15.00 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             {/*<JobPosition*/}
             {/*    title="Parts Specialist"*/}
