@@ -56,7 +56,6 @@ const PavementMarkingsPage: React.FC = () => {
                                     <li>Paint</li>
                                     <li>Thermoplastic</li>
                                     <li>Preformed tape</li>
-                                    <li>Epoxy</li>
                                 </ul>
                             </div>
                         </div>
