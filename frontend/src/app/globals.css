@@ -111,5 +111,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
   }
+}
 
+/* NEW - scroll margin & focus styles */
+input, textarea, select {
+  scroll-margin-top: 120px; /* Adjust based on your fixed header height */
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
 }
