@@ -287,28 +287,28 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
 
-            <JobPosition
-                title="Warehouse Worker"
-                icon={<FaWarehouse />}
-                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
-                qualifications={[
-                    "Regularly lift or move objects 10 to 50 lbs.",
-                    "Occasionally lift or move objects over 100 lbs. using equipment",
-                    "Frequently required to stand, walk, stoop, kneel, or crawl",
-                    "Good driving record",
-                    "Dependable and reliable",
-                    "Team player with the ability to work independently"
-                ]}
-                responsibilities={[
-                    "Process requests, pull materials, and prepare orders",
-                    "Load and unload trucks and check in merchandise",
-                    "Maintain a clean and safe environment",
-                    "Deliver orders to customers when needed"
-                ]}
-                jobType="Full-time"
-                compensation="$13.50 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Warehouse Worker"*/}
+            {/*    icon={<FaWarehouse />}*/}
+            {/*    summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."*/}
+            {/*    qualifications={[*/}
+            {/*        "Regularly lift or move objects 10 to 50 lbs.",*/}
+            {/*        "Occasionally lift or move objects over 100 lbs. using equipment",*/}
+            {/*        "Frequently required to stand, walk, stoop, kneel, or crawl",*/}
+            {/*        "Good driving record",*/}
+            {/*        "Dependable and reliable",*/}
+            {/*        "Team player with the ability to work independently"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Process requests, pull materials, and prepare orders",*/}
+            {/*        "Load and unload trucks and check in merchandise",*/}
+            {/*        "Maintain a clean and safe environment",*/}
+            {/*        "Deliver orders to customers when needed"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$13.50 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="CDL Driver"
@@ -335,29 +335,29 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            {/*<JobPosition*/}
-            {/*    title="Field Technician/Laborer"*/}
-            {/*    icon={<FaTools />}*/}
-            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
-            {/*    qualifications={[*/}
-            {/*        "1-2 years of road construction experience preferred",*/}
-            {/*        "Possess a CDL preferred",*/}
-            {/*        "Experience operating construction equipment",*/}
-            {/*        "Ability to travel 100% of the time",*/}
-            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
-            {/*        "Flexible and adaptable to change"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Transport materials and equipment to job sites",*/}
-            {/*        "Perform maintenance of equipment",*/}
-            {/*        "Safely operate tools and machinery",*/}
-            {/*        "Maintain cleanliness of job sites",*/}
-            {/*        "Read and execute plans for layout marks"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="Dependent on Project"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
+            <JobPosition
+                title="Field Technician/Laborer"
+                icon={<FaTools />}
+                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
+                qualifications={[
+                    "1-2 years of road construction experience preferred",
+                    "Possess a CDL preferred",
+                    "Experience operating construction equipment",
+                    "Ability to travel 100% of the time",
+                    "Ability to lift up to 75 lbs. for extended periods",
+                    "Flexible and adaptable to change"
+                ]}
+                responsibilities={[
+                    "Transport materials and equipment to job sites",
+                    "Perform maintenance of equipment",
+                    "Safely operate tools and machinery",
+                    "Maintain cleanliness of job sites",
+                    "Read and execute plans for layout marks"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Project"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
         </section>
     );
 }
