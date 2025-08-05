@@ -211,7 +211,7 @@ export default function JobApplicationForm() {
                         <input type="checkbox" name="position" value="Clerical" className="mr-2"/> Clerical
                     </label>
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Administrative Assistant" className="mr-2"/> Administrative Assistant
+                        <input type="checkbox" name="position" value="Receptionist/Accounting Clerk Administrative Assistant" className="mr-2"/> Receptionist/Accounting Clerk Administrative Assistant
                     </label>
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Other" className="mr-2"/> Other:

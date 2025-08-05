@@ -118,7 +118,7 @@ export default function JobOpportunities() {
             </div>
 
             <JobPosition
-                title="Administrative Assistant/Receptionist"
+                title="Receptionist/Accounting Clerk Administrative Assistant"
                 icon={<FaTools />}
                 summary="Administrative Assistant/Receptionist will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."
                 qualifications={[
@@ -146,7 +146,7 @@ export default function JobOpportunities() {
                     "Perform additional administrative tasks as needed"
                 ]}
                 jobType="Full-time"
-                compensation="$16.00/hr - $18.00/hr"
+                compensation="$16.00/hr - $20.00/hr"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
             />
 
