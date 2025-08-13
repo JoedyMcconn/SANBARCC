@@ -117,38 +117,38 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
-            <JobPosition
-                title="Receptionist/Accounting Clerk Administrative Assistant"
-                icon={<FaTools />}
-                summary="Administrative Assistant/Receptionist will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."
-                qualifications={[
-                    "3+ years of experience",
-                    "Excellent organizational, time management, good listening skills",
-                    "Proficient knowledge of Microsoft Office Applications, including Excel",
-                    "Proficient database application software experience",
-                    "Knowledge of Pro Contractor by Viewpoint preferred",
-                    "Ability to multi-task, prioritize, and problem solve",
-                    "Self-starter and dependable",
-                    "Excellent communication skills both written and verbal",
-                    "Construction industry experience preferred",
-                    "Ability to work with confidential information"
-                ]}
-                responsibilities={[
-                    "Answer phones, greet customers, and direct accordingly",
-                    "Collect and distribute mail",
-                    "Order and maintain office supplies",
-                    "Maintain printer usage, postage downloads, and prepare and stamp mail",
-                    "Collect, code and reconcile statements and credit card expense reports on a weekly basis",
-                    "Assist cardholders with expense reports, upload activities, and maintain credit card files",
-                    "Scan AP Invoices",
-                    "Process Customer Credit applications",
-                    "Oversee employment applications and process new hire paperwork",
-                    "Perform additional administrative tasks as needed"
-                ]}
-                jobType="Full-time"
-                compensation="$16.00/hr - $20.00/hr"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Receptionist/Accounting Clerk Administrative Assistant"*/}
+            {/*    icon={<FaTools />}*/}
+            {/*    summary="Administrative Assistant/Receptionist will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."*/}
+            {/*    qualifications={[*/}
+            {/*        "3+ years of experience",*/}
+            {/*        "Excellent organizational, time management, good listening skills",*/}
+            {/*        "Proficient knowledge of Microsoft Office Applications, including Excel",*/}
+            {/*        "Proficient database application software experience",*/}
+            {/*        "Knowledge of Pro Contractor by Viewpoint preferred",*/}
+            {/*        "Ability to multi-task, prioritize, and problem solve",*/}
+            {/*        "Self-starter and dependable",*/}
+            {/*        "Excellent communication skills both written and verbal",*/}
+            {/*        "Construction industry experience preferred",*/}
+            {/*        "Ability to work with confidential information"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Answer phones, greet customers, and direct accordingly",*/}
+            {/*        "Collect and distribute mail",*/}
+            {/*        "Order and maintain office supplies",*/}
+            {/*        "Maintain printer usage, postage downloads, and prepare and stamp mail",*/}
+            {/*        "Collect, code and reconcile statements and credit card expense reports on a weekly basis",*/}
+            {/*        "Assist cardholders with expense reports, upload activities, and maintain credit card files",*/}
+            {/*        "Scan AP Invoices",*/}
+            {/*        "Process Customer Credit applications",*/}
+            {/*        "Oversee employment applications and process new hire paperwork",*/}
+            {/*        "Perform additional administrative tasks as needed"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$16.00/hr - $20.00/hr"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
+            {/*/>*/}
 
             {/*<JobPosition*/}
             {/*    title="Parts & Delivery Driver"*/}
