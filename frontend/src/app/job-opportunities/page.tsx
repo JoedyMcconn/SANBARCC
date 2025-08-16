@@ -287,28 +287,28 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
 
-            {/*<JobPosition*/}
-            {/*    title="Warehouse Worker"*/}
-            {/*    icon={<FaWarehouse />}*/}
-            {/*    summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."*/}
-            {/*    qualifications={[*/}
-            {/*        "Regularly lift or move objects 10 to 50 lbs.",*/}
-            {/*        "Occasionally lift or move objects over 100 lbs. using equipment",*/}
-            {/*        "Frequently required to stand, walk, stoop, kneel, or crawl",*/}
-            {/*        "Good driving record",*/}
-            {/*        "Dependable and reliable",*/}
-            {/*        "Team player with the ability to work independently"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Process requests, pull materials, and prepare orders",*/}
-            {/*        "Load and unload trucks and check in merchandise",*/}
-            {/*        "Maintain a clean and safe environment",*/}
-            {/*        "Deliver orders to customers when needed"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$13.50 per hour"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
+            <JobPosition
+                title="Warehouse Worker"
+                icon={<FaWarehouse />}
+                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
+                qualifications={[
+                    "Regularly lift or move objects 10 to 50 lbs.",
+                    "Occasionally lift or move objects over 100 lbs. using equipment",
+                    "Frequently required to stand, walk, stoop, kneel, or crawl",
+                    "Good driving record",
+                    "Dependable and reliable",
+                    "Team player with the ability to work independently"
+                ]}
+                responsibilities={[
+                    "Process requests, pull materials, and prepare orders",
+                    "Load and unload trucks and check in merchandise",
+                    "Maintain a clean and safe environment",
+                    "Deliver orders to customers when needed"
+                ]}
+                jobType="Full-time"
+                compensation="$15.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
 
             <JobPosition
                 title="CDL Driver"
