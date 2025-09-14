@@ -210,16 +210,16 @@ const products: Product[] = [
             { text: "Polyethylene (non-reflective)", icon: <FaTape /> }
         ]
     },
-    {
-        title: "Impact Attenuator",
-        image: "/rental-placeholder.webp",
-        alt: "Impact Attenuator",
-        items: [
-            { text: "", icon: <FaTrafficLight /> },
-            { text: "", icon: <FaRoadBarrier /> },
-            { text: "P", icon: <FaSign /> },
-        ]
-    },
+    // {
+    //     title: "Impact Attenuator",
+    //     image: "/rental-placeholder.webp",
+    //     alt: "Impact Attenuator",
+    //     items: [
+    //         { text: "", icon: <FaTrafficLight /> },
+    //         { text: "", icon: <FaRoadBarrier /> },
+    //         { text: "P", icon: <FaSign /> },
+    //     ]
+    // },
     {
         title: "Panel Lights",
         image: "/PanelLite1.webp",
