@@ -219,7 +219,7 @@ export default function JobApplicationForm() {
                 </div>
                 <div>
                     <label htmlFor="skills" className="block text-xl font-sans mb-2">If Other, Specify:</label>
-                    <textarea name="skills" id="skills" required
+                    <textarea name="skills" id="skills"
                               className="w-full p-3 rounded-md border border-gray-300 mb-4"></textarea>
                 </div>
 
