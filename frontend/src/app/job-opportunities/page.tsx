@@ -255,11 +255,6 @@ export default function JobOpportunities() {
                     "Maintain printers and laminators daily",
                     "Ensure proper supplies and materials are available for printing jobs"
                 ]}
-                educationExperience={[
-                    "Minimum of high school diploma or equivalent",
-                    "1–2 years’ experience in a related or similar role",
-                    "FlexPrint software experience preferred"
-                ]}
                 jobType="Full-time"
                 compensation="$19.00 - $22.00 per hour"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"
