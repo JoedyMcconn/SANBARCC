@@ -234,32 +234,35 @@ export default function JobOpportunities() {
             {/*/>*/}
 
             <JobPosition
-                title="Crew Foreman"
-                icon={<FaHardHat />}
-                summary="San Bar Construction Corp. is currently recruiting to fill the position of crew foreman who will supervise and coordinate the work for highway construction crew members in guardrail and/or sign installation."
+                title="Sign Designer"
+                icon={<FaSign />}
+                summary="San Bar Construction Corp. specializes in fast-paced roadway construction, focusing on roadway striping, signing, and guardrail installation. We are hiring a full-time Sign Designer/Printer with strong computer and design skills to work in our sign shop. The role involves using artistic and design-software skills to develop signs for businesses, contractors, municipalities, retail, and other customers. This includes understanding the sign building and fabrication process, setting up files for digital printing and routing to various printers and laminators (training provided)."
                 qualifications={[
-                    "5 plus years in the highway construction industry",
-                    "2-4 years of experience as a lead, foreman, or supervisor",
-                    "Good communication skills both written and verbal",
-                    "Must perform heavy physical activity",
-                    "Ability to operate hydraulically operated jack hammers and other heavy equipment",
-                    "Work outdoors with exposure to changing weather conditions",
-                    "Good understanding of the construction industry",
-                    "Must possess a valid driver’s license"
+                    "Intermediate skills in Adobe Illustrator and/or Photoshop; FlexPrint experience is a plus",
+                    "Strong computer skills, able to import/export files",
+                    "Ability to establish priorities, work independently, and achieve objectives without supervision",
+                    "Positive attitude, detail-oriented, strong time management and multi-tasking skills",
+                    "Proven ability to work collaboratively",
+                    "Excellent analytical, problem-solving, verbal, graphic, presentation, and written communication skills",
+                    "Predictable and consistent behavior with attitude, attendance, and performance",
+                    "Able to lift up to 50 pounds on occasion"
                 ]}
                 responsibilities={[
-                    "Coordinate daily tasks according to plans, adjust as necessary due to weather and personnel",
-                    "Delegate responsibilities to crew members and contractors",
-                    "Provide leadership through example and sharing of knowledge/skills",
-                    "Plan the work schedule to achieve maximum production",
-                    "Ensure safe operation and transportation of equipment",
-                    "Instruct crews on procedures and methods to be used",
-                    "Monitor and collaborate with crew members to complete projects",
-                    "Maintain accurate records and meet deadlines"
+                    "Work with the sign shop foreman and internal departments to design and print signs that meet project requirements",
+                    "Ensure all printing jobs stay on schedule to meet department timelines",
+                    "Understand the proofing process, make corrections, and provide submittals for approval",
+                    "Communicate professionally and courteously with the team and occasionally with customers",
+                    "Maintain printers and laminators daily",
+                    "Ensure proper supplies and materials are available for printing jobs"
+                ]}
+                educationExperience={[
+                    "Minimum of high school diploma or equivalent",
+                    "1–2 years’ experience in a related or similar role",
+                    "FlexPrint software experience preferred"
                 ]}
                 jobType="Full-time"
-                compensation="Dependent on experience"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+                compensation="$19.00 - $22.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"
             />
 
             {/*<JobPosition*/}
