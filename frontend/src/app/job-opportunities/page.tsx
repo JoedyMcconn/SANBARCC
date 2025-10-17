@@ -256,7 +256,7 @@ export default function JobOpportunities() {
                     "Ensure proper supplies and materials are available for printing jobs"
                 ]}
                 jobType="Full-time"
-                compensation="$19.00 - $22.00 per hour"
+                compensation="$20.00 - $23.00 per hour"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"
             />
 
