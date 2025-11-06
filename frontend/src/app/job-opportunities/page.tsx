@@ -149,7 +149,6 @@ export default function JobOpportunities() {
                 jobType="Full-time"
                 compensation="Negotiable"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"
-                note="Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check."
             />
 
 
