@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck } from 'react-icons/fa';
+import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck, FaClipboardCheck } from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -117,6 +117,41 @@ export default function JobOpportunities() {
                     </Link>
                 </div>
             </div>
+
+
+
+            <JobPosition
+                title="Purchasing Manager"
+                icon={<FaClipboardCheck />}
+                summary="The Purchasing Manager role will be integral to maintaining operational efficiency and driving sales growth at San Bar. This position requires strong organizational skills, multitasking abilities, and effective communication across departments. Responsibilities include inventory management, supplier relationship maintenance, ensuring material availability, managing schedules, and overseeing sales processes to ensure customer satisfaction and business growth."
+                qualifications={[
+                    "Bachelor’s degree in Business Administration, Supply Chain Management, or a related field",
+                    "Minimum of 3–5 years of experience in purchasing, inventory management, or supply chain roles, ideally within the construction or related industries",
+                    "Proven track record in procurement, supplier negotiation, and inventory control",
+                    "Strong proficiency in Microsoft Office Suite (Excel, Word, PowerPoint), particularly Excel for managing data and analyzing trends",
+                    "Exceptional ability to prioritize tasks, manage time effectively, and handle multiple projects simultaneously",
+                    "Strong verbal and written communication skills with the ability to interact effectively with internal teams, suppliers, and customers",
+                    "Ability to adapt to changing market conditions, evolving customer needs, and shifts in company priorities"
+                ]}
+                responsibilities={[
+                    "Monitor inventory levels and maintain understanding of lead times, stock levels, and freight requirements",
+                    "Procure inventory items while staying informed about market conditions, seasonal trends, prepaid shipment needs, and stock requirements",
+                    "Source new products to enhance company sales",
+                    "Coordinate with Operations to combine purchases for optimized freight costs and pricing advantages",
+                    "Build and maintain strong relationships with current suppliers and establish new ones",
+                    "Ensure accurate costing and tracking of all inventory items",
+                    "Coordinate inventory audits and provide finalized inventory data for auditors",
+                    "Oversee the Inside Sales Associate/Sales Administration Assistant to ensure excellent customer service",
+                    "Promote San Bar’s products and services to generate increased sales",
+                    "Build and maintain strong customer relationships, ensuring satisfaction and repeat business",
+                    "Source products to fulfill customer needs and manage timely, effective delivery"
+                ]}
+                jobType="Full-time"
+                compensation="Negotiable"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"
+                note="Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check."
+            />
+
 
             {/*<JobPosition*/}
             {/*    title="Receptionist/Accounting Clerk Administrative Assistant"*/}
