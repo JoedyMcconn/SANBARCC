@@ -39,7 +39,8 @@ export default function Footer() {
                     <p className="text-2xl lg:text-3xl mt-7 text-yellow-500">
                         <strong>Hours:</strong>
                     </p>
-                    <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                    <p>Mon - Thursday: 7:00 AM - 5:00 PM</p>
+                    <p>Friday: 7:00 AM - 11:00 AM</p>
                     <p>Saturday - Sunday: Closed</p>
                     <p className="text-2xl lg:text-3xl mt-7 text-yellow-500">
                         <strong>Address:</strong>
