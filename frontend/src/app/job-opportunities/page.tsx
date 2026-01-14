@@ -120,36 +120,36 @@ export default function JobOpportunities() {
 
 
 
-            <JobPosition
-                title="Purchasing Manager"
-                icon={<FaClipboardCheck />}
-                summary="The Purchasing Manager role will be integral to maintaining operational efficiency and driving sales growth at San Bar. This position requires strong organizational skills, multitasking abilities, and effective communication across departments. Responsibilities include inventory management, supplier relationship maintenance, ensuring material availability, managing schedules, and overseeing sales processes to ensure customer satisfaction and business growth."
-                qualifications={[
-                    "Bachelor’s degree in Business Administration, Supply Chain Management, or a related field",
-                    "Minimum of 3–5 years of experience in purchasing, inventory management, or supply chain roles, ideally within the construction or related industries",
-                    "Proven track record in procurement, supplier negotiation, and inventory control",
-                    "Strong proficiency in Microsoft Office Suite (Excel, Word, PowerPoint), particularly Excel for managing data and analyzing trends",
-                    "Exceptional ability to prioritize tasks, manage time effectively, and handle multiple projects simultaneously",
-                    "Strong verbal and written communication skills with the ability to interact effectively with internal teams, suppliers, and customers",
-                    "Ability to adapt to changing market conditions, evolving customer needs, and shifts in company priorities"
-                ]}
-                responsibilities={[
-                    "Monitor inventory levels and maintain understanding of lead times, stock levels, and freight requirements",
-                    "Procure inventory items while staying informed about market conditions, seasonal trends, prepaid shipment needs, and stock requirements",
-                    "Source new products to enhance company sales",
-                    "Coordinate with Operations to combine purchases for optimized freight costs and pricing advantages",
-                    "Build and maintain strong relationships with current suppliers and establish new ones",
-                    "Ensure accurate costing and tracking of all inventory items",
-                    "Coordinate inventory audits and provide finalized inventory data for auditors",
-                    "Oversee the Inside Sales Associate/Sales Administration Assistant to ensure excellent customer service",
-                    "Promote San Bar’s products and services to generate increased sales",
-                    "Build and maintain strong customer relationships, ensuring satisfaction and repeat business",
-                    "Source products to fulfill customer needs and manage timely, effective delivery"
-                ]}
-                jobType="Full-time"
-                compensation="Negotiable"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Purchasing Manager"*/}
+            {/*    icon={<FaClipboardCheck />}*/}
+            {/*    summary="The Purchasing Manager role will be integral to maintaining operational efficiency and driving sales growth at San Bar. This position requires strong organizational skills, multitasking abilities, and effective communication across departments. Responsibilities include inventory management, supplier relationship maintenance, ensuring material availability, managing schedules, and overseeing sales processes to ensure customer satisfaction and business growth."*/}
+            {/*    qualifications={[*/}
+            {/*        "Bachelor’s degree in Business Administration, Supply Chain Management, or a related field",*/}
+            {/*        "Minimum of 3–5 years of experience in purchasing, inventory management, or supply chain roles, ideally within the construction or related industries",*/}
+            {/*        "Proven track record in procurement, supplier negotiation, and inventory control",*/}
+            {/*        "Strong proficiency in Microsoft Office Suite (Excel, Word, PowerPoint), particularly Excel for managing data and analyzing trends",*/}
+            {/*        "Exceptional ability to prioritize tasks, manage time effectively, and handle multiple projects simultaneously",*/}
+            {/*        "Strong verbal and written communication skills with the ability to interact effectively with internal teams, suppliers, and customers",*/}
+            {/*        "Ability to adapt to changing market conditions, evolving customer needs, and shifts in company priorities"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Monitor inventory levels and maintain understanding of lead times, stock levels, and freight requirements",*/}
+            {/*        "Procure inventory items while staying informed about market conditions, seasonal trends, prepaid shipment needs, and stock requirements",*/}
+            {/*        "Source new products to enhance company sales",*/}
+            {/*        "Coordinate with Operations to combine purchases for optimized freight costs and pricing advantages",*/}
+            {/*        "Build and maintain strong relationships with current suppliers and establish new ones",*/}
+            {/*        "Ensure accurate costing and tracking of all inventory items",*/}
+            {/*        "Coordinate inventory audits and provide finalized inventory data for auditors",*/}
+            {/*        "Oversee the Inside Sales Associate/Sales Administration Assistant to ensure excellent customer service",*/}
+            {/*        "Promote San Bar’s products and services to generate increased sales",*/}
+            {/*        "Build and maintain strong customer relationships, ensuring satisfaction and repeat business",*/}
+            {/*        "Source products to fulfill customer needs and manage timely, effective delivery"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Negotiable"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"*/}
+            {/*/>*/}
 
 
             {/*<JobPosition*/}
@@ -267,32 +267,32 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
 
-            <JobPosition
-                title="Sign Designer"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. specializes in fast-paced roadway construction, focusing on roadway striping, signing, and guardrail installation. We are hiring a full-time Sign Designer/Printer with strong computer and design skills to work in our sign shop. The role involves using artistic and design-software skills to develop signs for businesses, contractors, municipalities, retail, and other customers. This includes understanding the sign building and fabrication process, setting up files for digital printing and routing to various printers and laminators (training provided)."
-                qualifications={[
-                    "Intermediate skills in Adobe Illustrator and/or Photoshop; FlexPrint experience is a plus",
-                    "Strong computer skills, able to import/export files",
-                    "Ability to establish priorities, work independently, and achieve objectives without supervision",
-                    "Positive attitude, detail-oriented, strong time management and multi-tasking skills",
-                    "Proven ability to work collaboratively",
-                    "Excellent analytical, problem-solving, verbal, graphic, presentation, and written communication skills",
-                    "Predictable and consistent behavior with attitude, attendance, and performance",
-                    "Able to lift up to 50 pounds on occasion"
-                ]}
-                responsibilities={[
-                    "Work with the sign shop foreman and internal departments to design and print signs that meet project requirements",
-                    "Ensure all printing jobs stay on schedule to meet department timelines",
-                    "Understand the proofing process, make corrections, and provide submittals for approval",
-                    "Communicate professionally and courteously with the team and occasionally with customers",
-                    "Maintain printers and laminators daily",
-                    "Ensure proper supplies and materials are available for printing jobs"
-                ]}
-                jobType="Full-time"
-                compensation="$20.00 - $23.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Sign Designer"*/}
+            {/*    icon={<FaSign />}*/}
+            {/*    summary="San Bar Construction Corp. specializes in fast-paced roadway construction, focusing on roadway striping, signing, and guardrail installation. We are hiring a full-time Sign Designer/Printer with strong computer and design skills to work in our sign shop. The role involves using artistic and design-software skills to develop signs for businesses, contractors, municipalities, retail, and other customers. This includes understanding the sign building and fabrication process, setting up files for digital printing and routing to various printers and laminators (training provided)."*/}
+            {/*    qualifications={[*/}
+            {/*        "Intermediate skills in Adobe Illustrator and/or Photoshop; FlexPrint experience is a plus",*/}
+            {/*        "Strong computer skills, able to import/export files",*/}
+            {/*        "Ability to establish priorities, work independently, and achieve objectives without supervision",*/}
+            {/*        "Positive attitude, detail-oriented, strong time management and multi-tasking skills",*/}
+            {/*        "Proven ability to work collaboratively",*/}
+            {/*        "Excellent analytical, problem-solving, verbal, graphic, presentation, and written communication skills",*/}
+            {/*        "Predictable and consistent behavior with attitude, attendance, and performance",*/}
+            {/*        "Able to lift up to 50 pounds on occasion"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Work with the sign shop foreman and internal departments to design and print signs that meet project requirements",*/}
+            {/*        "Ensure all printing jobs stay on schedule to meet department timelines",*/}
+            {/*        "Understand the proofing process, make corrections, and provide submittals for approval",*/}
+            {/*        "Communicate professionally and courteously with the team and occasionally with customers",*/}
+            {/*        "Maintain printers and laminators daily",*/}
+            {/*        "Ensure proper supplies and materials are available for printing jobs"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$20.00 - $23.00 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"*/}
+            {/*/>*/}
 
             {/*<JobPosition*/}
             {/*    title="Sign Shop Laborer - Entry Level"*/}
@@ -320,28 +320,28 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
 
-            <JobPosition
-                title="Warehouse Worker"
-                icon={<FaWarehouse />}
-                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
-                qualifications={[
-                    "Regularly lift or move objects 10 to 50 lbs.",
-                    "Occasionally lift or move objects over 100 lbs. using equipment",
-                    "Frequently required to stand, walk, stoop, kneel, or crawl",
-                    "Good driving record",
-                    "Dependable and reliable",
-                    "Team player with the ability to work independently"
-                ]}
-                responsibilities={[
-                    "Process requests, pull materials, and prepare orders",
-                    "Load and unload trucks and check in merchandise",
-                    "Maintain a clean and safe environment",
-                    "Deliver orders to customers when needed"
-                ]}
-                jobType="Full-time"
-                compensation="$15.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Warehouse Worker"*/}
+            {/*    icon={<FaWarehouse />}*/}
+            {/*    summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."*/}
+            {/*    qualifications={[*/}
+            {/*        "Regularly lift or move objects 10 to 50 lbs.",*/}
+            {/*        "Occasionally lift or move objects over 100 lbs. using equipment",*/}
+            {/*        "Frequently required to stand, walk, stoop, kneel, or crawl",*/}
+            {/*        "Good driving record",*/}
+            {/*        "Dependable and reliable",*/}
+            {/*        "Team player with the ability to work independently"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Process requests, pull materials, and prepare orders",*/}
+            {/*        "Load and unload trucks and check in merchandise",*/}
+            {/*        "Maintain a clean and safe environment",*/}
+            {/*        "Deliver orders to customers when needed"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$15.00 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="CDL Driver"
@@ -368,29 +368,29 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            <JobPosition
-                title="Field Technician/Laborer"
-                icon={<FaTools />}
-                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
-                qualifications={[
-                    "1-2 years of road construction experience preferred",
-                    "Possess a CDL preferred",
-                    "Experience operating construction equipment",
-                    "Ability to travel 100% of the time",
-                    "Ability to lift up to 75 lbs. for extended periods",
-                    "Flexible and adaptable to change"
-                ]}
-                responsibilities={[
-                    "Transport materials and equipment to job sites",
-                    "Perform maintenance of equipment",
-                    "Safely operate tools and machinery",
-                    "Maintain cleanliness of job sites",
-                    "Read and execute plans for layout marks"
-                ]}
-                jobType="Full-time"
-                compensation="Dependent on Project"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Field Technician/Laborer"*/}
+            {/*    icon={<FaTools />}*/}
+            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
+            {/*    qualifications={[*/}
+            {/*        "1-2 years of road construction experience preferred",*/}
+            {/*        "Possess a CDL preferred",*/}
+            {/*        "Experience operating construction equipment",*/}
+            {/*        "Ability to travel 100% of the time",*/}
+            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
+            {/*        "Flexible and adaptable to change"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Transport materials and equipment to job sites",*/}
+            {/*        "Perform maintenance of equipment",*/}
+            {/*        "Safely operate tools and machinery",*/}
+            {/*        "Maintain cleanliness of job sites",*/}
+            {/*        "Read and execute plans for layout marks"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Dependent on Project"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
         </section>
     );
 }

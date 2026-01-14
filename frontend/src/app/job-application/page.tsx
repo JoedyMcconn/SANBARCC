@@ -188,20 +188,20 @@ export default function JobApplicationForm() {
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Laborer" className="mr-2"/> Laborer
                     </label>
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Field/Technician"
-                               className="mr-2"/> Field/Technician
-                    </label>
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Striper" className="mr-2"/> Guardrail Operator
-                    </label>
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Striper Operator" className="mr-2"/> Striper
-                        Operator
-                    </label>
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Purchasing Manager" className="mr-2"/> Purchasing Manager
-                    </label>
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Field/Technician"*/}
+                    {/*           className="mr-2"/> Field/Technician*/}
+                    {/*</label>*/}
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Striper" className="mr-2"/> Guardrail Operator*/}
+                    {/*</label>*/}
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Striper Operator" className="mr-2"/> Striper*/}
+                    {/*    Operator*/}
+                    {/*</label>*/}
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Purchasing Manager" className="mr-2"/> Purchasing Manager*/}
+                    {/*</label>*/}
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Truck Driver" className="mr-2"/> CDL Truck Driver
                     </label>
@@ -209,9 +209,9 @@ export default function JobApplicationForm() {
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Clerical" className="mr-2"/> Clerical
                     </label>
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Sign Designer" className="mr-2"/> Sign Designer
-                    </label>
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Sign Designer" className="mr-2"/> Sign Designer*/}
+                    {/*</label>*/}
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Other" className="mr-2"/> Other:
                     </label>
