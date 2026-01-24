@@ -147,7 +147,7 @@ export default function JobOpportunities() {
                     "Source products to fulfill customer needs and manage timely, effective delivery"
                 ]}
                 jobType="Full-time"
-                compensation="60,000-70,000"
+                compensation="$60,000-$70,000"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"
             />
 
