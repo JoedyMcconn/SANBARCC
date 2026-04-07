@@ -1,7 +1,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck, FaClipboardCheck } from 'react-icons/fa';
+import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck, FaClipboardCheck, } from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -391,6 +391,87 @@ export default function JobOpportunities() {
             {/*    compensation="Dependent on Project"*/}
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
+
+            <JobPosition
+                title="Acting Foreman"
+                icon={<FaHardHat />}
+                summary="San Bar Construction Corp. is seeking an Acting Foreman (Foreman-in-Training) to work under an experienced Foreman in overseeing highway construction crews. This role is a structured development position designed to provide hands-on leadership experience in guardrail installation, sign installation, and highway striping operations.
+During the training period, the Acting Foreman will assist with supervising daily crew activities, coordinating tasks, managing documentation, and ensuring work is completed safely, efficiently, and according to project specifications.
+This position serves as a direct pathway to a Foreman role, offering hands-on training, mentorship, and increasing responsibility, with advancement based on performance and readiness to independently manage crews and projects."
+
+                qualifications={[
+                    "3–5+ years of highway construction experience preferred",
+                    "Previous experience as a lead or senior crew member strongly preferred",
+                    "Hands-on experience in guardrail, sign installation, or striping operations",
+                    "Strong willingness to learn leadership and crew management",
+                    "Good communication skills (verbal and written)",
+                    "Ability to perform physically demanding work and lift heavy materials",
+                    "Experience operating construction equipment and hydraulic tools preferred",
+                    "Ability to work outdoors in varying weather conditions",
+                    "Solid understanding of construction processes and jobsite safety",
+                    "Valid driver’s license required"
+                ]}
+
+                responsibilities={[
+                    "Assist the Foreman in coordinating daily crew activities based on project plans",
+                    "Help adjust work plans based on weather, site conditions, and staffing needs",
+                    "Support delegation of tasks and responsibilities to crew members",
+                    "Read and interpret project plans, specifications, and layouts",
+                    "Lead by example in safety, productivity, and quality workmanship",
+                    "Assist in training crew members on installation techniques and procedures",
+                    "Monitor project progress to meet timelines and production goals",
+                    "Support equipment management, including safe operation and maintenance",
+                    "Maintain accurate documentation and jobsite records",
+                    "Ensure job sites remain safe, clean, and compliant with safety standards"
+                ]}
+
+                jobType="Full-time"
+                compensation="Dependent on project, with additional wage adjustments based on pay class"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+            <JobPosition
+                title="Guardrail Laborer / Operator / Installer"
+                icon={<FaSign />}
+                summary="San Bar Construction Corp. is seeking a Guardrail Laborer/Operator/Installer to join our field crew in the installation, repair, and maintenance of highway guardrail systems. This role supports all phases of guardrail construction, including layout, post driving, rail installation, and site cleanup.
+
+The position requires a strong focus on safety, teamwork, and quality workmanship while working in active roadway environments. Ideal candidates are dependable, mechanically inclined, and able to perform physically demanding work while maintaining high standards on every project."
+
+                qualifications={[
+                    "1–2 years of roadway or guardrail installation experience preferred",
+                    "CDL preferred but not required",
+                    "Experience working in a construction crew environment",
+                    "Familiarity with hand and power tools used in guardrail installation",
+                    "Strong hand-eye coordination and mechanical aptitude",
+                    "Safety-focused mindset with attention to detail",
+                    "Ability to follow directions and established installation procedures",
+                    "Ability to work independently and as part of a team",
+                    "Willingness to travel for job assignments (up to 100%)",
+                    "Ability to lift 50–75 lbs repeatedly throughout the day",
+                    "Valid driver’s license required",
+                    "Experience operating construction equipment (post drivers, skid steers, forklifts) preferred"
+                ]}
+
+                responsibilities={[
+                    "Install and repair highway guardrail systems, including posts, blocks, and steel rail",
+                    "Assist with layout and marking for proper guardrail placement according to plans",
+                    "Load, unload, and transport materials, tools, and equipment to job sites",
+                    "Operate equipment such as post drivers, skid steers, and company vehicles safely",
+                    "Use hand and power tools to complete installation tasks",
+                    "Ensure all work meets quality standards and project specifications",
+                    "Perform basic maintenance and repairs on tools and equipment",
+                    "Maintain a clean and organized job site free of debris and hazards",
+                    "Follow all safety protocols when working near roadways and traffic",
+                    "Assist with traffic control setup when required",
+                    "Complete additional assigned duties as needed"
+                ]}
+
+                jobType="Full-time"
+                compensation="Dependent on project"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+
         </section>
     );
 }
