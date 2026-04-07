@@ -44,23 +44,37 @@ export default function JobApplicationForm() {
         setRecaptchaToken(token); // Save the token in state
     };
 
-    const handleSubmit = (event: React.FormEvent) => {
-        event.preventDefault(); // Prevent form submission
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
-        // Check if reCAPTCHA has been completed
         if (!recaptchaToken) {
             alert("Please complete the reCAPTCHA before submitting the form.");
             return;
         }
 
-        // If reCAPTCHA is completed, proceed with form submission
-        (event.target as HTMLFormElement).submit();
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+
+        formData.append("recaptchaToken", recaptchaToken);
+
+        const response = await window.fetch("/api/job-application", {
+            method: "POST",
+            body: formData,
+        } as RequestInit);
+
+        if (response.ok) {
+            alert("Application submitted successfully.");
+            form.reset();
+            setRecaptchaToken(null);
+        } else {
+            alert("There was a problem submitting the application.");
+        }
     };
 
     return (
         <section className="container mx-auto px-6 md:px-12 lg:px-16 py-30 mt-40 bg-white">
             <h2 className="text-6xl font-bold text-center mb-20">Pre-Employment Application</h2>
-            <form action="https://getform.io/f/ayvpzjrb" method="POST" className="bg-gray-100 p-6 rounded-lg shadow-lg">
+            <form onSubmit={handleSubmit} className="bg-gray-100 p-6 rounded-lg shadow-lg">
                 {/* Applicant Information */}
                 <h3 className="text-4xl font-semibold mb-6">Applicant Information</h3>
 
@@ -80,7 +94,8 @@ export default function JobApplicationForm() {
 
                 {/* Address */}
                 <div>
-                    <label htmlFor="address" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <label htmlFor="address" className="block text-lg font-sans my-2">Address (Street Address, City,
+                        State, Zip Code)</label>
                     <input type="text" name="Address" id="address" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
@@ -101,7 +116,8 @@ export default function JobApplicationForm() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label htmlFor="driversLicense" className="block text-lg font-sans my-2">Driver’s License #</label>
+                        <label htmlFor="driversLicense" className="block text-lg font-sans my-2">Driver’s License
+                            #</label>
                         <input type="text" name="Drivers-License" id="driversLicense" required
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
@@ -168,7 +184,8 @@ export default function JobApplicationForm() {
 
                 {/* Cannabis/Marijuana Card */}
                 <div>
-                    <label className="block text-lg font-sans my-2">Do you possess a medical cannabis/marijuana card?</label>
+                    <label className="block text-lg font-sans my-2">Do you possess a medical cannabis/marijuana
+                        card?</label>
                     <div className="flex gap-4 font-sans">
                         <label className="flex items-center">
                             <input type="radio" name="Marijuana-Card" value="Yes" required className="mr-2"/> Yes
@@ -178,8 +195,6 @@ export default function JobApplicationForm() {
                         </label>
                     </div>
                 </div>
-
-
 
 
                 {/* Positions Applying For */}
@@ -195,7 +210,8 @@ export default function JobApplicationForm() {
                     </label>
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Guardrail Laborer/Installer" className="mr-2"/>Guardrail Laborer/Installer
+                        <input type="checkbox" name="position" value="Guardrail Laborer/Installer" className="mr-2"/>Guardrail
+                        Laborer/Installer
                     </label>
 
                     <label className="flex items-center">
@@ -306,7 +322,8 @@ export default function JobApplicationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="address1" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <label htmlFor="address1" className="block text-lg font-sans my-2">Address (Street Address, City,
+                        State, Zip Code)</label>
                     <input type="text" name="Company-Address-1" id="address1" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
@@ -357,13 +374,15 @@ export default function JobApplicationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="reasonForLeaving1" className="block text-lg font-sans my-2">Reason for Leaving</label>
+                    <label htmlFor="reasonForLeaving1" className="block text-lg font-sans my-2">Reason for
+                        Leaving</label>
                     <input type="text" name="Reason-For-Leaving-1" id="reasonForLeaving1" required
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div>
-                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a reference?</label>
+                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a
+                        reference?</label>
                     <div className="flex gap-4">
                         <label className="flex items-center">
                             <input type="radio" name="Contact-Supervisor-1" value="Yes" className="mr-2" required/> Yes
@@ -394,7 +413,8 @@ export default function JobApplicationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="address2" className="block text-lg font-sans my-2">Address (Street Address, City, State, Zip Code)</label>
+                    <label htmlFor="address2" className="block text-lg font-sans my-2">Address (Street Address, City,
+                        State, Zip Code)</label>
                     <input type="text" name="Company-Address-2" id="address2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
@@ -445,13 +465,15 @@ export default function JobApplicationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="reasonForLeaving2" className="block text-lg font-sans my-2">Reason for Leaving</label>
+                    <label htmlFor="reasonForLeaving2" className="block text-lg font-sans my-2">Reason for
+                        Leaving</label>
                     <input type="text" name="Reason-For-Leaving-2" id="reasonForLeaving2"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
 
                 <div>
-                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a reference?</label>
+                    <label className="block text-lg font-sans my-2">May we contact your previous supervisor for a
+                        reference?</label>
                     <div className="flex gap-4 font-sans my-2">
                         <label className="flex items-center">
                             <input type="radio" name="Contact-Supervisor-2" value="Yes" className="mr-2"/> Yes
@@ -461,7 +483,6 @@ export default function JobApplicationForm() {
                         </label>
                     </div>
                 </div>
-
 
 
                 <h3 className="text-4xl font-semibold my-8">Education</h3>
@@ -596,7 +617,6 @@ export default function JobApplicationForm() {
                 </div>
 
 
-
                 {/* Military Service */}
                 <h3 className="text-4xl font-semibold my-8">Military Service (Optional)</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans my-2">
@@ -634,7 +654,8 @@ export default function JobApplicationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="dischargeExplanation" className="block text-lg font-sans my-2">If other than honorable, explain</label>
+                    <label htmlFor="dischargeExplanation" className="block text-lg font-sans my-2">If other than
+                        honorable, explain</label>
                     <textarea name="Military-Discharge-Explanation" id="dischargeExplanation"
                               className="w-full p-3 rounded-md border border-gray-300"></textarea>
                 </div>
@@ -689,7 +710,8 @@ export default function JobApplicationForm() {
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
                     <div>
-                        <label htmlFor="referenceCompany3" className="block text-lg font-semibold mb-2">Company/Title</label>
+                        <label htmlFor="referenceCompany3"
+                               className="block text-lg font-semibold mb-2">Company/Title</label>
                         <input type="text" name="Reference-Company-3" id="referenceCompany3"
                                className="w-full p-3 rounded-md border border-gray-300"/>
                     </div>
@@ -700,7 +722,6 @@ export default function JobApplicationForm() {
                     <input type="tel" name="Reference-Phone-3" id="referencePhone3"
                            className="w-full p-3 rounded-md border border-gray-300"/>
                 </div>
-
 
 
                 <h3 className="text-4xl font-bold my-8">Disclaimer and E-Signature</h3>
