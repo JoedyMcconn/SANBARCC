@@ -368,29 +368,29 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            {/*<JobPosition*/}
-            {/*    title="Field Technician/Laborer"*/}
-            {/*    icon={<FaTools />}*/}
-            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
-            {/*    qualifications={[*/}
-            {/*        "1-2 years of road construction experience preferred",*/}
-            {/*        "Possess a CDL preferred",*/}
-            {/*        "Experience operating construction equipment",*/}
-            {/*        "Ability to travel 100% of the time",*/}
-            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
-            {/*        "Flexible and adaptable to change"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Transport materials and equipment to job sites",*/}
-            {/*        "Perform maintenance of equipment",*/}
-            {/*        "Safely operate tools and machinery",*/}
-            {/*        "Maintain cleanliness of job sites",*/}
-            {/*        "Read and execute plans for layout marks"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="Dependent on Project"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
+            <JobPosition
+                title="Field Technician/Laborer"
+                icon={<FaTools />}
+                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
+                qualifications={[
+                    "1-2 years of road construction experience preferred",
+                    "Possess a CDL preferred",
+                    "Experience operating construction equipment",
+                    "Ability to travel 100% of the time",
+                    "Ability to lift up to 75 lbs. for extended periods",
+                    "Flexible and adaptable to change"
+                ]}
+                responsibilities={[
+                    "Transport materials and equipment to job sites",
+                    "Perform maintenance of equipment",
+                    "Safely operate tools and machinery",
+                    "Maintain cleanliness of job sites",
+                    "Read and execute plans for layout marks"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Project"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
 
             <JobPosition
                 title="Acting Foreman"
