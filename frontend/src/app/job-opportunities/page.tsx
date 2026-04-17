@@ -399,29 +399,29 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            <JobPosition
-                title="Field Technician/Laborer"
-                icon={<FaTools />}
-                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
-                qualifications={[
-                    "1-2 years of road construction experience preferred",
-                    "Possess a CDL preferred",
-                    "Experience operating construction equipment",
-                    "Ability to travel 100% of the time",
-                    "Ability to lift up to 75 lbs. for extended periods",
-                    "Flexible and adaptable to change"
-                ]}
-                responsibilities={[
-                    "Transport materials and equipment to job sites",
-                    "Perform maintenance of equipment",
-                    "Safely operate tools and machinery",
-                    "Maintain cleanliness of job sites",
-                    "Read and execute plans for layout marks"
-                ]}
-                jobType="Full-time"
-                compensation="Dependent on Project"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Field Technician/Laborer"*/}
+            {/*    icon={<FaTools />}*/}
+            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
+            {/*    qualifications={[*/}
+            {/*        "1-2 years of road construction experience preferred",*/}
+            {/*        "Possess a CDL preferred",*/}
+            {/*        "Experience operating construction equipment",*/}
+            {/*        "Ability to travel 100% of the time",*/}
+            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
+            {/*        "Flexible and adaptable to change"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Transport materials and equipment to job sites",*/}
+            {/*        "Perform maintenance of equipment",*/}
+            {/*        "Safely operate tools and machinery",*/}
+            {/*        "Maintain cleanliness of job sites",*/}
+            {/*        "Read and execute plans for layout marks"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Dependent on Project"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Acting Foreman"
@@ -461,46 +461,46 @@ This position serves as a direct pathway to a Foreman role, offering hands-on tr
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            <JobPosition
-                title="Guardrail Laborer / Operator / Installer"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. is seeking a Guardrail Laborer/Operator/Installer to join our field crew in the installation, repair, and maintenance of highway guardrail systems. This role supports all phases of guardrail construction, including layout, post driving, rail installation, and site cleanup.
+{/*            <JobPosition*/}
+{/*                title="Guardrail Laborer / Operator / Installer"*/}
+{/*                icon={<FaSign />}*/}
+{/*                summary="San Bar Construction Corp. is seeking a Guardrail Laborer/Operator/Installer to join our field crew in the installation, repair, and maintenance of highway guardrail systems. This role supports all phases of guardrail construction, including layout, post driving, rail installation, and site cleanup.*/}
 
-The position requires a strong focus on safety, teamwork, and quality workmanship while working in active roadway environments. Ideal candidates are dependable, mechanically inclined, and able to perform physically demanding work while maintaining high standards on every project."
+{/*The position requires a strong focus on safety, teamwork, and quality workmanship while working in active roadway environments. Ideal candidates are dependable, mechanically inclined, and able to perform physically demanding work while maintaining high standards on every project."*/}
 
-                qualifications={[
-                    "1–2 years of roadway or guardrail installation experience preferred",
-                    "CDL preferred but not required",
-                    "Experience working in a construction crew environment",
-                    "Familiarity with hand and power tools used in guardrail installation",
-                    "Strong hand-eye coordination and mechanical aptitude",
-                    "Safety-focused mindset with attention to detail",
-                    "Ability to follow directions and established installation procedures",
-                    "Ability to work independently and as part of a team",
-                    "Willingness to travel for job assignments (up to 100%)",
-                    "Ability to lift 50–75 lbs repeatedly throughout the day",
-                    "Valid driver’s license required",
-                    "Experience operating construction equipment (post drivers, skid steers, forklifts) preferred"
-                ]}
+{/*                qualifications={[*/}
+{/*                    "1–2 years of roadway or guardrail installation experience preferred",*/}
+{/*                    "CDL preferred but not required",*/}
+{/*                    "Experience working in a construction crew environment",*/}
+{/*                    "Familiarity with hand and power tools used in guardrail installation",*/}
+{/*                    "Strong hand-eye coordination and mechanical aptitude",*/}
+{/*                    "Safety-focused mindset with attention to detail",*/}
+{/*                    "Ability to follow directions and established installation procedures",*/}
+{/*                    "Ability to work independently and as part of a team",*/}
+{/*                    "Willingness to travel for job assignments (up to 100%)",*/}
+{/*                    "Ability to lift 50–75 lbs repeatedly throughout the day",*/}
+{/*                    "Valid driver’s license required",*/}
+{/*                    "Experience operating construction equipment (post drivers, skid steers, forklifts) preferred"*/}
+{/*                ]}*/}
 
-                responsibilities={[
-                    "Install and repair highway guardrail systems, including posts, blocks, and steel rail",
-                    "Assist with layout and marking for proper guardrail placement according to plans",
-                    "Load, unload, and transport materials, tools, and equipment to job sites",
-                    "Operate equipment such as post drivers, skid steers, and company vehicles safely",
-                    "Use hand and power tools to complete installation tasks",
-                    "Ensure all work meets quality standards and project specifications",
-                    "Perform basic maintenance and repairs on tools and equipment",
-                    "Maintain a clean and organized job site free of debris and hazards",
-                    "Follow all safety protocols when working near roadways and traffic",
-                    "Assist with traffic control setup when required",
-                    "Complete additional assigned duties as needed"
-                ]}
+{/*                responsibilities={[*/}
+{/*                    "Install and repair highway guardrail systems, including posts, blocks, and steel rail",*/}
+{/*                    "Assist with layout and marking for proper guardrail placement according to plans",*/}
+{/*                    "Load, unload, and transport materials, tools, and equipment to job sites",*/}
+{/*                    "Operate equipment such as post drivers, skid steers, and company vehicles safely",*/}
+{/*                    "Use hand and power tools to complete installation tasks",*/}
+{/*                    "Ensure all work meets quality standards and project specifications",*/}
+{/*                    "Perform basic maintenance and repairs on tools and equipment",*/}
+{/*                    "Maintain a clean and organized job site free of debris and hazards",*/}
+{/*                    "Follow all safety protocols when working near roadways and traffic",*/}
+{/*                    "Assist with traffic control setup when required",*/}
+{/*                    "Complete additional assigned duties as needed"*/}
+{/*                ]}*/}
 
-                jobType="Full-time"
-                compensation="Dependent on project"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+{/*                jobType="Full-time"*/}
+{/*                compensation="Dependent on project"*/}
+{/*                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+{/*            />*/}
 
 
         </section>
