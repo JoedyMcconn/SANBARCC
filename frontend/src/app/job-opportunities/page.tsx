@@ -212,7 +212,7 @@ export default function JobOpportunities() {
                     "Perform additional administrative tasks as needed"
                 ]}
                 jobType="Full-time"
-                compensation="$15.00/hr"
+                compensation="$17.00/hr"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
             />
 
@@ -351,28 +351,28 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
             {/*/>*/}
 
-            {/*<JobPosition*/}
-            {/*    title="Warehouse Worker"*/}
-            {/*    icon={<FaWarehouse />}*/}
-            {/*    summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."*/}
-            {/*    qualifications={[*/}
-            {/*        "Regularly lift or move objects 10 to 50 lbs.",*/}
-            {/*        "Occasionally lift or move objects over 100 lbs. using equipment",*/}
-            {/*        "Frequently required to stand, walk, stoop, kneel, or crawl",*/}
-            {/*        "Good driving record",*/}
-            {/*        "Dependable and reliable",*/}
-            {/*        "Team player with the ability to work independently"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Process requests, pull materials, and prepare orders",*/}
-            {/*        "Load and unload trucks and check in merchandise",*/}
-            {/*        "Maintain a clean and safe environment",*/}
-            {/*        "Deliver orders to customers when needed"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$15.00 per hour"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
+            <JobPosition
+                title="Warehouse Worker"
+                icon={<FaWarehouse />}
+                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
+                qualifications={[
+                    "Regularly lift or move objects 10 to 50 lbs.",
+                    "Occasionally lift or move objects over 100 lbs. using equipment",
+                    "Frequently required to stand, walk, stoop, kneel, or crawl",
+                    "Good driving record",
+                    "Dependable and reliable",
+                    "Team player with the ability to work independently"
+                ]}
+                responsibilities={[
+                    "Process requests, pull materials, and prepare orders",
+                    "Load and unload trucks and check in merchandise",
+                    "Maintain a clean and safe environment",
+                    "Deliver orders to customers when needed"
+                ]}
+                jobType="Full-time"
+                compensation="$15.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
 
             <JobPosition
                 title="CDL Driver"
@@ -399,67 +399,67 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
-            {/*<JobPosition*/}
-            {/*    title="Field Technician/Laborer"*/}
-            {/*    icon={<FaTools />}*/}
-            {/*    summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."*/}
-            {/*    qualifications={[*/}
-            {/*        "1-2 years of road construction experience preferred",*/}
-            {/*        "Possess a CDL preferred",*/}
-            {/*        "Experience operating construction equipment",*/}
-            {/*        "Ability to travel 100% of the time",*/}
-            {/*        "Ability to lift up to 75 lbs. for extended periods",*/}
-            {/*        "Flexible and adaptable to change"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Transport materials and equipment to job sites",*/}
-            {/*        "Perform maintenance of equipment",*/}
-            {/*        "Safely operate tools and machinery",*/}
-            {/*        "Maintain cleanliness of job sites",*/}
-            {/*        "Read and execute plans for layout marks"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="Dependent on Project"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
-
             <JobPosition
-                title="Acting Foreman"
-                icon={<FaHardHat />}
-                summary="San Bar Construction Corp. is seeking an Acting Foreman (Foreman-in-Training) to work under an experienced Foreman in overseeing highway construction crews. This role is a structured development position designed to provide hands-on leadership experience in guardrail installation, sign installation, and highway striping operations.
-During the training period, the Acting Foreman will assist with supervising daily crew activities, coordinating tasks, managing documentation, and ensuring work is completed safely, efficiently, and according to project specifications.
-This position serves as a direct pathway to a Foreman role, offering hands-on training, mentorship, and increasing responsibility, with advancement based on performance and readiness to independently manage crews and projects."
-
+                title="Field Technician/Laborer"
+                icon={<FaTools />}
+                summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
                 qualifications={[
-                    "3–5+ years of highway construction experience preferred",
-                    "Previous experience as a lead or senior crew member strongly preferred",
-                    "Hands-on experience in guardrail, sign installation, or striping operations",
-                    "Strong willingness to learn leadership and crew management",
-                    "Good communication skills (verbal and written)",
-                    "Ability to perform physically demanding work and lift heavy materials",
-                    "Experience operating construction equipment and hydraulic tools preferred",
-                    "Ability to work outdoors in varying weather conditions",
-                    "Solid understanding of construction processes and jobsite safety",
-                    "Valid driver’s license required"
+                    "1-2 years of road construction experience preferred",
+                    "Possess a CDL preferred",
+                    "Experience operating construction equipment",
+                    "Ability to travel 100% of the time",
+                    "Ability to lift up to 75 lbs. for extended periods",
+                    "Flexible and adaptable to change"
                 ]}
-
                 responsibilities={[
-                    "Assist the Foreman in coordinating daily crew activities based on project plans",
-                    "Help adjust work plans based on weather, site conditions, and staffing needs",
-                    "Support delegation of tasks and responsibilities to crew members",
-                    "Read and interpret project plans, specifications, and layouts",
-                    "Lead by example in safety, productivity, and quality workmanship",
-                    "Assist in training crew members on installation techniques and procedures",
-                    "Monitor project progress to meet timelines and production goals",
-                    "Support equipment management, including safe operation and maintenance",
-                    "Maintain accurate documentation and jobsite records",
-                    "Ensure job sites remain safe, clean, and compliant with safety standards"
+                    "Transport materials and equipment to job sites",
+                    "Perform maintenance of equipment",
+                    "Safely operate tools and machinery",
+                    "Maintain cleanliness of job sites",
+                    "Read and execute plans for layout marks"
                 ]}
-
                 jobType="Full-time"
-                compensation="Dependent on project, with additional wage adjustments based on pay class"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+                compensation="Dependent on Project"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
+
+{/*            <JobPosition*/}
+{/*                title="Acting Foreman"*/}
+{/*                icon={<FaHardHat />}*/}
+{/*                summary="San Bar Construction Corp. is seeking an Acting Foreman (Foreman-in-Training) to work under an experienced Foreman in overseeing highway construction crews. This role is a structured development position designed to provide hands-on leadership experience in guardrail installation, sign installation, and highway striping operations.*/}
+{/*During the training period, the Acting Foreman will assist with supervising daily crew activities, coordinating tasks, managing documentation, and ensuring work is completed safely, efficiently, and according to project specifications.*/}
+{/*This position serves as a direct pathway to a Foreman role, offering hands-on training, mentorship, and increasing responsibility, with advancement based on performance and readiness to independently manage crews and projects."*/}
+
+{/*                qualifications={[*/}
+{/*                    "3–5+ years of highway construction experience preferred",*/}
+{/*                    "Previous experience as a lead or senior crew member strongly preferred",*/}
+{/*                    "Hands-on experience in guardrail, sign installation, or striping operations",*/}
+{/*                    "Strong willingness to learn leadership and crew management",*/}
+{/*                    "Good communication skills (verbal and written)",*/}
+{/*                    "Ability to perform physically demanding work and lift heavy materials",*/}
+{/*                    "Experience operating construction equipment and hydraulic tools preferred",*/}
+{/*                    "Ability to work outdoors in varying weather conditions",*/}
+{/*                    "Solid understanding of construction processes and jobsite safety",*/}
+{/*                    "Valid driver’s license required"*/}
+{/*                ]}*/}
+
+{/*                responsibilities={[*/}
+{/*                    "Assist the Foreman in coordinating daily crew activities based on project plans",*/}
+{/*                    "Help adjust work plans based on weather, site conditions, and staffing needs",*/}
+{/*                    "Support delegation of tasks and responsibilities to crew members",*/}
+{/*                    "Read and interpret project plans, specifications, and layouts",*/}
+{/*                    "Lead by example in safety, productivity, and quality workmanship",*/}
+{/*                    "Assist in training crew members on installation techniques and procedures",*/}
+{/*                    "Monitor project progress to meet timelines and production goals",*/}
+{/*                    "Support equipment management, including safe operation and maintenance",*/}
+{/*                    "Maintain accurate documentation and jobsite records",*/}
+{/*                    "Ensure job sites remain safe, clean, and compliant with safety standards"*/}
+{/*                ]}*/}
+
+{/*                jobType="Full-time"*/}
+{/*                compensation="Dependent on project, with additional wage adjustments based on pay class"*/}
+{/*                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+{/*            />*/}
 
 {/*            <JobPosition*/}
 {/*                title="Guardrail Laborer / Operator / Installer"*/}

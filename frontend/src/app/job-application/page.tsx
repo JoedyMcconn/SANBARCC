@@ -185,22 +185,23 @@ export default function JobApplicationForm() {
                 {/* Positions Applying For */}
                 <h3 className="text-2xl font-sans my-6">Position(s) Applying for</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans mb-6">
+
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Laborer" className="mr-2"/> Laborer
+                        <input type="checkbox" name="position" value="Warehouse Laborer" className="mr-2"/> Warehouse Laborer
                     </label>
 
-                    {/*<label className="flex items-center">*/}
-                    {/*    <input type="checkbox" name="position" value="Field/Technician"*/}
-                    {/*           className="mr-2"/> Field/Technician*/}
-                    {/*</label>*/}
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Field Technician/Laborer"
+                               className="mr-2"/> Field/Technician
+                    </label>
 
                     {/*<label className="flex items-center">*/}
                     {/*    <input type="checkbox" name="position" value="Guardrail Laborer/Installer" className="mr-2"/>Guardrail Laborer/Installer*/}
                     {/*</label>*/}
 
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Acting Foreman" className="mr-2"/>Acting Foreman
-                    </label>
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Acting Foreman" className="mr-2"/>Acting Foreman*/}
+                    {/*</label>*/}
 
                     {/*<label className="flex items-center">*/}
                     {/*    <input type="checkbox" name="position" value="Purchasing Manager" className="mr-2"/> Purchasing Manager*/}
