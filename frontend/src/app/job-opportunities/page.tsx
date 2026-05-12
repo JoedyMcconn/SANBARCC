@@ -185,36 +185,36 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
             {/*/>*/}
 
-            <JobPosition
-                title="Receptionist / Administrative Assistant"
-                icon={<FaClipboardCheck />}
-                summary="Receptionist/Administrative Assistant will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."
-                qualifications={[
-                    "1+ years of experience",
-                    "Excellent organizational, time management, and listening skills",
-                    "Proficient knowledge of Microsoft Office Applications, including Excel",
-                    "Proficient database application software experience",
-                    "Knowledge of Pro Contractor by Viewpoint preferred",
-                    "Ability to multi-task, prioritize, and problem solve",
-                    "Self-starter and dependable",
-                    "Excellent communication skills both written and verbal",
-                    "Construction industry experience preferred",
-                    "Ability to work with confidential information"
-                ]}
-                responsibilities={[
-                    "Answer phones, greet customers, and direct accordingly",
-                    "Collect and distribute mail",
-                    "Order and maintain office supplies",
-                    "Maintain printer usage, postage downloads, and prepare and stamp mail",
-                    "Scan AP invoices",
-                    "Process customer credit applications",
-                    "Oversee employment applications and process new hire paperwork",
-                    "Perform additional administrative tasks as needed"
-                ]}
-                jobType="Full-time"
-                compensation="$17.00/hr"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Receptionist / Administrative Assistant"*/}
+            {/*    icon={<FaClipboardCheck />}*/}
+            {/*    summary="Receptionist/Administrative Assistant will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."*/}
+            {/*    qualifications={[*/}
+            {/*        "1+ years of experience",*/}
+            {/*        "Excellent organizational, time management, and listening skills",*/}
+            {/*        "Proficient knowledge of Microsoft Office Applications, including Excel",*/}
+            {/*        "Proficient database application software experience",*/}
+            {/*        "Knowledge of Pro Contractor by Viewpoint preferred",*/}
+            {/*        "Ability to multi-task, prioritize, and problem solve",*/}
+            {/*        "Self-starter and dependable",*/}
+            {/*        "Excellent communication skills both written and verbal",*/}
+            {/*        "Construction industry experience preferred",*/}
+            {/*        "Ability to work with confidential information"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Answer phones, greet customers, and direct accordingly",*/}
+            {/*        "Collect and distribute mail",*/}
+            {/*        "Order and maintain office supplies",*/}
+            {/*        "Maintain printer usage, postage downloads, and prepare and stamp mail",*/}
+            {/*        "Scan AP invoices",*/}
+            {/*        "Process customer credit applications",*/}
+            {/*        "Oversee employment applications and process new hire paperwork",*/}
+            {/*        "Perform additional administrative tasks as needed"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$17.00/hr"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
+            {/*/>*/}
 
             {/*<JobPosition*/}
             {/*    title="Parts & Delivery Driver"*/}
