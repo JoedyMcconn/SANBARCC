@@ -1,7 +1,6 @@
-
 import React from 'react';
 import Link from 'next/link';
-import { FaHardHat, FaTools, FaWarehouse, FaSign, FaTruck, FaClipboardCheck, } from 'react-icons/fa';
+import { FaTools, FaWarehouse, FaTruck } from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -14,342 +13,136 @@ interface JobPositionProps {
     benefits?: string;
 }
 
-function JobPosition({ title, icon, summary, qualifications, responsibilities, jobType, compensation, benefits }: JobPositionProps) {
+function JobPosition({
+                         title,
+                         icon,
+                         summary,
+                         qualifications,
+                         responsibilities,
+                         jobType,
+                         compensation,
+                         benefits,
+                     }: JobPositionProps) {
     return (
-        <div className="w-full max-w-6xl mx-auto bg-black p-8 rounded-lg mb-16">
-            <div className="bg-white p-8 rounded-lg flex flex-wrap">
-                <div className="w-full text-center mb-8">
-                    <div className="flex justify-center mb-6">
-                        <span className="text-6xl lg:text-7xl">{icon}</span>
+        <div className="w-full max-w-4xl mx-auto bg-black/90 p-2 rounded-2xl mb-6 shadow-xl">
+            <div className="bg-white p-4 md:p-5 rounded-2xl border border-black/10">
+                <div className="flex items-center gap-3 mb-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F7D117] text-xl text-black shadow-sm">
+                        {icon}
                     </div>
-                    <h2 className="text-5xl lg:text-6xl font-semibold text-black">
+
+                    <h2 className="text-xl md:text-2xl font-bold text-black leading-tight">
                         {title}
                     </h2>
                 </div>
-                <div className="w-full">
-                    <p className="font-sans text-2xl md:text-3xl text-gray-700 leading-relaxed mb-8">
-                        <strong>Position Summary:</strong> {summary}
-                    </p>
-                </div>
-                <div className="w-full md:w-1/2 mb-8">
-                    <h3 className="text-2xl font-semibold text-black mb-4">
-                        <strong>Qualifications:</strong>
-                    </h3>
-                    <ul className="list-disc list-inside text-gray-700 mb-6 font-sans text-lg md:text-xl">
-                        {qualifications.map((qualification, index) => (
-                            <li key={index}>{qualification}</li>
-                        ))}
-                    </ul>
-                </div>
-                <div className="w-full md:w-1/2 mb-8 ">
-                    <h3 className="text-2xl font-semibold text-black mb-4">
-                        <strong>Duties & Responsibilities:</strong>
-                    </h3>
-                    <ul className="list-disc list-inside text-gray-700 mb-6 font-sans text-lg md:text-xl">
-                        {responsibilities.map((responsibility, index) => (
-                            <li key={index}>{responsibility}</li>
-                        ))}
-                    </ul>
-                </div>
-                {jobType && (
-                    <div className="w-full md:w-1/2 mb-8">
-                        <h3 className="text-2xl font-semibold text-black mb-4">
-                            <strong>Job Type:</strong>
+
+                <p className="font-sans text-sm text-gray-700 leading-relaxed mb-4">
+                    <strong>Position Summary:</strong> {summary}
+                </p>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div>
+                        <h3 className="text-base font-bold text-black mb-2">
+                            Qualifications
                         </h3>
-                        <p className="text-gray-700 font-sans text-lg md:text-xl">{jobType}</p>
+
+                        <ul className="list-disc pl-5 text-gray-700 font-sans text-sm leading-snug space-y-1">
+                            {qualifications.map((qualification, index) => (
+                                <li key={index}>{qualification}</li>
+                            ))}
+                        </ul>
                     </div>
-                )}
-                {compensation && (
-                    <div className="w-full md:w-1/2 mb-8">
-                        <h3 className="text-2xl font-semibold text-black mb-4">
-                            <strong>Compensation:</strong>
+
+                    <div>
+                        <h3 className="text-base font-bold text-black mb-2">
+                            Duties & Responsibilities
                         </h3>
-                        <p className="text-gray-700 font-sans text-lg md:text-xl">{compensation}</p>
+
+                        <ul className="list-disc pl-5 text-gray-700 font-sans text-sm leading-snug space-y-1">
+                            {responsibilities.map((responsibility, index) => (
+                                <li key={index}>{responsibility}</li>
+                            ))}
+                        </ul>
                     </div>
-                )}
-                {benefits && (
-                    <div className="w-full md:w-1/2">
-                        <h3 className="text-2xl font-semibold text-black mb-4">
-                            <strong>Benefits:</strong>
-                        </h3>
-                        <p className="text-gray-700 font-sans text-lg md:text-xl">{benefits}</p>
-                    </div>
-                )}
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-5 pt-4 border-t border-gray-200">
+                    {jobType && (
+                        <div className="rounded-xl bg-gray-50 p-3 border border-gray-100">
+                            <h3 className="text-sm font-bold text-black mb-1">
+                                Job Type
+                            </h3>
+                            <p className="text-gray-700 font-sans text-sm">{jobType}</p>
+                        </div>
+                    )}
+
+                    {compensation && (
+                        <div className="rounded-xl bg-gray-50 p-3 border border-gray-100">
+                            <h3 className="text-sm font-bold text-black mb-1">
+                                Compensation
+                            </h3>
+                            <p className="text-gray-700 font-sans text-sm">
+                                {compensation}
+                            </p>
+                        </div>
+                    )}
+
+                    {benefits && (
+                        <div className="rounded-xl bg-gray-50 p-3 border border-gray-100">
+                            <h3 className="text-sm font-bold text-black mb-1">
+                                Benefits
+                            </h3>
+                            <p className="text-gray-700 font-sans text-sm leading-relaxed">
+                                {benefits}
+                            </p>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     );
 }
 
-
 export default function JobOpportunities() {
     return (
-        <section id="job-opportunities" className="relative min-h-screen py-16 bg-[#F7D117] mt-6">
-            <div className="relative w-full h-96 bg-cover bg-center" style={{backgroundImage: "url('/LogoBackground.png')"}}>
-                <div className="absolute inset-0 flex justify-center items-center">
-                    <div className="bg-black p-4">
-                        <div className="bg-yellow-500 p-4">
-                            <h1 className="text-4xl lg:text-7xl font-bold text-white text-center">Job Opportunities</h1>
+        <section id="job-opportunities" className="relative min-h-screen py-8 bg-[#F7D117] mt-6">
+            <div
+                className="relative w-full h-48 md:h-64 bg-cover bg-center"
+                style={{ backgroundImage: "url('/LogoBackground.png')" }}
+            >
+                <div className="absolute inset-0 flex justify-center items-center px-4">
+                    <div className="bg-black/90 p-2 rounded-xl shadow-xl">
+                        <div className="bg-[#F7D117] px-5 py-3 rounded-lg border border-white/30">
+                            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white text-center tracking-tight">
+                                Job Opportunities
+                            </h1>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container px-6 md:px-12 lg:px-16 py-12 mt-10 bg-white rounded-2xl shadow-lg mb-16 max-w-4xl mx-auto">
-                <p className="text-left text-xl md:text-2xl lg:text-3xl leading-relaxed mb-6 font-sans">
-                    Apply now online or in person. <br/> <strong>San Bar Construction Corp.</strong> is an Equal Opportunity Employer and encourages diversity in the workforce.
+            <div className="container px-5 md:px-8 py-7 mt-8 bg-white rounded-2xl shadow-xl mb-8 max-w-4xl mx-auto border border-black/10">
+                <p className="text-left text-base md:text-lg leading-relaxed mb-4 font-sans text-gray-800">
+                    Apply now online or in person. <br />
+                    <strong>San Bar Construction Corp.</strong> is an Equal Opportunity Employer and encourages diversity in the workforce.
                 </p>
 
-                <p className="text-left text-2xl md:text-xl lg:text-4xl font-bold leading-relaxed mb-6">
+                <p className="text-left text-xl md:text-2xl font-bold leading-relaxed mb-4 text-black">
                     San Bar is a Drug Free Workplace.
                 </p>
 
-                <p className="text-left text-xl md:text-xl lg:text-2xl leading-relaxed mb-8 font-sans">
+                <p className="text-left text-base md:text-lg leading-relaxed mb-6 font-sans text-gray-800">
                     To apply, please click the button below and submit your application.
                 </p>
 
-                <div className="flex justify-start mt-10">
+                <div className="flex justify-start">
                     <Link href="/job-application">
-                        <button
-                            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg md:text-xl lg:text-2xl shadow-md transition-transform duration-200 transform hover:scale-105"
-                        >
+                        <button className="bg-black hover:bg-gray-900 text-white font-bold py-2.5 px-5 rounded-xl text-base md:text-lg shadow-md transition-transform duration-200 transform hover:scale-105">
                             Apply Here
                         </button>
                     </Link>
                 </div>
             </div>
-
-
-
-            {/*<JobPosition*/}
-            {/*    title="Purchasing Manager"*/}
-            {/*    icon={<FaClipboardCheck />}*/}
-            {/*    summary="The Purchasing Manager role will be integral to maintaining operational efficiency and driving sales growth at San Bar. This position requires strong organizational skills, multitasking abilities, and effective communication across departments. Responsibilities include inventory management, supplier relationship maintenance, ensuring material availability, managing schedules, and overseeing sales processes to ensure customer satisfaction and business growth."*/}
-            {/*    qualifications={[*/}
-            {/*        "Bachelor’s degree in Business Administration, Supply Chain Management, or a related field",*/}
-            {/*        "Minimum of 3–5 years of experience in purchasing, inventory management, or supply chain roles, ideally within the construction or related industries",*/}
-            {/*        "Proven track record in procurement, supplier negotiation, and inventory control",*/}
-            {/*        "Strong proficiency in Microsoft Office Suite (Excel, Word, PowerPoint), particularly Excel for managing data and analyzing trends",*/}
-            {/*        "Exceptional ability to prioritize tasks, manage time effectively, and handle multiple projects simultaneously",*/}
-            {/*        "Strong verbal and written communication skills with the ability to interact effectively with internal teams, suppliers, and customers",*/}
-            {/*        "Ability to adapt to changing market conditions, evolving customer needs, and shifts in company priorities"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Monitor inventory levels and maintain understanding of lead times, stock levels, and freight requirements",*/}
-            {/*        "Procure inventory items while staying informed about market conditions, seasonal trends, prepaid shipment needs, and stock requirements",*/}
-            {/*        "Source new products to enhance company sales",*/}
-            {/*        "Coordinate with Operations to combine purchases for optimized freight costs and pricing advantages",*/}
-            {/*        "Build and maintain strong relationships with current suppliers and establish new ones",*/}
-            {/*        "Ensure accurate costing and tracking of all inventory items",*/}
-            {/*        "Coordinate inventory audits and provide finalized inventory data for auditors",*/}
-            {/*        "Oversee the Inside Sales Associate/Sales Administration Assistant to ensure excellent customer service",*/}
-            {/*        "Promote San Bar’s products and services to generate increased sales",*/}
-            {/*        "Build and maintain strong customer relationships, ensuring satisfaction and repeat business",*/}
-            {/*        "Source products to fulfill customer needs and manage timely, effective delivery"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$60,000-$70,000"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation Leave"*/}
-            {/*/>*/}
-
-
-            {/*<JobPosition*/}
-            {/*    title="Receptionist/Accounting Clerk Administrative Assistant"*/}
-            {/*    icon={<FaTools />}*/}
-            {/*    summary="Administrative Assistant/Receptionist will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."*/}
-            {/*    qualifications={[*/}
-            {/*        "3+ years of experience",*/}
-            {/*        "Excellent organizational, time management, good listening skills",*/}
-            {/*        "Proficient knowledge of Microsoft Office Applications, including Excel",*/}
-            {/*        "Proficient database application software experience",*/}
-            {/*        "Knowledge of Pro Contractor by Viewpoint preferred",*/}
-            {/*        "Ability to multi-task, prioritize, and problem solve",*/}
-            {/*        "Self-starter and dependable",*/}
-            {/*        "Excellent communication skills both written and verbal",*/}
-            {/*        "Construction industry experience preferred",*/}
-            {/*        "Ability to work with confidential information"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Answer phones, greet customers, and direct accordingly",*/}
-            {/*        "Collect and distribute mail",*/}
-            {/*        "Order and maintain office supplies",*/}
-            {/*        "Maintain printer usage, postage downloads, and prepare and stamp mail",*/}
-            {/*        "Collect, code and reconcile statements and credit card expense reports on a weekly basis",*/}
-            {/*        "Assist cardholders with expense reports, upload activities, and maintain credit card files",*/}
-            {/*        "Scan AP Invoices",*/}
-            {/*        "Process Customer Credit applications",*/}
-            {/*        "Oversee employment applications and process new hire paperwork",*/}
-            {/*        "Perform additional administrative tasks as needed"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$16.00/hr - $20.00/hr"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
-            {/*/>*/}
-
-            {/*<JobPosition*/}
-            {/*    title="Receptionist / Administrative Assistant"*/}
-            {/*    icon={<FaClipboardCheck />}*/}
-            {/*    summary="Receptionist/Administrative Assistant will be the first point of contact with customers. This individual will perform essential front desk and administrative duties, including answering phones and directing phone calls, responding to inquiries, and providing support to the CFO and HR Manager."*/}
-            {/*    qualifications={[*/}
-            {/*        "1+ years of experience",*/}
-            {/*        "Excellent organizational, time management, and listening skills",*/}
-            {/*        "Proficient knowledge of Microsoft Office Applications, including Excel",*/}
-            {/*        "Proficient database application software experience",*/}
-            {/*        "Knowledge of Pro Contractor by Viewpoint preferred",*/}
-            {/*        "Ability to multi-task, prioritize, and problem solve",*/}
-            {/*        "Self-starter and dependable",*/}
-            {/*        "Excellent communication skills both written and verbal",*/}
-            {/*        "Construction industry experience preferred",*/}
-            {/*        "Ability to work with confidential information"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Answer phones, greet customers, and direct accordingly",*/}
-            {/*        "Collect and distribute mail",*/}
-            {/*        "Order and maintain office supplies",*/}
-            {/*        "Maintain printer usage, postage downloads, and prepare and stamp mail",*/}
-            {/*        "Scan AP invoices",*/}
-            {/*        "Process customer credit applications",*/}
-            {/*        "Oversee employment applications and process new hire paperwork",*/}
-            {/*        "Perform additional administrative tasks as needed"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$17.00/hr"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
-            {/*/>*/}
-
-            {/*<JobPosition*/}
-            {/*    title="Parts & Delivery Driver"*/}
-            {/*    icon={<FaTruck />}*/}
-            {/*    summary="San Bar Construction Corp. is currently hiring for a Parts & Delivery Driver who will pick up and deliver parts and supplies throughout Albuquerque and the surrounding area."*/}
-            {/*    qualifications={[*/}
-            {/*        "Excellent driving record and a valid driver’s license",*/}
-            {/*        "Good attention to detail",*/}
-            {/*        "Ability to work independently and manage multiple tasks",*/}
-            {/*        "Good communication skills",*/}
-            {/*        "Dependable and reliable",*/}
-            {/*        "Organizational skills to keep track of paperwork",*/}
-            {/*        "Ability to lift 25 to 50 lbs"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Pick up vehicle parts and supplies from various vendors",*/}
-            {/*        "Make deliveries to vendors",*/}
-            {/*        "Track and maintain accurate records of invoices, receipts, and checks",*/}
-            {/*        "Prepare a weekly expense report",*/}
-            {/*        "Keep vehicle clean of trash and report maintenance issues to fleet manager",*/}
-            {/*        "Perform light janitorial duties including restrooms and breakroom",*/}
-            {/*        "Restock the popcorn machine and vending machines",*/}
-            {/*        "Perform other duties as assigned"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$15.00 per hour"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
-
-            {/*<JobPosition*/}
-            {/*    title="Parts Specialist"*/}
-            {/*    icon={<FaTools />}*/}
-            {/*    summary="The Parts Specialist is responsible for managing and maintaining the inventory of parts and supplies, coordinating with vendors, and ensuring accurate and timely distribution of materials to meet the needs of the company’s operations. This role requires strong organizational skills, attention to detail, and the ability to work collaboratively with various departments."*/}
-            {/*    qualifications={[*/}
-            {/*        "5+ years experience with parts or mechanical work",*/}
-            {/*        "Strong organizational and time management skills",*/}
-            {/*        "Excellent verbal and written communication skills",*/}
-            {/*        "Dependable",*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Manage inventory of parts and supplies, ensuring accurate stock levels",*/}
-            {/*        "Order and receive parts from vendors in a timely manner",*/}
-            {/*        "Maintain accurate records of inventory and transactions",*/}
-            {/*        "Coordinate with the maintenance and operations teams to provide necessary parts and materials",*/}
-            {/*        "Ensure proper storage and labeling of parts and supplies",*/}
-            {/*        "Assist in resolving discrepancies in inventory or shipments",*/}
-            {/*        "Provide excellent customer service to internal and external stakeholders",*/}
-            {/*        "Ensure the parts area is clean, organized, and complies with safety standards"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="Based on Experience"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
-
-
-            {/*<JobPosition*/}
-            {/*    title="Sign Designer - Signage"*/}
-            {/*    icon={<FaSign />}*/}
-            {/*    summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."*/}
-            {/*    qualifications={[*/}
-            {/*        "Ability to establish priorities, work independently, and achieve objectives without supervision",*/}
-            {/*        "Time management and multi-tasking skills while being detail-oriented with a positive attitude",*/}
-            {/*        "Proven ability to work collaboratively",*/}
-            {/*        "Excellent analytical and problem-solving skills",*/}
-            {/*        "Excellent verbal and written communication skills",*/}
-            {/*        "Able to create excellent graphics and presentations based on customer orders",*/}
-            {/*        "Works well in a fast-paced environment",*/}
-            {/*        "Possess intermediate computer skills, can import/export files",*/}
-            {/*        "Intermediate skills in Adobe Illustrator and/or Photoshop (Flexprint experience is a plus)",*/}
-            {/*        "Able to lift up to 50 pounds on occasion"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Work with sign shop manager, sales department, and contracting department to execute initial designs that meet project requirements",*/}
-            {/*        "Ensure all printing jobs stay on schedule to meet the various department timelines",*/}
-            {/*        "Understand the proofing process, make corrections, and provide submittals for approval",*/}
-            {/*        "Communicate professionally and courteously with the team and (on occasion) customers",*/}
-            {/*        "Ensure proper supplies and materials are available to complete printing jobs"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="Based on Experience"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
-
-            {/*<JobPosition*/}
-            {/*    title="Sign Designer"*/}
-            {/*    icon={<FaSign />}*/}
-            {/*    summary="San Bar Construction Corp. specializes in fast-paced roadway construction, focusing on roadway striping, signing, and guardrail installation. We are hiring a full-time Sign Designer/Printer with strong computer and design skills to work in our sign shop. The role involves using artistic and design-software skills to develop signs for businesses, contractors, municipalities, retail, and other customers. This includes understanding the sign building and fabrication process, setting up files for digital printing and routing to various printers and laminators (training provided)."*/}
-            {/*    qualifications={[*/}
-            {/*        "Intermediate skills in Adobe Illustrator and/or Photoshop; FlexPrint experience is a plus",*/}
-            {/*        "Strong computer skills, able to import/export files",*/}
-            {/*        "Ability to establish priorities, work independently, and achieve objectives without supervision",*/}
-            {/*        "Positive attitude, detail-oriented, strong time management and multi-tasking skills",*/}
-            {/*        "Proven ability to work collaboratively",*/}
-            {/*        "Excellent analytical, problem-solving, verbal, graphic, presentation, and written communication skills",*/}
-            {/*        "Predictable and consistent behavior with attitude, attendance, and performance",*/}
-            {/*        "Able to lift up to 50 pounds on occasion"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Work with the sign shop foreman and internal departments to design and print signs that meet project requirements",*/}
-            {/*        "Ensure all printing jobs stay on schedule to meet department timelines",*/}
-            {/*        "Understand the proofing process, make corrections, and provide submittals for approval",*/}
-            {/*        "Communicate professionally and courteously with the team and occasionally with customers",*/}
-            {/*        "Maintain printers and laminators daily",*/}
-            {/*        "Ensure proper supplies and materials are available for printing jobs"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$20.00 - $23.00 per hour"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, Vacation, HWA, 401k"*/}
-            {/*/>*/}
-
-            {/*<JobPosition*/}
-            {/*    title="Sign Shop Laborer - Entry Level"*/}
-            {/*    icon={<FaSign />}*/}
-            {/*    summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."*/}
-            {/*    qualifications={[*/}
-            {/*        "Detail oriented",*/}
-            {/*        "Dependable and reliable",*/}
-            {/*        "Ability to work in a fast-paced environment",*/}
-            {/*        "Work independently and in a team environment",*/}
-            {/*        "A self-starter",*/}
-            {/*        "Ability to multi-task",*/}
-            {/*        "Ability to lift 25 to 30 lbs.",*/}
-            {/*        "Stand for long periods of time",*/}
-            {/*        "Knowledge of using a tape measurer preferred",*/}
-            {/*        "Good communication skills"*/}
-            {/*    ]}*/}
-            {/*    responsibilities={[*/}
-            {/*        "Manufacture signs, banners, and digital printed media",*/}
-            {/*        "Cut metal, wood, and other materials as required",*/}
-            {/*        "Operate various saws and equipment"*/}
-            {/*    ]}*/}
-            {/*    jobType="Full-time"*/}
-            {/*    compensation="$14.50 per hour"*/}
-            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-            {/*/>*/}
 
             <JobPosition
                 title="Warehouse Worker"
@@ -361,13 +154,13 @@ export default function JobOpportunities() {
                     "Frequently required to stand, walk, stoop, kneel, or crawl",
                     "Good driving record",
                     "Dependable and reliable",
-                    "Team player with the ability to work independently"
+                    "Team player with the ability to work independently",
                 ]}
                 responsibilities={[
                     "Process requests, pull materials, and prepare orders",
                     "Load and unload trucks and check in merchandise",
                     "Maintain a clean and safe environment",
-                    "Deliver orders to customers when needed"
+                    "Deliver orders to customers when needed",
                 ]}
                 jobType="Full-time"
                 compensation="$15.00 per hour"
@@ -385,14 +178,14 @@ export default function JobOpportunities() {
                     "Safety and detail-oriented",
                     "Experience operating construction equipment",
                     "Ability to lift up to 75 lbs. for extended periods",
-                    "Flexible and adaptable to change"
+                    "Flexible and adaptable to change",
                 ]}
                 responsibilities={[
                     "Transport materials, equipment, and vehicles to job sites",
                     "Perform pre-trip and post-trip inspections",
                     "Load and manually lift materials",
                     "Keep vehicles and job sites clean",
-                    "Perform basic repairs as needed"
+                    "Perform basic repairs as needed",
                 ]}
                 jobType="Full-time"
                 compensation="Dependent on Project"
@@ -400,7 +193,7 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
-                title="Field Technician/Laborer"
+                title="Field Technician / Laborer"
                 icon={<FaTools />}
                 summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
                 qualifications={[
@@ -409,100 +202,19 @@ export default function JobOpportunities() {
                     "Experience operating construction equipment",
                     "Ability to travel 100% of the time",
                     "Ability to lift up to 75 lbs. for extended periods",
-                    "Flexible and adaptable to change"
+                    "Flexible and adaptable to change",
                 ]}
                 responsibilities={[
                     "Transport materials and equipment to job sites",
                     "Perform maintenance of equipment",
                     "Safely operate tools and machinery",
                     "Maintain cleanliness of job sites",
-                    "Read and execute plans for layout marks"
+                    "Read and execute plans for layout marks",
                 ]}
                 jobType="Full-time"
                 compensation="Dependent on Project"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
-
-{/*            <JobPosition*/}
-{/*                title="Acting Foreman"*/}
-{/*                icon={<FaHardHat />}*/}
-{/*                summary="San Bar Construction Corp. is seeking an Acting Foreman (Foreman-in-Training) to work under an experienced Foreman in overseeing highway construction crews. This role is a structured development position designed to provide hands-on leadership experience in guardrail installation, sign installation, and highway striping operations.*/}
-{/*During the training period, the Acting Foreman will assist with supervising daily crew activities, coordinating tasks, managing documentation, and ensuring work is completed safely, efficiently, and according to project specifications.*/}
-{/*This position serves as a direct pathway to a Foreman role, offering hands-on training, mentorship, and increasing responsibility, with advancement based on performance and readiness to independently manage crews and projects."*/}
-
-{/*                qualifications={[*/}
-{/*                    "3–5+ years of highway construction experience preferred",*/}
-{/*                    "Previous experience as a lead or senior crew member strongly preferred",*/}
-{/*                    "Hands-on experience in guardrail, sign installation, or striping operations",*/}
-{/*                    "Strong willingness to learn leadership and crew management",*/}
-{/*                    "Good communication skills (verbal and written)",*/}
-{/*                    "Ability to perform physically demanding work and lift heavy materials",*/}
-{/*                    "Experience operating construction equipment and hydraulic tools preferred",*/}
-{/*                    "Ability to work outdoors in varying weather conditions",*/}
-{/*                    "Solid understanding of construction processes and jobsite safety",*/}
-{/*                    "Valid driver’s license required"*/}
-{/*                ]}*/}
-
-{/*                responsibilities={[*/}
-{/*                    "Assist the Foreman in coordinating daily crew activities based on project plans",*/}
-{/*                    "Help adjust work plans based on weather, site conditions, and staffing needs",*/}
-{/*                    "Support delegation of tasks and responsibilities to crew members",*/}
-{/*                    "Read and interpret project plans, specifications, and layouts",*/}
-{/*                    "Lead by example in safety, productivity, and quality workmanship",*/}
-{/*                    "Assist in training crew members on installation techniques and procedures",*/}
-{/*                    "Monitor project progress to meet timelines and production goals",*/}
-{/*                    "Support equipment management, including safe operation and maintenance",*/}
-{/*                    "Maintain accurate documentation and jobsite records",*/}
-{/*                    "Ensure job sites remain safe, clean, and compliant with safety standards"*/}
-{/*                ]}*/}
-
-{/*                jobType="Full-time"*/}
-{/*                compensation="Dependent on project, with additional wage adjustments based on pay class"*/}
-{/*                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-{/*            />*/}
-
-{/*            <JobPosition*/}
-{/*                title="Guardrail Laborer / Operator / Installer"*/}
-{/*                icon={<FaSign />}*/}
-{/*                summary="San Bar Construction Corp. is seeking a Guardrail Laborer/Operator/Installer to join our field crew in the installation, repair, and maintenance of highway guardrail systems. This role supports all phases of guardrail construction, including layout, post driving, rail installation, and site cleanup.*/}
-
-{/*The position requires a strong focus on safety, teamwork, and quality workmanship while working in active roadway environments. Ideal candidates are dependable, mechanically inclined, and able to perform physically demanding work while maintaining high standards on every project."*/}
-
-{/*                qualifications={[*/}
-{/*                    "1–2 years of roadway or guardrail installation experience preferred",*/}
-{/*                    "CDL preferred but not required",*/}
-{/*                    "Experience working in a construction crew environment",*/}
-{/*                    "Familiarity with hand and power tools used in guardrail installation",*/}
-{/*                    "Strong hand-eye coordination and mechanical aptitude",*/}
-{/*                    "Safety-focused mindset with attention to detail",*/}
-{/*                    "Ability to follow directions and established installation procedures",*/}
-{/*                    "Ability to work independently and as part of a team",*/}
-{/*                    "Willingness to travel for job assignments (up to 100%)",*/}
-{/*                    "Ability to lift 50–75 lbs repeatedly throughout the day",*/}
-{/*                    "Valid driver’s license required",*/}
-{/*                    "Experience operating construction equipment (post drivers, skid steers, forklifts) preferred"*/}
-{/*                ]}*/}
-
-{/*                responsibilities={[*/}
-{/*                    "Install and repair highway guardrail systems, including posts, blocks, and steel rail",*/}
-{/*                    "Assist with layout and marking for proper guardrail placement according to plans",*/}
-{/*                    "Load, unload, and transport materials, tools, and equipment to job sites",*/}
-{/*                    "Operate equipment such as post drivers, skid steers, and company vehicles safely",*/}
-{/*                    "Use hand and power tools to complete installation tasks",*/}
-{/*                    "Ensure all work meets quality standards and project specifications",*/}
-{/*                    "Perform basic maintenance and repairs on tools and equipment",*/}
-{/*                    "Maintain a clean and organized job site free of debris and hazards",*/}
-{/*                    "Follow all safety protocols when working near roadways and traffic",*/}
-{/*                    "Assist with traffic control setup when required",*/}
-{/*                    "Complete additional assigned duties as needed"*/}
-{/*                ]}*/}
-
-{/*                jobType="Full-time"*/}
-{/*                compensation="Dependent on project"*/}
-{/*                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
-{/*            />*/}
-
-
         </section>
     );
 }
