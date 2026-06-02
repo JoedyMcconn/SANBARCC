@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaTools, FaWarehouse, FaTruck, FaCalculator} from 'react-icons/fa';
+import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign} from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -182,6 +182,62 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
+                title="Sign Designer - Signage"
+                icon={<FaSign />}
+                summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."
+                qualifications={[
+                    "Ability to establish priorities, work independently, and achieve objectives without supervision",
+                    "Time management and multi-tasking skills while being detail-oriented with a positive attitude",
+                    "Proven ability to work collaboratively",
+                    "Excellent analytical and problem-solving skills",
+                    "Excellent verbal and written communication skills",
+                    "Able to create excellent graphics and presentations based on customer orders",
+                    "Works well in a fast-paced environment",
+                    "Possess intermediate computer skills, can import/export files",
+                    "Intermediate skills in Adobe Illustrator and/or Photoshop (Flexprint experience is a plus)",
+                    "Able to lift up to 50 pounds on occasion"
+                ]}
+                responsibilities={[
+                    "Work with sign shop manager, sales department, and contracting department to execute initial designs that meet project requirements",
+                    "Ensure all printing jobs stay on schedule to meet the various department timelines",
+                    "Understand the proofing process, make corrections, and provide submittals for approval",
+                    "Communicate professionally and courteously with the team and (on occasion) customers",
+                    "Ensure proper supplies and materials are available to complete printing jobs"
+                ]}
+                jobType="Full-time"
+                compensation="Based on Experience"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+            <JobPosition
+                title="Diesel Technician / Mechanic"
+                icon={<FaTools />}
+                summary="San Bar Construction Corporation is currently recruiting to fill the position of Diesel Technician / Mechanic. The primary duties include diagnosis, repair, and maintenance of primarily diesel-powered vehicles, equipment, light-duty trucks, and heavy-duty trucks. San Bar Construction repairs, rebuilds, and manufactures specialized equipment for highway striping, guardrail, rumble strip, and ultra-high-pressure water blasting in a large climate-controlled mechanic shop."
+                qualifications={[
+                    "Minimum of 5 years automotive/diesel mechanic experience",
+                    "Valid driver license required; CDL license is a plus but not required",
+                    "Proficiency with maintenance and repair tools",
+                    "Strong attention to detail",
+                    "Ability to meet all company, government, and equipment-related safety requirements",
+                    "Ability to communicate effectively with operators, supervisors, and co-workers",
+                    "Physically fit and able to lift up to 60 pounds",
+                    "Capable of climbing, kneeling, twisting, and bending as required to complete necessary repairs"
+                ]}
+                responsibilities={[
+                    "Perform inspections, diagnosis, troubleshooting, maintenance, and repair of highway safety construction vehicles and equipment",
+                    "Analyze diagnostic test results",
+                    "Service vehicles and equipment as required to ensure safe and proper operation",
+                    "Operate equipment such as forklifts, skid loaders, stationary and portable air compressors, brooms, boom trucks, and other industry-related equipment",
+                    "Diagnose and repair a wide variety of mechanical and electrical equipment",
+                    "Read and understand specifications, schematics, and manuals",
+                    "Ensure cleanliness of the shop"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Experience"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
+            />
+
+            <JobPosition
                 title="Warehouse Worker"
                 icon={<FaWarehouse />}
                 summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
@@ -205,37 +261,31 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
-                title="Payroll Specialist"
-                icon={<FaCalculator />}
-                summary="San Bar Construction Corporation is currently recruiting to fill the position of Payroll Specialist. The primary function of the Payroll Specialist will be to process weekly payroll for employees, including certified payrolls, employee benefit changes, maintaining payroll database integrity, accounting-related activities as directed, and providing excellent customer service."
+                title="Sign Shop Laborer - Entry Level"
+                icon={<FaSign />}
+                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."
                 qualifications={[
-                    "3+ years of payroll processing experience required",
-                    "Construction in-house payroll experience required",
-                    "Certified Payroll (Davis Bacon) experience and related reporting required",
-                    "Strong work ethic, professional integrity, and reliability in handling highly confidential information",
-                    "Strong time management and organizational skills",
-                    "Self-starter capable of working with minimal supervision",
-                    "Strong Excel skills",
-                    "Strong Microsoft Office skills",
-                    "Experience with General Ledger account responsibilities as assigned by the Controller"
+                    "Detail oriented",
+                    "Dependable and reliable",
+                    "Ability to work in a fast-paced environment",
+                    "Work independently and in a team environment",
+                    "A self-starter",
+                    "Ability to multi-task",
+                    "Ability to lift 25 to 30 lbs.",
+                    "Stand for long periods of time",
+                    "Knowledge of using a tape measurer preferred",
+                    "Good communication skills"
                 ]}
                 responsibilities={[
-                    "Process weekly payroll for 80+ employees",
-                    "Process bonus payroll",
-                    "Process weekly 401K uploads",
-                    "Process all Certified Payrolls weekly and ensure delivery to job-specific contractors",
-                    "Enter new employee information during onboarding and deactivate employees during offboarding",
-                    "Process employee changes including pay rates, tax withholding, direct deposit, and deductions",
-                    "Calculate child support garnishments and liens and coordinate third-party payroll payments",
-                    "Maintain vacation and sick leave records and monitor accuracy",
-                    "Provide exceptional customer service to employees",
-                    "Serve as a resource for employee payroll and paystub questions",
-                    "Perform all other duties as assigned"
+                    "Manufacture signs, banners, and digital printed media",
+                    "Cut metal, wood, and other materials as required",
+                    "Operate various saws and equipment"
                 ]}
                 jobType="Full-time"
-                compensation="Dependent on Experience"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, and Vacation Leave"
+                compensation="$14.50 per hour"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
+
 
             <JobPosition
                 title="CDL Driver"
