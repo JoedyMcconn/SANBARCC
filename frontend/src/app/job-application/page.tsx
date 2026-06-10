@@ -186,13 +186,18 @@ export default function JobApplicationForm() {
                 <h3 className="text-2xl font-sans my-6">Position(s) Applying for</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans mb-6">
 
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Warehouse Laborer" className="mr-2"/> Warehouse Laborer
-                    </label>
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Warehouse Laborer" className="mr-2"/> Warehouse Laborer*/}
+                    {/*</label>*/}
 
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Field Technician/Laborer"
                                className="mr-2"/> Field/Technician
+                    </label>
+
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Sign Designer / Print Technician"
+                               className="mr-2"/> Sign Designer / Print Technician
                     </label>
 
                     {/*<label className="flex items-center">*/}
@@ -208,11 +213,15 @@ export default function JobApplicationForm() {
                     {/*</label>*/}
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Truck Driver" className="mr-2"/> CDL Truck Driver
+                        <input type="checkbox" name="position" value=" CDL Driver" className="mr-2"/> CDL Truck Driver
                     </label>
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Clerical" className="mr-2"/> Clerical
+                        <input type="checkbox" name="position" value="Diesel Technician" className="mr-2"/> Diesel Technician
+                    </label>
+
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Accountant" className="mr-2"/> Accountant
                     </label>
 
                     {/*<label className="flex items-center">*/}

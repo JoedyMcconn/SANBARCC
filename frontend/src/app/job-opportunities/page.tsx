@@ -182,7 +182,7 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
-                title="Sign Designer - Signage"
+                title="Sign Designer / Print Technician"
                 icon={<FaSign />}
                 summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."
                 qualifications={[
@@ -235,55 +235,6 @@ export default function JobOpportunities() {
                 jobType="Full-time"
                 compensation="Dependent on Experience"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
-            />
-
-            <JobPosition
-                title="Warehouse Worker"
-                icon={<FaWarehouse />}
-                summary="The Warehouse Worker will perform a variety of tasks including receiving and processing incoming stock, materials, or equipment and preparing and shipping orders."
-                qualifications={[
-                    "Regularly lift or move objects 10 to 50 lbs.",
-                    "Occasionally lift or move objects over 100 lbs. using equipment",
-                    "Frequently required to stand, walk, stoop, kneel, or crawl",
-                    "Good driving record",
-                    "Dependable and reliable",
-                    "Team player with the ability to work independently",
-                ]}
-                responsibilities={[
-                    "Process requests, pull materials, and prepare orders",
-                    "Load and unload trucks and check in merchandise",
-                    "Maintain a clean and safe environment",
-                    "Deliver orders to customers when needed",
-                ]}
-                jobType="Full-time"
-                compensation="$15.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
-
-            <JobPosition
-                title="Sign Shop Laborer - Entry Level"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers. Training will be provided for those with the desire to learn and advance with this dynamic company."
-                qualifications={[
-                    "Detail oriented",
-                    "Dependable and reliable",
-                    "Ability to work in a fast-paced environment",
-                    "Work independently and in a team environment",
-                    "A self-starter",
-                    "Ability to multi-task",
-                    "Ability to lift 25 to 30 lbs.",
-                    "Stand for long periods of time",
-                    "Knowledge of using a tape measurer preferred",
-                    "Good communication skills"
-                ]}
-                responsibilities={[
-                    "Manufacture signs, banners, and digital printed media",
-                    "Cut metal, wood, and other materials as required",
-                    "Operate various saws and equipment"
-                ]}
-                jobType="Full-time"
-                compensation="$14.50 per hour"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
 
 
