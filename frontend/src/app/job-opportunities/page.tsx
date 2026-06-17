@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign} from 'react-icons/fa';
+import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign, FaHardHat} from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -182,31 +182,74 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
-                title="Sign Designer / Print Technician"
+                title="Sign Designer / Print & Production Technician"
                 icon={<FaSign />}
-                summary="A Sign Designer will use artistic and design-software skills to create signs for businesses, contractors, communities, municipalities, retail, education, and other customers. This role requires knowledge of signage material options, fabrication methods, and construction processes for exterior signs, roadway panels, banners, and decals. The designer must also understand colors, type, and size as it relates to signage. Setting up files for digital printing and routing to various types of printers and laminators is a key component of the job."
+                summary="San Bar Construction Corp. is a fast-paced roadway construction company specializing in roadway striping, traffic sign fabrication and installation, and guardrail installation. We are seeking a Sign Designer / Print & Production Technician to join our in-house sign shop. This is a hands-on production role ideal for someone with experience in sign design, fabrication setup, and large-format printing rather than traditional or marketing-focused graphic design."
                 qualifications={[
-                    "Ability to establish priorities, work independently, and achieve objectives without supervision",
-                    "Time management and multi-tasking skills while being detail-oriented with a positive attitude",
-                    "Proven ability to work collaboratively",
-                    "Excellent analytical and problem-solving skills",
-                    "Excellent verbal and written communication skills",
-                    "Able to create excellent graphics and presentations based on customer orders",
-                    "Works well in a fast-paced environment",
-                    "Possess intermediate computer skills, can import/export files",
-                    "Intermediate skills in Adobe Illustrator and/or Photoshop (Flexprint experience is a plus)",
-                    "Able to lift up to 50 pounds on occasion"
+                    "Experience in sign design or production, ideally within a fabrication, construction, or municipal signage environment",
+                    "Proficiency in Adobe Illustrator required; experience with FlexiPrint/FlexiSign or similar sign-making software is a plus",
+                    "Strong computer skills, including the ability to import/export files and manage digital assets",
+                    "Understanding of sign construction processes including materials, substrates, vinyl application, and lamination; training provided",
+                    "Excellent attention to detail with the ability to manage print queues and prioritize tasks independently",
+                    "Strong problem-solving abilities with clear verbal and written communication skills",
+                    "Reliable, with consistent attendance, a positive attitude, and a solid work ethic",
+                    "Comfortable working in a fast-paced, production-driven environment",
+                    "Physically able to lift up to 50 lbs occasionally and remain on your feet for extended periods",
+                    "1–2 years in a sign shop or print production role",
+                    "High school diploma or equivalent"
                 ]}
                 responsibilities={[
-                    "Work with sign shop manager, sales department, and contracting department to execute initial designs that meet project requirements",
-                    "Ensure all printing jobs stay on schedule to meet the various department timelines",
-                    "Understand the proofing process, make corrections, and provide submittals for approval",
-                    "Communicate professionally and courteously with the team and (on occasion) customers",
-                    "Ensure proper supplies and materials are available to complete printing jobs"
+                    "Collaborate with the sign shop production supervisor and internal departments to design, set up, and print various signs that meet project requirements",
+                    "Prepare files for printing, plotting, cutting, and laminating using large-format printers and related equipment",
+                    "Manage multiple signage projects, ensuring accurate production and timely delivery",
+                    "Perform daily, weekly, and monthly maintenance on printers, laminators, and other sign shop equipment",
+                    "Ensure that all materials and supplies are stocked for uninterrupted production",
+                    "Occasionally interact with customers to clarify specifications or provide sign proofs"
                 ]}
                 jobType="Full-time"
-                compensation="Based on Experience"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
+                compensation="$23.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, and Vacation"
+            />
+
+            <JobPosition
+                title="Senior Project Manager"
+                icon={<FaHardHat />}
+                summary="San Bar Construction Corp. is seeking an experienced Senior Project Manager to oversee roadway infrastructure projects throughout New Mexico. This position is responsible for managing multiple projects from contract award through closeout, coordinating field operations, maintaining client and vendor relationships, and ensuring projects are completed safely, efficiently, and profitably."
+                qualifications={[
+                    "Minimum five (5) years of construction management, project management, operations management, or related experience",
+                    "Strong organizational, leadership, and communication skills",
+                    "Ability to manage multiple projects simultaneously",
+                    "Proficiency with Microsoft Office Suite",
+                    "Valid driver's license with acceptable driving record",
+                    "Ability to read and interpret plans and specifications",
+                    "Experience with roadway construction preferred",
+                    "Experience with pavement markings preferred",
+                    "Experience with traffic control operations preferred",
+                    "Experience with guardrail installation preferred",
+                    "Experience with roadway signage preferred",
+                    "Experience with NMDOT projects preferred",
+                    "Experience with public works contracting preferred",
+                    "Experience with construction scheduling preferred",
+                    "Experience with contract administration preferred",
+                    "Experience with estimating and project budgeting preferred"
+                ]}
+                responsibilities={[
+                    "Manage multiple roadway construction projects simultaneously",
+                    "Receive and administer contracts from award through closeout",
+                    "Order and coordinate delivery of pavement marking materials, guardrail components, square tubing, sign materials, and other project-related products",
+                    "Schedule field crews, equipment, and project activities",
+                    "Coordinate crew assignments and lodging arrangements",
+                    "Develop and maintain strong relationships with vendors, customers, subcontractors, and NMDOT personnel",
+                    "Track project costs, budgets, profitability, and production",
+                    "Prepare and manage change orders, RFIs, submittals, and project documentation",
+                    "Conduct frequent field visits throughout New Mexico",
+                    "Assist with project billing and payment tracking",
+                    "Lead collection efforts and actively monitor Accounts Receivable aging reports",
+                    "Work directly with customers, project managers, and accounting personnel to ensure receivables remain current and outstanding balances are collected promptly"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on Experience"
+                benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, Vacation Leave, and Company Vehicle"
             />
 
             <JobPosition

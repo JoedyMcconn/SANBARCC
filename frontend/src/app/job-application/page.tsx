@@ -200,6 +200,11 @@ export default function JobApplicationForm() {
                                className="mr-2"/> Sign Designer / Print Technician
                     </label>
 
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Senior Project Manager"
+                               className="mr-2"/> Senior Project Manager
+                    </label>
+
                     {/*<label className="flex items-center">*/}
                     {/*    <input type="checkbox" name="position" value="Guardrail Laborer/Installer" className="mr-2"/>Guardrail Laborer/Installer*/}
                     {/*</label>*/}
@@ -217,7 +222,8 @@ export default function JobApplicationForm() {
                     </label>
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Diesel Technician" className="mr-2"/> Diesel Technician
+                        <input type="checkbox" name="position" value="Diesel Technician" className="mr-2"/> Diesel
+                        Technician
                     </label>
 
                     <label className="flex items-center">
