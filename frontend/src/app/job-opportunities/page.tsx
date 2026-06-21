@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign, FaHardHat} from 'react-icons/fa';
+import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign, FaHardHat, FaUserTie} from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -180,6 +180,49 @@ export default function JobOpportunities() {
                 compensation="Dependent on Experience"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, and Vacation Leave"
             />
+
+            <JobPosition
+                title="Retail Store Associate"
+                icon={<FaUserTie />}
+                summary="We are seeking a Retail Store Associate to serve as the first point of contact for walk-in customers and incoming sales calls. This role supports inside sales, customer orders, billing, month-end reporting, and accounts receivable processes while helping maintain a clean, organized, and customer-focused retail environment."
+                qualifications={[
+                    "1+ years of relevant professional experience",
+                    "Experience processing and managing invoices",
+                    "Strong organizational, time management, and active listening skills",
+                    "Proficient in Microsoft Office Suite, including Microsoft Excel",
+                    "Experience with database applications and business software systems",
+                    "Ability to multitask, prioritize responsibilities, and solve problems effectively",
+                    "Self-motivated, dependable, and able to work independently",
+                    "Excellent written and verbal communication skills with a professional and personable demeanor",
+                    "Construction industry experience preferred",
+                    "Ability to handle confidential and sensitive information with discretion",
+                    "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
+                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
+                ]}
+                responsibilities={[
+                    "Assist walk-in customers and respond to incoming sales calls",
+                    "Prepare customer quotes and orders while confirming inventory availability prior to sale",
+                    "Assist the Front Desk position with daily phone coverage",
+                    "Coordinate with the Sign Shop Production Supervisor to ensure orders are correct and completed in a timely manner",
+                    "Call customers when orders are ready for pickup and confirm packing slips are acknowledged for completed orders",
+                    "Work with the Warehouse Manager when customer orders need to be shipped",
+                    "Maintain customer sales files, quote files, equipment rental files, and pending sales records",
+                    "Assist the Director of Inventory and Sales with PPE distribution to employees as needed",
+                    "Keep the store clean, stocked, staged, and organized to promote sales",
+                    "Create and complete the purchase order process",
+                    "Monitor taxable and non-taxable purchases and invoice accordingly",
+                    "Process credit card and check payments and handle receipts according to San Bar policies and procedures",
+                    "Invoice customers daily, including tax, freight, and credit card fees when applicable",
+                    "Close out invoices at month end and prepare monthly reports for the Director of Inventory and Sales",
+                    "Monitor sales accounts receivable bi-weekly, review AR aging monthly, and follow up on balances older than 31 days",
+                    "Assist customers with invoice copies, credits, and account questions to help resolve past-due issues",
+                    "Meet with the Director of Inventory and Sales and CFO/Treasurer to review collection issues and receivables"
+                ]}
+                jobType="Full-time"
+                compensation="$18.00/hour"
+                benefits="Medical, Dental, and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, and Vacation Leave"
+            />
+
 
             <JobPosition
                 title="Sign Designer / Print & Production Technician"
