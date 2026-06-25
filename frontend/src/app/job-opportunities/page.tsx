@@ -254,46 +254,46 @@ export default function JobOpportunities() {
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, and Vacation"
             />
 
-            <JobPosition
-                title="Senior Project Manager"
-                icon={<FaHardHat />}
-                summary="San Bar Construction Corp. is seeking an experienced Senior Project Manager to oversee roadway infrastructure projects throughout New Mexico. This position is responsible for managing multiple projects from contract award through closeout, coordinating field operations, maintaining client and vendor relationships, and ensuring projects are completed safely, efficiently, and profitably."
-                qualifications={[
-                    "Minimum five (5) years of construction management, project management, operations management, or related experience",
-                    "Strong organizational, leadership, and communication skills",
-                    "Ability to manage multiple projects simultaneously",
-                    "Proficiency with Microsoft Office Suite",
-                    "Valid driver's license with acceptable driving record",
-                    "Ability to read and interpret plans and specifications",
-                    "Experience with roadway construction preferred",
-                    "Experience with pavement markings preferred",
-                    "Experience with traffic control operations preferred",
-                    "Experience with guardrail installation preferred",
-                    "Experience with roadway signage preferred",
-                    "Experience with NMDOT projects preferred",
-                    "Experience with public works contracting preferred",
-                    "Experience with construction scheduling preferred",
-                    "Experience with contract administration preferred",
-                    "Experience with estimating and project budgeting preferred"
-                ]}
-                responsibilities={[
-                    "Manage multiple roadway construction projects simultaneously",
-                    "Receive and administer contracts from award through closeout",
-                    "Order and coordinate delivery of pavement marking materials, guardrail components, square tubing, sign materials, and other project-related products",
-                    "Schedule field crews, equipment, and project activities",
-                    "Coordinate crew assignments and lodging arrangements",
-                    "Develop and maintain strong relationships with vendors, customers, subcontractors, and NMDOT personnel",
-                    "Track project costs, budgets, profitability, and production",
-                    "Prepare and manage change orders, RFIs, submittals, and project documentation",
-                    "Conduct frequent field visits throughout New Mexico",
-                    "Assist with project billing and payment tracking",
-                    "Lead collection efforts and actively monitor Accounts Receivable aging reports",
-                    "Work directly with customers, project managers, and accounting personnel to ensure receivables remain current and outstanding balances are collected promptly"
-                ]}
-                jobType="Full-time"
-                compensation="Dependent on Experience"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, Vacation Leave, and Company Vehicle"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Senior Project Manager"*/}
+            {/*    icon={<FaHardHat />}*/}
+            {/*    summary="San Bar Construction Corp. is seeking an experienced Senior Project Manager to oversee roadway infrastructure projects throughout New Mexico. This position is responsible for managing multiple projects from contract award through closeout, coordinating field operations, maintaining client and vendor relationships, and ensuring projects are completed safely, efficiently, and profitably."*/}
+            {/*    qualifications={[*/}
+            {/*        "Minimum five (5) years of construction management, project management, operations management, or related experience",*/}
+            {/*        "Strong organizational, leadership, and communication skills",*/}
+            {/*        "Ability to manage multiple projects simultaneously",*/}
+            {/*        "Proficiency with Microsoft Office Suite",*/}
+            {/*        "Valid driver's license with acceptable driving record",*/}
+            {/*        "Ability to read and interpret plans and specifications",*/}
+            {/*        "Experience with roadway construction preferred",*/}
+            {/*        "Experience with pavement markings preferred",*/}
+            {/*        "Experience with traffic control operations preferred",*/}
+            {/*        "Experience with guardrail installation preferred",*/}
+            {/*        "Experience with roadway signage preferred",*/}
+            {/*        "Experience with NMDOT projects preferred",*/}
+            {/*        "Experience with public works contracting preferred",*/}
+            {/*        "Experience with construction scheduling preferred",*/}
+            {/*        "Experience with contract administration preferred",*/}
+            {/*        "Experience with estimating and project budgeting preferred"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Manage multiple roadway construction projects simultaneously",*/}
+            {/*        "Receive and administer contracts from award through closeout",*/}
+            {/*        "Order and coordinate delivery of pavement marking materials, guardrail components, square tubing, sign materials, and other project-related products",*/}
+            {/*        "Schedule field crews, equipment, and project activities",*/}
+            {/*        "Coordinate crew assignments and lodging arrangements",*/}
+            {/*        "Develop and maintain strong relationships with vendors, customers, subcontractors, and NMDOT personnel",*/}
+            {/*        "Track project costs, budgets, profitability, and production",*/}
+            {/*        "Prepare and manage change orders, RFIs, submittals, and project documentation",*/}
+            {/*        "Conduct frequent field visits throughout New Mexico",*/}
+            {/*        "Assist with project billing and payment tracking",*/}
+            {/*        "Lead collection efforts and actively monitor Accounts Receivable aging reports",*/}
+            {/*        "Work directly with customers, project managers, and accounting personnel to ensure receivables remain current and outstanding balances are collected promptly"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Dependent on Experience"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, Vacation Leave, and Company Vehicle"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Diesel Technician / Mechanic"
