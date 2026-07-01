@@ -186,9 +186,9 @@ export default function JobApplicationForm() {
                 <h3 className="text-2xl font-sans my-6">Position(s) Applying for</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans mb-6">
 
-                    {/*<label className="flex items-center">*/}
-                    {/*    <input type="checkbox" name="position" value="Warehouse Laborer" className="mr-2"/> Warehouse Laborer*/}
-                    {/*</label>*/}
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Sign Shop Laborer" className="mr-2"/> Sign Shop Laborer
+                    </label>
 
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Field Technician/Laborer"
@@ -226,9 +226,9 @@ export default function JobApplicationForm() {
                         Technician
                     </label>
 
-                    <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Accountant" className="mr-2"/> Accountant
-                    </label>
+                    {/*<label className="flex items-center">*/}
+                    {/*    <input type="checkbox" name="position" value="Accountant" className="mr-2"/> Accountant*/}
+                    {/*</label>*/}
 
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Retail Store Associate" className="mr-2"/> Retail Store Associate

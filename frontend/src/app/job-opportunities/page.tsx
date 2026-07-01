@@ -145,40 +145,31 @@ export default function JobOpportunities() {
             </div>
 
             <JobPosition
-                title="Accountant"
-                icon={<FaCalculator />}
-                summary="The Accountant is responsible for supporting the company’s financial operations through fixed asset management, inventory control, month-end accounting activities, tax reporting, and insurance administration. This position ensures the accuracy of financial records related to capital assets, inventory, and operational expenses while assisting with month-end close processes and regulatory reporting. The Accountant will report directly to the CFO and work closely with Accounting, Fleet Management, and Operations personnel to maintain accurate accounting records."
+                title="Sign Shop Laborer - Entry Level"
+                icon={<FaSign />}
+                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers to support the manufacturing of signs, banners, and digital printed media for roadway construction projects. Industry experience is not required, and training will be provided to candidates with the desire to learn and grow with the company."
                 qualifications={[
-                    "Bachelor’s degree in Accounting required",
-                    "3-5 years of accounting experience preferred",
-                    "Construction industry experience preferred",
-                    "Experience with fixed assets, inventory accounting, and month-end close processes preferred",
-                    "Strong organizational and analytical skills",
-                    "Ability to maintain accurate financial records",
-                    "Ability to work independently and as part of a team",
-                    "Professional integrity and attention to detail"
+                    "No industry experience required; training will be provided",
+                    "Detail oriented",
+                    "Dependable and reliable",
+                    "Ability to work in a fast-paced environment",
+                    "Able to work independently and in a team environment",
+                    "Self-starter with the ability to multitask",
+                    "Ability to lift 25 to 30 lbs.",
+                    "Ability to stand for long periods of time",
+                    "Knowledge and experience working with a tape measurer preferred",
+                    "Good communication skills",
+                    "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
+                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
                 ]}
                 responsibilities={[
-                    "Ensure capitalized assets are recorded properly",
-                    "Coordinate with Accounts Payable on new fixed assets",
-                    "Maintain current year vehicle lists and additions worksheets",
-                    "Review asset disposals with Fleet Manager and maintain disposal records",
-                    "Reconcile additions worksheets to the General Ledger",
-                    "Coordinate with CPA regarding fixed asset additions and disposals",
-                    "Book depreciation and disposal journal entries",
-                    "Maintain vehicle, property, and liability insurance records",
-                    "Coordinate insurance and registration updates for vehicles and equipment",
-                    "Manage inventory control processes and cost of materials sold calculations",
-                    "Identify obsolete inventory and assist with disposition planning",
-                    "Assist with month-end close and account reconciliations",
-                    "Process daily cash journal entries and maintain petty cash records",
-                    "Prepare tax reporting including CRS-1, WWT-1, and CMP-1 filings",
-                    "Serve as backup to the CFO when needed",
-                    "Perform other accounting duties as assigned"
+                    "Manufacture signs, banners, and digital printed media",
+                    "Cut metal, wood, and other materials according to designated orders",
+                    "Operate a variety of saws and equipment used in the manufacturing process"
                 ]}
                 jobType="Full-time"
-                compensation="Dependent on Experience"
-                benefits="Medical, Dental and Vision Insurance, Health Reimbursement Account (HRA), Supplemental Insurance, Holiday Pay, Healthy Workplace Act Sick Leave (HWA), 401K, and Vacation Leave"
+                compensation="$14.50 per hour"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
             />
 
             <JobPosition
