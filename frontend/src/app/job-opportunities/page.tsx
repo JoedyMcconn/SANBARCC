@@ -215,35 +215,6 @@ export default function JobOpportunities() {
             />
 
 
-            <JobPosition
-                title="Sign Designer / Print & Production Technician"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. is a fast-paced roadway construction company specializing in roadway striping, traffic sign fabrication and installation, and guardrail installation. We are seeking a Sign Designer / Print & Production Technician to join our in-house sign shop. This is a hands-on production role ideal for someone with experience in sign design, fabrication setup, and large-format printing rather than traditional or marketing-focused graphic design."
-                qualifications={[
-                    "Experience in sign design or production, ideally within a fabrication, construction, or municipal signage environment",
-                    "Proficiency in Adobe Illustrator required; experience with FlexiPrint/FlexiSign or similar sign-making software is a plus",
-                    "Strong computer skills, including the ability to import/export files and manage digital assets",
-                    "Understanding of sign construction processes including materials, substrates, vinyl application, and lamination; training provided",
-                    "Excellent attention to detail with the ability to manage print queues and prioritize tasks independently",
-                    "Strong problem-solving abilities with clear verbal and written communication skills",
-                    "Reliable, with consistent attendance, a positive attitude, and a solid work ethic",
-                    "Comfortable working in a fast-paced, production-driven environment",
-                    "Physically able to lift up to 50 lbs occasionally and remain on your feet for extended periods",
-                    "1–2 years in a sign shop or print production role",
-                    "High school diploma or equivalent"
-                ]}
-                responsibilities={[
-                    "Collaborate with the sign shop production supervisor and internal departments to design, set up, and print various signs that meet project requirements",
-                    "Prepare files for printing, plotting, cutting, and laminating using large-format printers and related equipment",
-                    "Manage multiple signage projects, ensuring accurate production and timely delivery",
-                    "Perform daily, weekly, and monthly maintenance on printers, laminators, and other sign shop equipment",
-                    "Ensure that all materials and supplies are stocked for uninterrupted production",
-                    "Occasionally interact with customers to clarify specifications or provide sign proofs"
-                ]}
-                jobType="Full-time"
-                compensation="$23.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, and Vacation"
-            />
 
             {/*<JobPosition*/}
             {/*    title="Senior Project Manager"*/}
