@@ -1,31 +1,23 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaUserTie } from 'react-icons/fa';
 
-const leadershipTeam = [
+type LeadershipMember = {
+    name: string;
+    title: string;
+    image: string;
+};
+
+const leadershipTeam: LeadershipMember[] = [
     {
-        name: 'Devin Vigil',
-        title: '',
-        image: '/DevinVigil1.jpg',
-    },
-    {
-        name: 'Eli Richardson',
-        title: '',
-        image: '/EliRichardson1.jpg',
+        name: 'David "Hossie" Sanchez',
+        title: 'Owner / Chief Executive Officer',
+        image: '/DavidHossieSanchez1.jpg',
     },
     {
         name: 'Micah Sanchez',
-        title: 'Operations Manager Assistant',
+        title: '1st Vice President / Chief Operating Officer',
         image: '/MicahSanchez1.jpg',
-    },
-    {
-        name: 'Daniel Argueta',
-        title: '',
-        image: '/DanielArgueta1.jpg',
-    },
-    {
-        name: 'Kody Robison',
-        title: '',
-        image: '/KodyRobison1.jpg',
     },
     {
         name: 'Shaun Berry',
@@ -33,9 +25,9 @@ const leadershipTeam = [
         image: '/ShaunBerry1.jpg',
     },
     {
-        name: 'Sam Boggs',
-        title: 'Fleet Manager',
-        image: '/SamBoggs1.jpg',
+        name: 'Frank Sanchez',
+        title: 'SVP of Sign Shop Operations',
+        image: '/FrankSanchez1.jpg',
     },
     {
         name: 'Austin Baca',
@@ -43,21 +35,85 @@ const leadershipTeam = [
         image: '/AustinBaca1.png',
     },
     {
-        name: 'Frank Sanchez',
-        title: 'SVP of Business & Market Development',
-        image: '/FrankSanchez1.jpg',
+        name: 'Eli Richardson',
+        title: 'Project Manager',
+        image: '/EliRIchardson1.jpg',
     },
     {
-        name: 'David "Hossie" Sanchez',
-        title: 'Owner',
-        image: '/DavidHossieSanchez1.jpg',
+        name: 'Devin Vigil',
+        title: 'Director of Inventory & Sales',
+        image: '/DevinVigil1.jpg',
+    },
+    {
+        name: 'Daniel Argueta',
+        title: 'Sign Shop Manager',
+        image: '/DanielArgueta1.jpg',
+    },
+    {
+        name: 'Kody Robison',
+        title: 'Warehouse Manager / Electronic Tech',
+        image: '/KodyRobison1.jpg',
+    },
+    {
+        name: 'Sam Boggs',
+        title: 'Fleet Manager',
+        image: '/SamBoggs1.jpg',
     },
     {
         name: 'Chris Cartwright',
-        title: '',
+        title: 'Chief Estimator',
         image: '/ChrisCartwright1.jpg',
     },
 ];
+
+const LeadershipMemberRow = ({
+                                 member,
+                                 index,
+                             }: {
+    member: LeadershipMember;
+    index: number;
+}) => {
+    const isReversed = index % 2 !== 0;
+
+    return (
+        <article className="border-b border-neutral-800/80 py-10 last:border-b-0 lg:py-14">
+            <div
+                className={`grid items-center gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-14 ${
+                    isReversed ? 'lg:grid-flow-col-dense' : ''
+                }`}
+            >
+                <div className={isReversed ? 'lg:col-start-2' : ''}>
+                    <div className="relative h-[340px] w-full overflow-hidden bg-gradient-to-b from-neutral-900/40 to-neutral-950 sm:h-[390px] lg:h-[430px]">
+                        <Image
+                            src={member.image}
+                            alt={member.name}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 45vw"
+                            className="object-contain object-bottom p-4 transition duration-500 hover:scale-[1.03]"
+                            priority={index < 3}
+                        />
+                    </div>
+                </div>
+
+                <div className={isReversed ? 'lg:col-start-1 lg:row-start-1' : ''}>
+                    <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#F7D117]">
+                        {String(index + 1).padStart(2, '0')} / Leadership
+                    </p>
+
+                    <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+                        {member.name}
+                    </h3>
+
+                    <div className="mt-5 h-1 w-20 bg-[#F7D117]" />
+
+                    <p className="mt-6 max-w-xl text-lg font-semibold uppercase tracking-[0.16em] text-neutral-300">
+                        {member.title}
+                    </p>
+                </div>
+            </div>
+        </article>
+    );
+};
 
 const Leadership = () => {
     return (
@@ -65,6 +121,7 @@ const Leadership = () => {
             {/* Hero Section */}
             <div className="relative overflow-hidden border-b border-[#F7D117]/30">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(247,209,23,0.18),_transparent_35%),linear-gradient(to_bottom,_rgba(0,0,0,0.15),_rgba(0,0,0,0.95))]" />
+                <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,_transparent_1px),linear-gradient(90deg,_rgba(255,255,255,0.03)_1px,_transparent_1px)] bg-[size:48px_48px]" />
 
                 <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
                     <div className="max-w-3xl">
@@ -89,53 +146,30 @@ const Leadership = () => {
                 </div>
             </div>
 
-            {/* Leadership Grid */}
+            {/* Leadership List */}
             <div className="mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-20">
-                <div className="mb-10 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-                    <div>
-                        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#F7D117]">
-                            Our Team
-                        </p>
+                <div className="mb-6 max-w-3xl">
+                    <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#F7D117]">
+                        Our Team
+                    </p>
 
-                        <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                            Leadership Team
-                        </h2>
-                    </div>
+                    <h2 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        Leadership Team
+                    </h2>
 
-                    <p className="max-w-xl text-sm leading-7 text-neutral-400">
+                    <p className="mt-5 text-sm leading-7 text-neutral-400 sm:text-base">
                         Dedicated professionals supporting the people, projects, and operations that keep
                         San Bar moving forward.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                    {leadershipTeam.map((member) => (
-                        <article
+                <div>
+                    {leadershipTeam.map((member, index) => (
+                        <LeadershipMemberRow
                             key={member.name}
-                            className="group overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 shadow-lg transition duration-300 hover:-translate-y-1 hover:border-[#F7D117]/70 hover:shadow-2xl"
-                        >
-                            <div className="relative overflow-hidden bg-black">
-                                <img
-                                    src={member.image}
-                                    alt={member.name}
-                                    className="h-80 w-full object-cover transition duration-500 group-hover:scale-105"
-                                />
-
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
-                            </div>
-
-                            <div className="p-5">
-                                <h3 className="text-xl font-bold text-white">
-                                    {member.name}
-                                </h3>
-
-                                {member.title && (
-                                    <p className="mt-2 text-sm font-semibold uppercase tracking-[0.16em] text-[#F7D117]">
-                                        {member.title}
-                                    </p>
-                                )}
-                            </div>
-                        </article>
+                            member={member}
+                            index={index}
+                        />
                     ))}
                 </div>
             </div>
