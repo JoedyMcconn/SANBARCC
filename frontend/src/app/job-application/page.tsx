@@ -196,10 +196,10 @@ export default function JobApplicationForm() {
                     </label>
 
 
-                    {/*<label className="flex items-center">*/}
-                    {/*    <input type="checkbox" name="position" value="Senior Project Manager"*/}
-                    {/*           className="mr-2"/> Senior Project Manager*/}
-                    {/*</label>*/}
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Warehouse Laborer"
+                               className="mr-2"/> Warehouse Laborer
+                    </label>
 
                     {/*<label className="flex items-center">*/}
                     {/*    <input type="checkbox" name="position" value="Guardrail Laborer/Installer" className="mr-2"/>Guardrail Laborer/Installer*/}

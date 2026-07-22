@@ -268,6 +268,39 @@ export default function JobOpportunities() {
                 compensation="Dependent on Project"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
+            <JobPosition
+                title="Warehouse Laborer"
+                icon={<FaWarehouse />}
+                summary="San Bar Construction Corp. is hiring a full-time Warehouse Laborer to receive and process incoming stock, materials, and equipment, verify documentation, load and unload vehicles, and prepare orders for delivery or shipment."
+                qualifications={[
+                    "Regularly lift or move objects 10 to 50 lbs.",
+                    "Occasionally lift or move objects weighing more than 100 lbs. using provided equipment",
+                    "Frequently required to stand, walk, stoop, kneel, crouch, or crawl",
+                    "Occasionally required to sit, climb, or balance",
+                    "Dependable and reliable",
+                    "Good driving record",
+                    "Team player with the ability to work independently",
+                    "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
+                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
+                ]}
+                responsibilities={[
+                    "Receive and process incoming stock, materials, or equipment by verifying proper documentation",
+                    "Load and unload vehicles, utilizing a forklift as required",
+                    "Pick and fill orders from stock, pack orders, and prepare shipments",
+                    "Prepare orders by processing requests and supply orders, pulling materials, packing boxes, and placing orders in the delivery area",
+                    "Load and secure merchandise for transportation",
+                    "Unload trucks and check in merchandise",
+                    "Verify bill-of-lading and file documentation appropriately",
+                    "Sort and place materials in designated areas",
+                    "Maintain a safe, clean, and organized warehouse environment, including cleaning, sweeping, and mopping as needed",
+                    "Wear proper safety equipment and follow all safety requirements",
+                    "Deliver orders to customers when necessary",
+                    "Perform other duties as assigned"
+                ]}
+                jobType="Full-time"
+                compensation="$15.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
 
             <JobPosition
                 title="Field Technician / Laborer"
