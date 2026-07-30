@@ -145,6 +145,41 @@ export default function JobOpportunities() {
             </div>
 
             <JobPosition
+                title="Maintenance Technician"
+                icon={<FaTools />}
+                summary="San Bar Construction Corp. is hiring a full-time Maintenance Technician to maintain, repair, and improve company facilities, ensuring they remain safe, functional, and well-presented."
+                qualifications={[
+                    "3+ years of commercial, residential, or industrial maintenance experience preferred",
+                    "Working knowledge of electrical, plumbing, HVAC, carpentry, painting, drywall repair, and general building maintenance",
+                    "Ability to safely operate hand tools, power tools, ladders, and maintenance equipment",
+                    "Strong troubleshooting and problem-solving skills",
+                    "Ability to prioritize multiple assignments and work independently",
+                    "Valid driver's license with a satisfactory driving record",
+                    "Ability to pass a background check if required",
+                    "Frequently lift and carry up to 50 pounds",
+                    "Ability to stand, walk, bend, kneel, climb ladders, and work in confined spaces",
+                    "Occasionally work outdoors in varying weather conditions",
+                    "Ability to respond to emergency maintenance situations",
+                    "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
+                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
+                ]}
+                responsibilities={[
+                    "Perform routine maintenance and repairs throughout office buildings and facilities",
+                    "Troubleshoot and repair plumbing, electrical, HVAC, lighting, doors, windows, locks, flooring, drywall, and building systems",
+                    "Complete carpentry, painting, patching, and general maintenance projects",
+                    "Conduct preventative maintenance inspections and document findings",
+                    "Respond promptly to maintenance requests and emergency repairs",
+                    "Assemble, install, and relocate office furniture, fixtures, and equipment",
+                    "Maintain exterior areas including walkways, parking areas, and landscaping support",
+                    "Ensure facilities remain clean, organized, safe, and compliant with company standards",
+                    "Perform other duties as assigned"
+                ]}
+                jobType="Full-time"
+                compensation="$18.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
+            />
+
+            <JobPosition
                 title="Sign Shop Laborer - Entry Level"
                 icon={<FaSign />}
                 summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers to support the manufacturing of signs, banners, and digital printed media for roadway construction projects. Industry experience is not required, and training will be provided to candidates with the desire to learn and grow with the company."
