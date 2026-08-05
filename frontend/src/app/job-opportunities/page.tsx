@@ -175,12 +175,12 @@ export default function JobOpportunities() {
                     "Perform other duties as assigned"
                 ]}
                 jobType="Full-time"
-                compensation="$18.00 per hour"
+                compensation="$19.00 per hour"
                 benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
             />
 
             <JobPosition
-                title="Sign Shop Laborer - Entry Level"
+                title="Traffic Sign Technician"
                 icon={<FaSign />}
                 summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers to support the manufacturing of signs, banners, and digital printed media for roadway construction projects. Industry experience is not required, and training will be provided to candidates with the desire to learn and grow with the company."
                 qualifications={[

@@ -187,7 +187,7 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans mb-6">
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Sign Shop Laborer" className="mr-2"/> Sign Shop Laborer
+                        <input type="checkbox" name="position" value="Traffic Sign Technician" className="mr-2"/> Traffic Sign Technician
                     </label>
 
                     <label className="flex items-center">
