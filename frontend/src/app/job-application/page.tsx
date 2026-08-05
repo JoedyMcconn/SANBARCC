@@ -192,7 +192,7 @@ export default function JobApplicationForm() {
 
                     <label className="flex items-center">
                         <input type="checkbox" name="position" value="Field Technician/Laborer"
-                               className="mr-2"/> Field/Technician
+                               className="mr-2"/> Field Technician / Laborer
                     </label>
 
 
