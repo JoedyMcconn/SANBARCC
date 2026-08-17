@@ -180,31 +180,65 @@ export default function JobOpportunities() {
             />
 
             <JobPosition
-                title="Traffic Sign Technician"
-                icon={<FaSign />}
-                summary="San Bar Construction Corp. is hiring full-time entry-level Sign Shop Laborers to support the manufacturing of signs, banners, and digital printed media for roadway construction projects. Industry experience is not required, and training will be provided to candidates with the desire to learn and grow with the company."
+                title="Road Construction Foreman"
+                icon={<FaHardHat />}
+                summary="San Bar Construction Corp. is seeking an experienced Road Construction Foreman to supervise and coordinate highway construction crews. This position leads, trains, and delegates work to crew members while ensuring projects are completed safely, efficiently, and on schedule."
                 qualifications={[
-                    "No industry experience required; training will be provided",
-                    "Detail oriented",
-                    "Dependable and reliable",
-                    "Ability to work in a fast-paced environment",
-                    "Able to work independently and in a team environment",
-                    "Self-starter with the ability to multitask",
-                    "Ability to lift 25 to 30 lbs.",
-                    "Ability to stand for long periods of time",
-                    "Knowledge and experience working with a tape measurer preferred",
-                    "Good communication skills",
+                    "5+ years of experience in the highway construction industry",
+                    "2–4 years of professional experience as a lead, foreman, or supervisor",
+                    "Experience with guardrail installation, sign installation, and highway striping preferred, but not required; on-the-job training is provided",
+                    "Strong written and verbal communication skills",
+                    "Good understanding of the construction industry",
+                    "Ability to perform heavy physical activity and lift heavy objects",
+                    "Ability to operate hydraulically operated jackhammers and other heavy equipment used in the industry",
+                    "Ability to work outdoors in changing weather conditions",
+                    "Must possess a valid driver's license",
                     "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
                     "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
                 ]}
                 responsibilities={[
-                    "Manufacture signs, banners, and digital printed media",
-                    "Cut metal, wood, and other materials according to designated orders",
-                    "Operate a variety of saws and equipment used in the manufacturing process"
+                    "Coordinate daily tasks according to project plans and adjust work as necessary due to weather or personnel",
+                    "Delegate responsibilities and projects to crew members and contractors",
+                    "Study project specifications and plan construction procedures",
+                    "Provide leadership, training, and guidance to crew members through example and knowledge sharing",
+                    "Plan work schedules to maximize production while maintaining high performance standards",
+                    "Ensure the safe operation and transportation of equipment",
+                    "Instruct crews on required procedures and work methods",
+                    "Monitor and work alongside crew members to ensure successful project completion",
+                    "Maintain accurate records and ensure required documentation is submitted on time"
+                ]}
+                jobType="Full-time"
+                compensation="Dependent on experience"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+            />
+
+            <JobPosition
+                title="Traffic Sign Technician"
+                icon={<FaSign />}
+                summary="San Bar Construction Corp. is hiring a full-time, entry-level Traffic Sign Technician to support the production of signs, banners, and digitally printed media for roadway construction projects. Industry experience is not required, and training will be provided for candidates eager to learn and grow with the company."
+                qualifications={[
+                    "No industry experience required; training will be provided",
+                    "Detail-oriented",
+                    "Dependable and reliable",
+                    "Ability to work in a fast-paced environment",
+                    "Ability to work independently and as part of a team",
+                    "Self-starter",
+                    "Ability to manage multiple tasks",
+                    "Ability to lift 25 to 30 lbs.",
+                    "Ability to stand for long periods",
+                    "Knowledge of and experience using a tape measure preferred",
+                    "Good communication skills",
+                    "Following a conditional offer, employment is contingent upon passing a pre-employment drug test and completing a satisfactory background check",
+                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
+                ]}
+                responsibilities={[
+                    "Manufacture signs, banners, and digitally printed media",
+                    "Cut metal, wood, and other materials according to work orders",
+                    "Operate saws and other equipment used in the manufacturing process"
                 ]}
                 jobType="Full-time"
                 compensation="$14.50 per hour"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"
+                benefits="Medical, dental, and vision insurance; HRA; supplemental insurance; holiday pay; HWA; 401(k); and vacation"
             />
 
 

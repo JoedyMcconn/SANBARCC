@@ -187,7 +187,13 @@ export default function JobApplicationForm() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans mb-6">
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Traffic Sign Technician" className="mr-2"/> Traffic Sign Technician
+                        <input type="checkbox" name="position" value="Traffic Sign Technician"
+                               className="mr-2"/> Traffic Sign Technician
+                    </label>
+
+                    <label className="flex items-center">
+                        <input type="checkbox" name="position" value="Road Construction Foreman"
+                               className="mr-2"/> Road Construction Foreman
                     </label>
 
                     <label className="flex items-center">
@@ -210,7 +216,8 @@ export default function JobApplicationForm() {
                     {/*</label>*/}
 
                     <label className="flex items-center">
-                        <input type="checkbox" name="position" value="Maintenance Technician" className="mr-2"/> Maintenance Technician
+                        <input type="checkbox" name="position" value="Maintenance Technician"
+                               className="mr-2"/> Maintenance Technician
                     </label>
 
                     <label className="flex items-center">
