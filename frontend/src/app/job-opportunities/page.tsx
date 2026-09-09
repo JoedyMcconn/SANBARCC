@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign, FaHardHat, FaUserTie} from 'react-icons/fa';
+import {FaTools, FaWarehouse, FaTruck, FaCalculator, FaSign, FaHardHat, FaUserTie, FaPrint} from 'react-icons/fa';
 
 interface JobPositionProps {
     title: string;
@@ -108,7 +108,7 @@ export default function JobOpportunities() {
         <section id="job-opportunities" className="relative min-h-screen py-8 bg-[#F7D117] mt-6">
             <div
                 className="relative w-full h-48 md:h-64 bg-cover bg-center"
-                style={{ backgroundImage: "url('/LogoBackground.png')" }}
+                style={{backgroundImage: "url('/LogoBackground.png')"}}
             >
                 <div className="absolute inset-0 flex justify-center items-center px-4">
                     <div className="bg-black/90 p-2 rounded-xl shadow-xl">
@@ -121,10 +121,12 @@ export default function JobOpportunities() {
                 </div>
             </div>
 
-            <div className="container px-5 md:px-8 py-7 mt-8 bg-white rounded-2xl shadow-xl mb-8 max-w-4xl mx-auto border border-black/10">
+            <div
+                className="container px-5 md:px-8 py-7 mt-8 bg-white rounded-2xl shadow-xl mb-8 max-w-4xl mx-auto border border-black/10">
                 <p className="text-left text-base md:text-lg leading-relaxed mb-4 font-sans text-gray-800">
-                    Apply now online or in person. <br />
-                    <strong>San Bar Construction Corp.</strong> is an Equal Opportunity Employer and encourages diversity in the workforce.
+                    Apply now online or in person. <br/>
+                    <strong>San Bar Construction Corp.</strong> is an Equal Opportunity Employer and encourages
+                    diversity in the workforce.
                 </p>
 
                 <p className="text-left text-xl md:text-2xl font-bold leading-relaxed mb-4 text-black">
@@ -137,7 +139,8 @@ export default function JobOpportunities() {
 
                 <div className="flex justify-start">
                     <Link href="/job-application">
-                        <button className="bg-black hover:bg-gray-900 text-white font-bold py-2.5 px-5 rounded-xl text-base md:text-lg shadow-md transition-transform duration-200 transform hover:scale-105">
+                        <button
+                            className="bg-black hover:bg-gray-900 text-white font-bold py-2.5 px-5 rounded-xl text-base md:text-lg shadow-md transition-transform duration-200 transform hover:scale-105">
                             Apply Here
                         </button>
                     </Link>
@@ -179,42 +182,183 @@ export default function JobOpportunities() {
             {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, Vacation"*/}
             {/*/>*/}
 
+            <section className="job-posting">
+                <h1>Sign Designer/Print and Production Technician</h1>
+
+                <h2>Position Summary</h2>
+                <p>
+                    San Bar Construction Corp. is a fast-paced roadway construction company
+                    specializing in roadway striping, traffic sign fabrication and installation,
+                    and guardrail installation.
+                </p>
+                <p>
+                    We are seeking a Sign Designer/Print and Production Technician to join our
+                    in-house sign shop. This is a hands-on production role, ideal for someone
+                    with experience in sign design, fabrication setup, and large-format printing,
+                    rather than traditional or marketing-focused graphic design.
+                </p>
+
+                <h2>Responsibilities</h2>
+                <ul>
+                    <li>
+                        Collaborate with the sign shop production supervisor and internal
+                        departments to design, set up, and print signs that meet project
+                        requirements.
+                    </li>
+                    <li>
+                        Prepare files for printing, plotting, cutting, and laminating using
+                        large-format printers and related equipment.
+                    </li>
+                    <li>
+                        Manage multiple signage projects while ensuring accurate production and
+                        timely delivery.
+                    </li>
+                    <li>
+                        Perform daily, weekly, and monthly maintenance on printers, laminators,
+                        and other sign shop equipment.
+                    </li>
+                    <li>
+                        Ensure materials and supplies are stocked for uninterrupted production.
+                    </li>
+                    <li>
+                        Occasionally interact with customers to clarify specifications or provide
+                        sign proofs.
+                    </li>
+                </ul>
+
+                <h2>Qualifications</h2>
+                <ul>
+                    <li>
+                        Experience in sign design or production, ideally within a fabrication,
+                        construction, or municipal-signage environment.
+                    </li>
+                    <li>
+                        Proficiency in Adobe Illustrator is required. Experience with
+                        FlexiPrint, FlexiSign, or similar sign-making software is a plus.
+                    </li>
+                    <li>
+                        Strong computer skills, including importing and exporting files and
+                        managing digital assets.
+                    </li>
+                    <li>
+                        Understanding of sign-construction processes, including materials,
+                        substrates, vinyl application, and lamination. Training is provided.
+                    </li>
+                    <li>
+                        Excellent attention to detail and the ability to manage print queues and
+                        prioritize tasks independently.
+                    </li>
+                    <li>
+                        Strong problem-solving abilities and clear written and verbal
+                        communication skills.
+                    </li>
+                    <li>
+                        Reliable, with consistent attendance, a positive attitude, and a strong
+                        work ethic.
+                    </li>
+                    <li>
+                        Comfortable working in a fast-paced, production-driven environment.
+                    </li>
+                    <li>
+                        Able to lift up to 50 pounds occasionally and remain on your feet for
+                        extended periods.
+                    </li>
+                </ul>
+
+                <h2>Education and Experience</h2>
+                <ul>
+                    <li>One to two years of sign-shop or print-production experience.</li>
+                    <li>High school diploma or equivalent.</li>
+                </ul>
+
+                <h2>Position Details</h2>
+                <p><strong>Job type:</strong> Full-time</p>
+                <p><strong>Compensation:</strong> $23.00 per hour</p>
+                <p>
+                    <strong>Benefits:</strong> Medical, dental, and vision insurance; HRA;
+                    supplemental insurance; holiday pay; HWA; 401(k); and vacation.
+                </p>
+
+                <p>
+                    Following a conditional offer, employment is contingent upon passing a
+                    pre-employment drug test and completing a satisfactory background check.
+                </p>
+
+                <p>
+                    San Bar Construction Corp. is an Equal Opportunity Employer and encourages
+                    diversity in the workforce.
+                </p>
+            </section>
+
             <JobPosition
-                title="Road Construction Foreman"
-                icon={<FaHardHat />}
-                summary="San Bar Construction Corp. is seeking an experienced Road Construction Foreman to supervise and coordinate highway construction crews. This position leads, trains, and delegates work to crew members while ensuring projects are completed safely, efficiently, and on schedule."
+                title="Sign Designer/Print and Production Technician"
+                icon={<FaPrint />}
+                summary="San Bar Construction Corp. is seeking a Sign Designer/Print and Production Technician to join its in-house sign shop. This hands-on production position focuses on sign design, fabrication setup, and large-format printing rather than traditional or marketing-focused graphic design."
                 qualifications={[
-                    "5+ years of experience in the highway construction industry",
-                    "2–4 years of professional experience as a lead, foreman, or supervisor",
-                    "Experience with guardrail installation, sign installation, and highway striping preferred, but not required; on-the-job training is provided",
-                    "Strong written and verbal communication skills",
-                    "Good understanding of the construction industry",
-                    "Ability to perform heavy physical activity and lift heavy objects",
-                    "Ability to operate hydraulically operated jackhammers and other heavy equipment used in the industry",
-                    "Ability to work outdoors in changing weather conditions",
-                    "Must possess a valid driver's license",
+                    "1–2 years of experience in a sign shop or print production role",
+                    "High school diploma or equivalent",
+                    "Experience in sign design or production, ideally within a fabrication, construction, or municipal signage environment",
+                    "Proficiency in Adobe Illustrator is required",
+                    "Experience with FlexiPrint, FlexiSign, or similar sign-making software is preferred",
+                    "Strong computer skills, including the ability to import and export files and manage digital assets",
+                    "Understanding of sign construction processes, including materials, substrates, vinyl application, and lamination; training is provided",
+                    "Excellent attention to detail and the ability to manage print queues and prioritize tasks independently",
+                    "Strong problem-solving abilities and clear written and verbal communication skills",
+                    "Reliable, with consistent attendance, a positive attitude, and a strong work ethic",
+                    "Comfortable working in a fast-paced, production-driven environment",
+                    "Ability to lift up to 50 pounds occasionally and remain on your feet for extended periods",
                     "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
                     "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
                 ]}
                 responsibilities={[
-                    "Coordinate daily tasks according to project plans and adjust work as necessary due to weather or personnel",
-                    "Delegate responsibilities and projects to crew members and contractors",
-                    "Study project specifications and plan construction procedures",
-                    "Provide leadership, training, and guidance to crew members through example and knowledge sharing",
-                    "Plan work schedules to maximize production while maintaining high performance standards",
-                    "Ensure the safe operation and transportation of equipment",
-                    "Instruct crews on required procedures and work methods",
-                    "Monitor and work alongside crew members to ensure successful project completion",
-                    "Maintain accurate records and ensure required documentation is submitted on time"
+                    "Collaborate with the sign shop production supervisor and internal departments to design, set up, and print signs that meet project requirements",
+                    "Prepare files for printing, plotting, cutting, and laminating using large-format printers and related equipment",
+                    "Manage multiple signage projects while ensuring accurate production and timely delivery",
+                    "Perform daily, weekly, and monthly maintenance on printers, laminators, and other sign shop equipment",
+                    "Ensure materials and supplies are stocked for uninterrupted production",
+                    "Occasionally interact with customers to clarify specifications or provide sign proofs"
                 ]}
                 jobType="Full-time"
-                compensation="Dependent on experience"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
+                compensation="$23.00 per hour"
+                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K, and Vacation"
             />
+
+            {/*<JobPosition*/}
+            {/*    title="Road Construction Foreman"*/}
+            {/*    icon={<FaHardHat />}*/}
+            {/*    summary="San Bar Construction Corp. is seeking an experienced Road Construction Foreman to supervise and coordinate highway construction crews. This position leads, trains, and delegates work to crew members while ensuring projects are completed safely, efficiently, and on schedule."*/}
+            {/*    qualifications={[*/}
+            {/*        "5+ years of experience in the highway construction industry",*/}
+            {/*        "2–4 years of professional experience as a lead, foreman, or supervisor",*/}
+            {/*        "Experience with guardrail installation, sign installation, and highway striping preferred, but not required; on-the-job training is provided",*/}
+            {/*        "Strong written and verbal communication skills",*/}
+            {/*        "Good understanding of the construction industry",*/}
+            {/*        "Ability to perform heavy physical activity and lift heavy objects",*/}
+            {/*        "Ability to operate hydraulically operated jackhammers and other heavy equipment used in the industry",*/}
+            {/*        "Ability to work outdoors in changing weather conditions",*/}
+            {/*        "Must possess a valid driver's license",*/}
+            {/*        "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",*/}
+            {/*        "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Coordinate daily tasks according to project plans and adjust work as necessary due to weather or personnel",*/}
+            {/*        "Delegate responsibilities and projects to crew members and contractors",*/}
+            {/*        "Study project specifications and plan construction procedures",*/}
+            {/*        "Provide leadership, training, and guidance to crew members through example and knowledge sharing",*/}
+            {/*        "Plan work schedules to maximize production while maintaining high performance standards",*/}
+            {/*        "Ensure the safe operation and transportation of equipment",*/}
+            {/*        "Instruct crews on required procedures and work methods",*/}
+            {/*        "Monitor and work alongside crew members to ensure successful project completion",*/}
+            {/*        "Maintain accurate records and ensure required documentation is submitted on time"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="Dependent on experience"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Traffic Sign Technician"
-                icon={<FaSign />}
+                icon={<FaSign/>}
                 summary="San Bar Construction Corp. is hiring a full-time, entry-level Traffic Sign Technician to support the production of signs, banners, and digitally printed media for roadway construction projects. Industry experience is not required, and training will be provided for candidates eager to learn and grow with the company."
                 qualifications={[
                     "No industry experience required; training will be provided",
@@ -240,7 +384,6 @@ export default function JobOpportunities() {
                 compensation="$14.50 per hour"
                 benefits="Medical, dental, and vision insurance; HRA; supplemental insurance; holiday pay; HWA; 401(k); and vacation"
             />
-
 
 
             {/*<JobPosition*/}
@@ -286,7 +429,7 @@ export default function JobOpportunities() {
 
             <JobPosition
                 title="Diesel Technician / Mechanic"
-                icon={<FaTools />}
+                icon={<FaTools/>}
                 summary="San Bar Construction Corporation is currently recruiting to fill the position of Diesel Technician / Mechanic. The primary duties include diagnosis, repair, and maintenance of primarily diesel-powered vehicles, equipment, light-duty trucks, and heavy-duty trucks. San Bar Construction repairs, rebuilds, and manufactures specialized equipment for highway striping, guardrail, rumble strip, and ultra-high-pressure water blasting in a large climate-controlled mechanic shop."
                 qualifications={[
                     "Minimum of 5 years automotive/diesel mechanic experience",
@@ -315,7 +458,7 @@ export default function JobOpportunities() {
 
             <JobPosition
                 title="CDL Driver"
-                icon={<FaTruck />}
+                icon={<FaTruck/>}
                 summary="The CDL Driver will load, transport, and unload materials to and from work sites, operating various equipment safely, and performing basic maintenance."
                 qualifications={[
                     "Possess a valid Class A or B CDL License",
@@ -337,43 +480,43 @@ export default function JobOpportunities() {
                 compensation="Dependent on Project"
                 benefits="Medical, Dental and Vision Insurance, Health Reimbursement, Supplemental Insurance, Holiday Pay, HWA, 401K"
             />
-            <JobPosition
-                title="Warehouse Laborer"
-                icon={<FaWarehouse />}
-                summary="San Bar Construction Corp. is hiring a full-time Warehouse Laborer to receive and process incoming stock, materials, and equipment, verify documentation, load and unload vehicles, and prepare orders for delivery or shipment."
-                qualifications={[
-                    "Regularly lift or move objects 10 to 50 lbs.",
-                    "Occasionally lift or move objects weighing more than 100 lbs. using provided equipment",
-                    "Frequently required to stand, walk, stoop, kneel, crouch, or crawl",
-                    "Occasionally required to sit, climb, or balance",
-                    "Dependable and reliable",
-                    "Good driving record",
-                    "Team player with the ability to work independently",
-                    "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
-                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
-                ]}
-                responsibilities={[
-                    "Receive and process incoming stock, materials, or equipment by verifying proper documentation",
-                    "Load and unload vehicles, utilizing a forklift as required",
-                    "Pick and fill orders from stock, pack orders, and prepare shipments",
-                    "Prepare orders by processing requests and supply orders, pulling materials, packing boxes, and placing orders in the delivery area",
-                    "Load and secure merchandise for transportation",
-                    "Unload trucks and check in merchandise",
-                    "Verify bill-of-lading and file documentation appropriately",
-                    "Sort and place materials in designated areas",
-                    "Maintain a safe, clean, and organized warehouse environment, including cleaning, sweeping, and mopping as needed",
-                    "Wear proper safety equipment and follow all safety requirements",
-                    "Deliver orders to customers when necessary",
-                    "Perform other duties as assigned"
-                ]}
-                jobType="Full-time"
-                compensation="$15.00 per hour"
-                benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"
-            />
+            {/*<JobPosition*/}
+            {/*    title="Warehouse Laborer"*/}
+            {/*    icon={<FaWarehouse />}*/}
+            {/*    summary="San Bar Construction Corp. is hiring a full-time Warehouse Laborer to receive and process incoming stock, materials, and equipment, verify documentation, load and unload vehicles, and prepare orders for delivery or shipment."*/}
+            {/*    qualifications={[*/}
+            {/*        "Regularly lift or move objects 10 to 50 lbs.",*/}
+            {/*        "Occasionally lift or move objects weighing more than 100 lbs. using provided equipment",*/}
+            {/*        "Frequently required to stand, walk, stoop, kneel, crouch, or crawl",*/}
+            {/*        "Occasionally required to sit, climb, or balance",*/}
+            {/*        "Dependable and reliable",*/}
+            {/*        "Good driving record",*/}
+            {/*        "Team player with the ability to work independently",*/}
+            {/*        "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",*/}
+            {/*        "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"*/}
+            {/*    ]}*/}
+            {/*    responsibilities={[*/}
+            {/*        "Receive and process incoming stock, materials, or equipment by verifying proper documentation",*/}
+            {/*        "Load and unload vehicles, utilizing a forklift as required",*/}
+            {/*        "Pick and fill orders from stock, pack orders, and prepare shipments",*/}
+            {/*        "Prepare orders by processing requests and supply orders, pulling materials, packing boxes, and placing orders in the delivery area",*/}
+            {/*        "Load and secure merchandise for transportation",*/}
+            {/*        "Unload trucks and check in merchandise",*/}
+            {/*        "Verify bill-of-lading and file documentation appropriately",*/}
+            {/*        "Sort and place materials in designated areas",*/}
+            {/*        "Maintain a safe, clean, and organized warehouse environment, including cleaning, sweeping, and mopping as needed",*/}
+            {/*        "Wear proper safety equipment and follow all safety requirements",*/}
+            {/*        "Deliver orders to customers when necessary",*/}
+            {/*        "Perform other duties as assigned"*/}
+            {/*    ]}*/}
+            {/*    jobType="Full-time"*/}
+            {/*    compensation="$15.00 per hour"*/}
+            {/*    benefits="Medical, Dental and Vision Insurance, HRA, Supplemental Insurance, Holiday Pay, HWA, 401K"*/}
+            {/*/>*/}
 
             <JobPosition
                 title="Field Technician / Laborer"
-                icon={<FaTools />}
+                icon={<FaTools/>}
                 summary="The Field Technician/Laborer will work on preparing and executing projects professionally, including loading and unloading materials, operating equipment, and basic maintenance."
                 qualifications={[
                     "1-2 years of road construction experience preferred",
