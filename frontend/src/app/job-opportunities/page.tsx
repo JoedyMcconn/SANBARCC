@@ -199,39 +199,6 @@ export default function JobOpportunities() {
                     "Reliable, with consistent attendance, a positive attitude, and a strong work ethic",
                     "Comfortable working in a fast-paced, production-driven environment",
                     "Ability to lift up to 50 pounds occasionally and remain on your feet for extended periods",
-                    "Following a conditional offer, employment is contingent upon passing a pre-employment drug test and completing a satisfactory background check",
-                    "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce",
-                ]}
-                responsibilities={[
-                    "Collaborate with the sign shop production supervisor and internal departments to design, set up, and print signs that meet project requirements",
-                    "Prepare files for printing, plotting, cutting, and laminating using large-format printers and related equipment",
-                    "Manage multiple signage projects while ensuring accurate production and timely delivery",
-                    "Perform daily, weekly, and monthly maintenance on printers, laminators, and other sign shop equipment",
-                    "Ensure materials and supplies are stocked for uninterrupted production",
-                    "Occasionally interact with customers to clarify specifications or provide sign proofs",
-                ]}
-                jobType="Full-time"
-                compensation="$23.00 per hour"
-                benefits="Medical insurance, dental insurance, vision insurance, HRA, supplemental insurance, holiday pay, HWA, 401(k), and vacation"
-            />
-
-            <JobPosition
-                title="Sign Designer/Print and Production Technician"
-                icon={<FaPrint />}
-                summary="San Bar Construction Corp. is seeking a Sign Designer/Print and Production Technician to join its in-house sign shop. This hands-on production position focuses on sign design, fabrication setup, and large-format printing rather than traditional or marketing-focused graphic design."
-                qualifications={[
-                    "1–2 years of experience in a sign shop or print production role",
-                    "High school diploma or equivalent",
-                    "Experience in sign design or production, ideally within a fabrication, construction, or municipal signage environment",
-                    "Proficiency in Adobe Illustrator is required",
-                    "Experience with FlexiPrint, FlexiSign, or similar sign-making software is preferred",
-                    "Strong computer skills, including the ability to import and export files and manage digital assets",
-                    "Understanding of sign construction processes, including materials, substrates, vinyl application, and lamination; training is provided",
-                    "Excellent attention to detail and the ability to manage print queues and prioritize tasks independently",
-                    "Strong problem-solving abilities and clear written and verbal communication skills",
-                    "Reliable, with consistent attendance, a positive attitude, and a strong work ethic",
-                    "Comfortable working in a fast-paced, production-driven environment",
-                    "Ability to lift up to 50 pounds occasionally and remain on your feet for extended periods",
                     "Following a conditional offer, employment is contingent on passing a pre-employment drug test and completion of a satisfactory background check",
                     "San Bar Construction Corp. is an Equal Opportunity Employer and encourages diversity in the workforce"
                 ]}
